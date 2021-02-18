@@ -1,0 +1,24 @@
+.social-links {
+	display: flex;
+	flex-direction: column;
+}
+
+.social-links a {
+	margin-bottom: 20px;
+	text-decoration: overline;
+	display: block;
+	border: 1px solid transparent;
+	padding: 10px;
+	width: 15%;
+}
+
+.social-links a:hover {
+	text-decoration: underline;
+	border: 1px solid blue;
+}
+
+.social-links a:active {
+	text-decoration:line-through;
+	background-color: blue;
+	color: white;
+}
