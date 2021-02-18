@@ -30,9 +30,9 @@ class Main extends Component {
 	                  </div>
 	              </div>
 	              <div class="links" id="myLinks">
-	                <a href="#" >Projects</a>
-	                <a href="#" >About</a>
-	                <a href="#" >Contact</a>
+	                <a>Projects</a>
+	                <a>About</a>
+	                <a>Contact</a>
 	              </div>
 	          </div>
 			  <div className="content">
@@ -46,5 +46,23 @@ class Main extends Component {
     );
   }
 }
+
+function hideNav() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+    x.style.transition = "display 2s";
+  }
+}
+
+function resize() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    }
+}
+window.onresize = resize;
 
 export default Main;

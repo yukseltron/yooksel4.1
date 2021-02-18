@@ -64,10 +64,10 @@ img {
 	}
 
 	.projects-menu {
-		margin-top: -63px;
+		margin-top: -200px;
 	}
-
 }
+
 
 .projects-menu {
 	display: flex;
@@ -75,6 +75,8 @@ img {
 	z-index: 10;
 	background-color: black;
 	color: white;
+	margin-top: -120px;
+	text-align: center;
 }
 
 .projects-menu p {
