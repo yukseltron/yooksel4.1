@@ -6,7 +6,7 @@ import routesIMG from './project-svgs/routes-app.svg';
 import monodriftIMG from './project-svgs/monodrift.svg';
 import uvcIMG from './project-svgs/rsg.svg';
 import jpIMG from './project-svgs/jp.svg';
-import './projects.css';
+import styles from './projects.css';
 
 var projs = [];
 
@@ -65,14 +65,13 @@ class Projects extends Component {
                         <p>{i.description}</p>
                     </div>
                     <div class="img-container">
-                        <img class="animate__animated animate__fadeInDown" src={i.img}/>
+                        <img className={styles.animate__animated, styles.animate__fadeInDown} src={i.img}/>
                     </div>
             </div>
         )
       }
     return (
 		<div class="projects-container">
-        <link rel="stylesheet" href="projects.css"/>
 			<div class="projects-menu">
 				<p id="ux" onclick="onlyUX();">UX</p>
 				<p id="code" onclick="onlyCode();">Code</p>

@@ -50,6 +50,7 @@ img {
 
 	.container {
 		margin-bottom: 200px;
+		display: flex;
 	}
 
 	.img-container {

@@ -19,9 +19,9 @@ class Main extends Component {
 	              <div class="header-content">
 	                  <a id="name"><NavLink to="/">Hamid Yuksel</NavLink></a>
 	                  <div id="nav-header">
-	                      <a class="nav-header"><NavLink to="/projects">Projects</NavLink></a>
-	                      <a class="nav-header"><NavLink to="/about">About</NavLink></a>
-	                      <a class="nav-header"><NavLink to="/contact">Contact</NavLink></a>
+	                      <h3 class="nav-header"><NavLink to="/projects">Projects</NavLink></h3>
+	                      <h3 class="nav-header"><NavLink to="/about">About</NavLink></h3>
+	                      <h3 class="nav-header"><NavLink to="/contact">Contact</NavLink></h3>
 	                  </div>
 	                  <div class="nav-hamburger" href="javascript:void(0);" onclick="hideNav()">
 	                      <div></div>
