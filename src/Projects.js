@@ -53,6 +53,107 @@ projs[5] = uvc;
 projs[6] = jp;
 
 class Projects extends Component {
+    onlyUX() {
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
+        var uxList = []
+        uxList[0] = quercus;
+        uxList[1] = routes;
+        projs = uxList;
+        this.render();
+    }
+
+    onlyCode() {
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
+        var x = document.getElementsByClassName("container");
+        var a = document.getElementById("ux");
+        var b = document.getElementById("code");
+        var c = document.getElementById("writing");
+        var d = document.getElementById("art");
+        a.style.color = "white";
+        b.style.color = "white";
+        c.style.color = "white";
+        d.style.color = "white";
+        a.style.fontWeight = "100";
+        a.style.fontWeight = "100";
+        b.style.fontWeight = "900";
+        b.style.color = "blue";
+        a.style.backgroundColor = "black";
+        b.style.backgroundColor = "black";
+        c.style.backgroundColor = "black";
+        d.style.backgroundColor = "black";
+        b.style.backgroundColor = "white";
+        c.style.fontWeight = "100";
+        d.style.fontWeight = "100";
+        for (var i = 0; i < x.length; i++) {
+          if (x[i].matches('.Code') == false) {
+            x[i].style.display = "none";
+          } else {
+              x[i].style.display = "block";
+          }
+        }
+    }
+
+    onlyWriting() {
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
+        var x = document.getElementsByClassName("container");
+        var a = document.getElementById("ux");
+        var b = document.getElementById("code");
+        var c = document.getElementById("writing");
+        var d = document.getElementById("art");
+        a.style.color = "white";
+        b.style.color = "white";
+        c.style.color = "white";
+        d.style.color = "white";
+        a.style.fontWeight = "100";
+        a.style.fontWeight = "100";
+        b.style.fontWeight = "100";
+        c.style.fontWeight = "900";
+        c.style.color = "blue";
+        a.style.backgroundColor = "black";
+        b.style.backgroundColor = "black";
+        c.style.backgroundColor = "black";
+        d.style.backgroundColor = "black";
+        c.style.backgroundColor = "white";
+        d.style.fontWeight = "100";
+        for (var i = 0; i < x.length; i++) {
+          if (x[i].matches('.Writing') == false) {
+            x[i].style.display = "none";
+          } else {
+              x[i].style.display = "block";
+          }
+        }
+    }
+
+    onlyArt() {
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
+        var x = document.getElementsByClassName("container");
+        var a = document.getElementById("ux");
+        var b = document.getElementById("code");
+        var c = document.getElementById("writing");
+        var d = document.getElementById("art");
+        a.style.color = "white";
+        b.style.color = "white";
+        c.style.color = "white";
+        d.style.color = "white";
+        a.style.fontWeight = "100";
+        b.style.fontWeight = "100";
+        c.style.fontWeight = "100";
+        d.style.fontWeight = "900";
+        d.style.color = "blue";
+        a.style.backgroundColor = "black";
+        b.style.backgroundColor = "black";
+        c.style.backgroundColor = "black";
+        d.style.backgroundColor = "black";
+        d.style.backgroundColor = "white";
+        for (var i = 0; i < x.length; i++) {
+          if (x[i].matches('.Art') == false) {
+            x[i].style.display = "none";
+          } else {
+              x[i].style.display = "block";
+          }
+        }
+    }
+
   render() {
       const items = []
 
@@ -73,10 +174,10 @@ class Projects extends Component {
     return (
 		<div class="projects-container">
 			<div class="projects-menu">
-				<p id="ux" onclick="onlyUX();">UX</p>
-				<p id="code" onclick="onlyCode();">Code</p>
-				<p id="writing" onclick="onlyWriting();">Writing</p>
-				<p id="art" onclick="onlyArt();">Art</p>
+				<p id="ux" onclick={this.onlyUX}>UX</p>
+				<p id="code" onclick={this.onlyCode}>Code</p>
+				<p id="writing" onclick={this.onlyWriting}>Writing</p>
+				<p id="art" onclick={this.onlyArt}>Art</p>
 			</div>
 			<div class="fade-in" id="projects">
 				{items}
@@ -85,130 +186,5 @@ class Projects extends Component {
     );
   }
 }
-
-
-function onlyUX() {
-    document.body.scrollTop = document.documentElement.scrollTop = 0;
-    var x = document.getElementsByClassName("container");
-    var a = document.getElementById("ux");
-    var b = document.getElementById("code");
-    var c = document.getElementById("writing");
-    var d = document.getElementById("art");
-    a.style.color = "white";
-    b.style.color = "white";
-    c.style.color = "white";
-    d.style.color = "white";
-    a.style.fontWeight = "100";
-    a.style.fontWeight = "900";
-    a.style.color = "blue";
-    a.style.backgroundColor = "black";
-    b.style.backgroundColor = "black";
-    c.style.backgroundColor = "black";
-    d.style.backgroundColor = "black";
-    a.style.backgroundColor = "white";
-    b.style.fontWeight = "100";
-    c.style.fontWeight = "100";
-    d.style.fontWeight = "100";
-    for (var i = 0; i < x.length; i++) {
-      if (x[i].matches('.UX') == false) {
-        x[i].style.display = "none";
-      } else {
-        x[i].style.display = "block";
-      }
-    }
-}
-
-function onlyCode() {
-    document.body.scrollTop = document.documentElement.scrollTop = 0;
-    var x = document.getElementsByClassName("container");
-    var a = document.getElementById("ux");
-    var b = document.getElementById("code");
-    var c = document.getElementById("writing");
-    var d = document.getElementById("art");
-    a.style.color = "white";
-    b.style.color = "white";
-    c.style.color = "white";
-    d.style.color = "white";
-    a.style.fontWeight = "100";
-    a.style.fontWeight = "100";
-    b.style.fontWeight = "900";
-    b.style.color = "blue";
-    a.style.backgroundColor = "black";
-    b.style.backgroundColor = "black";
-    c.style.backgroundColor = "black";
-    d.style.backgroundColor = "black";
-    b.style.backgroundColor = "white";
-    c.style.fontWeight = "100";
-    d.style.fontWeight = "100";
-    for (var i = 0; i < x.length; i++) {
-      if (x[i].matches('.Code') == false) {
-        x[i].style.display = "none";
-      } else {
-          x[i].style.display = "block";
-      }
-    }
-}
-
-function onlyWriting() {
-    document.body.scrollTop = document.documentElement.scrollTop = 0;
-    var x = document.getElementsByClassName("container");
-    var a = document.getElementById("ux");
-    var b = document.getElementById("code");
-    var c = document.getElementById("writing");
-    var d = document.getElementById("art");
-    a.style.color = "white";
-    b.style.color = "white";
-    c.style.color = "white";
-    d.style.color = "white";
-    a.style.fontWeight = "100";
-    a.style.fontWeight = "100";
-    b.style.fontWeight = "100";
-    c.style.fontWeight = "900";
-    c.style.color = "blue";
-    a.style.backgroundColor = "black";
-    b.style.backgroundColor = "black";
-    c.style.backgroundColor = "black";
-    d.style.backgroundColor = "black";
-    c.style.backgroundColor = "white";
-    d.style.fontWeight = "100";
-    for (var i = 0; i < x.length; i++) {
-      if (x[i].matches('.Writing') == false) {
-        x[i].style.display = "none";
-      } else {
-          x[i].style.display = "block";
-      }
-    }
-}
-
-function onlyArt() {
-    document.body.scrollTop = document.documentElement.scrollTop = 0;
-    var x = document.getElementsByClassName("container");
-    var a = document.getElementById("ux");
-    var b = document.getElementById("code");
-    var c = document.getElementById("writing");
-    var d = document.getElementById("art");
-    a.style.color = "white";
-    b.style.color = "white";
-    c.style.color = "white";
-    d.style.color = "white";
-    a.style.fontWeight = "100";
-    b.style.fontWeight = "100";
-    c.style.fontWeight = "100";
-    d.style.fontWeight = "900";
-    d.style.color = "blue";
-    a.style.backgroundColor = "black";
-    b.style.backgroundColor = "black";
-    c.style.backgroundColor = "black";
-    d.style.backgroundColor = "black";
-    d.style.backgroundColor = "white";
-    for (var i = 0; i < x.length; i++) {
-      if (x[i].matches('.Art') == false) {
-        x[i].style.display = "none";
-      } else {
-          x[i].style.display = "block";
-      }
-    }
-}
-
 
 export default Projects;
