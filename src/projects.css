@@ -1,0 +1,63 @@
+@media screen and (min-width: 1500px) {
+	.container {
+		margin-bottom: 250px;
+	}
+
+	.info h1{
+		margin-bottom: 75px;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.container {
+		margin-top: 150px;
+		font-size: 80%;
+		margin-bottom: 150px;
+	}
+
+	.container:hover {
+		color: white;
+		background-color: black;
+	}
+
+	.img-container img {
+	    width: 50% !important;
+	}
+}
+
+.container {
+	margin-top: 50px;
+	border: 1px solid black;
+	padding: 50px;
+}
+
+.container:hover {
+	cursor: pointer;
+}
+
+.container p {
+	line-height: 16px;
+	font-size: 120%;
+}
+
+.container h3 {
+	font-size: 150%;
+}
+
+.description {
+	text-align: center;
+}
+
+.img-container img {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.info {
+	line-height: 30px;
+	text-align: center;
+}

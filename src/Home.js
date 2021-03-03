@@ -37,24 +37,26 @@ class Home extends Component {
                     <h1 id="name">Hamid Yuksel</h1>
                     <div class="iam">
     					<h3>is a </h3>
-                        <h3><NavLink to="/projects" class="home-navs gradient1">UX designer</NavLink></h3>
+                        <NavLink to="/projects" class="home-navs gradient1">UX designer</NavLink>
                         <h3>with a background in </h3>
-                        <h3><NavLink to="/projects" class="home-navs gradient1">computer science </NavLink></h3>
+                        <NavLink to="/projects" class="home-navs gradient2">computer science </NavLink>
                         <h3>and an interest in</h3>
                         <h3>art, writing, </h3>
-                        <h3><NavLink to="/projects" class="home-navs gradient1">and more</NavLink></h3>
+                        <NavLink to="/projects" class="home-navs gradient3">and more</NavLink>
                     </div>
 				</div>
-                                    <br />
+                <br />
                 <div>
-                    <h2><NavLink to="/projects" class="link">View my projects</NavLink></h2>
+                    <h2><NavLink to="/projects" class="link">View my work</NavLink></h2>
                     <h2><NavLink to="/contact" class="link">Contact me</NavLink></h2>
                 </div>
 			</div>
 			<div class="shape-container">
 		        <div id="shape" style={{backgroundImage: backGradient}} class="shape1"></div>
-                <p>Built with react</p>
-                <p>Last updated Mar 3/2021</p>
+                <div class="footnote">
+                    <p>Built with React</p>
+                    <p>Last updated Mar 3/2021</p>
+                </div>
 			</div>
 		</div>
     );
