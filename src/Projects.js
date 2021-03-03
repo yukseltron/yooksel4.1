@@ -21,7 +21,7 @@ class Proj {
     }
 }
 
-let quercus = new Proj('Improving Querucs', 'UX Case Study', '2020',
+let quercus = new Proj('Improving Quercus', 'UX Case Study', '2020',
 'Helping university students with online learning and group formation.', 'UX', quercusIMG);
 
 let rsg = new Proj('Random String Generator', 'Compiler', '2020',
@@ -52,106 +52,48 @@ projs[4] = monodrift;
 projs[5] = uvc;
 projs[6] = jp;
 
+
+
 class Projects extends Component {
-    onlyUX() {
+    onlyUX(e) {
         document.body.scrollTop = document.documentElement.scrollTop = 0;
         var uxList = []
         uxList[0] = quercus;
         uxList[1] = routes;
         projs = uxList;
-        this.render();
+        e.target.style.background = 'white';
+        e.target.style.color = 'black';
     }
 
-    onlyCode() {
+    onlyCode(e) {
         document.body.scrollTop = document.documentElement.scrollTop = 0;
-        var x = document.getElementsByClassName("container");
-        var a = document.getElementById("ux");
-        var b = document.getElementById("code");
-        var c = document.getElementById("writing");
-        var d = document.getElementById("art");
-        a.style.color = "white";
-        b.style.color = "white";
-        c.style.color = "white";
-        d.style.color = "white";
-        a.style.fontWeight = "100";
-        a.style.fontWeight = "100";
-        b.style.fontWeight = "900";
-        b.style.color = "blue";
-        a.style.backgroundColor = "black";
-        b.style.backgroundColor = "black";
-        c.style.backgroundColor = "black";
-        d.style.backgroundColor = "black";
-        b.style.backgroundColor = "white";
-        c.style.fontWeight = "100";
-        d.style.fontWeight = "100";
-        for (var i = 0; i < x.length; i++) {
-          if (x[i].matches('.Code') == false) {
-            x[i].style.display = "none";
-          } else {
-              x[i].style.display = "block";
-          }
-        }
+        var uxList = []
+        uxList[0] = rsg;
+        uxList[1] = vab;
+        uxList[2] = jp;
+        projs = uxList;
+        e.target.style.background = 'white';
+        e.target.style.color = 'black';
     }
 
-    onlyWriting() {
+    onlyWriting(e) {
         document.body.scrollTop = document.documentElement.scrollTop = 0;
-        var x = document.getElementsByClassName("container");
-        var a = document.getElementById("ux");
-        var b = document.getElementById("code");
-        var c = document.getElementById("writing");
-        var d = document.getElementById("art");
-        a.style.color = "white";
-        b.style.color = "white";
-        c.style.color = "white";
-        d.style.color = "white";
-        a.style.fontWeight = "100";
-        a.style.fontWeight = "100";
-        b.style.fontWeight = "100";
-        c.style.fontWeight = "900";
-        c.style.color = "blue";
-        a.style.backgroundColor = "black";
-        b.style.backgroundColor = "black";
-        c.style.backgroundColor = "black";
-        d.style.backgroundColor = "black";
-        c.style.backgroundColor = "white";
-        d.style.fontWeight = "100";
-        for (var i = 0; i < x.length; i++) {
-          if (x[i].matches('.Writing') == false) {
-            x[i].style.display = "none";
-          } else {
-              x[i].style.display = "block";
-          }
-        }
+        var uxList = []
+        uxList[0] = quercus;
+        uxList[1] = routes;
+        projs = uxList;
+        e.target.style.background = 'white';
+        e.target.style.color = 'black';
     }
 
-    onlyArt() {
+    onlyArt(e) {
         document.body.scrollTop = document.documentElement.scrollTop = 0;
-        var x = document.getElementsByClassName("container");
-        var a = document.getElementById("ux");
-        var b = document.getElementById("code");
-        var c = document.getElementById("writing");
-        var d = document.getElementById("art");
-        a.style.color = "white";
-        b.style.color = "white";
-        c.style.color = "white";
-        d.style.color = "white";
-        a.style.fontWeight = "100";
-        b.style.fontWeight = "100";
-        c.style.fontWeight = "100";
-        d.style.fontWeight = "900";
-        d.style.color = "blue";
-        a.style.backgroundColor = "black";
-        b.style.backgroundColor = "black";
-        c.style.backgroundColor = "black";
-        d.style.backgroundColor = "black";
-        d.style.backgroundColor = "white";
-        for (var i = 0; i < x.length; i++) {
-          if (x[i].matches('.Art') == false) {
-            x[i].style.display = "none";
-          } else {
-              x[i].style.display = "block";
-          }
-        }
+        var uxList = []
+        uxList[0] = quercus;
+        uxList[1] = routes;
+        projs = uxList;
+        e.target.style.background = 'white';
+        e.target.style.color = 'black';
     }
 
   render() {
@@ -161,7 +103,7 @@ class Projects extends Component {
         items.push(
             <div class="container">
                     <div class="info centered" id="project1">
-                        <h2>{i.title}</h2>
+                        <h1>{i.title}</h1>
                         <h3>{i.platform}</h3>
                         <p>{i.description}</p>
                     </div>
@@ -174,10 +116,10 @@ class Projects extends Component {
     return (
 		<div class="projects-container">
 			<div class="projects-menu">
-				<p id="ux" onclick={this.onlyUX}>UX</p>
-				<p id="code" onclick={this.onlyCode}>Code</p>
-				<p id="writing" onclick={this.onlyWriting}>Writing</p>
-				<p id="art" onclick={this.onlyArt}>Art</p>
+				<p id="ux" onClick={this.onlyUX}>UX</p>
+				<p id="code" onClick={this.onlyCode}>Code</p>
+				<p id="writing" onClick={this.onlyWriting}>Writing</p>
+				<p id="art" onClick={this.onlyArt}>Art</p>
 			</div>
 			<div class="fade-in" id="projects">
 				{items}

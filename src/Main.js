@@ -16,11 +16,11 @@ class Main extends Component {
 		<HashRouter>
 			<div id="container" class="mobile-container fade-in">
                 <div class="header-content">
-                    <h2 id="name"><NavLink to="/">Hamid Yuksel</NavLink></h2>
                     <div id="nav-header">
-                        <h3><NavLink to="/projects">Projects</NavLink></h3>
-                        <h3><NavLink to="/about">About</NavLink></h3>
-                        <h3><NavLink to="/contact">Contact</NavLink></h3>
+                        <h2><NavLink to="/">Home</NavLink></h2>
+                        <h2><NavLink to="/projects">Projects</NavLink></h2>
+                        <h2><NavLink to="/about">About</NavLink></h2>
+                        <h2><NavLink to="/contact">Contact</NavLink></h2>
                     </div>
                 </div>
     			  <div className="content">
@@ -32,16 +32,6 @@ class Main extends Component {
 	        </div>
 		</HashRouter>
     );
-  }
-}
-
-function hideNav() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-    x.style.transition = "display 2s";
   }
 }
 

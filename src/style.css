@@ -1,79 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+@import url("https://use.typekit.net/hvq3uny.css");
 
-h1 {
-	font-weight: lighter;
-    font-family: 'Karla', sans-serif;
+body {
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
-h2 {
-	font-weight: lighter;
-    font-family: 'Karla', sans-serif;
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+h1 {
+	font-family: pragmatica-extended, sans-serif;
+	font-weight: 700;
+	font-style: normal;
 }
 
 h3 {
-    font-family: 'Karla', sans-serif;
+	font-family: pragmatica-extended, sans-serif;
+	font-weight: 300;
+	font-size: 200%;
 }
 
-h4 {
-    font-family: 'Karla', sans-serif;
+p {
+	font-family: antarctican-mono, sans-serif;
+	font-weight: 500;
+	font-style: normal;
 }
 
-li {
-    font-family: 'Karla', sans-serif;
-}
+/*For Home*/
 
-img {
-	width: 100%;
-    height: auto;
-}
-
-a {
-    text-decoration: none;
-    font-family: 'Inconsolata', monospace;
-}
-
-.mobile-container {
-  max-width: 1000px;
-  margin: auto;
-}
-
-
-.header-content {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-
-.header-content a {
+.home-navs {
+	font-family: pragmatica-extended, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	color: black;
 	text-decoration: none;
-	padding-left: 10px;
-	padding-right: 10px;
 }
 
-.fade-in {
-  animation: fadeIn ease 1.5s;
-  -webkit-animation: fadeIn ease 1.5s;
-  -moz-animation: fadeIn ease 1.5s;
-  -o-animation: fadeIn ease 1.5s;
-  -ms-animation: fadeIn ease 1.5s;
+.home {
+	text-align: center;
 }
 
 .shape1 {
   background: linear-gradient(45deg, #81F499 0%, #6DD3CE 100%);
   animation: morph1 8s ease-in-out infinite;
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-  height: 500px;
+  height: 600px;
   transition: all 1s ease-in-out;
-  width: 500px;
-  z-index: 5;
+  width: 700px;
   overflow: none;
-  display: none;
 }
 
 @keyframes morph1 {
   0% {
-			border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
+			border-radius:  100% 40% 30% 70% / 60% 30% 70% 40%;
 	}
 
 	50% {
@@ -81,10 +62,77 @@ a {
 	}
 
 	100% {
-		border-radius:  100% 40% 30% 70% / 60% 30% 70% 40%;
+		border-radius:  60% 40% 30% 70% / 60% 30% 70% 40%;
 	}
 }
 
+.shape-container p {
+	text-align: right;
+	line-height: 0.5;
+}
+
+.intro-desc {
+	font-size: 400%;
+}
+
+.iam {
+	line-height: 4px;
+}
+
+#name {
+	font-family: pragmatica-extended, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+/**/
+
+/**For Main.js**/
+
 #nav-header {
 	display: flex;
+	justify-content: space-between;
+	font-size: 80%;
+}
+
+h2 a {
+	font-family: antarctican-mono, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	color: black;
+}
+
+h2 a:hover {
+	text-decoration: underline;
+}
+
+h2 a:active {
+	text-decoration: underline;
+}
+/**/
+
+
+@media screen and (min-width: 800px) {
+
+	.home {
+		text-align: left;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	#name {
+		font-size: 400%;
+	}
+
+	#nav-header {
+		justify-content: flex-end;
+	}
+
+	#nav-header a {
+		margin-left: 100px;
+	}
+
+	.shape1 {
+		position: auto;
+	}
 }
