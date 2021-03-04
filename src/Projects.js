@@ -69,7 +69,6 @@ class Projects extends Component {
 
       for (var i of projs) {
         items.push(
-            <Router>
                 <Link to={i.link}>
                     <div class="container">
                             <div class="info">
@@ -83,11 +82,6 @@ class Projects extends Component {
                             <p class="date">{i.year}</p>
                     </div>
                 </Link>
-                <Switch>
-                    <Route path={i.link}/>
-                    <Quercus />
-                </Switch>
-            </Router>
         )
       }
     return (
