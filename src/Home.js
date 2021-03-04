@@ -5,6 +5,7 @@ import {
   HashRouter
 } from "react-router-dom";
 import Projects from "./Projects";
+import About from "./About";
 import './home.css';
 
 var backGradient = "";
@@ -37,12 +38,12 @@ class Home extends Component {
                     <h1 id="name">Hamid Yuksel</h1>
                     <div class="iam">
     					<h3>is a </h3>
-                        <NavLink to="/projects" class="home-navs gradient1">UX designer</NavLink>
+                        <h1 class="home-navs gradient1">UX designer</h1>
                         <h3>with a background in </h3>
-                        <NavLink to="/projects" class="home-navs gradient2">computer science </NavLink>
+                        <h1 class="home-navs gradient2">computer science </h1>
                         <h3>and an interest in</h3>
                         <h3>art, writing, </h3>
-                        <NavLink to="/projects" class="home-navs gradient3">and more</NavLink>
+                        <h1 to="/projects" class="home-navs gradient3">and more</h1>
                     </div>
 				</div>
                 <br />

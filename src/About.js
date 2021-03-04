@@ -21,6 +21,19 @@ function onToggle() {
 
 
 class About extends Component {
+    onToggle() {
+      var x = document.getElementById("skill-type").checked;
+      if (x == true) {
+          document.getElementById("skills").innerHTML = 'Coding Skills';
+          document.getElementById("cs-skills").style.display = 'flex';
+          document.getElementById("ux-skills").style.display = 'none';
+      } else {
+          document.getElementById("skills").innerHTML = 'UX Skills';
+          document.getElementById("ux-skills").style.display = 'flex';
+          document.getElementById("cs-skills").style.display = 'none';
+      }
+    }
+
   render() {
     return (
         <div class='about-body fade-in animate_animated animate__fadeInUpBig'>
@@ -54,7 +67,7 @@ class About extends Component {
         	<br />
             <label class="label">
               <div class="toggle">
-                <input class="toggle-state" onClick={onToggle} type="checkbox" name="check" value="check" id="skill-type"/>
+                <input class="toggle-state" onClick={this.onToggle} type="checkbox" name="check" value="check" id="skill-type"/>
                 <div class="indicator"></div>
               </div>
             </label>

@@ -73,10 +73,11 @@ h2 a {
 	margin-bottom: 9px;
 }
 
-.iam a{
+.iam h1{
 	line-height: 30px;
 	font-size: 200%;
 	margin-top: 0 ;
+	margin-bottom: 0;
 	display: block;
 	width: inherit;;
 }
@@ -95,8 +96,8 @@ h2 a {
 		margin-bottom: 30px;
 	}
 
-	.iam a{
-		line-height: 80px;
+	.iam h1{
+		line-height: 60px;
 	}
 
 	.shape1 {

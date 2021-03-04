@@ -25,6 +25,11 @@
 	}
 }
 
+a {
+	color: black;
+	text-decoration: none;
+}
+
 .container {
 	margin-top: 50px;
 	border: 1px solid black;
@@ -46,6 +51,11 @@
 
 .description {
 	text-align: center;
+}
+
+.date {
+	text-align: center;
+	margin-top: 50px;
 }
 
 .img-container img {
