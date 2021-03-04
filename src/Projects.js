@@ -14,6 +14,8 @@ import routesIMG from './project-svgs/routes-app.svg';
 import monodriftIMG from './project-svgs/monodrift.svg';
 import uvcIMG from './project-svgs/rsg.svg';
 import jpIMG from './project-svgs/jp.svg';
+import glenIMG from './project-svgs/glenbow.svg';
+import walletoIMG from './project-svgs/walleto.svg';
 import styles from './projects.css';
 import Quercus from "./Quercus";
 
@@ -52,18 +54,35 @@ let uvc = new Proj('UVC', 'Album Arts', '2018',
 let jp = new Proj('The Josephus Problem', 'Web App', '2018',
 'A visualization of the math puzzle solution.', 'Code', jpIMG);
 
+let walleto = new Proj('Walleto', 'Crypto Wallet on Web', '2021',
+'Designing a way to safely store and use cryptocurrencies', 'UX', walletoIMG);
+
+let glenbow = new Proj('Changing Glenbow', 'Museum IA Redesign on Web', '2021',
+'Improve the museum site navigation and organization', 'UX', glenIMG);
+
 let more = new Proj('Other Works', 'Coding, Writing, and Art Projects', 'ongoing',
 'Check out some of my other creative projects.', 'Code', jpIMG);
 
 
 
-projs[0] = quercus;
-projs[1] = routes;
-projs[2] = more;
+projs[0] = walleto;
+projs[1] = quercus;
+projs[2] = glenbow;
+projs[3] = routes;
+projs[4] = more;
 
 
 
 class Projects extends Component {
+    constructor(props) {
+        super(props)
+        this.myRef = React.createRef()   // Create a ref object
+    }
+
+    componentDidMount() {
+      this.myRef.current.scrollTo(0, 0);
+    }
+
   render() {
       const items = []
 
@@ -85,7 +104,7 @@ class Projects extends Component {
         )
       }
     return (
-		<div class="projects-container">
+		<div ref={this.myRef} class="projects-container">
 			<div class="fade-in" id="projects">
 				{items}
 			</div>

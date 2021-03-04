@@ -1,0 +1,65 @@
+.left {
+	text-align: left;
+	line-height: 5px;
+	font-size: 80%;
+	padding-left: 25px;
+}
+
+.project {
+	text-align: center;
+}
+
+.project img {
+	width: 100%;
+}
+
+.project a {
+		color: blue;
+}
+
+.project a:hover {
+	text-decoration: underline;
+}
+
+.subtitle {
+	padding-bottom: 50px;
+	margin-bottom: 0px;
+}
+
+.border-bottom {
+	border-bottom: 1px solid black;
+}
+
+.border-top {
+	border-top: 1px solid black;
+}
+
+.section p{
+	text-align: left;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.p-center {
+	text-align: center !important;
+}
+
+@media screen and (min-width: 1000px) {
+	.left {
+		font-size: 50%;
+	}
+	.project {
+		font-size: 150%;
+	}
+
+	.project img {
+		width: 50%;
+	}
+
+
+	.section p{
+		text-align: left;
+		padding-left: 150px;
+		padding-right: 150px;
+	}
+}
