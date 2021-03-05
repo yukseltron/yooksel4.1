@@ -91,8 +91,8 @@ class Quercus extends Component {
                     <div class="problem-section">
                         <img src={problem}/>
                         <div>
-                            <p>Finding files can be confusing for new students since each professor organizes files differently. This causes confusion which can lead to precious time wasted for an assignment.</p>
-                            <p>As well, some projects require forming teams, which could be difficult to do online. Students are unsure of who is still looking for a group or where they can even find contact info.</p>
+                            <p>Finding files can be confusing for new students since each professor organizes files differently. This confusion can lead to precious time wasted for an assignment.</p>
+                            <p>As well, some projects require forming teams, which could be difficult to do online. Students can't tell who is still looking for a group or where they can even contact anyone.</p>
                         </div>
                     </div>
                 </div>
@@ -166,19 +166,40 @@ class Quercus extends Component {
                 <div class="div2"></div>
                 <div class="div3"></div>
             </div>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
 			<h3>Research</h3>
             <p>We gathered our data from 11 UofT students through a survey on their experiences using Quercus.</p>
-			<h2>Our data showed:</h2>
+            <br/>
+    	  	<br/>
+            <h2>Our data showed:</h2>
 			<p class="p-center">Students struggle with inconsistent course pages</p>
 			<img  class="img-m"src={research1}/>
 			<p class="p-center">And that they do not really participate in online dicussions</p>
 			<img class="img-m" src={research2}/>
+            <br/>
 			<br/>
+            <br/>
 			<br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
 			<h2>Persona</h2>
             <p class="p-center">Analyzing what we learned, we constructed a persona.</p>
+            <br/>
+            <br/>
 			<img class="img-m" src={persona}/>
 		  	<br/>
+			<br/>
+            <br/>
+			<br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
 			<h2>Journey Mapping</h2>
 			<br/>
 		</div>
