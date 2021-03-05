@@ -4,6 +4,10 @@ body {
 	margin-left: 5%;
 	margin-right: 5%;
 }
+.mobile-container {
+  max-width: 2000px;
+  margin: auto;
+}
 
 html, body {
     max-width: 100%;

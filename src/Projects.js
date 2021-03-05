@@ -58,7 +58,7 @@ let walleto = new Proj('Walleto', 'Crypto Wallet on Web', '2021',
 'Designing a way to safely store and use cryptocurrencies', 'UX', walletoIMG);
 
 let glenbow = new Proj('Changing Glenbow', 'Museum IA Redesign on Web', '2021',
-'Improve the museum site navigation and organization', 'UX', glenIMG);
+'Improving the museum site navigation and organization', 'UX', glenIMG);
 
 let more = new Proj('Other Works', 'Coding, Writing, and Art Projects', 'ongoing',
 'Check out some of my other creative projects.', 'Code', jpIMG);

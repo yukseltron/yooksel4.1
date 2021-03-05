@@ -15,11 +15,6 @@
 		margin-bottom: 150px;
 	}
 
-	.container:hover {
-		color: white;
-		background-color: black;
-	}
-
 	.img-container img {
 	    width: 50% !important;
 	}
@@ -38,6 +33,8 @@ a {
 
 .container:hover {
 	cursor: pointer;
+	color: white;
+	background-color: black;
 }
 
 .container p {
