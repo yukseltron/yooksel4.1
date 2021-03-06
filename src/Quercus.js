@@ -45,7 +45,7 @@ class Quercus extends Component {
                     <br/>
                     <div>
                         <h2>Tools Used</h2>
-                        <p>Adobe XD</p>
+                        <p>Adobe XD<br/>Google Forms<br/>Adobe illustrator</p>
                     </div>
                 </div>
 				<br/>
@@ -63,7 +63,6 @@ class Quercus extends Component {
 	  		<h4><a target="_blank" href="https://www.behance.net/gallery/111653313/Improving-Quercus">View case study on Behance</a></h4>
 	  		<h4><a target="_blank" href="https://xd.adobe.com/view/bbecb767-a751-4c1d-b5a5-3131620dc877-eebf/?fullscreen">View final prototype</a></h4>
 	  	</p>
-        <br/>
         <div class="border-bottom section">
             <div class="circlebox">
                 <div class="div1 filled"></div>
@@ -71,10 +70,6 @@ class Quercus extends Component {
                 <div class="div3"></div>
                 <div class="div4"></div>
             </div>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
             <h3>Overview</h3>
             <p>Quercus (a.k.a 'Canvas') is an online learning system for the University of Toronto (UofT). Students and professors alike use it to organize and manage courses.</p>
             <br/>
@@ -133,6 +128,7 @@ class Quercus extends Component {
                 <div class="solution-sector">
                     <img src={solution}/>
                     <div class="solution-info">
+                        <p>Our recommendation is to implement:</p>
                         <h4>A group search feature, to find teammates and their contact info.</h4>
                         <h4>Interest boards to learn about classmates, without needing to contact them.</h4>
                         <h4>Guides on assignments to important and relevant lecture modules.</h4>
@@ -159,19 +155,15 @@ class Quercus extends Component {
     	  	<br/>
 		</div>
 	  	<br/>
-	  	<br/>
 		<div class="border-bottom section">
             <div class="circlebox">
-                <div class="div1 filled"></div>
-                <div class="div2"></div>
+                <div class="div1"></div>
+                <div class="div2 filled"></div>
                 <div class="div3"></div>
+                <div class="div4"></div>
             </div>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
 			<h3>Research</h3>
-            <p>We gathered our data from 11 UofT students through a survey on their experiences using Quercus.</p>
+            <p class="p-center">We gathered our data from 11 UofT students through a survey on their experiences using Quercus.</p>
             <br/>
     	  	<br/>
             <h2>Our data showed:</h2>
@@ -201,31 +193,78 @@ class Quercus extends Component {
             <br/>
             <br/>
 			<h2>Journey Mapping</h2>
+            <br/>
 			<br/>
+            <br/>
+			<br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
 		</div>
+        <br/>
 		<div class="border-bottom section">
             <div class="circlebox">
-                <div class="div1"></div>
-                <div class="div2 filled"></div>
-                <div class="div3"></div>
+            <div class="div1"></div>
+            <div class="div2"></div>
+            <div class="div3 filled"></div>
+            <div class="div4"></div>
             </div>
 			<h3>Ideation</h3>
 			<h2>Our Ideas</h2>
-            <p>We came up with ideas and ranked them on a prioritization grid as seen below.</p>
+            <p class="p-center">We came up with ideas and ranked them on a prioritization grid as seen below.</p>
 			<img class="img-m" src={prioriGrid}/>
-            <p class="p-center">The top ideas we felt best to work on were:</p>
-			<img class="img-s" src={ideas}/>
+            <h4>The top ideas we felt was best to work on were:</h4>
+			<div class="flowerbox">
+                <div class="div1">
+                    <h4>Content Connections</h4>
+                    <p>Showing which lectures are relevant to an assignment</p>
+                </div>
+                <div class="div2">
+                    <h4>Meeting Classmates</h4>
+                    <p>Helping students meet others and form teams quickly</p>
+                </div>
+                <div class="div3">
+                    <h4>Course Consistency</h4>
+                    <p>Making course material easy to find across different courses</p>
+                </div>
+            </div>
+            <br/>
 			<br/>
+            <br/>
 			<br/>
+            <br/>
+            <br/>
 			<h2>Sketches</h2>
             <p class="p-center">Seeing how we could implement our ideas:</p>
 			<img class="img-m" src={sketches}/>
+            <br/>
 			<br/>
+            <br/>
+			<br/>
+            <br/>
+            <br/>
             <h2>User Scenarios</h2>
-            <p>Here are the three main user scenarios for this project.</p>
+            <p class="p-center">Here are the three main user scenarios for this project.</p>
+            <br/>
+			<br/>
+            <br/>
+			<br/>
+            <br/>
             <br/>
 		</div>
+        <br/>
+        <div class="circlebox">
+            <div class="div1"></div>
+            <div class="div2"></div>
+            <div class="div3"></div>
+            <div class="div4 filled"></div>
+        </div>
 		<div class="border-bottom section">
+        <br/>
+        <br/>
+        <br/>
+        <br/>
 			<h3>Prototyping</h3>
             <h2>Midfi</h2>
             <h2>Usability Testing</h2>
