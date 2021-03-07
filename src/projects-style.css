@@ -14,10 +14,8 @@
 	border: 2px solid black;
 	height: 10px;
 	width: 10px;
-	margin-top: 100px;
-	margin-left: 25px;
-	margin-right: 25px;
-	border-radius: 50%;
+	margin: 25px;
+	border-radius: 50%;;
 }
 
 .flowerbox {
@@ -26,20 +24,40 @@
 }
 .flowerbox div {
 	border: 1px solid black;
-	height: 70%;
-	width: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
 }
 .flowerbox .div1 {
 	border-bottom-left-radius: 50px;
 	border-top-right-radius: 50px;
 }
+.flowerbox .div1 p {
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 0px;
+	text-align: center;
+}
 .flowerbox .div2 {
 	border-top-left-radius: 50px;
 	border-top-right-radius: 50px;
 }
+.flowerbox .div2 p {
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 0px;
+	text-align: center;
+}
 .flowerbox .div3 {
 	border-bottom-right-radius: 50px;
 	border-top-left-radius: 50px;
+}
+.flowerbox .div3 p {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	margin-top: 0px;
+	text-align: center;
 }
 
 .filled {
@@ -98,7 +116,7 @@
 }
 
 .img-m {
-	width: 70% !important;
+	width: 50% !important;
 }
 
 .h-left {
@@ -111,10 +129,6 @@
 
 .needs h1 {
 	margin-right: 20px;
-}
-
-.solution-info {
-	text-align: left;
 }
 
 @media screen and (min-width: 1000px) {
@@ -168,18 +182,17 @@
 		margin-right: 250px;
 	}
 
-	.solution-sector {
-		border: 1px solid transparent;
-		display: flex;
+	.solution-info div{
+		width: 60%;
+		margin: auto;
 	}
 
-	.solution-info {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
+	.solution-info h4{
+		text-align: left;
+		margin-bottom: -15px;
 	}
 
-	.solution-info h4 {
-		margin-left: 50px;
+	.journey-section {
+		display: flex;
 	}
 }

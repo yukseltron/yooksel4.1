@@ -12,6 +12,7 @@ import cover from './quercus/cover2.png';
 import problem from './quercus/problem.svg';
 import solution from './quercus/solution.png';
 import solution2 from './quercus/solution2.png';
+import journey from './quercus/journeymap.svg';
 
 
 class Quercus extends Component {
@@ -25,10 +26,17 @@ class Quercus extends Component {
 	  	<h4 class="subtitle">Helping students organize their courses and form teams online.</h4>
 		<div class="border-bottom">
 			<img id="quercus" src={clayIMG}/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
 		</div>
-	  	<br/>
+        <br/>
 		<div class="background-info">
-
             <div class="info">
                 <h2>In collaboration with</h2>
                 <p>
@@ -63,6 +71,14 @@ class Quercus extends Component {
 	  		<h4><a target="_blank" href="https://www.behance.net/gallery/111653313/Improving-Quercus">View case study on Behance</a></h4>
 	  		<h4><a target="_blank" href="https://xd.adobe.com/view/bbecb767-a751-4c1d-b5a5-3131620dc877-eebf/?fullscreen">View final prototype</a></h4>
 	  	</p>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
         <div class="border-bottom section">
             <div class="circlebox">
                 <div class="div1 filled"></div>
@@ -125,13 +141,20 @@ class Quercus extends Component {
             <br/>
             <div>
                 <h2>The Solution</h2>
+                <br/>
                 <div class="solution-sector">
-                    <img src={solution}/>
                     <div class="solution-info">
-                        <p>Our recommendation is to implement:</p>
-                        <h4>A group search feature, to find teammates and their contact info.</h4>
-                        <h4>Interest boards to learn about classmates, without needing to contact them.</h4>
-                        <h4>Guides on assignments to important and relevant lecture modules.</h4>
+                        <p class="p-center">Our recommendation is to implement on Quercus:</p>
+                        <div>
+                            <h4>A group search feature, to find teammates and their contact info.</h4>
+                            <h4>Interest boards to learn about classmates, without needing to contact them.</h4>
+                            <h4>Guides on assignments to important and relevant lecture modules.</h4>
+                        </div>
+                    </div>
+                    <br/>
+                    <br/>
+                    <div class="solution-imgs">
+                        <img src={solution}/>
                     </div>
                 </div>
             </div>
@@ -154,7 +177,14 @@ class Quercus extends Component {
     	  	<br/>
     	  	<br/>
 		</div>
-	  	<br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
 		<div class="border-bottom section">
             <div class="circlebox">
                 <div class="div1"></div>
@@ -194,14 +224,19 @@ class Quercus extends Component {
             <br/>
 			<h2>Journey Mapping</h2>
             <br/>
-			<br/>
-            <br/>
-			<br/>
-            <br/>
+            <div class="journey-section">
+                <p>Afterwards, we created journey maps to connect with our users, see how their process works, and outline pain points and areas of opportunities.<br/><br/>This journey map is for a scenario where our user prepares for a lecture and assignments.</p>
+                <img src={journey}/>
+            </div>
             <br/>
             <br/>
             <br/>
 		</div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
         <br/>
 		<div class="border-bottom section">
             <div class="circlebox">
@@ -226,7 +261,7 @@ class Quercus extends Component {
                 </div>
                 <div class="div3">
                     <h4>Course Consistency</h4>
-                    <p>Making course material easy to find across different courses</p>
+                    <p>Making course material easy to find across different courses online</p>
                 </div>
             </div>
             <br/>
@@ -236,16 +271,9 @@ class Quercus extends Component {
             <br/>
             <br/>
 			<h2>Sketches</h2>
-            <p class="p-center">Seeing how we could implement our ideas:</p>
+            <br/>
+            <p class="p-center">We tested out on pen and paper to see how we could implement our ideas:</p>
 			<img class="img-m" src={sketches}/>
-            <br/>
-			<br/>
-            <br/>
-			<br/>
-            <br/>
-            <br/>
-            <h2>User Scenarios</h2>
-            <p class="p-center">Here are the three main user scenarios for this project.</p>
             <br/>
 			<br/>
             <br/>
@@ -262,11 +290,16 @@ class Quercus extends Component {
         </div>
 		<div class="border-bottom section">
         <br/>
-        <br/>
-        <br/>
-        <br/>
 			<h3>Prototyping</h3>
             <h2>Midfi</h2>
+            <br/>
+            <br/>
+            <br/>
+            <h2>User Scenarios</h2>
+            <p class="p-center">Here are the three main user scenarios for this project.</p>
+            <br/>
+            <br/>
+            <br/>
             <h2>Usability Testing</h2>
             <br/>
             <h2>Final Design</h2>
