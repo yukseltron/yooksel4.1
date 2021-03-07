@@ -13,6 +13,7 @@ import problem from './quercus/problem.svg';
 import solution from './quercus/solution.png';
 import solution2 from './quercus/solution2.png';
 import journey from './quercus/journeymap.svg';
+import midfi from './quercus/midfi.svg';
 
 
 class Quercus extends Component {
@@ -282,6 +283,11 @@ class Quercus extends Component {
             <br/>
 		</div>
         <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
         <div class="circlebox">
             <div class="div1"></div>
             <div class="div2"></div>
@@ -292,6 +298,12 @@ class Quercus extends Component {
         <br/>
 			<h3>Prototyping</h3>
             <h2>Midfi</h2>
+			<img class="img-m" src={midfi}/>
+            <br/>
+			<br/>
+            <br/>
+			<br/>
+            <br/>
             <br/>
             <br/>
             <br/>
