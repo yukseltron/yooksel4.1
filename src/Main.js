@@ -10,11 +10,13 @@ import About from "./About";
 import Contact from "./Contact";
 import Quercus from "./Quercus";
 import './style.css';
+import ScrollToTop from './ScrollToTop';
 
 class Main extends Component {
   render() {
     return (
 		<HashRouter>
+            <ScrollToTop>
 			<div id="container" class="mobile-container fade-in">
                 <div class="header-content">
                     <div id="nav-header">
@@ -32,6 +34,7 @@ class Main extends Component {
                      <Route path="/quercus" component={Quercus}/>
     	           </div>
 	        </div>
+            </ScrollToTop>
 		</HashRouter>
     );
   }

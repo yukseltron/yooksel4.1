@@ -1,4 +1,12 @@
 import React, { Component } from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  NavLink,
+  HashRouter
+} from "react-router-dom";
 import quercusIMG from './project-svgs/quercus.svg';
 import './projects-style.css';
 import clayIMG from './quercus/quercus-clay.png';
@@ -22,13 +30,30 @@ import s1 from './quercus/s1.gif';
 import s2 from './quercus/s2.gif';
 import s3 from './quercus/s3.gif';
 import dribbble from './quercus/dribbble.svg';
+import ScrollToTop from './ScrollToTop';
 
 
 class Quercus extends Component {
+    constructor(props){
+       super(props)
+       //creates a reference for your element to use
+       this.myDivToFocus = React.createRef()
+    }
+
+    handleOnClick = (event) => {
+        //.current is verification that your element has rendered
+        if(this.myDivToFocus.current){
+            this.myDivToFocus.current.scrollIntoView({
+               behavior: "smooth",
+               block: "end"
+            })
+        }
+    }
+
   render() {
     return (
 	  <div class="fade-in project blank-space">
-	  	<h1>Improving Quercus</h1>
+	  	<h1 ref={this.myDivToFocus}>Improving Quercus</h1>
 		<div class="center proj-info">
 			<h4>2020</h4>
 		</div>
@@ -433,7 +458,15 @@ class Quercus extends Component {
             <p>Looking back, although we managed to successfully focus on key ideas, there were some ideas we could no longer work on. Initially, course consistency was an important goal of ours. However, we learned of legal barriers that ensure professors have total freedom and modularity with their course design. This makes course consistency a very idealistic goal too dependent on legal matters.</p>
             <p>While working on this project I was able to learn new features for Adobe XD (such as mapping a screen onto another screen), and get a better understanding of how to delegate tasks in a group UX project.</p>
             <p>Overall, I'm proud of my team's work. We were shorthanded to begin with, but we all managed to get all our deliverables done on time.</p>
-			<br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <h2><a onClick={this.handleOnClick}>Return to top</a></h2>
 		</div>
 	  </div>
 
