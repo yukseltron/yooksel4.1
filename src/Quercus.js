@@ -8,18 +8,26 @@ import persona from './quercus/persona.svg';
 import prioriGrid from './quercus/p-grid.svg';
 import ideas from './quercus/ideas.svg';
 import sketches from './quercus/sketches.svg';
-import cover from './quercus/cover2.png';
 import problem from './quercus/problem.svg';
 import solution from './quercus/solution.png';
 import solution2 from './quercus/solution2.png';
 import journey from './quercus/journeymap.svg';
 import midfi from './quercus/midfi.svg';
+import scenario1 from './quercus/scenario1.png';
+import scenario2 from './quercus/scenario2.png';
+import scenario3 from './quercus/scenario3.png';
+import criteria from './quercus/test.svg';
+import result from './quercus/results.svg';
+import s1 from './quercus/s1.gif';
+import s2 from './quercus/s2.gif';
+import s3 from './quercus/s3.gif';
+import dribbble from './quercus/dribbble.svg';
 
 
 class Quercus extends Component {
   render() {
     return (
-	  <div class="fade-in project">
+	  <div class="fade-in project blank-space">
 	  	<h1>Improving Quercus</h1>
 		<div class="center proj-info">
 			<h4>2020</h4>
@@ -86,6 +94,7 @@ class Quercus extends Component {
                 <div class="div2"></div>
                 <div class="div3"></div>
                 <div class="div4"></div>
+                <div class="div5"></div>
             </div>
             <h3>Overview</h3>
             <p>Quercus (a.k.a 'Canvas') is an online learning system for the University of Toronto (UofT). Students and professors alike use it to organize and manage courses.</p>
@@ -192,6 +201,7 @@ class Quercus extends Component {
                 <div class="div2 filled"></div>
                 <div class="div3"></div>
                 <div class="div4"></div>
+                <div class="div5"></div>
             </div>
 			<h3>Research</h3>
             <p class="p-center">We gathered our data from 11 UofT students through a survey on their experiences using Quercus.</p>
@@ -225,7 +235,7 @@ class Quercus extends Component {
             <br/>
 			<h2>Journey Mapping</h2>
             <br/>
-            <div class="journey-section">
+            <div class="horizontal-section">
                 <p>Afterwards, we created journey maps to connect with our users, see how their process works, and outline pain points and areas of opportunities.<br/><br/>This journey map is for a scenario where our user prepares for a lecture and assignments.</p>
                 <img src={journey}/>
             </div>
@@ -245,6 +255,7 @@ class Quercus extends Component {
             <div class="div2"></div>
             <div class="div3 filled"></div>
             <div class="div4"></div>
+            <div class="div5"></div>
             </div>
 			<h3>Ideation</h3>
 			<h2>Our Ideas</h2>
@@ -286,18 +297,18 @@ class Quercus extends Component {
         <br/>
         <br/>
         <br/>
-        <br/>
-        <br/>
         <div class="circlebox">
             <div class="div1"></div>
             <div class="div2"></div>
             <div class="div3"></div>
             <div class="div4 filled"></div>
+            <div class="div5"></div>
         </div>
 		<div class="border-bottom section">
         <br/>
 			<h3>Prototyping</h3>
             <h2>Midfi</h2>
+            <p class="p-center">Using the sketches, I made some midfi screens to better test out and showcase our ideas as an MVP.</p>
 			<img class="img-m" src={midfi}/>
             <br/>
 			<br/>
@@ -308,17 +319,120 @@ class Quercus extends Component {
             <br/>
             <br/>
             <h2>User Scenarios</h2>
-            <p class="p-center">Here are the three main user scenarios for this project.</p>
+            <br/>
+            <div>
+                <div class="horizontal-section scenario-section border-bottom">
+                    <p>This scenario depicts how our user Allie could prepare for an assignment. She's shown which assignment needs the most attention, and can instantly find the lectures relevant to it. As well, she can view the lecture in different formats to her liking.</p>
+                    <img class="img-s" src={scenario1}/>
+                </div>
+                <br/>
+                <br/>
+                <div class="horizontal-section scenario-section border-bottom">
+                    <p>Here, Allie needs to find a teammate to work with. She has the option to do a group search, see which classmates she's worked with before, and view the classmate's contact info. Past group details are also available to be seen.</p>
+                    <img class="img-s" src={scenario2}/>
+                </div>
+                <br/>
+                <br/>
+                <div class="horizontal-section scenario-section border-bottom">
+                    <p>In this scenario, we see how Allie can connect to classmates as friends by exploring and joining interest groups for a course. This way, Allie can find ways to bond online.</p>
+                    <img class="img-s" src={scenario3}/>
+                </div>
+            </div>
+            <br/>
+            <br/>
+            <br/>
             <br/>
             <br/>
             <br/>
             <h2>Usability Testing</h2>
             <br/>
-            <h2>Final Design</h2>
             <br/>
-			<h2>Storyboard 1</h2>
-			<h2>Storyboard 2</h2>
-			<h2>Lessons Learned</h2>
+            <h4 class="quote">"It was pretty easy and intuitive to use compared to the current system,<br/>so I much prefer the new system."</h4>
+            <p class="p-center">- interview participant</p>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <div class="horizontal-section">
+                        <p>Designing our interview method, we employed interviews and observations to conduct usability testing on our midfi prototype. Our interviews showed that participants could miss some of the new features and were confused by the difference between 'Group search' and 'Connections'. On the positive, participants really enjoyed the interests board and liked the customizable course materials. Overall they felt the user flow has been improved.</p>
+                <img class="img-m" src={criteria}/>
+            </div>
+            <p class="p-right">An example task from our interviews.</p>
+            <br/>
+            <div class="border-bottom"></div>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <div class="circlebox">
+                <div class="div1"></div>
+                <div class="div2"></div>
+                <div class="div3"></div>
+                <div class="div4"></div>
+                <div class="div5 filled"></div>
+            </div>
+            <br/>
+            <h3>Final Design</h3>
+            <img class="img-l subtle-shadow final-design-section" src={dribbble}/>
+            <p class="p-center">With the feedback gathered, we each designed our own separate hifi prototype.</p>
+            <p class="p-center">The main user flow interactions are shown below.</p>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+			<h2>Content Connections</h2>
+            <br/>
+            <br/>
+            <div class="horizontal-section">
+                <h4 class="storyboard-h4">Quickly find the right lectures to help with assignments</h4>
+                <img class="img-m subtle-shadow" src={s1}/>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+			<h2>Finding Groupmates</h2>
+            <br/>
+            <br/>
+            <div class="horizontal-section">
+                <h4 class="storyboard-h4">Make teams without a sweat and see who you've worked with before</h4>
+                <img class="img-m subtle-shadow" src={s2}/>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <h2>Interest Boards</h2>
+            <br/>
+            <br/>
+            <div class="horizontal-section">
+                <h4 class="storyboard-h4">Find and bond with classmates over your shared interests</h4>
+                <img class="img-m subtle-shadow" src={s3}/>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+			<h2>Reflection</h2>
+            <p>Looking back, although we managed to successfully focus on key ideas, there were some ideas we could no longer work on. Initially, course consistency was an important goal of ours. However, we learned of legal barriers that ensure professors have total freedom and modularity with their course design. This makes course consistency a very idealistic goal too dependent on legal matters.</p>
+            <p>While working on this project I was able to learn new features for Adobe XD (such as mapping a screen onto another screen), and get a better understanding of how to delegate tasks in a group UX project.</p>
+            <p>Overall, I'm proud of my team's work. We were shorthanded to begin with, but we all managed to get all our deliverables done on time.</p>
 			<br/>
 		</div>
 	  </div>

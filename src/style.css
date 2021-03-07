@@ -4,6 +4,7 @@ body {
 	margin-left: 5%;
 	margin-right: 5%;
 }
+
 .mobile-container {
   max-width: 2000px;
   margin: auto;
@@ -100,4 +101,8 @@ h2 a:active {
 	body {
 		font-size: 200%;
 	}
+}
+
+.blank-space {
+	margin-bottom: 500px;
 }

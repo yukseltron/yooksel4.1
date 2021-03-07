@@ -161,7 +161,7 @@ class About extends Component {
         	</div>
         	<br />
         	<br />
-        	<h3>Acitivities</h3>
+        	<h3>Activities</h3>
         	<div class="top-border">
         	  <p>Design Lead / DeltaHacks / Jan 2016-May 2017</p>
         	</div>
