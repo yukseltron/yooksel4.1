@@ -64,12 +64,12 @@ let more = new Proj('Other Works', 'Coding, Writing, and Art Projects', 'ongoing
 'Check out some of my other creative projects.', 'Code', jpIMG);
 
 
-
-projs[0] = walleto;
-projs[1] = quercus;
-projs[2] = glenbow;
-projs[3] = routes;
-projs[4] = more;
+projs[0] = quercus;
+//projs[0] = walleto;
+//projs[1] = quercus;
+//projs[2] = glenbow;
+//projs[3] = routes;
+//projs[4] = more;
 
 
 

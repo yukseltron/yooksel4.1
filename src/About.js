@@ -58,11 +58,11 @@ class About extends Component {
             <h4>
             In my spare time, you'll find me learning more about creatively applying machine learning and data analytics in new ways. That, or just doodling and reading about history.
             </h4>
-        	<Link to="/contact">
+        	<Link class="link" to="/contact">
         	Feel free to reach out to me!</Link>
         	<br />
         	<br />
-        	<a class="inline-a" target="_blank" href="https://drive.google.com/file/d/1sMYQzqJMsI7QLcOfawYpcD565c6HQTgs/view?usp=sharing">
+        	<a class="inline-a link" target="_blank" href="https://drive.google.com/file/d/1sMYQzqJMsI7QLcOfawYpcD565c6HQTgs/view?usp=sharing">
         		Here is my resume in PDF.
         	</a>
         	<br />

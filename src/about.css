@@ -2,12 +2,12 @@ li {
 	font-family: pragmatica-extended, sans-serif;
 }
 
-a {
+.link {
 	font-family: antarctican-mono, sans-serif;
 	color: blue;
 }
 
-a:hover {
+.link:hover {
 	text-decoration: underline;
 }
 

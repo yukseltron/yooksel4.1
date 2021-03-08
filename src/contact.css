@@ -1,0 +1,31 @@
+.contact {
+	margin-top: 100px;
+}
+
+.social-links {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.social-box {
+	width: 200px;
+	text-align: center;
+	padding: 10px;
+	margin: 5px;
+	color: blue;
+}
+
+.social-box:hover {
+	background-color: blue;
+	color: white;
+}
+
+.social-box a {
+	color: blue;
+}
+
+.social-box a:hover {
+	text-decoration: underline;
+}
