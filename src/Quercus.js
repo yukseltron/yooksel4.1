@@ -113,7 +113,7 @@ class Quercus extends Component {
         <br/>
         <br/>
         <br/>
-        <div class="border-bottom section">
+        <div class="border-bottom section" ref={this.div1}>
             <div class="circlebox">
                 <div class="div1 filled"></div>
                 <div class="div2"></div>
@@ -220,7 +220,7 @@ class Quercus extends Component {
         <br/>
         <br/>
         <br/>
-		<div class="border-bottom section">
+		<div class="border-bottom section" ref={this.div2}>
             <div class="circlebox">
                 <div class="div1"></div>
                 <div class="div2 filled"></div>
@@ -274,7 +274,7 @@ class Quercus extends Component {
         <br/>
         <br/>
         <br/>
-		<div class="border-bottom section">
+		<div class="border-bottom section" ref={this.div3}>
             <div class="circlebox">
             <div class="div1"></div>
             <div class="div2"></div>
@@ -322,7 +322,7 @@ class Quercus extends Component {
         <br/>
         <br/>
         <br/>
-        <div class="circlebox">
+        <div class="circlebox" ref={this.div4}>
             <div class="div1"></div>
             <div class="div2"></div>
             <div class="div3"></div>
@@ -371,11 +371,8 @@ class Quercus extends Component {
             <br/>
             <h2>Usability Testing</h2>
             <br/>
-            <br/>
             <h4 class="quote">"It was pretty easy and intuitive to use compared to the current system,<br/>so I much prefer the new system."</h4>
             <p class="p-center">- interview participant</p>
-            <br/>
-            <br/>
             <br/>
             <br/>
             <div class="horizontal-section">
@@ -393,11 +390,11 @@ class Quercus extends Component {
             <br/>
             <br/>
             <br/>
-            <div class="circlebox">
-                <div class="div1"></div>
-                <div class="div2"></div>
-                <div class="div3"></div>
-                <div class="div4"></div>
+            <div class="circlebox" ref={this.div5}>
+                <div class="div1" onClick={this.div1}></div>
+                <div class="div2" onClick={this.div2}></div>
+                <div class="div3" onClick={this.div3}></div>
+                <div class="div4" onClick={this.div4}></div>
                 <div class="div5 filled"></div>
             </div>
             <br/>

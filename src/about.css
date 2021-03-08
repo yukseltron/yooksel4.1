@@ -1,9 +1,21 @@
+li {
+	font-family: pragmatica-extended, sans-serif;
+}
+
+a {
+	font-family: antarctican-mono, sans-serif;
+	color: blue;
+}
+
+a:hover {
+	text-decoration: underline;
+}
 
 .skills {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 .left-border {
@@ -25,6 +37,9 @@
 	margin-top: 50px;
 }
 
+#toggle-p {
+	margin-right: 15px;
+}
 
 @media screen and (min-width: 800px) {
 

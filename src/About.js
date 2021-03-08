@@ -3,6 +3,7 @@ import './about.css';
 import {
   Route,
   NavLink,
+  Link,
   HashRouter
 } from "react-router-dom";
 
@@ -37,35 +38,43 @@ class About extends Component {
   render() {
     return (
         <div class='about-body fade-in animate_animated animate__fadeInUpBig'>
-        	<p>
-        	Is a curious human being who does design, coding, writing, art, etc.
-        	</p>
-            <p>
-            I have worked professionally as a UX designer, Web developer, and Graphic designer. Currently looking for challenging UX work that can help me learn and grow.
-            </p>
-            <p>
-            Although no longer working in software or graphic design, I still code as a hobby and use this experience to enhance my UX skills.
-            </p>
-            <p>
+        <br />
+        <br />
+        <br />
+        <br />
+            <h1>Hey,</h1>
+        	<h2>
+        	Looks like you want to get to know me better!
+        	</h2>
+            <h3>
+            I'm just a human being in Toronto, Canada. Probably working on hobbies or projects.
+            </h3>
+            <h4>
+            Professionally, I have worked as a UX designer, Web developer, and Graphic designer. Currently I'm looking for challenging UX work.
+            </h4>
+            <h4>
+            Although no longer working in software, I still code as a hobby and use this experience to suppliment my UX skills.
+            </h4>
+            <h4>
             In my spare time, you'll find me learning more about creatively applying machine learning and data analytics in new ways. That, or just doodling and reading about history.
-            </p>
-        	<p>
-        	I can be found in Toronto, Ontario, Canada. Probably working on hobbies or projects.
-        	</p>
-        	<p>
-        	</p>
-            	<br />
+            </h4>
+        	<Link to="/contact">
+        	Feel free to reach out to me!</Link>
+        	<br />
+        	<br />
         	<a class="inline-a" target="_blank" href="https://drive.google.com/file/d/1sMYQzqJMsI7QLcOfawYpcD565c6HQTgs/view?usp=sharing">
         		Here is my resume in PDF.
         	</a>
         	<br />
-            	<br />
-            <NavLink class="inline-a" href="" to="/contact">Feel free to reach out!</NavLink>
         	<br />
         	<br />
         	<br />
-        	<br />
+            <br />
+            <br />
+            <br />
+            <br />
             <label class="label">
+            <p id="toggle-p">Click me</p>
               <div class="toggle">
                 <input class="toggle-state" onClick={this.onToggle} type="checkbox" name="check" value="check" id="skill-type"/>
                 <div class="indicator"></div>
@@ -74,16 +83,7 @@ class About extends Component {
         	<h3 id="skills">UX Skills</h3>
             <div class="skills top-border" id="ux-skills">
                 <div>
-                    <p>Designs using</p>
-                    <ul>
-                        <li>figma</li>
-                        <li>illustrator</li>
-                        <li>Photoshop</li>
-                        <li>XD</li>
-                    </ul>
-                </div>
-                <div>
-                    <p>Designs with</p>
+                    <h2>Designs with</h2>
                     <ul>
                         <li>Research & Data Analytics</li>
                         <li>Information Architecture</li>
@@ -94,7 +94,7 @@ class About extends Component {
                     </ul>
                 </div>
                 <div>
-                    <p>Methods used</p>
+                    <h2>Methods used</h2>
                     <ul>
                         <li>Card Sorting</li>
                         <li>Tree Testing</li>
@@ -103,10 +103,19 @@ class About extends Component {
                         <li>Usability Testing</li>
                     </ul>
                 </div>
+                <div>
+                    <h2>Designs using</h2>
+                    <ul>
+                        <li>Figma</li>
+                        <li>illustrator</li>
+                        <li>Photoshop</li>
+                        <li>XD</li>
+                    </ul>
+                </div>
             </div>
             <div class="skills top-border" id="cs-skills">
                 <div>
-                    <p>Codes using</p>
+                    <h2>Codes using</h2>
                     <ul>
                         <li>Python</li>
                         <li>JavaScript</li>
@@ -117,14 +126,14 @@ class About extends Component {
                     </ul>
                 </div>
                 <div>
-                    <p>Is learning</p>
+                    <h2>Is learning</h2>
                     <ul>
                         <li>Haskell</li>
                         <li>Swift</li>
                     </ul>
                 </div>
                 <div>
-                    <p>Can use</p>
+                    <h2>Can use</h2>
                     <ul>
                         <li>SQL</li>
                         <li>Elm</li>
@@ -135,43 +144,45 @@ class About extends Component {
             </div>
         	<br />
         	<br />
+            <br />
+        	<br />
         	<h3>Education</h3>
         	<div class="education top-border">
         		<div>
-        			<p>Masters of Information / UX Design, Data Science @ University of Toronto, St George / 2022</p>
-        			<br />
-        			<p>Bachelors of Applied Science / Computer Science @ McMaster University / 2020</p>
+        			<h2>Masters of Information / UX Design, Data Science @ University of Toronto, St George / 2022</h2>
+        			<h2>Bachelors of Applied Science / Computer Science @ McMaster University / 2020</h2>
         		</div>
         	</div>
+            <br />
         	<br />
-        	<br />
+            <br />
         	<br />
         	<h3>Experience</h3>
         	<div class="top-border"></div>
         	<div>
-        	  <p>UX Designer & Developer / <a href="https://www.caseware.com/ca" target="_blank">CaseWare</a> /  Toronto ON / May 2018-2019</p>
+        	  <h2>UX Designer & Developer / CaseWare /  Toronto ON / May 2018-2019</h2>
         	</div>
-        	<br />
         	<div class="top-border-dashed">
-        	  <p>Junior Web Dev & Graphic Designer / <a href="https://studentsuccess.mcmaster.ca/" target="_blank">McMaster SSC</a> / Hamilton ON / Summer 2017</p>
+        	  <h2>Junior Web Dev & Graphic Designer / McMaster SSC / Hamilton ON / Summer 2017</h2>
         	</div>
-        	<br />
         	<div class="top-border-dashed">
-        	  <p>Software Design Engineer Intern / <a href="https://www.concur.com/" target="_blank">Concur</a>  / Seattle WA / Summer 2016</p>
+        	  <h2>Software Design Engineer Intern / Concur / Seattle WA / Summer 2016</h2>
         	</div>
         	<br />
         	<br />
+            <br />
+            <br />
         	<h3>Activities</h3>
         	<div class="top-border">
-        	  <p>Design Lead / DeltaHacks / Jan 2016-May 2017</p>
+        	  <h2>Design Lead / DeltaHacks / Jan 2016-May 2017</h2>
         	</div>
         		<br />
         	<div class="top-border-dashed">
-        	  <p>Dev Mentor / NameCheap / Feb 2016-Jan 2017</p>
+        	  <h2>Dev Mentor / NameCheap / Feb 2016-Jan 2017</h2>
         	</div>
         		<br />
         	<div class="top-border-dashed">
-        	  <p>Instructor / Mac Outreach / Sep 2015-16</p>
+        	  <h2>Instructor / Mac Outreach / Sep 2015-2016</h2>
         	</div>
         </div>
 
