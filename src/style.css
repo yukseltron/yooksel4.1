@@ -97,12 +97,6 @@ h2 a:active {
 	}
 }
 
-@media screen and (min-width: 1800px) {
-	body {
-		font-size: 200%;
-	}
-}
-
 .blank-space {
 	margin-bottom: 500px;
 }

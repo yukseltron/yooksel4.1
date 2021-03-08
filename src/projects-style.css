@@ -96,6 +96,10 @@
 	margin-bottom: 70px;
 }
 
+.spacer {
+	margin-bottom: 200px;
+}
+
 .subtitle {
 	padding-bottom: 50px;
 	margin-bottom: 0px;
@@ -161,15 +165,7 @@
   7px 7px 15px rgba(55, 84, 170,.15),
   -7px -7px 20px rgba(255, 255, 255,1),
   inset 0px 0px 4px rgba(255, 255, 255,.2);
-  border-radius: 25px;
-}
-
-.bigger-radius {
-	border-radius: 40px;
-}
-
-.final-design-section {
-  border-radius: 100px;
+  border-radius: 2%;
 }
 
 .quote {
@@ -189,13 +185,19 @@
 	}
 
 	.my-info h2 {
-		margin-bottom: -20px;
+		margin-bottom: -15px;
 	}
 
 	.my-info .role-info{
 		text-align: right;
 		padding-right: 50px;
 		border-right: 1px solid black;
+	}
+
+	.role-info {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 
 	.my-info .background-info {

@@ -1,12 +1,3 @@
-import React, { Component } from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  NavLink,
-  HashRouter
-} from "react-router-dom";
 import quercusIMG from './project-svgs/quercus.svg';
 import './projects-style.css';
 import clayIMG from './quercus/quercus-clay.png';
@@ -30,6 +21,15 @@ import s1 from './quercus/s1.gif';
 import s2 from './quercus/s2.gif';
 import s3 from './quercus/s3.gif';
 import dribbble from './quercus/dribbble.svg';
+import React, { Component } from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  NavLink,
+  HashRouter
+} from "react-router-dom";
 import ScrollToTop from './ScrollToTop';
 
 
@@ -52,13 +52,13 @@ class Quercus extends Component {
 
   render() {
     return (
-	  <div class="fade-in project blank-space">
+	  <div class="fade-in project">
 	  	<h1 ref={this.myDivToFocus}>Improving Quercus</h1>
 		<div class="center proj-info">
 			<h4>2020</h4>
 		</div>
 	  	<h4 class="subtitle">Helping students organize their courses and form teams online.</h4>
-		<div class="border-bottom">
+		<div class="border-bottom spacer">
 			<img id="quercus" src={clayIMG}/>
             <br/>
             <br/>
@@ -70,16 +70,15 @@ class Quercus extends Component {
             <br/>
 		</div>
         <br/>
-		<div class="background-info">
-            <div class="info">
-                <h2>In collaboration with</h2>
-                <p>
-                    <a href="mailto:mikella.seth@mail.utoronto.ca">Mikella Seth</a> and <a href="mailto:nhatanh.tranle@mail.utoronto.ca">Suzie Tran</a>.
-                </p>
-            </div>
-			<br/>
+		<div class="background-info spacer">
 			<div class="my-info">
                 <div class="role-info">
+                    <div>
+                        <h2>In collaboration with</h2>
+                        <p>
+                            <a href="mailto:mikella.seth@mail.utoronto.ca">Mikella Seth</a> and <a href="mailto:nhatanh.tranle@mail.utoronto.ca">Suzie Tran</a>.
+                        </p>
+                    </div>
                     <div>
                         <h2>My role</h2>
                         <p>UI Designer<br/>Survey Maker<br/>Illustrator</p>
@@ -113,7 +112,7 @@ class Quercus extends Component {
         <br/>
         <br/>
         <br/>
-        <div class="border-bottom section" ref={this.div1}>
+        <div class="border-bottom spacer" ref={this.div1}>
             <div class="circlebox">
                 <div class="div1 filled"></div>
                 <div class="div2"></div>
@@ -134,7 +133,7 @@ class Quercus extends Component {
             <div>
                 <div>
                     <h2>The Problem</h2>
-                    <div class="problem-section">
+                    <div class="problem-section spacer">
                         <img src={problem}/>
                         <div>
                             <p>Finding files can be confusing for new students since each professor organizes files differently. This confusion can lead to precious time wasted for an assignment.</p>
@@ -150,7 +149,7 @@ class Quercus extends Component {
                 <br/>
                 <br/>
                 <br/>
-                <div class="needs-section">
+                <div class="needs-section spacer">
                     <h2>The Needs</h2>
                     <div class="needs">
                         <h1>1.</h1>
@@ -177,7 +176,7 @@ class Quercus extends Component {
             <div>
                 <h2>The Solution</h2>
                 <br/>
-                <div class="solution-sector">
+                <div class="solution-sector spacer">
                     <div class="solution-info">
                         <p class="p-center">Our recommendation is to implement on Quercus:</p>
                         <div>
@@ -188,7 +187,7 @@ class Quercus extends Component {
                     </div>
                     <br/>
                     <br/>
-                    <div class="solution-imgs">
+                    <div class="solution-imgs spacer">
                         <img src={solution}/>
                     </div>
                 </div>
@@ -203,7 +202,7 @@ class Quercus extends Component {
             <br/>
         </div>
 	  	<br/>
-		<div class="border-bottom section">
+		<div class="border-bottom section spacer">
 		  	<h3>My Contributions</h3>
             <p>For the research phase, I was responsible for the survey questions and format. I contributed to the user analysis in making the persona and journey maps.</p>
             <p>During ideation, I helped come up with ideas and organized our results on a prioritization grid. As well, I helped design our user scenarios.</p>
@@ -234,9 +233,9 @@ class Quercus extends Component {
     	  	<br/>
             <h2>Our data showed:</h2>
 			<p class="p-center">Students struggle with inconsistent course pages</p>
-			<img  class="img-m"src={research1}/>
+			<img src={research1}/>
 			<p class="p-center">And that they do not really participate in online dicussions</p>
-			<img class="img-m" src={research2}/>
+			<img src={research2}/>
             <br/>
 			<br/>
             <br/>
@@ -249,7 +248,7 @@ class Quercus extends Component {
             <p class="p-center">Analyzing what we learned, we constructed a persona.</p>
             <br/>
             <br/>
-			<img class="img-m" src={persona}/>
+			<img src={persona}/>
 		  	<br/>
 			<br/>
             <br/>
@@ -287,19 +286,17 @@ class Quercus extends Component {
             <p class="p-center">We came up with ideas and ranked them on a prioritization grid as seen below.</p>
 			<img class="img-m" src={prioriGrid}/>
             <h4>The top ideas we felt was best to work on were:</h4>
-			<div class="flowerbox">
-                <div class="div1">
-                    <h4>Content Connections</h4>
-                    <p>Showing which lectures are relevant to an assignment</p>
-                </div>
-                <div class="div2">
-                    <h4>Meeting Classmates</h4>
-                    <p>Helping students meet others and form teams quickly</p>
-                </div>
-                <div class="div3">
-                    <h4>Course Consistency</h4>
-                    <p>Making course material easy to find across different courses online</p>
-                </div>
+            <div class="div1">
+                <h4>Content Connections</h4>
+                <p>Showing which lectures are relevant to an assignment</p>
+            </div>
+            <div class="div2">
+                <h4>Meeting Classmates</h4>
+                <p>Helping students meet others and form teams quickly</p>
+            </div>
+            <div class="div3">
+                <h4>Course Consistency</h4>
+                <p>Making course material easy to find across different courses online</p>
             </div>
             <br/>
 			<br/>
@@ -310,7 +307,7 @@ class Quercus extends Component {
 			<h2>Sketches</h2>
             <br/>
             <p class="p-center">We tested out on pen and paper to see how we could implement our ideas:</p>
-			<img class="img-m" src={sketches}/>
+			<img src={sketches}/>
             <br/>
 			<br/>
             <br/>
@@ -334,7 +331,7 @@ class Quercus extends Component {
 			<h3>Prototyping</h3>
             <h2>Midfi</h2>
             <p class="p-center">Using the sketches, I made some midfi screens to better test out and showcase our ideas as an MVP.</p>
-			<img class="img-m" src={midfi}/>
+			<img src={midfi}/>
             <br/>
 			<br/>
             <br/>
@@ -348,19 +345,19 @@ class Quercus extends Component {
             <div>
                 <div class="horizontal-section scenario-section border-bottom">
                     <p>This scenario depicts how our user Allie could prepare for an assignment. She's shown which assignment needs the most attention, and can instantly find the lectures relevant to it. As well, she can view the lecture in different formats to her liking.</p>
-                    <img class="img-s" src={scenario1}/>
+                    <img src={scenario1}/>
                 </div>
                 <br/>
                 <br/>
                 <div class="horizontal-section scenario-section border-bottom">
                     <p>Here, Allie needs to find a teammate to work with. She has the option to do a group search, see which classmates she's worked with before, and view the classmate's contact info. Past group details are also available to be seen.</p>
-                    <img class="img-s" src={scenario2}/>
+                    <img src={scenario2}/>
                 </div>
                 <br/>
                 <br/>
                 <div class="horizontal-section scenario-section border-bottom">
                     <p>In this scenario, we see how Allie can connect to classmates as friends by exploring and joining interest groups for a course. This way, Allie can find ways to bond online.</p>
-                    <img class="img-s" src={scenario3}/>
+                    <img src={scenario3}/>
                 </div>
             </div>
             <br/>
@@ -377,7 +374,7 @@ class Quercus extends Component {
             <br/>
             <div class="horizontal-section">
                         <p>Designing our interview method, we employed interviews and observations to conduct usability testing on our midfi prototype. Our interviews showed that participants could miss some of the new features and were confused by the difference between 'Group search' and 'Connections'. On the positive, participants really enjoyed the interests board and liked the customizable course materials. Overall they felt the user flow has been improved.</p>
-                <img class="img-m" src={criteria}/>
+                <img src={criteria}/>
             </div>
             <p class="p-right">An example task from our interviews.</p>
             <br/>
@@ -399,7 +396,7 @@ class Quercus extends Component {
             </div>
             <br/>
             <h3>Final Design</h3>
-            <img class="img-l subtle-shadow final-design-section" src={dribbble}/>
+            <img class="subtle-shadow final-design-section" src={dribbble}/>
             <p class="p-center">With the feedback gathered, we each designed our own separate hifi prototype.</p>
             <p class="p-center">The main user flow interactions are shown below.</p>
             <br/>
@@ -411,7 +408,7 @@ class Quercus extends Component {
             <br/>
             <div class="horizontal-section">
                 <h4 class="storyboard-h4">Quickly find the right lectures to help with assignments</h4>
-                <img class="img-m subtle-shadow" src={s1}/>
+                <img class="subtle-shadow" src={s1}/>
             </div>
             <br/>
             <br/>
@@ -426,7 +423,7 @@ class Quercus extends Component {
             <br/>
             <div class="horizontal-section">
                 <h4 class="storyboard-h4">Make teams without a sweat and see who you've worked with before</h4>
-                <img class="img-m subtle-shadow" src={s2}/>
+                <img class="subtle-shadow" src={s2}/>
             </div>
             <br/>
             <br/>
@@ -441,7 +438,7 @@ class Quercus extends Component {
             <br/>
             <div class="horizontal-section">
                 <h4 class="storyboard-h4">Find and bond with classmates over your shared interests</h4>
-                <img class="img-m subtle-shadow" src={s3}/>
+                <img class="subtle-shadow" src={s3}/>
             </div>
             <br/>
             <br/>
