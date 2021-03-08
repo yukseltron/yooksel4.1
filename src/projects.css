@@ -29,12 +29,16 @@ a {
 	margin-top: 50px;
 	border: 1px solid black;
 	padding: 50px;
+	transition: background-color 1s, color 1s;
+	transition-timing-function: ease-in-out;
 }
 
 .container:hover {
 	cursor: pointer;
 	color: white;
 	background-color: black;
+	transition: background-color 1s, color 1s;
+	transition-timing-function: ease-in-out;
 }
 
 .container p {
