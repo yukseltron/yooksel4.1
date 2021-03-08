@@ -1,3 +1,7 @@
+p {
+	text-align: left;
+}
+
 .center {
 	text-align: left;
 	line-height: 5px;
@@ -122,9 +126,11 @@
 .p-center {
 	text-align: center !important;
 }
-
 .p-right {
 	text-align: right !important;
+}
+.p-left {
+	text-align: left !important;
 }
 
 .img-l {
@@ -135,12 +141,17 @@
 	width: 50% !important;
 }
 
+.img-s {
+	width: 30% !important;
+}
+
 .h-left {
 	text-align: left;
 }
 
 .needs {
 	display: flex;
+	align-items: baseline;
 }
 
 .needs h1 {
@@ -174,6 +185,27 @@
 
 .storyboard-h4 {
 	text-align: left;
+}
+
+.solution-sector img {
+	width: 100% !important;
+}
+
+.solution-info h4{
+	text-align: left;
+	margin-bottom: -15px;
+}
+
+.ideation-section {
+	margin-top: 50px !important;
+}
+
+.ideation-section h4{
+	margin-bottom: -10px;
+}
+
+.scenario-section {
+	padding-bottom: 25px;
 }
 
 @media screen and (min-width: 1000px) {
@@ -228,21 +260,6 @@
 		transform: skewY(10deg);
 	}
 
-	.needs-section {
-		margin-left: 250px;
-		margin-right: 250px;
-	}
-
-	.solution-info div{
-		width: 60%;
-		margin: auto;
-	}
-
-	.solution-info h4{
-		text-align: left;
-		margin-bottom: -15px;
-	}
-
 	.horizontal-section {
 		display: flex;
 		justify-content: space-around;
@@ -253,9 +270,16 @@
 		padding-right: 50px;
 	}
 
-	.scenario-section img{
-		height: auto;
+	.center-content {
 		width: 40%;
-		margin-bottom: 40px;
+		margin: auto;
+	}
+
+	.img-m {
+		width: 30% !important;
+	}
+
+	.final-design-section img{
+		width: 100%;
 	}
 }
