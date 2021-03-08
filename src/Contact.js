@@ -5,38 +5,38 @@ class Contact extends Component {
   render() {
     return (
 		<div class="fade-in animate_animated animate__fadeInUp contact">
-				<h1>
-					If you want to reach out,<br/>here's my contact info<br/>and some social media links.
-					</h1>
+				<h3>
+					If you want to reach out,<br/>here's my email and social media links.
+					</h3>
 				<div class="social-links">
                     <a href="mailto:h.yuksel04@gmail.com" target="_blank">
                     <div class="social-box">
-    					<h3>email</h3>
+    					<h1>email</h1>
                     </div>
                     </a>
                     <a href="https://github.com/yukseltron" target="_blank">
                     <div class="social-box">
-                        <h3>github</h3>
+                        <h1>github</h1>
                     </div>
                     </a>
                     <a href="https://dribbble.com/yukseltron" target="_blank">
                     <div class="social-box">
-                        <h3>dribbble</h3>
+                        <h1>dribbble</h1>
                     </div>
                     </a>
                     <a href="https://www.behance.net/egggie" target="_blank">
                     <div class="social-box">
-                        <h3>behance</h3>
+                        <h1>behance</h1>
                     </div>
                     </a>
                     <a href="https://thenounproject.com/yuks/" target="_blank">
                     <div class="social-box">
-                        <h3>noun project</h3>
+                        <h1>noun project</h1>
                     </div>
                     </a>
                     <a href="https://ca.linkedin.com/in/hyuks" target="_blank">
                     <div class="social-box">
-                        <h3>linkedin</h3>
+                        <h1>linkedin</h1>
                     </div>
                     </a>
 				</div>

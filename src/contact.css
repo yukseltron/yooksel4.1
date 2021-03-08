@@ -4,28 +4,23 @@
 
 .social-links {
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+	flex-direction: column;
 	justify-content: space-between;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	transition: background-color 1s, color 0.5s;
 }
 
-.social-box {
-	width: 200px;
+.social-links a{
 	text-align: center;
-	padding: 10px;
-	margin: 5px;
-	color: blue;
+	border-bottom: 1px solid black;
+	padding: 25px;
 }
 
-.social-box:hover {
+.social-links a:hover {
 	background-color: blue;
+	border-color: blue;
 	color: white;
-}
-
-.social-box a {
-	color: blue;
-}
-
-.social-box a:hover {
-	text-decoration: underline;
+	transition: background-color 1s, color 0.5s;
 }
