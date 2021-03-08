@@ -81,12 +81,12 @@ class Quercus extends Component {
                     </div>
                     <div>
                         <h2>My role</h2>
-                        <p class="p-right">UI Designer<br/>Survey Maker<br/>Illustrator</p>
+                        <p>UI Designer<br/>Survey Maker<br/>Illustrator</p>
                     </div>
                     <br/>
                     <div>
                         <h2>Tools Used</h2>
-                        <p class="p-right">Adobe XD<br/>Google Forms<br/>Adobe illustrator</p>
+                        <p>Adobe XD<br/>Google Forms<br/>Adobe illustrator</p>
                     </div>
                 </div>
 				<br/>

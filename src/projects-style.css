@@ -101,7 +101,7 @@ p {
 }
 
 .spacer {
-	margin-bottom: 200px;
+	margin-bottom: 100px;
 }
 
 .subtitle {
@@ -208,16 +208,23 @@ p {
 	padding-bottom: 25px;
 }
 
+.my-info p{
+	text-align: center;
+}
+
 @media screen and (min-width: 1000px) {
 	.my-info {
 		display: flex;
 		justify-content: center;
-		text-align: left;
 		margin-left: 100px;
 	}
 
 	.my-info h2 {
 		margin-bottom: -15px;
+	}
+
+	.my-info p {
+		text-align: right;
 	}
 
 	.my-info .role-info{
@@ -281,5 +288,9 @@ p {
 
 	.final-design-section img{
 		width: 100%;
+	}
+
+	.spacer {
+		margin-bottom: 200px;
 	}
 }
