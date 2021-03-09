@@ -8,16 +8,16 @@ import {
   HashRouter
 } from "react-router-dom";
 import quercusIMG from './project-svgs/quercus.svg';
-import rsgIMG from './project-svgs/rsg.svg';
-import vabIMG from './project-svgs/vrbot.svg';
 import routesIMG from './project-svgs/routes-app.svg';
-import monodriftIMG from './project-svgs/monodrift.svg';
-import uvcIMG from './project-svgs/rsg.svg';
 import jpIMG from './project-svgs/jp.svg';
 import glenIMG from './project-svgs/glenbow.svg';
 import walletoIMG from './project-svgs/walleto.svg';
 import styles from './projects.css';
 import Quercus from "./Quercus";
+import Routes from "./Routes";
+import Walleto from "./Walleto";
+import Glenbow from "./Glenbow";
+import More from "./More";
 
 var projs = [];
 
@@ -36,40 +36,24 @@ class Proj {
 let quercus = new Proj('Improving Quercus', 'Online Learning System on Web', '2020',
 'Helping students organize their courses and form teams online.', 'UX', quercusIMG, '/quercus');
 
-let rsg = new Proj('Random String Generator', 'Grammar Compiler', '2020',
-'Generating well-typed random sentences using grammars and probabilities.', 'Code', rsgIMG);
-
-let vab = new Proj('Virtual Assistance Bot', 'Unity VR Capstone', '2020',
-'A configurable bot for guiding people in virtual reality experiments.', 'Code', vabIMG);
-
 let routes = new Proj('Routes', 'Mobile Commuting App', '2019',
-'A mockup on how to improve your commuting experience.', 'UX', routesIMG, '/quercus');
-
-let monodrift = new Proj('Mono Drift', 'Short Stories', '2019',
-'The singularity approaches, and the consequences are felt by all.', 'Writing', monodriftIMG);
-
-let uvc = new Proj('UVC', 'Album Arts', '2018',
-'Cover arts for the debut EP and singles of UltraViolet Catastrophe.', 'Art', uvcIMG);
-
-let jp = new Proj('The Josephus Problem', 'Web App', '2018',
-'A visualization of the math puzzle solution.', 'Code', jpIMG);
+'A mockup on how to improve your commuting experience.', 'UX', routesIMG, '/routes');
 
 let walleto = new Proj('Walleto', 'Crypto Wallet on Web', '2021',
-'Designing a way to safely store and use cryptocurrencies', 'UX', walletoIMG);
+'Designing a way to safely store and use cryptocurrencies', 'UX', walletoIMG, '/walleto');
 
 let glenbow = new Proj('Changing Glenbow', 'Museum IA Redesign on Web', '2021',
-'Improving the museum site navigation and organization', 'UX', glenIMG);
+'Improving the museum site navigation and organization', 'UX', glenIMG, '/glenbow');
 
 let more = new Proj('Other Works', 'Coding, Writing, and Art Projects', 'ongoing',
-'Check out some of my other creative projects.', 'Code', jpIMG);
+'Check out some of my other creative projects.', '', jpIMG, '/more');
 
 
 projs[0] = quercus;
-//projs[0] = walleto;
-//projs[1] = quercus;
-//projs[2] = glenbow;
-//projs[3] = routes;
-//projs[4] = more;
+projs[1] = walleto;
+projs[2] = glenbow;
+projs[3] = routes;
+projs[4] = more;
 
 
 
@@ -105,6 +89,8 @@ class Projects extends Component {
       }
     return (
 		<div ref={this.myRef} class="projects-container">
+            <h4>These are my UX projects.</h4>
+            <h4>Check out my <Link class="h-link" to="/more">other projects here.</Link></h4>
 			<div class="fade-in" id="projects">
 				{items}
 			</div>

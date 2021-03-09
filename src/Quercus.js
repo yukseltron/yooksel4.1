@@ -54,9 +54,7 @@ class Quercus extends Component {
     return (
 	  <div class="fade-in project">
 	  	<h1 ref={this.myDivToFocus}>Improving Quercus</h1>
-		<div class="center proj-info">
-			<h4>2020</h4>
-		</div>
+		<h4 class="p-center">2020</h4>
 	  	<h4 class="subtitle">Helping students organize their courses and form teams online.</h4>
 		<div class="border-bottom spacer">
 			<img id="quercus" src={clayIMG}/>

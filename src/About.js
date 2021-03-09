@@ -62,7 +62,7 @@ class About extends Component {
         	Feel free to reach out to me!</Link>
         	<br />
         	<br />
-        	<a class="inline-a link" target="_blank" href="https://drive.google.com/file/d/1uxdbQeUstEunqsq15n86ddOl0Obe-tPp/view?usp=sharing">
+        	<a class="inline-a link" target="_blank" href="https://drive.google.com/file/d/1KPHVizJ2xn9hKYpI7P7kKwkSqDRMLByQ/view?usp=sharing">
         		Here is my resume in PDF.
         	</a>
         	<br />
