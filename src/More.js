@@ -45,7 +45,7 @@ let vab = new Proj('Virtual Assistance Bot', 'Unity VR Capstone', '2020',
 'A configurable bot for guiding people in virtual reality experiments.', 'Code', vabIMG, '/virtual-assistance-bot');
 
 let monodrift = new Proj('Mono Drift', 'Short Stories', '2019',
-'The singularity approaches, and the consequences are felt by all.', 'Writing', monodriftIMG, '/monodrift');
+'The singularity approaches, and the consequences are felt by all.', 'Writing', monodriftIMG, '/mono-drift');
 
 let uvc = new Proj('UVC', 'Album Arts', '2018',
 'Cover arts for the debut EP and singles of UltraViolet Catastrophe.', 'Art', uvcIMG, '/uvc');
@@ -91,8 +91,7 @@ class More extends Component {
       }
     return (
 		<div ref={this.myRef} class="projects-container">
-            <h4>These projects range from programming, to writing, to graphic design work.</h4>
-            <h4>Want my UX Work? <Link class="h-link" to="/projects">See it here</Link></h4>
+            <h4>My programming, writing, and graphic design work. <Link class="h-link" to="/projects">Want my UX stuff?</Link></h4>
 			<div class="fade-in" id="projects">
 				{items}
 			</div>

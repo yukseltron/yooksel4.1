@@ -89,8 +89,7 @@ class Projects extends Component {
       }
     return (
 		<div ref={this.myRef} class="projects-container">
-            <h4>These are my UX projects.</h4>
-            <h4>Check out my <Link class="h-link" to="/more">other projects here.</Link></h4>
+            <h4>These are my UX projects. Check out my <Link class="h-link" to="/more">other projects here.</Link></h4>
 			<div class="fade-in" id="projects">
 				{items}
 			</div>

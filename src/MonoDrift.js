@@ -30,24 +30,29 @@ class MonoDrift extends Component {
 
   render() {
     return (
-	  <div class="fade-in project">
-	  	<h1 ref={this.myDivToFocus}>MonoDrift</h1>
-		<div class="center proj-info">
-			<h4>2019</h4>
-		</div>
-	  	<h4 class="subtitle">Helping students organize their courses and form teams online.</h4>
-		<div class="border-bottom spacer">
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-		</div>
-	  </div>
-
+        <div class="fade-in project">
+          <h1 ref={this.myDivToFocus}>Mono Drift</h1>
+          <h4 class="p-center">2020</h4>
+          <h4 class="subtitle">It approaches, and so do its consequences</h4>
+          <div class="spacer">
+          <img/>
+          </div>
+          <br/>
+          <br/>
+          <p class="border-bottom border-top spacer">
+              <h4 class="p-center"><a target="_blank" href="https://www.behance.net/gallery/111653313/Improving-Quercus">View case study on Behance</a></h4>
+              <h4 class="p-center"><a target="_blank" href="https://xd.adobe.com/view/bbecb767-a751-4c1d-b5a5-3131620dc877-eebf/?fullscreen">View final prototype</a></h4>
+          </p>
+          <br/>
+          <div class="spacer" ref={this.div1}>
+              <h3>Background</h3>
+              <p class="p-center spacer">Cryptocurrencies and applications with blockchain technologies are growing and so are the need for online tools and uses for crypto.</p>
+          </div>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+        </div>
     );
   }
 }
