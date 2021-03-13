@@ -26,9 +26,6 @@ p {
   -7px -7px 20px rgba(255, 255, 255,1),
   inset 0px 0px 4px rgba(255, 255, 255,.2);
 }
-.circlebox:hover {
-	cursor: pointer;
-}
 
 .flowerbox {
 	display: flex;
@@ -212,6 +209,7 @@ p {
 	text-align: center;
 }
 
+
 @media screen and (min-width: 1000px) {
 	.my-info {
 		display: flex;
@@ -259,12 +257,13 @@ p {
 		padding-right: 150px;
 	}
 
-	.problem-section {
-		display: flex;
+	.problem {
+		margin-right: 50px;
 	}
 
-	.problem-section img{
-		transform: skewY(10deg);
+	.problem-section {
+		display: flex;
+		align-items: center;
 	}
 
 	.horizontal-section {

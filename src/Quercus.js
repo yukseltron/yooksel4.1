@@ -133,7 +133,7 @@ class Quercus extends Component {
                     <h2>The Problem</h2>
                     <br/>
                     <div class="problem-section spacer">
-                        <img src={problem}/>
+                        <img class="problem" src={problem}/>
                         <div>
                             <p class="p-left">Finding files can be confusing for new students since each professor organizes files differently. This confusion can lead to precious time wasted for an assignment.</p>
                             <p class="p-left">As well, some projects require forming teams, which could be difficult to do online. Students can't tell who is still looking for a group or where they can even contact anyone.</p>

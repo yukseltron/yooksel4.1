@@ -1,4 +1,19 @@
 import './projects-style.css';
+import main from './walleto/landing.svg';
+import challenge from './walleto/challenge.svg';
+import solution from './walleto/solution.svg';
+import moodBoard from './walleto/mood.svg';
+import persona from './walleto/persona.svg';
+import journey from './walleto/journey.svg';
+import sketches from './walleto/walleto-sketches.png';
+import midfi from './walleto/midfi.svg';
+import scenario1 from './walleto/scenario1.svg';
+import scenario2 from './walleto/scenario2.svg';
+import scenario3 from './walleto/scenario3.svg';
+import hifi from './walleto/hifi.svg';
+import s1 from './walleto/scenario1.gif';
+import s2 from './walleto/scenario2.gif';
+import s3 from './walleto/scenario3.gif';
 import React, { Component } from "react";
 import {
   BrowserRouter as Router,
@@ -33,9 +48,19 @@ class Walleto extends Component {
 	  <div class="fade-in project">
 	  	<h1 ref={this.myDivToFocus}>Walleto</h1>
 		<h4 class="p-center">2021</h4>
-	  	<h4 class="subtitle">A pratical crypto wallet</h4>
+	  	<h4 class="subtitle">A practical crypto wallet</h4>
 		<div class="border-bottom spacer">
-
+            <img class="subtle-shadow" src={main}/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
 		</div>
         <br/>
         <div class="background-info spacer">
@@ -90,7 +115,7 @@ class Walleto extends Component {
                     <h2>The Challenge</h2>
                     <br/>
                     <div class="problem-section spacer">
-                        <img/>
+                        <img class="problem" src={challenge}/>
                         <div>
                             <p class="p-left">I wanted to try and focus on how crypto could be presented with real purposes online. As crypto has grown massively in popularity, markets have emerged that try to sell things through crypto. Of course, I found that more than just art, but also platforms for charity and video games exist on crypto. Overall however, this project's true purpose was about learning to prepare design specifications.</p>
                         </div>
@@ -116,7 +141,7 @@ class Walleto extends Component {
                     </div>
                     <div class="needs spacer">
                         <h1>3.</h1>
-                        <h4 class="h-left">A way to explore a market to see what they can use spend their crypto on.</h4>
+                        <h4 class="h-left">A way to see and organize their portfolio and transactions history.</h4>
                     </div>
                 </div>
             </div>
@@ -135,14 +160,14 @@ class Walleto extends Component {
                 <div class="solution-sector spacer center-content">
                     <div class="solution-info">
                         <div>
-                            <h4>Walleto is a crypto wallet that focuses on practicality. It shows the gains/losses in your accounts, allows for easy transfering to contacts, and includes a market showcasing all the things you can use your crypto for.</h4>
+                            <h4>Walleto is a crypto wallet that focuses on practicality by showing gains/losses and transaction histories in your accounts, as well as allowing for easy transfering to contacts.</h4>
                         </div>
                     </div>
                     <br/>
                     <br/>
                     <br/>
                     <br/>
-                    <img/>
+                    <img src={solution}/>
                 </div>
             </div>
             <br/>
@@ -166,7 +191,7 @@ class Walleto extends Component {
         	  	<br/>
                 <h2>Mood Board</h2>
     			<p class="p-center"></p>
-    			<img/>
+    			<img src={moodBoard}/>
     			<p class="p-center"></p>
             </div>
             <br/>
@@ -182,7 +207,7 @@ class Walleto extends Component {
                 <p class="p-center">Analyzing what we learned, we construct a persona.</p>
                 <br/>
                 <br/>
-    			<img/>
+    			<img class="subtle-shadow" src={persona}/>
             </div>
 		  	<br/>
 			<br/>
@@ -197,7 +222,7 @@ class Walleto extends Component {
                 <br/>
                 <div class="horizontal-section">
                     <p>Afterwards, we created journey maps to connect with our users, see how their process works, and outline pain points and areas of opportunities.<br/><br/>This journey map is for a scenario where our user prepares for a lecture and assignments.</p>
-                    <img />
+                    <img src={journey}/>
                 </div>
             </div>
             <br/>
@@ -227,7 +252,7 @@ class Walleto extends Component {
     			<h2>Sketches</h2>
                 <br/>
                 <p class="p-center">Testing out some ways to implement the ideas through sketches:</p>
-    			<img/>
+    			<img src={sketches}/>
             </div>
             <br/>
 			<br/>
@@ -243,13 +268,13 @@ class Walleto extends Component {
             <div class="div4 filled"></div>
             <div class="div5"></div>
         </div>
-		<div class="border-bottom section spacer">
+		<div class="section spacer">
         <br/>
             <div class="spacer">
     			<h3>Prototyping</h3>
                 <h2>Midfi</h2>
                 <p class="p-center">Using the sketches, I made some midfi screens to better test out the ideas.</p>
-    			<img/>
+    			<img src={midfi}/>
             </div>
             <br/>
 			<br/>
@@ -265,19 +290,19 @@ class Walleto extends Component {
                 <div>
                     <div class="horizontal-section scenario-section border-bottom">
                         <p>This scenario depicts how our user Allie could prepare for an assignment. She's shown which assignment needs the most attention, and can instantly find the lectures relevant to it. As well, she can view the lecture in different formats to her liking.</p>
-                        <img/>
+                        <img class="img-ml" src={scenario1}/>
                     </div>
                     <br/>
                     <br/>
                     <div class="horizontal-section scenario-section border-bottom">
                         <p>Here, Allie needs to find a teammate to work with. She has the option to do a group search, see which classmates she's worked with before, and view the classmate's contact info. Past group details are also available to be seen.</p>
-                        <img/>
+                        <img class="img-ml" src={scenario2}/>
                     </div>
                     <br/>
                     <br/>
                     <div class="horizontal-section scenario-section border-bottom">
                         <p>In this scenario, we see how Allie can connect to classmates as friends by exploring and joining interest groups for a course. This way, Allie can find ways to bond online.</p>
-                        <img/>
+                        <img class="img-ml" src={scenario3}/>
                     </div>
                 </div>
             </div>
@@ -300,7 +325,7 @@ class Walleto extends Component {
             <br/>
             <div class="spacer final-design-section">
                 <h3>Final Design</h3>
-                <img/>
+                <img src={hifi}/>
                 <p class="p-center">Working off of feedback on the midfi, I designed this hi-fidelity prototype.</p>
                 <p class="p-center">The main user flow interactions are shown below.</p>
             </div>
@@ -316,7 +341,7 @@ class Walleto extends Component {
                         <h2 class="p-left">Content Connections</h2>
                         <h4 class="storyboard-h4">Quickly find the right lectures to help with assignments</h4>
                     </div>
-                    <img class="subtle-shadow"/>
+                    <img class="subtle-shadow" src={s1}/>
                 </div>
                 <br/>
                 <br/>
@@ -333,7 +358,7 @@ class Walleto extends Component {
             			<h2 class="p-left">Finding Groupmates</h2>
                         <h4 class="storyboard-h4">Make teams without a sweat and see who you've worked with before</h4>
                     </div>
-                    <img class="subtle-shadow"/>
+                    <img class="subtle-shadow" src={s2}/>
                 </div>
                 <br/>
                 <br/>
@@ -350,7 +375,7 @@ class Walleto extends Component {
                         <h2 class="p-left">idea</h2>
                         <h4 class="storyboard-h4">Find and bond with classmates over your shared interests</h4>
                     </div>
-                    <img class="subtle-shadow"/>
+                    <img class="subtle-shadow" src={s3}/>
                 </div>
             </div>
             <br/>
