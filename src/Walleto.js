@@ -15,6 +15,7 @@ import s1 from './walleto/scenario1.gif';
 import s2 from './walleto/scenario2.gif';
 import s3 from './walleto/scenario3.gif';
 import chart from './walleto/chart.png';
+import access from './walleto/access.svg';
 import React, { Component } from "react";
 import {
   BrowserRouter as Router,
@@ -89,8 +90,7 @@ class Walleto extends Component {
         </div>
         <br/>
         <p class="border-bottom border-top spacer">
-            <h4 class="p-center"><a target="_blank" href="https://www.behance.net/gallery/111653313/Improving-Quercus">View case study on Behance</a></h4>
-            <h4 class="p-center"><a target="_blank" href="https://xd.adobe.com/view/bbecb767-a751-4c1d-b5a5-3131620dc877-eebf/?fullscreen">View final prototype</a></h4>
+            <h4 class="p-center"><a target="_blank" href="https://dribbble.com/shots/15291623-Walleto">View dribbble shot</a></h4>
         </p>
         <br/>
         <div class="border-bottom spacer" ref={this.div1}>
@@ -265,13 +265,13 @@ class Walleto extends Component {
                 <br/>
                 <div>
                     <div class="horizontal-section scenario-section border-bottom">
-                        <p>This scenario depicts how a user could view their transactions history for a specific cryptocurrency they have.</p>
+                        <p>Viewing their transactions history for a specific cryptocurrency they have.</p>
                         <img class="img-ml" src={scenario1}/>
                     </div>
                     <br/>
                     <br/>
                     <div class="horizontal-section scenario-section border-bottom">
-                        <p>Here, this shows how a user could send money to a contact.</p>
+                        <p>Here, a user wants to schedule a money transfer to a friend of theirs.</p>
                         <img class="img-ml" src={scenario2}/>
                     </div>
                     <br/>
@@ -294,6 +294,11 @@ class Walleto extends Component {
                 <h3>Final Design</h3>
                 <img src={hifi}/>
                 <p class="p-center">Next up, I designed a hi-fidelity prototype.</p>
+                <p class="p-center">Here is just the design specifications made for it.</p>
+                <br/>
+                <br/>
+                <br/>
+                <img class="img-l" src={access}/>
                 <p class="p-center">Some main user flow interactions are shown below.</p>
             </div>
             <br/>
