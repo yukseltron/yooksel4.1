@@ -80,7 +80,7 @@ class RandomStringGenerator extends Component {
               </div>
               <br/>
           </div>
-          <div class="border-bottom spacer border-top">
+          <div class="spacer">
                 <div class="center-content">
                   <h3>My Contributions</h3>
                     <p>I built the class for modeling context sensitive grammars, including its parsing algorithms. I also wrote the associated random string generation methods with weighted probabilities for context sensitive grammars.</p>
@@ -88,7 +88,7 @@ class RandomStringGenerator extends Component {
           </div>
               <div class="spacer">
                 <div class="center-content">
-                      <h2>Reflection</h2>
+                      <h3>Reflection</h3>
                       <p>Looking back, although we managed to successfully focus on key ideas, there were some ideas we could no longer work on. Initially, course consistency was an important goal of ours. However, we learned of legal barriers that ensure professors have total freedom and modularity with their course design. This makes course consistency a very idealistic goal too dependent on legal matters.</p>
                       <p>While working on this project I was able to learn new features for Adobe XD (such as mapping a screen onto another screen), and get a better understanding of how to delegate tasks in a group UX project.</p>
                       <p>Overall, I'm proud of my team's work. We were shorthanded to begin with, but we all managed to get all our deliverables done on time.</p>

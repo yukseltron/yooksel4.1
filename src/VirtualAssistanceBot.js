@@ -44,7 +44,7 @@ class VirtualAssistanceBot extends Component {
                       <div>
                           <h2>In collaboration with</h2>
                           <p>
-                              <a href="mailto:mikella.seth@mail.utoronto.ca">Anthony Mella</a>,<br/><a href="mailto:nhatanh.tranle@mail.utoronto.ca">Jakub Pawlikowski</a>,<br/> and <a href="mailto:nhatanh.tranle@mail.utoronto.ca">Tyler Phillips</a>.
+                              <a href="https://github.com/tonyxmella66">Anthony Mella</a>,<br/><a href="https://github.com/JPawlikowski">Jakub Pawlikowski</a>,<br/> and <a href="https://github.com/Philipsty">Tyler Phillips</a>.
                           </p>
                       </div>
                       <div>
@@ -59,7 +59,7 @@ class VirtualAssistanceBot extends Component {
                   </div>
   				<br/>
                   <div class="background-info">
-                      <h4>For: McMaster Decision Science Laboratory</h4>
+                      <h4>For: McMaster Decision Science Laboratory (McDSL)</h4>
                       <h4>Platform: Unity</h4>
                       <h4>Sep 2019-April 2020</h4>
                   </div>
@@ -67,118 +67,46 @@ class VirtualAssistanceBot extends Component {
   			</div>
               <br/>
   		</div>
-          <br/>
-          <p class="border-bottom border-top spacer">
-              <h4 class="p-center"><a target="_blank" href="https://www.behance.net/gallery/111653313/Improving-Quercus">View case study on Behance</a></h4>
-              <h4 class="p-center"><a target="_blank" href="https://xd.adobe.com/view/bbecb767-a751-4c1d-b5a5-3131620dc877-eebf/?fullscreen">View final prototype</a></h4>
-          </p>
-          <br/>
-          <div class="spacer" ref={this.div1}>
-              <div class="circlebox">
-                  <div class="div1 filled"></div>
-                  <div class="div2"></div>
-                  <div class="div3"></div>
-                  <div class="div4"></div>
-                  <div class="div5"></div>
+        <br/>
+        <p class="border-bottom border-top spacer">
+            <h4 class="p-center"><a target="_blank" href="https://www.youtube.com/watch?v=_-yhq2RHWto">View short video demo (3 min)</a></h4>
+            <h4 class="p-center"><a target="_blank" href="https://github.com/tonyxmella66/Capstone2019">View VR bot source code on github</a></h4>
+            <h4 class="p-center"><a target="_blank" href="https://github.com/yukseltron/bot-factory">View bot configurer source code on github</a></h4>
+        </p>
+        <br/>
+        <div class="spacer" ref={this.div1}>
+            <div class="center-content">
+                <h3>Abstract</h3>
+                <p>This was a capstone culmination project as part of our final year of computer science studies.</p>
+                <p>For some background: The McMaster Desicion Sciences Laboratory (McDSL) needed a bot to provide assistance to people inside of their human behaviour experiments using virtual reality.</p>
+                <p>The researchers themselves didn't want to disrupt the experiment by intervening themselves.</p>
+                <p>So we built for them a proof-of-concept assistance bot that waits and listens for help, and then offers appropriate advice.</p>
+                <p>The researchers can add and edit what the bot should listen for and say, get data on the help provided, and customize the bot's appearance.</p>
+            </div>
+            <br/>
+        </div>
+        <div class="spacer ">
+              <div class="center-content">
+                <h3>My Contributions</h3>
+                  <p> I was the project manager, creating and delegating tasks. I was responsible for the team's cohesiveness and ensuring our goals aligned. I also built the web app for creating and editing the bot configuration file.</p>
               </div>
-              <h3>Overview</h3>
-              <p class="p-center spacer">Cryptocurrencies and applications with blockchain technologies are growing and so are the need for online tools and uses for crypto.</p>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <div>
-                  <div>
-                      <h2>The Challenge</h2>
-                      <br/>
-                      <div class="problem-section spacer">
-                          <img/>
-                          <div>
-                              <p class="p-left">I wanted to try and focus on how crypto could be presented with real purposes online. As crypto has grown massively in popularity, markets have emerged that try to sell things through crypto. Of course, I found that more than just art, but also platforms for charity and video games exist on crypto. Overall however, this project's true purpose was about learning to prepare design specifications.</p>
-                          </div>
-                      </div>
-                  </div>
-                  <br/>
-                  <br/>
-                  <br/>
-                  <br/>
-                  <br/>
-                  <br/>
-                  <br/>
-                  <br/>
-                  <div class="needs-section spacer center-content">
-                      <h2>The Needs</h2>
-                      <div class="needs">
-                          <h1>1.</h1>
-                          <h4 class="h-left">Be able to assess accounts and see how crypto prices are affecting them.</h4>
-                      </div>
-                      <div class="needs">
-                          <h1>2.</h1>
-                          <h4 class="h-left">A way to quickly and easily send crypto between accounts or to people.</h4>
-                      </div>
-                      <div class="needs spacer">
-                          <h1>3.</h1>
-                          <h4 class="h-left">A way to explore a market to see what they can use spend their crypto on.</h4>
-                      </div>
-                  </div>
+        </div>
+            <div class="spacer">
+              <div class="center-content">
+                    <h3>Reflection</h3>
+                    <p>The biggest difficulty faced was our limited hardware available and struggles with VR support. This made development slow as we found problems getting Unity VR games to run on suboptimal rigs. Luckily, McDSL supplied us with the hardware necessary to complete the project.</p>
+                    <p>Although the onset of COVID-19 made progress even more difficult, we were able to rally and successfully complete the project.</p>
               </div>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-              <div>
-                  <h2>The Solution</h2>
-                  <br/>
-                  <div class="solution-sector spacer center-content">
-                      <div class="solution-info">
-                          <div>
-                              <h4>Walleto is a crypto wallet that focuses on practicality. It shows the gains/losses in your accounts, allows for easy transfering to contacts, and includes a market showcasing all the things you can use your crypto for.</h4>
-                          </div>
-                      </div>
-                      <img/>
-                  </div>
-              </div>
-              <br/>
-              <br/>
-              <br/>
-              <br/>
-          </div>
-          <div class="border-bottom spacer border-top">
-                <div class="center-content">
-                  <h3>My Contributions</h3>
-                    <p>For the research phase, I was responsible for the survey questions and format. I contributed to the user analysis in making the persona and journey maps.</p>
-                    <p>During ideation, I helped come up with ideas and organized our results on a prioritization grid. As well, I helped design our user scenarios.</p>
-                    <p>In the design phase, I was responsible for making the Midfi and Hifi prototypes and the overall visual design.</p>
-                </div>
-          </div>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-              <div class="spacer">
-                  <h2>Reflection</h2>
-                  <p>Looking back, although we managed to successfully focus on key ideas, there were some ideas we could no longer work on. Initially, course consistency was an important goal of ours. However, we learned of legal barriers that ensure professors have total freedom and modularity with their course design. This makes course consistency a very idealistic goal too dependent on legal matters.</p>
-                  <p>While working on this project I was able to learn new features for Adobe XD (such as mapping a screen onto another screen), and get a better understanding of how to delegate tasks in a group UX project.</p>
-                  <p>Overall, I'm proud of my team's work. We were shorthanded to begin with, but we all managed to get all our deliverables done on time.</p>
-                  <br/>
-                  <br/>
-                  <br/>
-                  <br/>
-                  <br/>
-                  <br/>
-                  <br/>
-                  <br/>
-                  <h2><a onClick={this.handleOnClick}>Return to top</a></h2>
-              </div>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <h2><a onClick={this.handleOnClick}>Return to top</a></h2>
+            </div>
         </div>
     );
   }
