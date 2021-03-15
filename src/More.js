@@ -2,8 +2,9 @@ import './projects-style.css';
 import rsgIMG from './project-svgs/rsg.svg';
 import vabIMG from './project-svgs/vrbot.svg';
 import monodriftIMG from './project-svgs/monodrift.svg';
-import uvcIMG from './project-svgs/rsg.svg';
+import uvcIMG from './project-svgs/uvc.svg';
 import jpIMG from './project-svgs/jp.svg';
+import ehoroIMG from './project-svgs/ehoro.svg';
 import styles from './projects.css';
 import React, { Component } from "react";
 import {
@@ -18,6 +19,7 @@ import RandomStringGenerator from "./RandomStringGenerator";
 import VirtualAssistanceBot from "./VirtualAssistanceBot";
 import MonoDrift from "./MonoDrift";
 import UVCatastrophe from "./UVCatastrophe";
+import EmojiHoroscope from "./EmojiHoroscope";
 import JosephusProblem from "./JosephusProblem";
 import ScrollToTop from './ScrollToTop';
 
@@ -50,23 +52,35 @@ let monodrift = new Proj('Mono Drift', 'Short Stories', '2019',
 let uvc = new Proj('UVC', 'Album Arts', '2018',
 'Cover arts for the debut EP and singles of UltraViolet Catastrophe.', 'Art', uvcIMG, '/uvc');
 
-let jp = new Proj('The Josephus Problem', 'Web App', '2018',
+let jp = new Proj('The Josephus Problem', 'Web App', '2017',
 'A visualization of the math puzzle solution.', 'Code', jpIMG, '/jp');
+
+let emojihoroscope = new Proj('Emoji Horoscope', 'Web App', '2018',
+'See your horoscope in emoji form.', 'Code', ehoroIMG, '/emojihoroscope');
+
 
 projs[0] = rsg;
 projs[1] = vab;
 projs[2] = monodrift;
 projs[3] = uvc;
-projs[4] = jp;
+projs[4] = emojihoroscope
+projs[5] = jp;
 
 class More extends Component {
-    constructor(props) {
-        super(props)
-        this.myRef = React.createRef()   // Create a ref object
+    constructor(props){
+       super(props)
+       //creates a reference for your element to use
+       this.myDivToFocus = React.createRef()
     }
 
-    componentDidMount() {
-      this.myRef.current.scrollTo(0, 0);
+    handleOnClick = (event) => {
+        //.current is verification that your element has rendered
+        if(this.myDivToFocus.current){
+            this.myDivToFocus.current.scrollIntoView({
+               behavior: "smooth",
+               block: "end"
+            })
+        }
     }
 
   render() {
@@ -91,10 +105,11 @@ class More extends Component {
       }
     return (
 		<div ref={this.myRef} class="projects-container">
-            <h4>My programming, writing, and graphic design work. <Link class="h-link" to="/projects">Want my UX stuff?</Link></h4>
+            <h4 ref={this.myDivToFocus}>My programming, writing, and graphic design work. <Link class="h-link" to="/projects">Want my UX stuff?</Link></h4>
 			<div class="fade-in" id="projects">
 				{items}
 			</div>
+            <h2 class="p-center link-top spacer"><a onClick={this.handleOnClick}>Return to top</a></h2>
 		</div>
     );
   }

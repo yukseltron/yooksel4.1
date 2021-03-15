@@ -11,7 +11,7 @@ import {
 import ScrollToTop from './ScrollToTop';
 
 
-class JosephusProblem extends Component {
+class EmojiHoroscope extends Component {
     constructor(props){
        super(props)
        //creates a reference for your element to use
@@ -31,25 +31,24 @@ class JosephusProblem extends Component {
   render() {
     return (
         <div class="fade-in project">
-          <h1 ref={this.myDivToFocus}>The Josephus Problem</h1>
-          <h4 class="p-center">2017</h4>
-          <h4 class="subtitle">A visualization of the infamous puzzle</h4>
+          <h1 ref={this.myDivToFocus}>Emoji Horoscope</h1>
+          <h4 class="p-center">2018</h4>
+          <h4 class="subtitle">See your future through emojis</h4>
           <div>
           <img src=""/>
           </div>
           <div ref={this.div1}>
               <h3>Background</h3>
               <div class="center-content">
-                <p>Imagine there's (N) of you captured as prisoners. As enemies of the kingdom, you are all arranged in a circle, and are told that starting from person 1, every Kth prisoner will be killed. K being some arbitrarily chosen interval. Luckily for you, you're the one who chooses. What K value do you pick, given N number of people, so that you remain as the last person alive?</p>
-                <p>Built using Angular.</p>
+                <p>This was a simple project utilizing a horoscope API in combination with a sentiment analysis API. Feeding the horoscope text into the sentiment analysis API gave a value that could be mapped to an emoji.</p>
+                <p>Built using Python and Django.</p>
               </div>
           </div>
           <br/>
           <br/>
           <p class="border-bottom border-top">
-              <h4 class="p-center"><a target="_blank" href="https://yukseltron.github.io/Josephus-Problem/">View website</a></h4>
-              <h4 class="p-center"><a target="_blank" href="https://github.com/yukseltron/Josephus-Problem">View source code</a></h4>
-              <h4 class="p-center"><a target="_blank" href="https://en.wikipedia.org/wiki/Josephus_problem">View more info on the problem</a></h4>
+              <h4 class="p-center"><a target="_blank" href="https://emoji-horoscope.appspot.com/">View website</a></h4>
+              <h4 class="p-center"><a target="_blank" href="https://github.com/yukseltron/emoji-horoscope">View source code</a></h4>
           </p>
           <br/>
           <br/>
@@ -61,4 +60,4 @@ class JosephusProblem extends Component {
   }
 }
 
-export default JosephusProblem;
+export default EmojiHoroscope;

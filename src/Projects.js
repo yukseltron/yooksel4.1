@@ -18,6 +18,7 @@ import Routes from "./Routes";
 import Walleto from "./Walleto";
 import Glenbow from "./Glenbow";
 import More from "./More";
+import ScrollToTop from './ScrollToTop';
 
 var projs = [];
 
@@ -51,20 +52,25 @@ let more = new Proj('Other Works', 'Coding, Writing, and Art Projects', 'ongoing
 
 projs[0] = quercus;
 projs[1] = walleto;
-projs[2] = glenbow;
-projs[3] = routes;
-projs[4] = more;
+projs[2] = more;
 
 
 
 class Projects extends Component {
-    constructor(props) {
-        super(props)
-        this.myRef = React.createRef()   // Create a ref object
+    constructor(props){
+       super(props)
+       //creates a reference for your element to use
+       this.myDivToFocus = React.createRef()
     }
 
-    componentDidMount() {
-      this.myRef.current.scrollTo(0, 0);
+    handleOnClick = (event) => {
+        //.current is verification that your element has rendered
+        if(this.myDivToFocus.current){
+            this.myDivToFocus.current.scrollIntoView({
+               behavior: "smooth",
+               block: "end"
+            })
+        }
     }
 
   render() {
@@ -88,11 +94,12 @@ class Projects extends Component {
         )
       }
     return (
-		<div ref={this.myRef} class="projects-container">
-            <h4>These are my UX projects. Check out my <Link class="h-link" to="/more">other projects here.</Link></h4>
+		<div class="projects-container">
+            <h4 ref={this.myDivToFocus}>These are my UX projects. Check out my <Link class="h-link" to="/more">other projects here.</Link></h4>
 			<div class="fade-in" id="projects">
 				{items}
 			</div>
+            <h2><a class="p-center link-top spacer" onClick={this.handleOnClick}>Return to top</a></h2>
 		</div>
     );
   }

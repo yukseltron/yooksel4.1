@@ -49,20 +49,19 @@ class About extends Component {
             <h3>
             I'm just a human being in Toronto, Canada. Probably working on hobbies or projects.
             </h3>
+            <h4>Originally, I studied computer science, but I also taught myself how to use design tools in my spare time. Currently, I'm doing a masters where I can learn more about design (and also data science).</h4>
+            <h4>That being said, I still enjoy programming and try to learn new tools. This website you're on for example I built using React for the first time. But for now, I'm focusing on further developing a career in design.</h4>
             <h4>
-            Professionally, I have worked as a UX designer, Web developer, and Graphic designer. Currently I'm looking for challenging UX work.
+            Professionally, I've worked as a UX Designer, Web developer, and Graphic Designer. Currently I'm looking for new challenging UX work.
             </h4>
             <h4>
-            Although no longer working in software, I still code as a hobby and use this experience to suppliment my UX skills.
-            </h4>
-            <h4>
-            In my spare time, you'll find me learning more about creatively applying machine learning and data analytics in new ways. That, or just doodling and reading about history.
+            In my spare time, I enjoy doing things like doodling or reading about history.
             </h4>
         	<Link class="link" to="/contact">
         	Feel free to reach out to me!</Link>
         	<br />
         	<br />
-        	<a class="inline-a link" target="_blank" href="https://drive.google.com/file/d/1KPHVizJ2xn9hKYpI7P7kKwkSqDRMLByQ/view?usp=sharing">
+        	<a class="inline-a link" target="_blank" href="https://drive.google.com/file/d/1H-tHPjIP5dlZl9QtXDgoibdMZKjLbyDJ/view?usp=sharing">
         		Here is my resume in PDF.
         	</a>
         	<br />

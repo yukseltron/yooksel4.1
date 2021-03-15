@@ -17,6 +17,7 @@ import UVCatastrophe from "./UVCatastrophe";
 import JosephusProblem from "./JosephusProblem";
 import Walleto from "./Walleto";
 import Glenbow from "./Glenbow";
+import EmojiHoroscope from "./EmojiHoroscope";
 import More from "./More";
 import './style.css';
 import ScrollToTop from './ScrollToTop';
@@ -47,6 +48,7 @@ class Main extends Component {
                      <Route path="/mono-drift" component={MonoDrift}/>
                      <Route path="/uvc" component={UVCatastrophe}/>
                      <Route path="/jp" component={JosephusProblem}/>
+                     <Route path="/emojihoroscope" component={EmojiHoroscope}/>
                      <Route path="/walleto" component={Walleto}/>
                      <Route path="/glenbow" component={Glenbow}/>
                      <Route path="/more" component={More}/>

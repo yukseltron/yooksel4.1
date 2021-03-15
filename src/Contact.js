@@ -7,7 +7,15 @@ class Contact extends Component {
 		<div class="fade-in animate_animated animate__fadeInUp contact">
 				<h3>
 					If you want to reach out,<br/>here's my email and social media links.
-					</h3>
+				</h3>
+                <a class="inline-a link" target="_blank" href="https://drive.google.com/file/d/1H-tHPjIP5dlZl9QtXDgoibdMZKjLbyDJ/view?usp=sharing">
+            		In case you're actually looking for my resume.
+            	</a>
+                <br/>
+                        <br/>
+                                <br/>
+                                        <br/>
+                                                <br/>
 				<div class="social-links">
                     <a href="mailto:h.yuksel04@gmail.com" target="_blank">
                     <div class="social-box">
