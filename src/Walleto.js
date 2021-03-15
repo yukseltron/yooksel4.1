@@ -90,7 +90,7 @@ class Walleto extends Component {
         </div>
         <br/>
         <p class="border-bottom border-top spacer">
-            <h4 class="p-center"><a target="_blank" href="https://dribbble.com/shots/15291623-Walleto">View dribbble shot</a></h4>
+            <h4 class="p-center"><a target="_blank" href="https://www.figma.com/file/G5kmU9JP0DI3rG5kEBJoRS/A1?node-id=0%3A1">View on figma</a></h4>
         </p>
         <br/>
         <div class="border-bottom spacer" ref={this.div1}>
@@ -360,7 +360,7 @@ class Walleto extends Component {
             <div class="spacer">
     			<h2>Reflection</h2>
                 <p>Looking back, this project was a learning opportunity for understanding more about cryptocurrencies, NFTs, and blockchains.</p>
-                <p>As cool as the technology seems however, I also learned about the environmental toll they have on the environment.</p>
+                <p>As cool as the technology seems however, I also learned about the toll they have on the environment.</p>
                 <img src={chart}/>
                 <p class="p-center">Chart taken from <a target="_blank" href="http://climatestate.com/2013/07/11/the-rise-of-digital-currency-like-bitcoin-and-carbon-footprints/">this site.</a></p>
                 <p>For the future, it'd be interesting to maybe track environmental impact metrics as well for the user, in order to promote more environmentally-friendly trading and crypto.</p>
