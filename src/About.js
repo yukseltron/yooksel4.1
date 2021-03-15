@@ -55,7 +55,7 @@ class About extends Component {
             Professionally, I've worked as a UX Designer, Web developer, and Graphic Designer. Currently I'm looking for new challenging UX work.
             </h4>
             <h4>
-            In my spare time, I enjoy doing things like doodling or reading about history.
+            In my spare time, I enjoy doing things like doodling or reading about history. En plus, je puis parler en Francais car je vivais au Montreal quand j'étais un petit enfant.
             </h4>
         	<Link class="link" to="/contact">
         	Feel free to reach out to me!</Link>
@@ -148,8 +148,20 @@ class About extends Component {
         	<h3>Education</h3>
         	<div class="education top-border">
         		<div>
-        			<h2>Masters of Information / UX Design, Data Science @ University of Toronto, St George / 2022</h2>
-        			<h2>Bachelors of Applied Science / Computer Science @ McMaster University / 2020</h2>
+                    <div>
+                        <h2>UX Design and Human-Centred Data Science</h2>
+                        <h4>@ University of Toronto, St George</h4>
+                        <p>Masters of Information</p>
+                        <p>2022</p>
+                    </div>
+                    <br/>
+                    <br/>
+                    <div class="top-border-dashed">
+                        <h2>Computer Science</h2>
+                        <h4>@ McMaster University</h4>
+                        <p>Bachelors of Applied Science</p>
+                        <p>2020</p>
+                    </div>
         		</div>
         	</div>
             <br />
@@ -157,15 +169,27 @@ class About extends Component {
             <br />
         	<br />
         	<h3>Experience</h3>
-        	<div class="top-border"></div>
-        	<div>
-        	  <h2>UX Designer & Developer / CaseWare /  Toronto ON / May 2018-2019</h2>
+        	<div class="top-border">
+              <h2>UX Designer & Developer</h2>
+              <h4>@ CaseWare</h4>
+        	  <p>Toronto ON</p>
+              <p>May 2018-2019</p>
         	</div>
+            <br/>
+            <br/>
         	<div class="top-border-dashed">
-        	  <h2>Junior Web Dev & Graphic Designer / McMaster SSC / Hamilton ON / Summer 2017</h2>
+                <h2>Web Developer & Graphic Designer</h2>
+                <h4>@ McMaster SSC</h4>
+                <p>Hamilton ON</p>
+                <p>Summer 2017</p>
         	</div>
+            <br/>
+            <br/>
         	<div class="top-border-dashed">
-        	  <h2>Software Design Engineer Intern / Concur / Seattle WA / Summer 2016</h2>
+                <h2>Software Design Engineer Intern</h2>
+                <h4>@ Concur</h4>
+                <p>Seattle WA</p>
+                <p>Summer 2016</p>
         	</div>
         	<br />
         	<br />
@@ -173,15 +197,23 @@ class About extends Component {
             <br />
         	<h3>Activities</h3>
         	<div class="top-border">
-        	  <h2>Design Lead / DeltaHacks / Jan 2016-May 2017</h2>
+                <h2>Design Lead</h2>
+                <h4>@ DeltaHacks</h4>
+                <p>Jan 2016 - May 2017</p>
         	</div>
         		<br />
+                <br/>
         	<div class="top-border-dashed">
-        	  <h2>Dev Mentor / NameCheap / Feb 2016-Jan 2017</h2>
+                <h2>Dev Mentor</h2>
+                <h4>@ NameCheap</h4>
+                <p>Feb 2016-Jan 2017</p>
         	</div>
         		<br />
+                <br/>
         	<div class="top-border-dashed">
-        	  <h2>Instructor / Mac Outreach / Sep 2015-2016</h2>
+                <h2>Instructor</h2>
+                <h4>@ Mac Outreach</h4>
+                <p>Sep 2015-2016</p>
         	</div>
         </div>
 
