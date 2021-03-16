@@ -89,9 +89,7 @@ class RandomStringGenerator extends Component {
               <div class="spacer">
                 <div class="center-content">
                       <h3>Reflection</h3>
-                      <p>Looking back, although we managed to successfully focus on key ideas, there were some ideas we could no longer work on. Initially, course consistency was an important goal of ours. However, we learned of legal barriers that ensure professors have total freedom and modularity with their course design. This makes course consistency a very idealistic goal too dependent on legal matters.</p>
-                      <p>While working on this project I was able to learn new features for Adobe XD (such as mapping a screen onto another screen), and get a better understanding of how to delegate tasks in a group UX project.</p>
-                      <p>Overall, I'm proud of my team's work. We were shorthanded to begin with, but we all managed to get all our deliverables done on time.</p>
+                      <p>This project was a challenge to program. Context-sensitive grammars are tricky to model. I ended up learning a lot about programmgin languages, their syntax and semantics. It was fun to build and took some effort.</p>
                 </div>
                   <br/>
                   <br/>
