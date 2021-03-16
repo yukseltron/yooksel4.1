@@ -13,8 +13,7 @@ li {
 
 .skills {
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+	flex-direction: column;
 	justify-content: space-around;
 }
 
@@ -42,6 +41,11 @@ li {
 }
 
 @media screen and (min-width: 800px) {
+	.skills {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
 
 }
 
