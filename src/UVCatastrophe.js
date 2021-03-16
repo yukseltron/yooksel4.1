@@ -61,8 +61,7 @@ class UVCatastrophe extends Component {
           </div>
           <br/>
           <p class="border-bottom border-top spacer">
-              <h4 class="p-center"><a target="_blank" href="https://www.behance.net/gallery/111653313/Improving-Quercus">View case study on Behance</a></h4>
-              <h4 class="p-center"><a target="_blank" href="https://xd.adobe.com/view/bbecb767-a751-4c1d-b5a5-3131620dc877-eebf/?fullscreen">View final prototype</a></h4>
+              <h4 class="p-center"><a target="_blank" href="https://open.spotify.com/album/2U2SuJu5p3T21xft0kzglf">View album on spotify</a></h4>
           </p>
           <br/>
           <div class="border-bottom spacer" ref={this.div1}>
