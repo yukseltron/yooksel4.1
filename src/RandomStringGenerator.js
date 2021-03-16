@@ -1,4 +1,5 @@
 import './projects-style.css';
+import frontIMG from './proj-fronts/rsg-front.svg';
 import React, { Component } from "react";
 import {
   BrowserRouter as Router,
@@ -34,10 +35,9 @@ class RandomStringGenerator extends Component {
           <h1 ref={this.myDivToFocus}>Random String Generator</h1>
           <h4 class="p-center">2020</h4>
           <h4 class="subtitle">Generating random strings using grammars and probability</h4>
-          <div class="border-bottom spacer">
-
+          <div class="border-bottom">
+          <img class="spacer" src={frontIMG}/>
           </div>
-          <br/>
           <div class="background-info spacer">
   			<div class="my-info">
                   <div class="role-info">

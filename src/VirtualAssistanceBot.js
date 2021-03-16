@@ -1,4 +1,5 @@
 import './projects-style.css';
+import frontIMG from './proj-fronts/vb-front.svg';
 import React, { Component } from "react";
 import {
   BrowserRouter as Router,
@@ -35,7 +36,7 @@ class VirtualAssistanceBot extends Component {
           <h4 class="p-center">2020</h4>
           <h4 class="subtitle">Guiding people in VR experiments with configurable bots</h4>
           <div class="border-bottom spacer">
-
+          <img class="spacer" src={frontIMG}/>
           </div>
           <br/>
           <div class="background-info spacer">

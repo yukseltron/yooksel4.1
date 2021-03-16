@@ -1,4 +1,5 @@
 import './projects-style.css';
+import frontIMG from './proj-fronts/md-front.svg';
 import React, { Component } from "react";
 import {
   BrowserRouter as Router,
@@ -35,8 +36,10 @@ class MonoDrift extends Component {
           <h4 class="p-center">2019</h4>
           <h4 class="subtitle">The singularity approaches</h4>
           <div>
-          <img src=""/>
+          <img src={frontIMG}/>
           </div>
+          <br/>
+          <br/>
           <div ref={this.div1}>
               <h3>Background</h3>
               <div class="center-content">
