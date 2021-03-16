@@ -57,7 +57,7 @@ class Home extends Component {
 		        <div id="shape" style={{backgroundImage: backGradient}} class="shape1"></div>
                 <div class="footnote">
                     <p>Built with React</p>
-                    <p>Last updated Mar 3/2021</p>
+                    <p>Last updated Mar 16/2021</p>
                 </div>
 			</div>
 		</div>
