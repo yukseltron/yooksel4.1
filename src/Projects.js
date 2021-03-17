@@ -52,8 +52,8 @@ let more = new Proj('Other Works', 'Coding, Writing, and Art Projects', '',
 
 projs[0] = walleto;
 projs[1] = quercus;
-projs[2] = glenbow;
-projs[3] = more;
+//projs[2] = glenbow;
+projs[2] = more;
 //projs[4] = Routes;
 //projs[5] = Walleto Market;
 //projs[6] = Grocery App
