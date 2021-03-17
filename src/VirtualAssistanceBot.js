@@ -35,10 +35,9 @@ class VirtualAssistanceBot extends Component {
           <h1 ref={this.myDivToFocus}>Virtual Assistance Bot</h1>
           <h4 class="p-center">2020</h4>
           <h4 class="subtitle">Guiding people in VR experiments with configurable bots</h4>
-          <div class="border-bottom spacer">
+          <div class="border-bottom">
           <img class="spacer" src={frontIMG}/>
           </div>
-          <br/>
           <div class="background-info spacer">
   			<div class="my-info">
                   <div class="role-info">

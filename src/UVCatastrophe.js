@@ -34,10 +34,9 @@ class UVCatastrophe extends Component {
           <h1 ref={this.myDivToFocus}>UltraViolet Catastrophe</h1>
           <h4 class="p-center">2018</h4>
           <h4 class="subtitle">Band Art and Branding</h4>
-          <div class="border-bottom spacer">
+          <div class="border-bottom">
           <img src="https://i.imgur.com/57z5Kg0.png"/>
           </div>
-          <br/>
           <div class="background-info">
               <div class="my-info">
                   <div class="role-info">
