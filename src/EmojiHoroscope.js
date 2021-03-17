@@ -1,4 +1,5 @@
 import './projects-style.css';
+import frontIMG from './proj-fronts/eh-front.svg';
 import React, { Component } from "react";
 import {
   BrowserRouter as Router,
@@ -35,7 +36,7 @@ class EmojiHoroscope extends Component {
           <h4 class="p-center">2018</h4>
           <h4 class="subtitle">See your future through emojis</h4>
           <div>
-          <img src=""/>
+          <img  class="front-img" src={frontIMG}/>
           </div>
           <div ref={this.div1}>
               <h3>Background</h3>

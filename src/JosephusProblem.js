@@ -1,4 +1,5 @@
 import './projects-style.css';
+import frontIMG from './proj-fronts/jp-front.svg';
 import React, { Component } from "react";
 import {
   BrowserRouter as Router,
@@ -35,7 +36,7 @@ class JosephusProblem extends Component {
           <h4 class="p-center">2017</h4>
           <h4 class="subtitle">A visualization of the infamous puzzle</h4>
           <div>
-          <img src=""/>
+          <img class="front-img" src={frontIMG}/>
           </div>
           <div ref={this.div1}>
               <h3>Background</h3>

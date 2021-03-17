@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 import quercusIMG from './project-svgs/quercus.svg';
 import routesIMG from './project-svgs/routes-app.svg';
-import jpIMG from './project-svgs/jp.svg';
+import moreIMG from './project-svgs/more.svg';
 import glenIMG from './project-svgs/glenbow.svg';
 import walletoIMG from './project-svgs/walleto.svg';
 import styles from './projects.css';
@@ -47,7 +47,7 @@ let glenbow = new Proj('Changing Glenbow', 'Museum IA Redesign on Web', '2021',
 'Improving the museum site navigation and organization', 'UX', glenIMG, '/glenbow');
 
 let more = new Proj('Other Works', 'Coding, Writing, and Art Projects', 'ongoing',
-'Check out some of my other creative projects.', '', jpIMG, '/more');
+'Check out some of my other creative projects.', '', moreIMG, '/more');
 
 
 projs[0] = quercus;

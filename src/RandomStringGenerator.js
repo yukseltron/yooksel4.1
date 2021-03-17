@@ -36,7 +36,7 @@ class RandomStringGenerator extends Component {
           <h4 class="p-center">2020</h4>
           <h4 class="subtitle">Generating random strings using grammars and probability</h4>
           <div class="border-bottom">
-          <img class="spacer" src={frontIMG}/>
+          <img class="spacer front-img" src={frontIMG}/>
           </div>
           <div class="background-info spacer">
   			<div class="my-info">

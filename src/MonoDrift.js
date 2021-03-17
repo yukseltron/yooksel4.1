@@ -36,7 +36,7 @@ class MonoDrift extends Component {
           <h4 class="p-center">2019</h4>
           <h4 class="subtitle">The singularity approaches</h4>
           <div>
-          <img src={frontIMG}/>
+          <img  class="" src={frontIMG}/>
           </div>
           <br/>
           <br/>
