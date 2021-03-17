@@ -37,12 +37,13 @@ class EmojiHoroscope extends Component {
           <h4 class="subtitle">See your future through emojis</h4>
           <div>
           <img  class="front-img" src={frontIMG}/>
+          <p class="p-center">Built with Python and Django</p>
           </div>
+          <br/>
           <div ref={this.div1}>
               <h3>Background</h3>
               <div class="center-content">
                 <p>This was a simple project utilizing a horoscope API in combination with a sentiment analysis API. Feeding the horoscope text into the sentiment analysis API gave a value that could be mapped to an emoji.</p>
-                <p>Built using Python and Django.</p>
               </div>
           </div>
           <br/>

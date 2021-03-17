@@ -5,6 +5,10 @@ body {
 	margin-right: 5%;
 }
 
+pre {
+	background-color: black;
+	color: orange;
+}
 .mobile-container {
   max-width: 2000px;
   margin: auto;
@@ -154,3 +158,11 @@ h2 a:active {
  .fade-in {
    animation: fadeIn 1.0s ease forwards;
  }
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}

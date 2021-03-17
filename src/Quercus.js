@@ -56,7 +56,7 @@ class Quercus extends Component {
 	  	<h1 ref={this.myDivToFocus}>Improving Quercus</h1>
 		<h4 class="p-center">2020</h4>
 	  	<h4 class="subtitle">Helping students organize their courses and form teams online.</h4>
-		<div class="border-bottom spacer">
+		<div class="border-bottom">
 			<img id="quercus" src={clayIMG}/>
             <br/>
             <br/>
@@ -68,7 +68,7 @@ class Quercus extends Component {
             <br/>
 		</div>
         <br/>
-		<div class="background-info spacer">
+    		<div class="background-info">
 			<div class="my-info">
                 <div class="role-info">
                     <div>
@@ -102,10 +102,6 @@ class Quercus extends Component {
 	  		<h4 class="p-center"><a target="_blank" href="https://www.behance.net/gallery/111653313/Improving-Quercus">View case study on Behance</a></h4>
 	  		<h4 class="p-center"><a target="_blank" href="https://xd.adobe.com/view/bbecb767-a751-4c1d-b5a5-3131620dc877-eebf/?fullscreen">View final prototype</a></h4>
 	  	</p>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
         <br/>
         <br/>
         <br/>

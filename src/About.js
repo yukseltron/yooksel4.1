@@ -47,7 +47,7 @@ class About extends Component {
         	Looks like you want to get to know me better!
         	</h2>
             <h3>
-            I'm just a human being in Toronto, Canada. Probably working on hobbies or projects.
+            I'm just a human being somewhere in Canada.<br/>Probably working on hobbies or projects.
             </h3>
             <h4>Originally, I studied computer science, but I also taught myself how to use design tools in my spare time. Currently, I'm doing a masters where I can learn more about design (and also data science).</h4>
             <h4>That being said, I still enjoy programming and try to learn new tools. This website you're on for example I built using React for the first time. But for now, I'm focusing on further developing a career in design.</h4>
@@ -150,16 +150,16 @@ class About extends Component {
         		<div>
                     <div>
                         <h2>UX Design and Human-Centred Data Science</h2>
-                        <h4>@ University of Toronto, St George</h4>
-                        <p>Masters of Information</p>
+                        <h4>Masters of Information</h4>
+                        <p>@ University of Toronto, St George</p>
                         <p>2022</p>
                     </div>
                     <br/>
                     <br/>
                     <div class="top-border-dashed">
                         <h2>Computer Science</h2>
-                        <h4>@ McMaster University</h4>
-                        <p>Bachelors of Applied Science</p>
+                        <h4>Bachelors of Applied Science</h4>
+                        <p>@ McMaster University</p>
                         <p>2020</p>
                     </div>
         		</div>

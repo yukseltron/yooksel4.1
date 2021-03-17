@@ -37,13 +37,15 @@ class MonoDrift extends Component {
           <h4 class="subtitle">The singularity approaches</h4>
           <div>
           <img  class="" src={frontIMG}/>
+          <p class="p-center">Built using Vue.js</p>
           </div>
           <br/>
           <br/>
           <div ref={this.div1}>
               <h3>Background</h3>
               <div class="center-content">
-                <p>Roaring engines, driven ambitions, and mythical machines. Playing with reality comes with consequences. But what led to this moment? How did the breakthroughs all happen? These loosely connected stories may explain it all.</p>
+                <p>This was written over a period of time and is still missing some stories I haven't finished writing.</p>
+                <p>"Roaring engines, driven ambitions, and mythical machines. Playing with reality comes with consequences. But what led to this moment? How did the breakthroughs all happen? These loosely connected stories may explain it all."</p>
               </div>
           </div>
           <br/>

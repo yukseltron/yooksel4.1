@@ -37,12 +37,13 @@ class JosephusProblem extends Component {
           <h4 class="subtitle">A visualization of the infamous puzzle</h4>
           <div>
           <img class="front-img" src={frontIMG}/>
+          <p class="p-center">Built with Angular and TypeScript</p>
           </div>
+          <br/>
           <div ref={this.div1}>
               <h3>Background</h3>
               <div class="center-content">
                 <p>Imagine there's (N) of you captured as prisoners. As enemies of the kingdom, you are all arranged in a circle, and are told that starting from person 1, every Kth prisoner will be killed. K being some arbitrarily chosen interval. Luckily for you, you're the one who chooses. What K value do you pick, given N number of people, so that you remain as the last person alive?</p>
-                <p>Built using Angular.</p>
               </div>
           </div>
           <br/>

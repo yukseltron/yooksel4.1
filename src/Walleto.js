@@ -51,7 +51,7 @@ class Walleto extends Component {
 	  	<h1 ref={this.myDivToFocus}>Walleto</h1>
 		<h4 class="p-center">2021</h4>
 	  	<h4 class="subtitle">A practical crypto wallet</h4>
-		<div class="border-bottom spacer">
+		<div class="border-bottom">
             <img class="subtle-shadow" src={main}/>
             <br/>
             <br/>
@@ -65,7 +65,7 @@ class Walleto extends Component {
             <br/>
 		</div>
         <br/>
-        <div class="background-info spacer">
+        <div class="background-info">
             <div class="my-info">
                 <div class="role-info">
                     <div>

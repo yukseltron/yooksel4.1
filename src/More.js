@@ -5,6 +5,7 @@ import monodriftIMG from './project-svgs/monodrift.svg';
 import uvcIMG from './project-svgs/uvc.svg';
 import jpIMG from './project-svgs/jp.svg';
 import ehoroIMG from './project-svgs/ehoro.svg';
+import uxstuffIMG from './project-svgs/uxstuff.svg';
 import styles from './projects.css';
 import React, { Component } from "react";
 import {
@@ -40,23 +41,26 @@ class Proj {
 }
 
 
-let rsg = new Proj('Random String Generator', 'Grammar Compiler', '2020',
-'Generating well-typed random sentences using grammars and probabilities.', 'Code', rsgIMG, '/random-string-generator');
+let rsg = new Proj('Random String Generator', 'Python Grammar Compiler', '2020',
+'Generating well-typed sentences using grammars and probabilities.', 'Code', rsgIMG, '/random-string-generator');
 
 let vab = new Proj('Virtual Assistance Bot', 'Unity VR Capstone', '2020',
 'A configurable bot for guiding people in virtual reality experiments.', 'Code', vabIMG, '/virtual-assistance-bot');
 
-let monodrift = new Proj('Mono Drift', 'Short Stories', '2019',
-'The singularity approaches, and the consequences are felt by all.', 'Writing', monodriftIMG, '/mono-drift');
+let monodrift = new Proj('Mono Drift', 'Vue.js Website', '2019',
+'Loosely related sci-fi short stories.', 'Writing', monodriftIMG, '/mono-drift');
 
-let uvc = new Proj('UVC', 'Album Arts', '2018',
+let uvc = new Proj('UVC', 'Album Artwork', '2018',
 'Cover arts for the debut EP and singles of UltraViolet Catastrophe.', 'Art', uvcIMG, '/uvc');
 
-let jp = new Proj('The Josephus Problem', 'Web App', '2017',
-'A visualization of the math puzzle solution.', 'Code', jpIMG, '/jp');
+let jp = new Proj('The Josephus Problem', 'Angular Web App', '2017',
+'A visual solution of the infamous math puzzle.', 'Code', jpIMG, '/jp');
 
-let emojihoroscope = new Proj('Emoji Horoscope', 'Web App', '2018',
+let emojihoroscope = new Proj('Emoji Horoscope', 'Django Web App', '2018',
 'See your horoscope in emoji form.', 'Code', ehoroIMG, '/emojihoroscope');
+
+let uxstuff = new Proj('UX Design', 'All my UX related work', '',
+'Check them out.', 'UX', uxstuffIMG, '/projects');
 
 
 projs[0] = rsg;
@@ -65,6 +69,26 @@ projs[2] = monodrift;
 projs[3] = uvc;
 projs[4] = emojihoroscope
 projs[5] = jp;
+projs[6] = uxstuff;
+//projs[6] = Intro to Comp poster
+//projs[7] = Flora
+//projs[8] = ELM slash bit fiction
+//projs[9] = bubble-tea finder
+//projs[10] = film posters
+//projs[11] = Walleto Market;
+//projs[12] = abstract icons
+//projs[13] = Will DangXHamid
+//projs[14] = incite art submissions
+//projs[15] = short stories
+//projs[16] = Amazon Drone Delivery
+//projs[17] = Playboy art Project
+//projs[18] = Human fertility predictor
+//projs[19] = Scripts
+//projs[20] = photography
+//projs[21] = bitcoin trader
+//projs[22] = bartxhamid project
+//projs[23] = Plant painting
+
 
 class More extends Component {
     constructor(props){
