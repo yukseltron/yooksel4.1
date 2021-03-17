@@ -43,16 +43,17 @@ let routes = new Proj('Routes', 'Mobile Commuting App', '2019',
 let walleto = new Proj('Walleto', 'Crypto Wallet on Web', '2021',
 'Designing a way to safely store and use cryptocurrencies', 'UX', walletoIMG, '/walleto');
 
-let glenbow = new Proj('Changing Glenbow', 'Museum IA Redesign on Web', '2021',
+let glenbow = new Proj('Changing Glenbow', 'Museum IA Redesign on Web', '2020',
 'Improving the museum site navigation and organization', 'UX', glenIMG, '/glenbow');
 
 let more = new Proj('Other Works', 'Coding, Writing, and Art Projects', 'ongoing',
 'Check out some of my other creative projects.', '', moreIMG, '/more');
 
 
-projs[0] = quercus;
-projs[1] = walleto;
-projs[2] = more;
+projs[0] = walleto;
+projs[1] = quercus;
+projs[2] = glenbow;
+projs[3] = more;
 
 
 
