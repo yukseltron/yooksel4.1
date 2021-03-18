@@ -3,7 +3,7 @@ import './projects-style.css';
 import clayIMG from './quercus/quercus-clay.png';
 import research1 from './quercus/research-1.svg';
 import research2 from './quercus/research-2.svg';
-import persona from './quercus/persona.svg';
+import persona from './quercus/persona-01.svg';
 import prioriGrid from './quercus/p-grid.svg';
 import ideas from './quercus/ideas.svg';
 import sketches from './quercus/sketches.svg';
