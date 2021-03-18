@@ -36,6 +36,10 @@ li {
 	margin-top: 50px;
 }
 
+.h3-para {
+	font-size: 100%;
+}
+
 #toggle-p {
 	margin-right: 15px;
 }
@@ -45,6 +49,12 @@ li {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
+	}
+
+	iframe {
+		width: 100%;
+		height: 400px;
+		margin: auto;
 	}
 
 }

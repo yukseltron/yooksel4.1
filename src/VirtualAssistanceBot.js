@@ -36,7 +36,7 @@ class VirtualAssistanceBot extends Component {
           <h4 class="p-center">2020</h4>
           <h4 class="subtitle">Guiding people in VR experiments with configurable bots</h4>
           <div class="border-bottom">
-          <img class="spacer" src={frontIMG}/>
+          <img loading="lazy" class="spacer" src={frontIMG}/>
           </div>
           <div class="background-info">
   			<div class="my-info">
@@ -93,7 +93,7 @@ class VirtualAssistanceBot extends Component {
         <div class="spacer ">
               <div>
                 <h3>Demo</h3>
-                    <iframe width="800" height="400" src="https://www.youtube.com/embed/_-yhq2RHWto" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/_-yhq2RHWto" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
         </div>
         <div class="spacer">

@@ -36,7 +36,7 @@ class MonoDrift extends Component {
           <h4 class="p-center">2019</h4>
           <h4 class="subtitle">The singularity approaches</h4>
           <div>
-          <img  class="" src={frontIMG}/>
+          <img  loading="lazy" src={frontIMG}/>
           <p class="p-center">Built using Vue.js</p>
           </div>
           <br/>

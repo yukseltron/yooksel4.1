@@ -36,7 +36,7 @@ class EmojiHoroscope extends Component {
           <h4 class="p-center">2018</h4>
           <h4 class="subtitle">See your future through emojis</h4>
           <div>
-          <img  class="front-img" src={frontIMG}/>
+          <img  loading="lazy" class="front-img" src={frontIMG}/>
           <p class="p-center">Built with Python and Django</p>
           </div>
           <br/>

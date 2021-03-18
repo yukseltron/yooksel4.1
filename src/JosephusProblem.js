@@ -36,7 +36,7 @@ class JosephusProblem extends Component {
           <h4 class="p-center">2017</h4>
           <h4 class="subtitle">A visualization of the infamous puzzle</h4>
           <div>
-          <img class="front-img" src={frontIMG}/>
+          <img loading="lazy" class="front-img" src={frontIMG}/>
           <p class="p-center">Built with Angular and TypeScript</p>
           </div>
           <br/>

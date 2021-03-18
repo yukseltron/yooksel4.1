@@ -1,3 +1,4 @@
+import LazyLoad from 'react-lazyload';
 import './projects-style.css';
 import rsgIMG from './project-svgs/rsg.svg';
 import vabIMG from './project-svgs/vrbot.svg';
@@ -88,6 +89,8 @@ projs[6] = uxstuff;
 //projs[21] = bitcoin trader
 //projs[22] = bartxhamid project
 //projs[23] = Plant painting
+//projs[23] = Pat rice posters
+
 
 
 class More extends Component {
@@ -118,9 +121,11 @@ class More extends Component {
                                 <h1>{i.title}</h1>
                                 <h3>{i.platform}</h3>
                             </div>
+                            <LazyLoad placeholder={<img src="https://media1.giphy.com/media/3oEjI6SIIHBdRxXI40/200.gif"/>}>
                             <div class="img-container">
                                 <img className={styles.animate__animated, styles.animate__fadeInDown} src={i.img}/>
                             </div>
+                            </LazyLoad>
                             <p class="description">{i.description}</p>
                             <p class="date">{i.year}</p>
                     </div>
@@ -129,11 +134,13 @@ class More extends Component {
       }
     return (
 		<div ref={this.myRef} class="projects-container">
+        <LazyLoad placeholder={<img src="https://media1.giphy.com/media/3oEjI6SIIHBdRxXI40/200.gif"/>}>
             <h4 ref={this.myDivToFocus}>My programming, writing, and graphic design work. <Link class="h-link" to="/projects">Want my UX stuff?</Link></h4>
 			<div class="fade-in" id="projects">
 				{items}
 			</div>
             <h2 class="p-center link-top spacer"><a onClick={this.handleOnClick}>Return to top</a></h2>
+        </LazyLoad>
 		</div>
     );
   }

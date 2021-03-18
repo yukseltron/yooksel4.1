@@ -7,6 +7,7 @@ import {
   NavLink,
   HashRouter
 } from "react-router-dom";
+import LazyLoad from 'react-lazyload';
 import quercusIMG from './project-svgs/quercus.svg';
 import routesIMG from './project-svgs/routes-app.svg';
 import moreIMG from './project-svgs/more.svg';
@@ -89,9 +90,11 @@ class Projects extends Component {
                                 <h1>{i.title}</h1>
                                 <h3>{i.platform}</h3>
                             </div>
+                             <LazyLoad placeholder={<img src="https://media1.giphy.com/media/3oEjI6SIIHBdRxXI40/200.gif"/>}>
                             <div class="img-container">
-                                <img className={styles.animate__animated, styles.animate__fadeInDown} src={i.img}/>
+                                <img loading="lazy" className={styles.animate__animated, styles.animate__fadeInDown} src={i.img}/>
                             </div>
+                            </LazyLoad>
                             <p class="description">{i.description}</p>
                             <p class="date">{i.year}</p>
                     </div>
@@ -100,11 +103,13 @@ class Projects extends Component {
       }
     return (
 		<div class="projects-container">
+        <LazyLoad>
             <h4 ref={this.myDivToFocus}>These are my UX projects. Check out my <Link class="h-link" to="/more">other projects here.</Link></h4>
 			<div class="fade-in" id="projects">
 				{items}
 			</div>
             <h2><a class="p-center link-top spacer" onClick={this.handleOnClick}>Return to top</a></h2>
+        </LazyLoad>
 		</div>
     );
   }

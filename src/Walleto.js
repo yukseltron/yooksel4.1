@@ -1,3 +1,4 @@
+import LazyLoad from 'react-lazyload';
 import './projects-style.css';
 import main from './walleto/landing.svg';
 import challenge from './walleto/challenge.svg';
@@ -48,6 +49,7 @@ class Walleto extends Component {
   render() {
     return (
 	  <div class="fade-in project">
+      <LazyLoad placeholder={<img src="https://media1.giphy.com/media/3oEjI6SIIHBdRxXI40/200.gif"/>}>
 	  	<h1 ref={this.myDivToFocus}>Walleto</h1>
 		<h4 class="p-center">2021</h4>
 	  	<h4 class="subtitle">A practical crypto wallet</h4>
@@ -105,30 +107,17 @@ class Walleto extends Component {
             <br/>
             <br/>
             <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
             <div>
                 <div>
                     <h2>The Challenge</h2>
                     <br/>
                     <div class="problem-section spacer">
-                        <img class="problem" src={challenge}/>
+                        <img loading="lazy" class="problem" src={challenge}/>
                         <div>
                             <p class="p-left">The focus on the project was to develop a sort of financial website. I chose to design website for tracking and trading cryptocurrency for a chance to learn more about it.</p>
                         </div>
                     </div>
                 </div>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
                 <div class="needs-section spacer center-content">
                     <h2>The Needs</h2>
                     <p>What could our user need for a crypto wallet site?</p>
@@ -146,15 +135,6 @@ class Walleto extends Component {
                     </div>
                 </div>
             </div>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
             <div>
                 <h2>The Solution</h2>
                 <br/>
@@ -164,17 +144,9 @@ class Walleto extends Component {
                             <h4>Walleto is a crypto wallet that focuses on practicality by showing gains/losses and transaction histories in your accounts, as well as allowing for easy transfering to contacts.</h4>
                         </div>
                     </div>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <img src={solution}/>
+                    <img loading="lazy" src={solution}/>
                 </div>
             </div>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
         </div>
         <div class="border-bottom section spacer" ref={this.div2}>
             <div class="circlebox">
@@ -191,52 +163,29 @@ class Walleto extends Component {
                 <br/>
         	  	<br/>
                 <h2>Mood Board</h2>
-    			<img src={moodBoard}/>
+    			<img loading="lazy" src={moodBoard}/>
             </div>
-            <br/>
-			<br/>
-            <br/>
-			<br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
             <div class="spacer">
     			<h2>Persona</h2>
                 <p class="p-center">Here's a persona for this project.</p>
                 <br/>
                 <br/>
-    			<img class="subtle-shadow" src={persona}/>
+    			<img loading="lazy" class="subtle-shadow" src={persona}/>
             </div>
-		  	<br/>
-			<br/>
-            <br/>
-			<br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
             <div class="spacer">
     			<h2>Journey Mapping</h2>
                 <br/>
                 <div class="horizontal-section">
                     <p>I made journey maps as well to better understand what our user might go through. This journey map is for a scenario where our user sends money to a contact.</p>
-                    <img src={journey}/>
+                    <img loading="lazy" src={journey}/>
                 </div>
             </div>
-            <br/>
-            <br/>
-            <br/>
             <div class="spacer">
                 <h2>Ideation</h2>
                 <br/>
                 <p class="p-center">Sketches for ideas and concepts on ideas to help users manage their crypto assets.</p>
-                <img src={sketches}/>
+                <img loading="lazy" src={sketches}/>
             </div>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
 		</div>
         <div class="circlebox" ref={this.div4}>
             <div class="div1"></div>
@@ -250,35 +199,27 @@ class Walleto extends Component {
     			<h3>Prototyping</h3>
                 <h2>Midfi</h2>
                 <p class="p-center">With the research I had done, I made some midfi screens to better test out the ideas.</p>
-    			<img src={midfi}/>
+    			<img loading="lazy" src={midfi}/>
             </div>
-            <br/>
-			<br/>
-            <br/>
-			<br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
             <div class="spacer">
                 <h2>User Scenarios</h2>
                 <br/>
                 <div>
                     <div class="horizontal-section scenario-section border-bottom">
                         <p>Viewing their transactions history for a specific cryptocurrency they have.</p>
-                        <img class="img-ml" src={scenario1}/>
+                        <img loading="lazy" class="img-ml" src={scenario1}/>
                     </div>
                     <br/>
                     <br/>
                     <div class="horizontal-section scenario-section border-bottom">
                         <p>Here, a user wants to schedule a money transfer to a friend of theirs.</p>
-                        <img class="img-ml" src={scenario2}/>
+                        <img loading="lazy" class="img-ml" src={scenario2}/>
                     </div>
                     <br/>
                     <br/>
                     <div class="horizontal-section scenario-section border-bottom">
                         <p>In this scenario, our user wants to set an alert for a crypto in case it reaches a certain price.</p>
-                        <img class="img-ml" src={scenario3}/>
+                        <img loading="lazy" class="img-ml" src={scenario3}/>
                     </div>
                 </div>
             </div>
@@ -292,28 +233,33 @@ class Walleto extends Component {
             <br/>
             <div class="spacer final-design-section">
                 <h3>Final Design</h3>
-                <img src={hifi}/>
+                <img loading="lazy" src={hifi}/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
                 <p class="p-center">Next up, I designed a hi-fidelity prototype.</p>
                 <p class="p-center">Here is just the design specifications made for it.</p>
                 <br/>
                 <br/>
                 <br/>
-                <img class="img-l" src={access}/>
-                <p class="p-center">Some main user flow interactions are shown below.</p>
+                <br/>
+                <br/>
+                <br/>
+                <img loading="lazy" class="img-l" src={access}/>
+                <br/>
+                <br/>
+                <br/>
             </div>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
             <div class="spacer">
                 <div class="horizontal-section">
                     <div>
                         <h2 class="p-left">Viewing Transactions</h2>
                         <h4 class="storyboard-h4">See your crypto's history.</h4>
                     </div>
-                    <img class="subtle-shadow" src={s1}/>
+                    <img loading="lazy" class="subtle-shadow" src={s1}/>
                 </div>
                 <br/>
                 <br/>
@@ -330,7 +276,7 @@ class Walleto extends Component {
                         <h2 class="p-left">Setting a Price Alert</h2>
                         <h4 class="storyboard-h4">Get notified for optimal trading.</h4>
                     </div>
-                    <img class="subtle-shadow" src={s3}/>
+                    <img loading="lazy" class="subtle-shadow" src={s3}/>
                 </div>
                 <br/>
                 <br/>
@@ -346,14 +292,9 @@ class Walleto extends Component {
                         <h2 class="p-left">Sending Crypto</h2>
                         <h4 class="storyboard-h4">Quickly send or schedule crypto transfers.</h4>
                     </div>
-                    <img class="subtle-shadow" src={s2}/>
+                    <img loading="lazy" class="subtle-shadow" src={s2}/>
                 </div>
             </div>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
             <br/>
             <br/>
             <br/>
@@ -361,7 +302,7 @@ class Walleto extends Component {
     			<h2>Reflection</h2>
                 <p>Looking back, this project was a learning opportunity for understanding more about cryptocurrencies, NFTs, and blockchains.</p>
                 <p>As cool as the technology seems however, I also learned about the toll they have on the environment.</p>
-                <img src={chart}/>
+                <img loading="lazy" src={chart}/>
                 <p class="p-center">Chart taken from <a target="_blank" href="http://climatestate.com/2013/07/11/the-rise-of-digital-currency-like-bitcoin-and-carbon-footprints/">this site.</a></p>
                 <p>For the future, it'd be interesting to maybe track environmental impact metrics as well for the user, in order to promote more environmentally-friendly trading and crypto.</p>
                 <br/>
@@ -374,6 +315,7 @@ class Walleto extends Component {
                 <br/>
                 <h2><a onClick={this.handleOnClick}>Return to top</a></h2>
             </div>
+        </LazyLoad>
 	  </div>
     );
   }

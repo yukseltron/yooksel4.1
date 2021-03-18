@@ -9,18 +9,18 @@
 	border-top: 1px solid black;
 	border-left: 1px solid black;
 	border-right: 1px solid black;
-	transition: background-color 1s, color 0.5s;
 }
 
 .social-links a{
 	text-align: center;
 	border-bottom: 1px solid black;
 	padding: 25px;
+	transition: background-color 0.25s, color 0.25s;
 }
 
 .social-links a:hover {
 	background-color: blue;
 	border-color: blue;
 	color: white;
-	transition: background-color 1s, color 0.5s;
+	transition: background-color 0.25s, color 0.25s;
 }

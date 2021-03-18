@@ -78,12 +78,6 @@ h2 a:active {
 
 @media screen and (min-width: 1000px) {
 
-	.home {
-		text-align: left;
-		display: flex;
-		justify-content: space-between;
-	}
-
 	#name {
 		font-size: 400%;
 	}

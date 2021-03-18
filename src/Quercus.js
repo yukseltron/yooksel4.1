@@ -1,3 +1,4 @@
+import LazyLoad from 'react-lazyload';
 import quercusIMG from './project-svgs/quercus.svg';
 import './projects-style.css';
 import clayIMG from './quercus/quercus-clay.png';
@@ -52,18 +53,12 @@ class Quercus extends Component {
   render() {
     return (
 	  <div class="fade-in project">
+      <LazyLoad placeholder={<img src="https://media1.giphy.com/media/3oEjI6SIIHBdRxXI40/200.gif"/>}>
 	  	<h1 ref={this.myDivToFocus}>Improving Quercus</h1>
 		<h4 class="p-center">2020</h4>
 	  	<h4 class="subtitle">Helping students organize their courses and form teams online.</h4>
 		<div class="border-bottom">
-			<img id="quercus" src={clayIMG}/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
+			<img id="quercus" loading="lazy" src={clayIMG}/>
             <br/>
 		</div>
         <br/>
@@ -101,10 +96,6 @@ class Quercus extends Component {
 	  		<h4 class="p-center"><a target="_blank" href="https://www.behance.net/gallery/111653313/Improving-Quercus">View case study on Behance</a></h4>
 	  		<h4 class="p-center"><a target="_blank" href="https://xd.adobe.com/view/bbecb767-a751-4c1d-b5a5-3131620dc877-eebf/?fullscreen">View final prototype</a></h4>
 	  	</p>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
         <div class="spacer" ref={this.div1}>
             <div class="circlebox">
                 <div class="div1 filled"></div>
@@ -114,7 +105,7 @@ class Quercus extends Component {
                 <div class="div5"></div>
             </div>
             <h3>Overview</h3>
-            <p class="p-center">Quercus (a.k.a 'Canvas') is an online learning system for the University of Toronto (UofT). Students and professors alike use it to organize and manage courses.</p>
+            <p class="center-content">Quercus (a.k.a 'Canvas') is an online learning system for the University of Toronto (UofT). Students and professors alike use it to organize and manage courses.</p>
             <br/>
             <br/>
             <br/>
@@ -128,18 +119,13 @@ class Quercus extends Component {
                     <h2>The Problem</h2>
                     <br/>
                     <div class="problem-section spacer">
-                        <img class="problem" src={problem}/>
+                        <img loading="lazy" class="problem" src={problem}/>
                         <div>
                             <p class="p-left">Finding files can be confusing for new students since each professor organizes files differently. This confusion can lead to precious time wasted for an assignment.</p>
                             <p class="p-left">As well, some projects require forming teams, which could be difficult to do online. Students can't tell who is still looking for a group or where they can even contact anyone.</p>
                         </div>
                     </div>
                 </div>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
                 <br/>
                 <br/>
                 <br/>
@@ -162,12 +148,6 @@ class Quercus extends Component {
             <br/>
             <br/>
             <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
             <div>
                 <h2>The Solution</h2>
                 <br/>
@@ -181,16 +161,9 @@ class Quercus extends Component {
                         </div>
                     </div>
                     <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <img src={solution}/>
+                    <img loading="lazy" src={solution}/>
                 </div>
             </div>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
         </div>
 		<div class="border-bottom spacer border-top">
             <div class="center-content">
@@ -203,12 +176,6 @@ class Quercus extends Component {
     	  	<br/>
     	  	<br/>
 		</div>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
 		<div class="border-bottom section spacer" ref={this.div2}>
             <div class="circlebox">
                 <div class="div1"></div>
@@ -226,49 +193,33 @@ class Quercus extends Component {
     			<p class="p-center">Students struggle with inconsistent course pages</p>
     			<img src={research1}/>
     			<p class="p-center">And that they do not really participate in online dicussions</p>
-    			<img src={research2}/>
+    			<img loading="lazy" src={research2}/>
             </div>
             <br/>
 			<br/>
-            <br/>
-			<br/>
-            <br/>
-            <br/>
-            <br/>
             <br/>
             <div class="spacer">
     			<h2>Persona</h2>
                 <p class="p-center">Analyzing what we learned, we constructed a persona.</p>
                 <br/>
                 <br/>
-    			<img src={persona}/>
+    			<img loading="lazy" src={persona}/>
             </div>
 		  	<br/>
 			<br/>
-            <br/>
-			<br/>
-            <br/>
-            <br/>
-            <br/>
             <br/>
             <div class="spacer">
     			<h2>Journey Mapping</h2>
                 <br/>
                 <div class="horizontal-section">
                     <p>Afterwards, we created journey maps to connect with our users, see how their process works, and outline pain points and areas of opportunities.<br/><br/>This journey map is for a scenario where our user prepares for a lecture and assignments.</p>
-                    <img src={journey}/>
+                    <img loading="lazy" src={journey}/>
                 </div>
             </div>
             <br/>
             <br/>
             <br/>
 		</div>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
 		<div class="border-bottom section spacer" ref={this.div3}>
             <div class="circlebox">
             <div class="div1"></div>
@@ -281,7 +232,7 @@ class Quercus extends Component {
     			<h3>Ideation</h3>
     			<h2>Our Ideas</h2>
                 <p class="p-center">We came up with ideas and ranked them on a prioritization grid as seen below.</p>
-    			<img src={prioriGrid}/>
+    			<img loading="lazy" src={prioriGrid}/>
                 <p class="p-center">The top ideas we felt was best to work on were:</p>
                 <div class="ideation-section center-content">
                     <h4>Content Connections</h4>
@@ -296,29 +247,13 @@ class Quercus extends Component {
                     <p>Making course material easy to find across different courses online</p>
                 </div>
             </div>
-            <br/>
-			<br/>
-            <br/>
-			<br/>
-            <br/>
-            <br/>
             <div class="spacer">
     			<h2>Sketches</h2>
                 <br/>
                 <p class="p-center">We tested out on pen and paper to see how we could implement our ideas:</p>
-    			<img src={sketches}/>
+    			<img loading="lazy" src={sketches}/>
             </div>
-            <br/>
-			<br/>
-            <br/>
-			<br/>
-            <br/>
-            <br/>
 		</div>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
         <div class="circlebox" ref={this.div4}>
             <div class="div1"></div>
             <div class="div2"></div>
@@ -332,15 +267,8 @@ class Quercus extends Component {
     			<h3>Prototyping</h3>
                 <h2>Midfi</h2>
                 <p class="p-center">Using the sketches, I made some midfi screens to better test out and showcase our ideas as an MVP.</p>
-    			<img src={midfi}/>
+    			<img loading="lazy" src={midfi}/>
             </div>
-            <br/>
-			<br/>
-            <br/>
-			<br/>
-            <br/>
-            <br/>
-            <br/>
             <br/>
             <div class="spacer">
                 <h2>User Scenarios</h2>
@@ -348,19 +276,19 @@ class Quercus extends Component {
                 <div>
                     <div class="horizontal-section scenario-section border-bottom">
                         <p>This scenario depicts how our user Allie could prepare for an assignment. She's shown which assignment needs the most attention, and can instantly find the lectures relevant to it. As well, she can view the lecture in different formats to her liking.</p>
-                        <img src={scenario1}/>
+                        <img loading="lazy" src={scenario1}/>
                     </div>
                     <br/>
                     <br/>
                     <div class="horizontal-section scenario-section border-bottom">
                         <p>Here, Allie needs to find a teammate to work with. She has the option to do a group search, see which classmates she's worked with before, and view the classmate's contact info. Past group details are also available to be seen.</p>
-                        <img src={scenario2}/>
+                        <img loading="lazy" src={scenario2}/>
                     </div>
                     <br/>
                     <br/>
                     <div class="horizontal-section scenario-section border-bottom">
                         <p>In this scenario, we see how Allie can connect to classmates as friends by exploring and joining interest groups for a course. This way, Allie can find ways to bond online.</p>
-                        <img src={scenario3}/>
+                        <img loading="lazy" src={scenario3}/>
                     </div>
                 </div>
             </div>
@@ -379,7 +307,7 @@ class Quercus extends Component {
                 <br/>
                 <div class="horizontal-section">
                             <p>Designing our interview method, we employed interviews and observations to conduct usability testing on our midfi prototype. Our interviews showed that participants could miss some of the new features and were confused by the difference between 'Group search' and 'Connections'. On the positive, participants really enjoyed the interests board and liked the customizable course materials. Overall they felt the user flow has been improved.</p>
-                    <img class="img-m" src={criteria}/>
+                    <img loading="lazy" class="img-m" src={criteria}/>
                 </div>
                 <p class="p-right">An example task from our interviews.</p>
                 <br/>
@@ -402,7 +330,7 @@ class Quercus extends Component {
             <br/>
             <div class="spacer final-design-section">
                 <h3>Final Design</h3>
-                <img src={dribbble}/>
+                <img loading="lazy" src={dribbble}/>
                 <p class="p-center">With the feedback gathered, we each designed our own separate hifi prototype.</p>
                 <p class="p-center">The main user flow interactions are shown below.</p>
             </div>
@@ -418,7 +346,7 @@ class Quercus extends Component {
                         <h2 class="p-left">Content Connections</h2>
                         <h4 class="storyboard-h4">Quickly find the right lectures to help with assignments</h4>
                     </div>
-                    <img class="subtle-shadow" src={s1}/>
+                    <img loading="lazy" class="subtle-shadow" src={s1}/>
                 </div>
                 <br/>
                 <br/>
@@ -435,7 +363,7 @@ class Quercus extends Component {
             			<h2 class="p-left">Finding Groupmates</h2>
                         <h4 class="storyboard-h4">Make teams without a sweat and see who you've worked with before</h4>
                     </div>
-                    <img class="subtle-shadow" src={s2}/>
+                    <img loading="lazy" class="subtle-shadow" src={s2}/>
                 </div>
                 <br/>
                 <br/>
@@ -452,7 +380,7 @@ class Quercus extends Component {
                         <h2 class="p-left">Interest Boards</h2>
                         <h4 class="storyboard-h4">Find and bond with classmates over your shared interests</h4>
                     </div>
-                    <img class="subtle-shadow" src={s3}/>
+                    <img loading="lazy" class="subtle-shadow" src={s3}/>
                 </div>
             </div>
             <br/>
@@ -479,6 +407,7 @@ class Quercus extends Component {
                 <h2><a onClick={this.handleOnClick}>Return to top</a></h2>
             </div>
 		</div>
+        </LazyLoad>
 	  </div>
 
     );

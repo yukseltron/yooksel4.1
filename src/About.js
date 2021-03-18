@@ -22,6 +22,22 @@ function onToggle() {
 
 
 class About extends Component {
+    constructor(props){
+       super(props)
+       //creates a reference for your element to use
+       this.myDivToFocus = React.createRef()
+    }
+
+    handleOnClick = (event) => {
+        //.current is verification that your element has rendered
+        if(this.myDivToFocus.current){
+            this.myDivToFocus.current.scrollIntoView({
+               behavior: "smooth",
+               block: "end"
+            })
+        }
+    }
+
     onToggle() {
       var x = document.getElementById("skill-type").checked;
       if (x == true) {
@@ -35,14 +51,15 @@ class About extends Component {
       }
     }
 
+
   render() {
     return (
-        <div class='about-body fade-in animate_animated animate__fadeInUpBig'>
+        <div class='about-body fade-in'>
         <br />
         <br />
         <br />
         <br />
-            <h1>Hey,</h1>
+            <h1 ref={this.myDivToFocus}>Hey,</h1>
         	<h2>
         	Looks like you want to get to know me better!
         	</h2>
@@ -84,17 +101,18 @@ class About extends Component {
                 <div>
                     <h2>Designs with</h2>
                     <ul>
-                        <li>Research & Data Analytics</li>
+                        <li>User Research</li>
                         <li>Information Architecture</li>
                         <li>Wireframing & Prototyping</li>
                         <li>Visual Communication</li>
                         <li>Collaboration</li>
-                        <li>Empathy</li>
+                        <li>Data Analytics</li>
                     </ul>
                 </div>
                 <div>
                     <h2>Methods used</h2>
                     <ul>
+                        <li>Iterative Design</li>
                         <li>Card Sorting</li>
                         <li>Tree Testing</li>
                         <li>Surveys</li>
@@ -119,7 +137,6 @@ class About extends Component {
                         <li>Python</li>
                         <li>JavaScript</li>
                         <li>HTML/CSS</li>
-                        <li>Java</li>
                         <li>Git</li>
                         <li>Bash</li>
                     </ul>
@@ -134,6 +151,7 @@ class About extends Component {
                 <div>
                     <h2>Can use</h2>
                     <ul>
+                        <li>Java</li>
                         <li>SQL</li>
                         <li>Elm</li>
                         <li>C</li>
@@ -172,8 +190,11 @@ class About extends Component {
         	<div class="top-border">
               <h2>UX Designer & Developer</h2>
               <h4>@ CaseWare</h4>
-        	  <p>Toronto ON</p>
+              <p>Toronto ON</p>
               <p>May 2018-2019</p>
+              <h3 class="h3-para">Helped make NOVA, the internal design system used across CaseWare products. Contributed to designing and developing the NOVA UI library, the NOVA site,
+its style guides, 40+ icons, and illustrations to help communicate to developers.</h3>
+             <p>Tools: User Interviews, Angular, HTM/CSS, Illustrator, XD</p>
         	</div>
             <br/>
             <br/>
@@ -182,6 +203,8 @@ class About extends Component {
                 <h4>@ McMaster SSC</h4>
                 <p>Hamilton ON</p>
                 <p>Summer 2017</p>
+                <h3 class="h3-para">Worked on a risk assessment app for students hosting events at the university. Designed the form and contributed to the risk assessment algorithm. Also made visual designs for the branding on various different SSC websites.</h3>
+                <p>Tools: Vue.js, HTML, CSS, Photoshop</p>
         	</div>
             <br/>
             <br/>
@@ -190,6 +213,9 @@ class About extends Component {
                 <h4>@ Concur</h4>
                 <p>Seattle WA</p>
                 <p>Summer 2016</p>
+                <h3 class="h3-para">Collaborated on a multithreading solution to optimize database search time from ~8hrs to ~30min. Built
+a web app to dynamically show all the search query metrics and outcomes in real time and in an organized manner with customization options.</h3>
+                <p>Tools: Java, JQuery, HTML, CSS, Spring, SQL</p>
         	</div>
         	<br />
         	<br />
@@ -200,6 +226,7 @@ class About extends Component {
                 <h2>Design Lead</h2>
                 <h4>@ DeltaHacks</h4>
                 <p>Jan 2016 - May 2017</p>
+                <h3 class="h3-para">Designed and led the team behind the main visual styles and branding of DeltaHacks III, a hackathon.</h3>
         	</div>
         		<br />
                 <br/>
@@ -207,6 +234,7 @@ class About extends Component {
                 <h2>Dev Mentor</h2>
                 <h4>@ NameCheap</h4>
                 <p>Feb 2016-Jan 2017</p>
+                <h3 class="h3-para">Mentored for programming and design to students at hackathons across North America.</h3>
         	</div>
         		<br />
                 <br/>
@@ -214,7 +242,121 @@ class About extends Component {
                 <h2>Instructor</h2>
                 <h4>@ Mac Outreach</h4>
                 <p>Sep 2015-2016</p>
+                <h3 class="h3-para">Helped teach 1000+ elementary students recursion and functional programming basics using ELM.</h3>
         	</div>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <div class="section-1">
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <p>Still want more?</p>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <p> Keep scrolling for some fun stuff</p>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+            </div>
+            <h3>Fun stuff</h3>
+            <h2>Album of the moment</h2>
+            <iframe src="https://open.spotify.com/embed/album/49MNmJhZQewjt06rpwp6QR" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <br />
+            <br/>
+            <h2>Film of the moment</h2>
+            <iframe src="https://www.youtube.com/embed/2HkjrJ6IK5E?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <h2 class="p-center"><a onClick={this.handleOnClick}>Return to top</a></h2>
         </div>
 
 
