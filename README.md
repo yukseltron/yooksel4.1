@@ -6,5 +6,5 @@ This is the 4.1th version of my personal website.
 
 Just portfolio stuff, info about me, etc
 
-[Check it out](yooksel.com)
+[Check it out](http://yooksel.com/)
 
