@@ -248,6 +248,7 @@ a web app to dynamically show all the search query metrics and outcomes in real 
             <br/>
             <br/>
             <br/>
+            <h2 class="p-center"><a onClick={this.handleOnClick}>Return to top</a></h2>
             <br/>
             <br/>
             <br/>

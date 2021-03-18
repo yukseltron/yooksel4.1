@@ -8,7 +8,7 @@ import Projects from "./Projects";
 import About from "./About";
 import './home.css';
 import uxstuffIMG from './project-svgs/uxstuff.svg';
-import problem from './quercus/problem.svg';
+import aboutIMG from './project-svgs/about.svg';
 
 var backGradient = "";
 
@@ -123,7 +123,7 @@ class Home extends Component {
                 <br />
                 <br />
                 <div class="shape-container center-content">
-                    <img src={problem}/>
+                    <img src={aboutIMG}/>
                 </div>
                 <br/>
                 <br/>
