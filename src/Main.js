@@ -16,6 +16,7 @@ import MonoDrift from "./MonoDrift";
 import UVCatastrophe from "./UVCatastrophe";
 import JosephusProblem from "./JosephusProblem";
 import Walleto from "./Walleto";
+import Marqet from "./Marqet";
 import Glenbow from "./Glenbow";
 import EmojiHoroscope from "./EmojiHoroscope";
 import More from "./More";
@@ -51,6 +52,7 @@ class Main extends Component {
                      <Route path="/emojihoroscope" component={EmojiHoroscope}/>
                      <Route path="/walleto" component={Walleto}/>
                      <Route path="/glenbow" component={Glenbow}/>
+                      <Route path="/marqet" component={Marqet}/>
                      <Route path="/more" component={More}/>
     	           </div>
 	        </div>

@@ -13,6 +13,7 @@ import routesIMG from './project-svgs/routes-app.svg';
 import moreIMG from './project-svgs/more.svg';
 import glenIMG from './project-svgs/glenbow.svg';
 import walletoIMG from './project-svgs/walleto.svg';
+import marqetIMG from './project-svgs/marqet.svg';
 import styles from './projects.css';
 import Quercus from "./Quercus";
 import Routes from "./Routes";
@@ -35,6 +36,9 @@ class Proj {
     }
 }
 
+let marqet = new Proj('Art Marqet', 'Mobile Crypto Market', 'W.I.P',
+"A market for finding unique, digitally authenticated art.", 'UX', marqetIMG, '/marqet');
+
 let quercus = new Proj('Improving Quercus', 'Online Learning System on Web', '2020',
 'Helping students organize their courses and form teams online.', 'UX', quercusIMG, '/quercus');
 
@@ -42,19 +46,19 @@ let routes = new Proj('Routes', 'Mobile Commuting App', '2019',
 'A mockup on how to improve your commuting experience.', 'UX', routesIMG, '/routes');
 
 let walleto = new Proj('Walleto', 'Crypto Wallet on Web', '2021',
-'Designing a way to safely store and use cryptocurrencies', 'UX', walletoIMG, '/walleto');
+'Designing a way to safely store and use cryptocurrencies.', 'UX', walletoIMG, '/walleto');
 
 let glenbow = new Proj('Changing Glenbow', 'IA Redesign on Web', '2020',
-"Improving a museum site's navigation and organization", 'UX', glenIMG, '/glenbow');
+"Improving a museum site's navigation and organization.", 'UX', glenIMG, '/glenbow');
 
 let more = new Proj('Other Works', 'Coding, Writing, and Art Projects', '',
 'Check out some of my other creative projects.', '', moreIMG, '/more');
 
-
-projs[0] = walleto;
-projs[1] = quercus;
+projs[0] = marqet;
+projs[1] = walleto;
+projs[2] = quercus;
 //projs[2] = glenbow;
-projs[2] = more;
+projs[3] = more;
 //projs[4] = Routes;
 //projs[5] = Walleto Market;
 //projs[6] = Grocery App
