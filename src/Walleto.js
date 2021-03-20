@@ -144,6 +144,10 @@ class Walleto extends Component {
                             <h4>Walleto is a crypto wallet that focuses on practicality by showing gains/losses and transaction histories in your accounts, as well as allowing for easy transfering to contacts.</h4>
                         </div>
                     </div>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
                     <img loading="lazy" src={solution}/>
                 </div>
             </div>
