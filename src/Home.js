@@ -52,8 +52,6 @@ class Home extends Component {
     				</div>
                     <br />
                     <div class="home-links">
-                        <h2><NavLink to="/projects" class="link">View my work</NavLink></h2>
-                        <br/>
                         <h2><NavLink to="/contact" class="link">Contact me</NavLink></h2>
                     </div>
     			</div>
