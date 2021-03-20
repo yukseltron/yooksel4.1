@@ -37,19 +37,19 @@ class Proj {
 }
 
 let marqet = new Proj('Art Marqet', 'Mobile Crypto Market', 'W.I.P',
-"A market for finding unique, digitally authenticated art.", 'UX', marqetIMG, '/marqet');
+"UI Design, UX Research", 'UX', marqetIMG, '/marqet');
 
 let quercus = new Proj('Improving Quercus', 'Online Learning System on Web', '2020',
-'Helping students organize their courses and form teams online.', 'UX', quercusIMG, '/quercus');
+'UI Design, UX Research, Illustrations', 'UX', quercusIMG, '/quercus');
 
 let routes = new Proj('Routes', 'Mobile Commuting App', '2019',
-'A mockup on how to improve your commuting experience.', 'UX', routesIMG, '/routes');
+'UI Design, UX Research', 'UX', routesIMG, '/routes');
 
 let walleto = new Proj('Walleto', 'Crypto Wallet on Web', '2021',
-'Designing a way to safely store and use cryptocurrencies.', 'UX', walletoIMG, '/walleto');
+'UI Design, UX Research', 'UX', walletoIMG, '/walleto');
 
 let glenbow = new Proj('Changing Glenbow', 'IA Redesign on Web', '2020',
-"Improving a museum site's navigation and organization.", 'UX', glenIMG, '/glenbow');
+"UX Researcher, UI Designer", 'UX', glenIMG, '/glenbow');
 
 let more = new Proj('Other Works', 'Coding, Writing, and Art Projects', '',
 'Check out some of my other creative projects.', '', moreIMG, '/more');
@@ -108,7 +108,7 @@ class Projects extends Component {
     return (
 		<div class="projects-container">
         <LazyLoad>
-            <h4 ref={this.myDivToFocus}>These are my UX projects. Check out my <Link class="h-link" to="/more">other projects here.</Link></h4>
+            <h4 class="p-center" ref={this.myDivToFocus}>These are my UX projects. Check out my <Link class="h-link" to="/more">other projects here.</Link></h4>
 			<div class="fade-in" id="projects">
 				{items}
 			</div>

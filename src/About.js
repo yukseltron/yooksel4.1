@@ -54,11 +54,7 @@ class About extends Component {
 
   render() {
     return (
-        <div class='about-body fade-in'>
-        <br />
-        <br />
-        <br />
-        <br />
+        <div class='about-body center-content fade-in'>
             <h1 ref={this.myDivToFocus}>Hey,</h1>
         	<h2>
         	Looks like you want to get to know me better!
@@ -90,7 +86,7 @@ class About extends Component {
             <br />
             <br />
             <label class="label">
-            <p id="toggle-p">Click me</p>
+            <p id="toggle-p">Switch skills</p>
               <div class="toggle">
                 <input class="toggle-state" onClick={this.onToggle} type="checkbox" name="check" value="check" id="skill-type"/>
                 <div class="indicator"></div>

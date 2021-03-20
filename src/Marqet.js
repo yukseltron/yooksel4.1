@@ -1,6 +1,6 @@
 import LazyLoad from 'react-lazyload';
 import './projects-style.css';
-import frontIMG from './proj-fronts/marqet-front.svg';
+import frontIMG from './proj-fronts/marqet2-front.png';
 import React, { Component } from "react";
 import {
   BrowserRouter as Router,
@@ -33,12 +33,13 @@ class Marqet extends Component {
   render() {
     return (
 		<div class="fade-in project">
+                <title>Marqet</title>
           <h1 ref={this.myDivToFocus}>Marqet</h1>
           <h4 class="p-center">2021</h4>
           <h4 class="subtitle">Find art authenticated on a blockchain</h4>
           <div>
 		  <img  loading="lazy" src={frontIMG}/>
-          <p class="p-center">Just a preview, still a work in progress!</p>
+          <p class="p-center">Still a work in progress!</p>
           </div>
           <br/>
           <br/>

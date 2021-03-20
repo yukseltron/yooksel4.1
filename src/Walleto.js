@@ -66,8 +66,7 @@ class Walleto extends Component {
             <br/>
             <br/>
 		</div>
-        <br/>
-        <div class="background-info">
+        <div class="background-info border-bottom">
             <div class="my-info">
                 <div class="role-info">
                     <div>
@@ -76,7 +75,7 @@ class Walleto extends Component {
                     </div>
                     <br/>
                     <div>
-                        <h2>Tools Used</h2>
+                        <h2>Tools I Used</h2>
                         <p>Figma<br/>Adobe illustrator</p>
                     </div>
                 </div>
@@ -89,11 +88,13 @@ class Walleto extends Component {
                 <br/>
             </div>
             <br/>
+            <br/>
+            <br/>
+            <br/>
+            <h3>Overview</h3>
+            <p class="center-content spacer">Cryptocurrencies and applications with blockchain technologies are growing and so are the need for online tools and uses for crypto. As such, a simple way to get crypto trading is needed for people new to the crypto world, but curious to learn more about it.</p>
         </div>
         <br/>
-        <p class="border-bottom border-top spacer">
-            <h4 class="p-center"><a target="_blank" href="https://www.figma.com/file/G5kmU9JP0DI3rG5kEBJoRS/A1?node-id=0%3A1">View on figma</a></h4>
-        </p>
         <br/>
         <div class="border-bottom spacer" ref={this.div1}>
             <div class="circlebox">
@@ -102,19 +103,17 @@ class Walleto extends Component {
                 <div class="div3"></div>
                 <div class="div4"></div>
             </div>
-            <h3>Overview</h3>
-            <p class="p-center">Cryptocurrencies and applications with blockchain technologies are growing and so are the need for online tools and uses for crypto.</p>
+            <h3>Introduction</h3>
             <br/>
             <br/>
             <br/>
             <div>
                 <div>
-                    <h2>The Challenge</h2>
-                    <br/>
                     <div class="problem-section spacer">
-                        <img loading="lazy" class="problem" src={challenge}/>
+                        <img class="img-s" loading="lazy" class="problem" src={challenge}/>
                         <div>
-                            <p class="p-left">The focus on the project was to develop a sort of financial website. I chose to design website for tracking and trading cryptocurrency for a chance to learn more about it.</p>
+                            <h2>The Challenge</h2>
+                            <p class="p-left center-content">The focus on the project was to develop a sort of financial website. I chose to design website for tracking and trading cryptocurrency for a chance to learn more about it.</p>
                         </div>
                     </div>
                 </div>
@@ -159,7 +158,7 @@ class Walleto extends Component {
                 <div class="div3"></div>
                 <div class="div4"></div>
             </div>
-            <div class="spacer">
+            <div class="center-content">
     			<h3>Research</h3>
                 <p>Doing some secondary research suggests that as crypto has grown massively in popularity, markets have emerged that try to sell things through crypto. Sometimes the things they sell are encrypted in a blockchain too as NFTs. Virtually any sort of file can be authenticated 'minted' to become an NFT.</p>
                 <p>Example of a crypto market:<a target="_blank" href="https://foundation.app/">foundation.app</a></p>
@@ -167,8 +166,8 @@ class Walleto extends Component {
                 <br/>
         	  	<br/>
                 <h2>Mood Board</h2>
-    			<img loading="lazy" src={moodBoard}/>
             </div>
+			<img class="spacer" loading="lazy" src={moodBoard}/>
             <div class="spacer">
     			<h2>Persona</h2>
                 <p class="p-center">Here's a persona for this project.</p>
@@ -179,9 +178,13 @@ class Walleto extends Component {
             <div class="spacer">
     			<h2>Journey Mapping</h2>
                 <br/>
-                <div class="horizontal-section">
-                    <p>I made journey maps as well to better understand what our user might go through. This journey map is for a scenario where our user sends money to a contact.</p>
-                    <img loading="lazy" src={journey}/>
+                <div>
+                    <p class="center-content">I made journey maps as well to better understand what our user might go through. This journey map is for a scenario where our user sends money to a contact.</p>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <img class="img-l" loading="lazy" src={journey}/>
                 </div>
             </div>
             <div class="spacer">
@@ -302,11 +305,25 @@ class Walleto extends Component {
             <br/>
             <br/>
             <br/>
-            <div class="spacer">
+            <br/>
+            <br/>
+            <br/>
+            <div class="border-bottom border-top spacer">
+                <h2 class="p-center">Check it out</h2>
+                <h4 class="p-center"><a target="_blank" href="https://www.figma.com/file/G5kmU9JP0DI3rG5kEBJoRS/A1?node-id=0%3A1">View on figma</a></h4>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <div class="spacer center-content">
     			<h2>Reflection</h2>
                 <p>Looking back, this project was a learning opportunity for understanding more about cryptocurrencies, NFTs, and blockchains.</p>
                 <p>As cool as the technology seems however, I also learned about the toll they have on the environment.</p>
-                <img loading="lazy" src={chart}/>
+                <p>This can be seen in the chart below, showing the increasing energy consumption needed for bitcoin mining over time.</p>
+                <img class="img-l" loading="lazy" src={chart}/>
                 <p class="p-center">Chart taken from <a target="_blank" href="http://climatestate.com/2013/07/11/the-rise-of-digital-currency-like-bitcoin-and-carbon-footprints/">this site.</a></p>
                 <p>For the future, it'd be interesting to maybe track environmental impact metrics as well for the user, in order to promote more environmentally-friendly trading and crypto.</p>
                 <br/>

@@ -61,19 +61,18 @@ class Quercus extends Component {
 			<img id="quercus" loading="lazy" src={clayIMG}/>
             <br/>
 		</div>
-        <br/>
-    		<div class="background-info">
+    		<div class="background-info border-bottom">
 			<div class="my-info">
                 <div class="role-info">
                     <div>
                         <h2>In collaboration with</h2>
                         <p>
-                            <a href="mailto:mikella.seth@mail.utoronto.ca">Mikella Seth</a> and <a href="mailto:nhatanh.tranle@mail.utoronto.ca">Suzie Tran</a>.
+                            <a href="mailto:mikella.seth@mail.utoronto.ca">Mikella Seth</a><br/>and <a href="mailto:nhatanh.tranle@mail.utoronto.ca">Suzie Tran</a>.
                         </p>
                     </div>
                     <div>
                         <h2>My role</h2>
-                        <p>UI Designer<br/>Survey Maker<br/>Illustrator</p>
+                        <p>UI Designer<br/>User Researcher<br/>Illustrator</p>
                     </div>
                     <br/>
                     <div>
@@ -89,13 +88,13 @@ class Quercus extends Component {
                 </div>
                 <br/>
 			</div>
-            <br/>
+			<br/>
+			<br/>
+			<br/>
+            <h3>Overview</h3>
+            <p class="center-content spacer">Quercus (a.k.a 'Canvas') is an online learning system for the University of Toronto (UofT). Students and professors alike use it to organize and manage courses.</p>
 		</div>
 	  	<br/>
-	  	<p class="border-bottom border-top spacer">
-	  		<h4 class="p-center"><a target="_blank" href="https://www.behance.net/gallery/111653313/Improving-Quercus">View case study on Behance</a></h4>
-	  		<h4 class="p-center"><a target="_blank" href="https://xd.adobe.com/view/bbecb767-a751-4c1d-b5a5-3131620dc877-eebf/?fullscreen">View final prototype</a></h4>
-	  	</p>
         <div class="spacer" ref={this.div1}>
             <div class="circlebox">
                 <div class="div1 filled"></div>
@@ -104,23 +103,14 @@ class Quercus extends Component {
                 <div class="div4"></div>
                 <div class="div5"></div>
             </div>
-            <h3>Overview</h3>
-            <p class="center-content">Quercus (a.k.a 'Canvas') is an online learning system for the University of Toronto (UofT). Students and professors alike use it to organize and manage courses.</p>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
             <div>
                 <div>
-                    <h2>The Problem</h2>
+                    <h3>Introduction</h3>
                     <br/>
                     <div class="problem-section spacer">
                         <img loading="lazy" class="problem" src={problem}/>
-                        <div>
+                        <div class="center-content">
+                            <h2>The Problem</h2>
                             <p class="p-left">Finding files can be confusing for new students since each professor organizes files differently. This confusion can lead to precious time wasted for an assignment.</p>
                             <p class="p-left">As well, some projects require forming teams, which could be difficult to do online. Students can't tell who is still looking for a group or where they can even contact anyone.</p>
                         </div>
@@ -160,6 +150,8 @@ class Quercus extends Component {
                             <h4>Guides on assignments to important and relevant lecture modules.</h4>
                         </div>
                     </div>
+                    <br/>
+                    <br/>
                     <br/>
                     <img loading="lazy" src={solution}/>
                 </div>
@@ -211,9 +203,12 @@ class Quercus extends Component {
             <div class="spacer">
     			<h2>Journey Mapping</h2>
                 <br/>
-                <div class="horizontal-section">
-                    <p>Afterwards, we created journey maps to connect with our users, see how their process works, and outline pain points and areas of opportunities.<br/><br/>This journey map is for a scenario where our user prepares for a lecture and assignments.</p>
-                    <img loading="lazy" src={journey}/>
+                <div>
+                    <p class="center-content">Afterwards, we created journey maps to connect with our users, see how their process works, and outline pain points and areas of opportunities.<br/><br/>This journey map is for a scenario where our user prepares for a lecture and assignments.</p>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <img class="img-l" loading="lazy" src={journey}/>
                 </div>
             </div>
             <br/>
@@ -306,7 +301,7 @@ class Quercus extends Component {
                 <br/>
                 <br/>
                 <div class="horizontal-section">
-                            <p>Designing our interview method, we employed interviews and observations to conduct usability testing on our midfi prototype. Our interviews showed that participants could miss some of the new features and were confused by the difference between 'Group search' and 'Connections'. On the positive, participants really enjoyed the interests board and liked the customizable course materials. Overall they felt the user flow has been improved.</p>
+                            <p class="center-content">Designing our interview method, we employed interviews and observations to conduct usability testing on our midfi prototype. Our interviews showed that participants could miss some of the new features and were confused by the difference between 'Group search' and 'Connections'. On the positive, participants really enjoyed the interests board and liked the customizable course materials. Overall they felt the user flow has been improved.</p>
                     <img loading="lazy" class="img-m" src={criteria}/>
                 </div>
                 <p class="p-right">An example task from our interviews.</p>
@@ -387,11 +382,16 @@ class Quercus extends Component {
             <br/>
             <br/>
             <br/>
+            <div class="border-bottom border-top spacer">
+                <h4> Check it out </h4>
+                <h4 class="p-center"><a target="_blank" href="https://www.behance.net/gallery/111653313/Improving-Quercus">View case study on Behance</a></h4>
+                <h4 class="p-center"><a target="_blank" href="https://xd.adobe.com/view/bbecb767-a751-4c1d-b5a5-3131620dc877-eebf/?fullscreen">View final prototype</a></h4>
+            </div>
             <br/>
             <br/>
             <br/>
             <br/>
-            <div class="spacer">
+            <div class=" center-content spacer">
     			<h2>Reflection</h2>
                 <p>Looking back, although we managed to successfully focus on key ideas, there were some ideas we could no longer work on. Initially, course consistency was an important goal of ours. However, we learned of legal barriers that ensure professors have total freedom and modularity with their course design. This makes course consistency a very idealistic goal too dependent on legal matters.</p>
                 <p>While working on this project I was able to learn new features for Adobe XD (such as mapping a screen onto another screen), and get a better understanding of how to delegate tasks in a group UX project.</p>

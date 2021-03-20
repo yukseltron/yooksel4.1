@@ -135,7 +135,7 @@ class More extends Component {
     return (
 		<div ref={this.myRef} class="projects-container">
         <LazyLoad placeholder={<img src="https://media1.giphy.com/media/3oEjI6SIIHBdRxXI40/200.gif"/>}>
-            <h4 ref={this.myDivToFocus}>My programming, writing, and graphic design work. <Link class="h-link" to="/projects">Want my UX stuff?</Link></h4>
+            <h4 class="p-center" ref={this.myDivToFocus}>My programming, writing, and graphic design work. <Link class="h-link" to="/projects">Want my UX stuff?</Link></h4>
 			<div class="fade-in" id="projects">
 				{items}
 			</div>
