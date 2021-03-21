@@ -14,7 +14,7 @@ li {
 .skills {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 .left-border {
@@ -40,6 +40,11 @@ li {
 	font-size: 100%;
 }
 
+.center-content-wide {
+	width: 60%;
+	margin: auto;
+}
+
 #toggle-p {
 	margin-right: 15px;
 }
@@ -48,7 +53,7 @@ li {
 	.skills {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-around;
+		justify-content: space-between;
 	}
 
 	iframe {

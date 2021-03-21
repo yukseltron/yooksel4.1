@@ -108,6 +108,8 @@ class Projects extends Component {
     return (
 		<div class="projects-container">
         <LazyLoad>
+            <br/>
+            <br/>
             <h4 class="p-center" ref={this.myDivToFocus}>These are my UX projects. Check out my <Link class="h-link" to="/more">other projects here.</Link></h4>
 			<div class="fade-in" id="projects">
 				{items}

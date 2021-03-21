@@ -158,11 +158,12 @@ class Walleto extends Component {
                 <div class="div3"></div>
                 <div class="div4"></div>
             </div>
-            <div class="center-content">
+            <div>
     			<h3>Research</h3>
-                <p>Doing some secondary research suggests that as crypto has grown massively in popularity, markets have emerged that try to sell things through crypto. Sometimes the things they sell are encrypted in a blockchain too as NFTs. Virtually any sort of file can be authenticated 'minted' to become an NFT.</p>
-                <p>Example of a crypto market:<a target="_blank" href="https://foundation.app/">foundation.app</a></p>
-                <p>Example of an NFT market:<a target="_blank" href="https://www.nbatopshot.com/">nbatopshot.com</a></p>
+                <p class="center-content">Doing some secondary research suggests that as crypto has grown massively in popularity, markets have emerged that try to sell things through crypto. Sometimes the things they sell are encrypted in a blockchain too as NFTs. Virtually any sort of file can be authenticated 'minted' to become an NFT.</p>
+                <br/>
+                <p class="center-content">Example of a crypto market:<a target="_blank" href="https://foundation.app/">foundation.app</a></p>
+                <p class="center-content">Example of an NFT market:<a target="_blank" href="https://www.nbatopshot.com/">nbatopshot.com</a></p>
                 <br/>
         	  	<br/>
                 <h2>Mood Board</h2>

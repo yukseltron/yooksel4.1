@@ -4,7 +4,7 @@ import './contact.css';
 class Contact extends Component {
   render() {
     return (
-		<div class="fade-in animate_animated animate__fadeInUp contact">
+		<div class="fade-in center-content contact">
 				<h3>
 					If you want to reach out,<br/>here's my email and social media links.
 				</h3>
