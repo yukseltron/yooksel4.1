@@ -93,13 +93,11 @@ class Projects extends Component {
                             <div class="info">
                                 <h1>{i.title}</h1>
                                 <h3>{i.platform}</h3>
+                                <p class="description">{i.description}</p>
                             </div>
-                             <LazyLoad placeholder={<img src="https://media1.giphy.com/media/3oEjI6SIIHBdRxXI40/200.gif"/>}>
                             <div class="img-container">
                                 <img loading="lazy" className={styles.animate__animated, styles.animate__fadeInDown} src={i.img}/>
                             </div>
-                            </LazyLoad>
-                            <p class="description">{i.description}</p>
                             <p class="date">{i.year}</p>
                     </div>
                 </Link>

@@ -43,25 +43,25 @@ class Proj {
 
 
 let rsg = new Proj('Random String Generator', 'Python Grammar Compiler', '2020',
-'Generating well-typed sentences using grammars and probabilities.', 'Code', rsgIMG, '/random-string-generator');
+'Programming, Computer Science', 'Code', rsgIMG, '/random-string-generator');
 
 let vab = new Proj('Virtual Assistance Bot', 'Unity VR Capstone', '2020',
-'A configurable bot for guiding people in virtual reality experiments.', 'Code', vabIMG, '/virtual-assistance-bot');
+'Project Management, Programming', 'Code', vabIMG, '/virtual-assistance-bot');
 
 let monodrift = new Proj('Mono Drift', 'Vue.js Website', '2019',
-'Loosely related sci-fi short stories.', 'Writing', monodriftIMG, '/mono-drift');
+'Writing, Programming', 'Writing', monodriftIMG, '/mono-drift');
 
 let uvc = new Proj('UVC', 'Album Artwork', '2018',
-'Cover arts for the debut EP and singles of UltraViolet Catastrophe.', 'Art', uvcIMG, '/uvc');
+'Graphic design.', 'Art', uvcIMG, '/uvc');
 
 let jp = new Proj('The Josephus Problem', 'Angular Web App', '2017',
-'A visual solution of the infamous math puzzle.', 'Code', jpIMG, '/jp');
+'Programming, Visualization', 'Code', jpIMG, '/jp');
 
 let emojihoroscope = new Proj('Emoji Horoscope', 'Django Web App', '2018',
-'See your horoscope in emoji form.', 'Code', ehoroIMG, '/emojihoroscope');
+'Programming, APIs', 'Code', ehoroIMG, '/emojihoroscope');
 
 let uxstuff = new Proj('UX Design', 'All my UX related work', '',
-'Check them out.', 'UX', uxstuffIMG, '/projects');
+'Check them out', 'UX', uxstuffIMG, '/projects');
 
 
 projs[0] = rsg;
@@ -120,13 +120,11 @@ class More extends Component {
                             <div class="info">
                                 <h1>{i.title}</h1>
                                 <h3>{i.platform}</h3>
+                                <p class="description">{i.description}</p>
                             </div>
-                            <LazyLoad placeholder={<img src="https://media1.giphy.com/media/3oEjI6SIIHBdRxXI40/200.gif"/>}>
                             <div class="img-container">
                                 <img className={styles.animate__animated, styles.animate__fadeInDown} src={i.img}/>
                             </div>
-                            </LazyLoad>
-                            <p class="description">{i.description}</p>
                             <p class="date">{i.year}</p>
                     </div>
                 </Link>
