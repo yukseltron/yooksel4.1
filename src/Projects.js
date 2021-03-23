@@ -40,7 +40,7 @@ let marqet = new Proj('Art Marqet', 'Mobile Crypto Market', 'W.I.P',
 "UI Design, UX Research", 'UX', marqetIMG, '/marqet');
 
 let quercus = new Proj('Improving Quercus', 'Online Learning System on Web', '2020',
-'UI Design, UX Research, Illustrations', 'UX', quercusIMG, '/quercus');
+'UI Design, UX Research, Illustration', 'UX', quercusIMG, '/quercus');
 
 let routes = new Proj('Routes', 'Mobile Commuting App', '2019',
 'UI Design, UX Research', 'UX', routesIMG, '/routes');
