@@ -97,7 +97,7 @@ class Marqet extends Component {
               <div>
                   <div>
                       <div class="problem-section spacer">
-                          <img class="img-s" loading="lazy" class="problem" src={challenge}/>
+                          <img class="img-s" class="problem" src={challenge}/>
                           <div>
                               <h2>The Challenge</h2>
                               <p class="p-left center-content">How can we provide a mobile art market for any art enthusiast wondering what they can do with their crypto funds?</p>
@@ -135,7 +135,7 @@ class Marqet extends Component {
                       <br/>
                       <br/>
                       <br/>
-                      <img loading="lazy" src={solution}/>
+                      <img src={solution}/>
                   </div>
               </div>
           </div>
@@ -158,7 +158,7 @@ class Marqet extends Component {
                     <p>Cryptopunks were amongst the first NFTs made. It was a generative art project made by 2 people called Larva Labs. You can read more about them <a href="https://www.larvalabs.com/cryptopunks">in this article. </a></p>
                 </div>
               </div>
-  			<img class="spacer" loading="lazy"/>
+  			<img class="spacer" />
               <div class="spacer">
       			<h2>Persona</h2>
                   <p class="p-center">Here's a persona for this project.</p>
@@ -181,7 +181,7 @@ class Marqet extends Component {
                   <p class="center-content">I sketched possible ideas on how to implement a solution. Here is an example sketch of a task about viewing an art piece.</p>
                   <br/>
                   <br/>
-                <img loading="lazy" src={ideation}/>
+                <img  src={ideation}/>
               </div>
   		</div>
         <div class="circlebox" ref={this.div4}>
@@ -197,12 +197,12 @@ class Marqet extends Component {
                 <p class="p-center">With the research I had done, I made some midfi screens to better test out the ideas.</p>
                 <br/>
                 <br/>
-                <img loading="lazy" src={midfi}/>
+                <img  src={midfi}/>
             </div>
             <div class="spacer final-design-section">
                 <h2>Hifi</h2>
                 <p class="p-center">Next up, I designed a hi-fidelity prototype.</p>
-                <img loading="lazy" src={hifi}/>
+                <img src={hifi}/>
                 <br/>
                 <br/>
                 <br/>
@@ -214,7 +214,7 @@ class Marqet extends Component {
                 <br/>
                 <br/>
                 <br/>
-                <img loading="lazy" class="img-s" src={specs}/>
+                <img  class="img-s" src={specs}/>
                 <br/>
                 <br/>
                 <br/>
@@ -231,7 +231,7 @@ to keep it on a watch list.</h4>
                     <br/>
                     <br/>
                     <br/>
-                    <img loading="lazy" class="spacer img-l" src={s1} />
+                    <img class="spacer img-l" src={s1} />
                 </div>
                 <div class="spacer">
                     <div>
@@ -244,7 +244,7 @@ in auction.</h4>
                     <br/>
                     <br/>
                     <br/>
-                    <img loading="lazy" class="spacer img-l" src={s2}/>
+                    <img  class="spacer img-l" src={s2}/>
                 </div>
                 <div class="">
                     <div>
@@ -257,7 +257,7 @@ She wants it to be hidden from the public.</h4>
                     <br/>
                     <br/>
                     <br/>
-                    <img loading="lazy" class="img-l" src={s3}/>
+                    <img  class="img-l" src={s3}/>
                 </div>
             </div>
             <br/>
