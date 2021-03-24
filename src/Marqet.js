@@ -10,7 +10,7 @@ import midfi from './marqet/midfi.svg';
 import hifi from './marqet/hifi2.svg';
 import s1 from './marqet/s1.svg';
 import s2 from './marqet/s2.svg';
-import s3 from './marqet/s2.svg';
+import s3 from './marqet/s3.svg';
 import specs from './marqet/specs.svg';
 import React, { Component } from "react";
 import {
