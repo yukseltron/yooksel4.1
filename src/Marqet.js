@@ -73,7 +73,7 @@ class Marqet extends Component {
                   <div class="background-info">
                       <h4>For: Art Enthusiasts<br/>(Hypothetical)</h4>
                       <h4>Platform: Mobile</h4>
-                      <h4>March 2020 (1 week)</h4>
+                      <h4>March 2021 (2 weeks)</h4>
                   </div>
                   <br/>
               </div>
