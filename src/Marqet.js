@@ -165,7 +165,7 @@ class Marqet extends Component {
                   <br/>
                   <br/>
                   <div class="horizontal-section center-content subtle-shadow">
-                      <img class="padding img-m" alt="art work titled cryptopunks, generative art and among the first NFTs minted" src={persona} />
+                      <img class="padding img-m" src={persona} />
                         <div>
                           <h3 class="text-left">Hailey</h3>
                           <h4 class="text-left border-bottom">Art enthusiast, Crypto newcomer</h4>
