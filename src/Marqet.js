@@ -100,7 +100,7 @@ class Marqet extends Component {
                           <img class="img-s" loading="lazy" class="problem" src={challenge}/>
                           <div>
                               <h2>The Challenge</h2>
-                              <p class="p-left center-content">How can we provide a mobile art market for any art enthusiast wondering what they can do with their crytpo funds?</p>
+                              <p class="p-left center-content">How can we provide a mobile art market for any art enthusiast wondering what they can do with their crypto funds?</p>
                           </div>
                       </div>
                   </div>
