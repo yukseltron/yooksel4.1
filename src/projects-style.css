@@ -205,6 +205,16 @@ p {
 	padding-bottom: 25px;
 }
 
+.persona-section {
+	display: flex;
+	flex-direction: row;
+}
+
+.persona-section-img {
+	max-width: 20%;
+	display: flex;
+	flex-direction: row;
+}
 .my-info p{
 	text-align: center;
 }
@@ -219,7 +229,7 @@ p {
 		width: 80%;
 		height: 400px;
 	}
-	
+
 	.my-info {
 		display: flex;
 		justify-content: center;
@@ -291,8 +301,9 @@ p {
 	}
 
 	.img-m {
-		width: 30% !important;
+		width: 50% !important;
 	}
+
 
 	.final-design-section img{
 		width: 100%;

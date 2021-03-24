@@ -189,7 +189,7 @@ class Walleto extends Component {
             <div class="spacer">
                 <h2>Ideation</h2>
                 <br/>
-                <p class="p-center">Sketches for ideas and concepts on ideas to help users manage their crypto assets.</p>
+                <p class="p-center">Sketches for ideas and concepts to help users manage their crypto assets.</p>
                 <img loading="lazy" src={sketches}/>
             </div>
 		</div>
@@ -247,7 +247,7 @@ class Walleto extends Component {
                 <br/>
                 <br/>
                 <p class="p-center">Next up, I designed a hi-fidelity prototype.</p>
-                <p class="p-center">Here is just the design specifications made for it.</p>
+                <p class="p-center">Here is the design and accessibility specifications made for it.</p>
                 <br/>
                 <br/>
                 <br/>

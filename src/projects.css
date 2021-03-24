@@ -68,3 +68,8 @@ a {
 .h-link:hover {
 	text-decoration: underline;
 }
+
+.horizontal {
+	display: flex;
+	flex-direction: row;
+}

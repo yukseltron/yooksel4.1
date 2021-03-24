@@ -41,13 +41,11 @@ class Home extends Component {
                         <p class="hello p-center">Hi! I'm</p>
                         <h1 id="name">Hamid Yuksel</h1>
                         <div class="iam">
-        					<h3>I'm a</h3>
-                            <h1 class="home-navs">UX designer</h1>
-                            <h3>with a background in </h3>
-                            <h1 class="home-navs">computer science </h1>
-                            <h3>and an interest in</h3>
-                            <h3>art, writing, </h3>
-                            <h1 to="/projects" class="home-navs">and more</h1>
+        					<h3>I'm a UX designer</h3>
+                            <br/>
+                            <h3>With a background in computer science</h3>
+                            <br/>
+                            <h3>and an interest in art, writing, and more.</h3>
                         </div>
     				</div>
                     <br />
@@ -133,7 +131,7 @@ class Home extends Component {
             <br/>
             <br/>
             <p class="text-right">I built this site with React</p>
-            <p class="text-right">Last updated Mar.18.2021</p>
+            <p class="text-right">Last updated Mar.24.2021</p>
         </div>
     );
   }

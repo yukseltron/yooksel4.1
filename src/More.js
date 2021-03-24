@@ -70,7 +70,6 @@ projs[2] = monodrift;
 projs[3] = uvc;
 projs[4] = emojihoroscope
 projs[5] = jp;
-projs[6] = uxstuff;
 //projs[6] = Intro to Comp poster
 //projs[7] = Flora
 //projs[8] = ELM slash bit fiction
@@ -133,9 +132,23 @@ class More extends Component {
     return (
 		<div ref={this.myRef} class="projects-container">
         <LazyLoad placeholder={<img src="https://media1.giphy.com/media/3oEjI6SIIHBdRxXI40/200.gif"/>}>
+        <br/>
+        <br/>
             <h4 class="p-center" ref={this.myDivToFocus}>My programming, writing, and graphic design work. <Link class="h-link" to="/projects">Want my UX stuff?</Link></h4>
 			<div class="fade-in" id="projects">
 				{items}
+                <Link to="/projects">
+                    <div class="container">
+                        <div class="img-container">
+                            <img loading="lazy" src={uxstuffIMG}/>
+                        </div>
+                        <div class="info">
+                            <h1>UX Designs</h1>
+                            <h3>All my UX related work</h3>
+                            <p class="description">Check them out.</p>
+                        </div>
+                    </div>
+                </Link>
 			</div>
             <h2 class="p-center link-top spacer"><a onClick={this.handleOnClick}>Return to top</a></h2>
         </LazyLoad>

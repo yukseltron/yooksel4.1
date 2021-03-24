@@ -2,6 +2,16 @@ import LazyLoad from 'react-lazyload';
 import './projects-style.css';
 import frontIMG from './proj-fronts/marqet.png';
 import challenge from './marqet/challenge.svg';
+import solution from './marqet/solution.svg';
+import research from './marqet/cryptopunks.png';
+import persona from './marqet/persona.svg';
+import ideation from './marqet/ideation.svg';
+import midfi from './marqet/midfi.svg';
+import hifi from './marqet/hifi2.svg';
+import s1 from './marqet/s1.svg';
+import s2 from './marqet/s2.svg';
+import s3 from './marqet/s2.svg';
+import specs from './marqet/specs.svg';
 import React, { Component } from "react";
 import {
   BrowserRouter as Router,
@@ -125,7 +135,7 @@ class Marqet extends Component {
                       <br/>
                       <br/>
                       <br/>
-                      <img loading="lazy"/>
+                      <img loading="lazy" src={solution}/>
                   </div>
               </div>
           </div>
@@ -143,6 +153,10 @@ class Marqet extends Component {
                   <p class="center-content">Example of an NFT market: <a target="_blank" href="https://www.nbatopshot.com/">nbatopshot.com</a></p>
                   <br/>
           	  	<br/>
+                <div class="horizontal-section center-content">
+                    <img class="img-m" alt="art work titled cryptopunks, generative art and among the first NFTs minted" src={research} />
+                    <p>Cryptopunks were amongst the first NFTs made. It was a generative art project made by 2 people called Larva Labs. You can read more about them <a href="https://www.larvalabs.com/cryptopunks">in this article. </a></p>
+                </div>
               </div>
   			<img class="spacer" loading="lazy"/>
               <div class="spacer">
@@ -150,25 +164,24 @@ class Marqet extends Component {
                   <p class="p-center">Here's a persona for this project.</p>
                   <br/>
                   <br/>
-      			<img loading="lazy" class="subtle-shadow"/>
-              </div>
-              <div class="spacer">
-      			<h2>Journey Mapping</h2>
-                  <br/>
-                  <div>
-                      <p class="center-content">This journey map is for a scenario where our user wants to place a bid on an art piece.</p>
-                      <br/>
-                      <br/>
-                      <br/>
-                      <br/>
-                      <img class="img-l" loading="lazy"/>
+                  <div class="horizontal-section center-content subtle-shadow">
+                      <img class="padding img-m" alt="art work titled cryptopunks, generative art and among the first NFTs minted" src={persona} />
+                        <div>
+                          <h3 class="text-left">Hailey</h3>
+                          <h4 class="text-left border-bottom">Art enthusiast, Crypto newcomer</h4>
+                          <h5 class="text-left">Hailey has cryptocurrency in the form of ethereum, but doesn’t really know what to do with it. <br/><br/>She’s interested in art,
+      and how they can be purchased as NFT’s,
+      but she’s new to the overall process.</h5>
+                        </div>
                   </div>
               </div>
               <div class="spacer">
                   <h2>Ideation</h2>
                   <br/>
-                  <p class="p-center">Sketches for ideas and concepts on ideas to help users with their crypto art.</p>
-                  <img loading="lazy"/>
+                  <p class="center-content">I sketched possible ideas on how to implement a solution. Here is an example sketch of a task about viewing an art piece.</p>
+                  <br/>
+                  <br/>
+                <img loading="lazy" src={ideation}/>
               </div>
   		</div>
         <div class="circlebox" ref={this.div4}>
@@ -182,70 +195,69 @@ class Marqet extends Component {
     			<h3>Prototyping</h3>
                 <h2>Midfi</h2>
                 <p class="p-center">With the research I had done, I made some midfi screens to better test out the ideas.</p>
-    			<img loading="lazy"/>
+                <br/>
+                <br/>
+                <img loading="lazy" src={midfi}/>
             </div>
             <div class="spacer final-design-section">
                 <h2>Hifi</h2>
                 <p class="p-center">Next up, I designed a hi-fidelity prototype.</p>
-                <img loading="lazy" />
+                <img loading="lazy" src={hifi}/>
                 <br/>
                 <br/>
                 <br/>
                 <br/>
                 <br/>
                 <br/>
-                <p class="p-center">Here is just the design specifications made for it.</p>
+                <p class="p-center">Here is the design and accessibility specifications I arranged for it.</p>
                 <br/>
                 <br/>
                 <br/>
                 <br/>
-                <br/>
-                <br/>
-                <img loading="lazy" class="img-l"/>
+                <img loading="lazy" class="img-s" src={specs}/>
                 <br/>
                 <br/>
                 <br/>
             </div>
             <div class="spacer">
-                <div class="horizontal-section">
+                <div class="spacer">
                     <div>
-                        <h2 class="p-left">Artwork Info</h2>
-                        <h4 class="storyboard-h4">Find out all the meta-information you need about the crypto art piece.</h4>
+                        <h2 class="center-content p-left">Artwork Info</h2>
+                        <h4 class=" center-content storyboard-h4">In this scenario, our user wants to find an artwork of interest,
+learn more about it, and decide
+to keep it on a watch list.</h4>
                     </div>
-                    <img loading="lazy" class="subtle-shadow" />
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <img loading="lazy" class="spacer img-l" src={s1} />
                 </div>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <div class="horizontal-section">
+                <div class="spacer">
                     <div>
-                        <h2 class="p-left">Auctions</h2>
-                        <h4 class="storyboard-h4">Place a bid to try and buy and artwork of your interest.</h4>
+                        <h2 class="center-content p-left">Auctions</h2>
+                        <h4 class="center-content  storyboard-h4">Here, our user found an interesting piece of art
+and now wants to place a bid to buy it
+in auction.</h4>
                     </div>
-                    <img loading="lazy" class="subtle-shadow"/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <img loading="lazy" class="spacer img-l" src={s2}/>
                 </div>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <div class="horizontal-section">
+                <div class="">
                     <div>
-                        <h2 class="p-left">Adjust Privacy</h2>
-                        <h4 class="storyboard-h4">You determine who sees what part of your art collection.</h4>
+                        <h2 class="center-content  p-left">Adjust Privacy</h2>
+                        <h4 class="center-content  storyboard-h4">Now our user wants to adjust the privacy
+settings for an art piece in her collection.
+She wants it to be hidden from the public.</h4>
                     </div>
-                    <img loading="lazy" class="subtle-shadow"/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <img loading="lazy" class="img-l" src={s3}/>
                 </div>
             </div>
             <br/>
@@ -256,7 +268,7 @@ class Marqet extends Component {
             <br/>
             <div class="border-bottom border-top spacer">
                 <h2 class="p-center">Check it out</h2>
-                <h4 class="p-center"><a target="_blank" href="https://www.figma.com/file/G5kmU9JP0DI3rG5kEBJoRS/A1?node-id=0%3A1">View on figma</a></h4>
+                <h4 class="p-center"><a target="_blank" href="https://www.figma.com/file/kXyfQVuJfCT81cC5NLzLNg/A2?node-id=0%3A1">View on figma</a></h4>
             </div>
             <br/>
             <br/>
@@ -267,9 +279,9 @@ class Marqet extends Component {
             <div class="spacer center-content">
                 <h2>Reflection</h2>
                 <p>This was a fun project for learning more about NFTs, and blockchains.</p>
-                <p>In terms of enivormental impact, it was interesting to learn about Proof of Work vs Proof of Stake in crypto transactions.</p>
-                <p>Cryptocurrencies pose a terrible risk in terms of the environmental cost that comes with them.</p>
-                <p>Crypto technologies focusing on proof of stake however, show promise in alleviating their environmental toll.</p>
+                <p>In terms of enivormental impact, it was interesting to learn about Proof of Work vs Proof of Stake in crypto transactions. Proof of stake has promise in terms of being more energy efficient, and is seeing widespread usage.</p>
+                <p>Although cryptocurrencies generally pose a terrible risk in terms of the environmental cost that comes with them, proof of stake mining could help overcome that.</p>
+                <p>However, time will tell how the larger art world will react to NFTs as they become more and more popular.</p>
                 <p>As such, for the future, it would be good to focus on adding more socially-conscious aspects such as the carbon footprint of a crypto artwork.</p>
                 <br/>
                 <br/>

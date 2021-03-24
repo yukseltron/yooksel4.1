@@ -58,7 +58,6 @@ projs[0] = marqet;
 projs[1] = walleto;
 projs[2] = quercus;
 //projs[2] = glenbow;
-projs[3] = more;
 //projs[4] = Routes;
 //projs[5] = Walleto Market;
 //projs[6] = Grocery App
@@ -111,6 +110,18 @@ class Projects extends Component {
             <h4 class="p-center" ref={this.myDivToFocus}>These are my UX projects. Check out my <Link class="h-link" to="/more">other projects here.</Link></h4>
 			<div class="fade-in" id="projects">
 				{items}
+                <Link to="/more">
+                    <div class="container">
+                        <div class="img-container">
+                            <img loading="lazy" src={moreIMG}/>
+                        </div>
+                        <div class="info">
+                            <h1>Other Works</h1>
+                            <h3>Coding, Writing, and Art Projects</h3>
+                            <p class="description">Check out some of my other creative projects.</p>
+                        </div>
+                    </div>
+                </Link>
 			</div>
             <h2><a class="p-center link-top spacer" onClick={this.handleOnClick}>Return to top</a></h2>
         </LazyLoad>
