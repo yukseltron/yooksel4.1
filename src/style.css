@@ -101,6 +101,10 @@ h2 a:active {
 	.shape1 {
 		position: auto;
 	}
+
+	.margin-right {
+		margin-right: 50px;
+	}
 }
 
 .blank-space {
@@ -169,6 +173,17 @@ h2 a:active {
 	text-align: right;
 }
 
-.padding {
-	padding: 15px;
+.border-white {
+	border: 1px solid white;
+}
+
+.bottom-border-white {
+	border-bottom: 1px solid white;
+}
+
+.border-padding {
+	padding: 50px;
+	background-color: #3535ff;
+	border-radius: 25px;
+	color: white;
 }

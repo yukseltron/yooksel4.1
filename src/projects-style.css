@@ -285,6 +285,11 @@ p {
 		align-items: center;
 	}
 
+	.persona-section {
+		display: flex;
+		justify-content: space-between;
+	}
+
 	.horizontal-section {
 		display: flex;
 		justify-content: space-between;

@@ -56,7 +56,7 @@ class Marqet extends Component {
           <br/>
           <br/>
           <br/>
-          <div class="background-info border-top border-bottom">
+          <div class="background-info border-top border-bottom marqet">
               <div class="my-info">
                   <div class="role-info">
                       <div>
@@ -164,11 +164,11 @@ class Marqet extends Component {
                   <p class="p-center">Here's a persona for this project.</p>
                   <br/>
                   <br/>
-                  <div class="horizontal-section center-content">
-                      <img class="padding img-m" src={persona} />
+                  <div class="horizontal-section center-content border-padding">
+                      <img class="border center-content margin-right img-m" src={persona} />
                         <div>
                           <h3 class="text-left">Hailey</h3>
-                          <h4 class="text-left border-bottom">Art enthusiast, Crypto newcomer</h4>
+                          <h4 class="text-left bottom-border-white">Art enthusiast, Crypto newcomer</h4>
                           <h5 class="text-left">Hailey has cryptocurrency in the form of ethereum, but doesn’t really know what to do with it. <br/><br/>She’s interested in art,
       and how they can be purchased as NFT’s,
       but she’s new to the overall process.</h5>
@@ -214,7 +214,7 @@ class Marqet extends Component {
                 <br/>
                 <br/>
                 <br/>
-                <img  class="img-s" src={specs}/>
+                <img  class="img-m" src={specs}/>
                 <br/>
                 <br/>
                 <br/>
