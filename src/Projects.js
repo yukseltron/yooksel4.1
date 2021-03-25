@@ -49,7 +49,7 @@ let walleto = new Proj('Walleto', 'Crypto Wallet on Web', '2021',
 'UI Design, UX Research', 'UX', walletoIMG, '/walleto');
 
 let glenbow = new Proj('Changing Glenbow', 'IA Redesign on Web', '2020',
-"UX Researcher, UI Designer", 'UX', glenIMG, '/glenbow');
+"UX Research, UI Design", 'UX', glenIMG, '/glenbow');
 
 let more = new Proj('Other Works', 'Coding, Writing, and Art Projects', '',
 'Check out some of my other creative projects.', '', moreIMG, '/more');

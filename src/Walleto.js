@@ -113,7 +113,7 @@ class Walleto extends Component {
                         <img class="img-s" loading="lazy" class="problem" src={challenge}/>
                         <div>
                             <h2>The Challenge</h2>
-                            <p class="p-left center-content">The focus on the project was to develop a sort of financial website. I chose to design website for tracking and trading cryptocurrency for a chance to learn more about it.</p>
+                            <p class="p-left center-content">The focus on the project was to develop a sort of financial website. I chose to design a website for tracking and trading cryptocurrency for a chance to learn more about it.</p>
                         </div>
                     </div>
                 </div>

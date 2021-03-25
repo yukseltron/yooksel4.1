@@ -128,7 +128,7 @@ class Marqet extends Component {
                   <div class="solution-sector spacer center-content">
                       <div class="solution-info">
                           <div>
-                              <h4>Marqet is a crypto art market and auction mobile app for art ethusiasts figuing out more about crypto.</h4>
+                              <h4>Marqet is a crypto art market and auction mobile app for art ethusiasts figuring out more about crypto.</h4>
                           </div>
                       </div>
                       <br/>
@@ -164,7 +164,7 @@ class Marqet extends Component {
                   <p class="p-center">Here's a persona for this project.</p>
                   <br/>
                   <br/>
-                  <div class="horizontal-section center-content subtle-shadow">
+                  <div class="horizontal-section center-content">
                       <img class="padding img-m" src={persona} />
                         <div>
                           <h3 class="text-left">Hailey</h3>
@@ -276,13 +276,13 @@ She wants it to be hidden from the public.</h4>
             <br/>
             <br/>
             <br/>
-            <div class="spacer center-content">
+            <div class="spacer">
                 <h2>Reflection</h2>
-                <p>This was a fun project for learning more about NFTs, and blockchains.</p>
-                <p>In terms of enivormental impact, it was interesting to learn about Proof of Work vs Proof of Stake in crypto transactions. Proof of stake has promise in terms of being more energy efficient, and is seeing widespread usage.</p>
-                <p>Although cryptocurrencies generally pose a terrible risk in terms of the environmental cost that comes with them, proof of stake mining could help overcome that.</p>
-                <p>However, time will tell how the larger art world will react to NFTs as they become more and more popular.</p>
-                <p>As such, for the future, it would be good to focus on adding more socially-conscious aspects such as the carbon footprint of a crypto artwork.</p>
+                <p class="center-content">This was a fun project for learning more about NFTs, and blockchains.</p>
+                <p class="center-content">In terms of enivormental impact, it was interesting to learn about Proof of Work vs Proof of Stake in crypto transactions. Proof of stake has promise in terms of being more energy efficient, and is seeing widespread usage.</p>
+                <p class="center-content">Although cryptocurrencies generally pose a terrible risk in terms of the environmental cost that comes with them, proof of stake mining could help overcome that.</p>
+                <p class="center-content">However, time will tell how the larger art world will react to NFTs as they become more and more popular.</p>
+                <p class="center-content">As such, for the future, it would be good to focus on adding more socially-conscious aspects such as the carbon footprint of a crypto artwork.</p>
                 <br/>
                 <br/>
                 <br/>

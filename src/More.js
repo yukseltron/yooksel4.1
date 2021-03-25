@@ -42,8 +42,8 @@ class Proj {
 }
 
 
-let rsg = new Proj('Random String Generator', 'Python Grammar Compiler', '2020',
-'Programming, Computer Science', 'Code', rsgIMG, '/random-string-generator');
+let rsg = new Proj('Random String Generator', 'Grammar Compiler in Python', '2020',
+'Programming, Project Management', 'Code', rsgIMG, '/random-string-generator');
 
 let vab = new Proj('Virtual Assistance Bot', 'Unity VR Capstone', '2020',
 'Project Management, Programming', 'Code', vabIMG, '/virtual-assistance-bot');
@@ -58,7 +58,7 @@ let jp = new Proj('The Josephus Problem', 'Angular Web App', '2017',
 'Programming, Visualization', 'Code', jpIMG, '/jp');
 
 let emojihoroscope = new Proj('Emoji Horoscope', 'Django Web App', '2018',
-'Programming, APIs', 'Code', ehoroIMG, '/emojihoroscope');
+'Programming', 'Code', ehoroIMG, '/emojihoroscope');
 
 let uxstuff = new Proj('UX Design', 'All my UX related work', '',
 'Check them out', 'UX', uxstuffIMG, '/projects');
