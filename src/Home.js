@@ -129,7 +129,7 @@ class Home extends Component {
             <br/>
             <br/>
             <p class="text-right">I built this site with React</p>
-            <p class="text-right">Last updated Mar.24.2021</p>
+            <p class="text-right">Last updated Mar.26.2021</p>
         </div>
     );
   }
