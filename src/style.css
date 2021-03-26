@@ -174,7 +174,8 @@ h2 a:active {
 }
 
 .border-white {
-	border: 1px solid white;
+	border-radius: 5px;
+	background-color: #3535ff;
 }
 
 .bottom-border-white {
@@ -183,9 +184,7 @@ h2 a:active {
 
 .border-padding {
 	padding: 50px;
-	background-color: #3535ff;
 	border-radius: 25px;
-	color: white;
 }
 
 .striked {
