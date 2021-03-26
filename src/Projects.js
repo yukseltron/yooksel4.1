@@ -36,7 +36,7 @@ class Proj {
     }
 }
 
-let marqet = new Proj('Art Marqet', 'Mobile Crypto Market', 'W.I.P',
+let marqet = new Proj('Art Marqet', 'Mobile Crypto Market', '2021',
 "UI Design, UX Research", 'UX', marqetIMG, '/marqet');
 
 let quercus = new Proj('Improving Quercus', 'Online Learning System on Web', '2020',

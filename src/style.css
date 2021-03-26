@@ -68,7 +68,7 @@ p {
 
 h2 a {
 	font-family: antarctican-mono, sans-serif;
-	font-weight: 400;
+	font-weight: 500;
 	font-style: normal;
 	text-decoration: none;
 	color: black;
@@ -186,4 +186,8 @@ h2 a:active {
 	background-color: #3535ff;
 	border-radius: 25px;
 	color: white;
+}
+
+.striked {
+	text-decoration: line-through;
 }

@@ -77,7 +77,7 @@ class Quercus extends Component {
                     <br/>
                     <div>
                         <h2>Tools Used</h2>
-                        <p>Adobe XD<br/>Google Forms<br/>Adobe illustrator</p>
+                        <p>Adobe XD<br/>Google Forms<br/>Adobe Illustrator</p>
                     </div>
                 </div>
 				<br/>
@@ -96,13 +96,6 @@ class Quercus extends Component {
 		</div>
 	  	<br/>
         <div class="spacer" ref={this.div1}>
-            <div class="circlebox">
-                <div class="div1 filled"></div>
-                <div class="div2"></div>
-                <div class="div3"></div>
-                <div class="div4"></div>
-                <div class="div5"></div>
-            </div>
             <div>
                 <div>
                     <h3>Introduction</h3>
@@ -111,8 +104,8 @@ class Quercus extends Component {
                         <img loading="lazy" class="problem" src={problem}/>
                         <div class="center-content">
                             <h2>The Problem</h2>
-                            <p class="p-left">Finding files can be confusing for new students since each professor organizes files differently. This confusion can lead to precious time wasted for an assignment.</p>
-                            <p class="p-left">As well, some projects require forming teams, which could be difficult to do online. Students can't tell who is still looking for a group or where they can even contact anyone.</p>
+                            <p class="p-left">When using Quercus, finding files can be confusing for new students since each professor organizes files differently. This confusion can lead to precious time wasted for an assignment.</p>
+                            <p class="p-left">As well, some projects require forming teams, which can be difficult to do online. Students can't tell who is still looking for a group or where they can even contact anyone.</p>
                         </div>
                     </div>
                 </div>
@@ -123,7 +116,7 @@ class Quercus extends Component {
                     <h2>The Needs</h2>
                     <div class="needs">
                         <h1>1.</h1>
-                        <h4 class="h-left">Students need a way to engage with professors and fellow students better, so that they may complete group faster and make lasting connections.</h4>
+                        <h4 class="h-left">Students need a way to engage with professors and fellow students better, so that they may form groups faster and make lasting connections.</h4>
                     </div>
                     <div class="needs">
                         <h1>2.</h1>
@@ -145,9 +138,11 @@ class Quercus extends Component {
                     <div class="solution-info">
                         <div>
                             <p class="p-left">Our recommendation is to implement on Quercus:</p>
-                            <h4>A group search feature, to find teammates and their contact info.</h4>
-                            <h4>Interest boards to learn about classmates, without needing to contact them.</h4>
-                            <h4>Guides on assignments to important and relevant lecture modules.</h4>
+                            <h4>• A group search feature, to find teammates and their contact info.</h4>
+                            <br/>
+                            <h4>• Interest boards to learn about classmates, without needing to contact them.</h4>
+                            <br/>
+                            <h4>• Guides on assignments to important and relevant lecture modules.</h4>
                         </div>
                     </div>
                     <br/>
@@ -160,7 +155,7 @@ class Quercus extends Component {
 		<div class="border-bottom spacer border-top">
             <div class="center-content">
     		  	<h3>My Contributions</h3>
-                <p>For the research phase, I was responsible for the survey questions and format. I contributed to the user analysis in making the persona and journey maps.</p>
+                <p>For the research phase, I was responsible for the survey questions and format. I also contributed to the user analysis in making the persona and journey maps.</p>
                 <p>During ideation, I helped come up with ideas and organized our results on a prioritization grid. As well, I helped design our user scenarios.</p>
                 <p>In the design phase, I was responsible for making the Midfi and Hifi prototypes and the overall visual design.</p>
             </div>
@@ -168,17 +163,10 @@ class Quercus extends Component {
     	  	<br/>
     	  	<br/>
 		</div>
-		<div class="border-bottom section spacer" ref={this.div2}>
-            <div class="circlebox">
-                <div class="div1"></div>
-                <div class="div2 filled"></div>
-                <div class="div3"></div>
-                <div class="div4"></div>
-                <div class="div5"></div>
-            </div>
+		<div class="section spacer" ref={this.div2}>
             <div class="spacer">
     			<h3>Research</h3>
-                <p class="p-center">We gathered our data from 11 UofT students through a survey on their experiences using Quercus.</p>
+                <p class="center-content">We gathered our data from 11 UofT students through a survey on their experiences using Quercus.</p>
                 <br/>
         	  	<br/>
                 <h2>Our data showed:</h2>
@@ -200,7 +188,7 @@ class Quercus extends Component {
 		  	<br/>
 			<br/>
             <br/>
-            <div class="spacer">
+            <div class="">
     			<h2>Journey Mapping</h2>
                 <br/>
                 <div>
@@ -215,85 +203,87 @@ class Quercus extends Component {
             <br/>
             <br/>
 		</div>
-		<div class="border-bottom section spacer" ref={this.div3}>
-            <div class="circlebox">
-            <div class="div1"></div>
-            <div class="div2"></div>
-            <div class="div3 filled"></div>
-            <div class="div4"></div>
-            <div class="div5"></div>
-            </div>
+		<div class="border-top section spacer" ref={this.div3}>
             <div class="spacer">
     			<h3>Ideation</h3>
     			<h2>Our Ideas</h2>
-                <p class="p-center">We came up with ideas and ranked them on a prioritization grid as seen below.</p>
+                <p class="center-content">We came up with ideas and ranked them on a prioritization grid as seen below.</p>
     			<img loading="lazy" src={prioriGrid}/>
                 <p class="p-center">The top ideas we felt was best to work on were:</p>
                 <div class="ideation-section center-content">
                     <h4>Content Connections</h4>
-                    <p>Showing which lectures are relevant to an assignment</p>
+                    <p>Showing which lectures are relevant to an assignment.</p>
                 </div>
                 <div class="ideation-section center-content">
                     <h4>Meeting Classmates</h4>
-                    <p>Helping students meet others and form teams quickly</p>
+                    <p>Helping students meet others and form teams quickly.</p>
                 </div>
                 <div class="ideation-section center-content">
                     <h4>Course Consistency</h4>
-                    <p>Making course material easy to find across different courses online</p>
+                    <p>Making course material easy to find across different courses online.</p>
                 </div>
             </div>
-            <div class="spacer">
+            <div class="">
     			<h2>Sketches</h2>
                 <br/>
-                <p class="p-center">We tested out on pen and paper to see how we could implement our ideas:</p>
+                <p class="center-content">We tested out on pen and paper to see how we could implement our ideas:</p>
     			<img loading="lazy" src={sketches}/>
             </div>
 		</div>
-        <div class="circlebox" ref={this.div4}>
-            <div class="div1"></div>
-            <div class="div2"></div>
-            <div class="div3"></div>
-            <div class="div4 filled"></div>
-            <div class="div5"></div>
-        </div>
-		<div class="border-bottom section spacer">
+		<div class="section">
         <br/>
-            <div class="spacer">
+            <div class="spacer border-top">
     			<h3>Prototyping</h3>
                 <h2>Midfi</h2>
-                <p class="p-center">Using the sketches, I made some midfi screens to better test out and showcase our ideas as an MVP.</p>
+                <p class="center-content">Using the sketches, I made some midfi screens to better test out and showcase our ideas as an MVP.</p>
     			<img loading="lazy" src={midfi}/>
             </div>
             <br/>
             <div class="spacer">
                 <h2>User Scenarios</h2>
+                <p class="center-content">Here we show the midfi user flows for the 3 ideas we settled on.</p>
+                <h4>1. Content Connections</h4>
+                <h4>2. Meeting Classmates</h4>
+                <h4 class="striked">3. Course Consistency</h4>
+                <h4>3. Interests Boards</h4>
+                <br/>
+                <br/>
+                <br/>
                 <br/>
                 <div>
-                    <div class="horizontal-section scenario-section border-bottom">
-                        <p>This scenario depicts how our user Allie could prepare for an assignment. She's shown which assignment needs the most attention, and can instantly find the lectures relevant to it. As well, she can view the lecture in different formats to her liking.</p>
+                    <div class="horizontal-section scenario-section">
+                        <div>
+                            <h4>Content Connections</h4>
+                            <p>This scenario depicts how our user Allie could prepare for an assignment. She's shown which assignment needs the most attention, and can instantly find the lectures relevant to it. As well, she can view the lecture in different formats to her liking.</p>
+                        </div>
                         <img loading="lazy" src={scenario1}/>
                     </div>
                     <br/>
                     <br/>
-                    <div class="horizontal-section scenario-section border-bottom">
-                        <p>Here, Allie needs to find a teammate to work with. She has the option to do a group search, see which classmates she's worked with before, and view the classmate's contact info. Past group details are also available to be seen.</p>
+                    <br/>
+                    <br/>
+                    <div class="horizontal-section scenario-section">
+                        <div>
+                            <h4>Meeting Classmates</h4>
+                            <p>Here, Allie needs to find a teammate to work with. She has the option to do a group search, see which classmates she's worked with before, and view the classmate's contact info. Past group details are also available to be seen.</p>
+                        </div>
                         <img loading="lazy" src={scenario2}/>
                     </div>
                     <br/>
                     <br/>
-                    <div class="horizontal-section scenario-section border-bottom">
-                        <p>In this scenario, we see how Allie can connect to classmates as friends by exploring and joining interest groups for a course. This way, Allie can find ways to bond online.</p>
+                    <br/>
+                    <br/>
+                    <div class="horizontal-section scenario-section">
+                        <div>
+                            <h4 class="striked">Course Consistency</h4>
+                            <h4>Interests Baords</h4>
+                            <p>Originally, we wanted courses online to be organized consistently. Unfortunately we found out the barrier to this is a legal hurdle. Professors must be given total creative freedom over how they organize a course. So we switched to an idea that focuses on making connections with classmates. In this scenario, we see how Allie can connect to classmates as friends by exploring and joining interest groups for a course. This way, Allie can find ways to bond online with classmates she may have never met before.</p>
+                        </div>
                         <img loading="lazy" src={scenario3}/>
                     </div>
                 </div>
             </div>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <div class="spacer border-bottom">
+            <div class="spacer">
                 <h2>Usability Testing</h2>
                 <br/>
                 <h4 class="quote">"It was pretty easy and intuitive to use compared to the current system,<br/>so I much prefer the new system."</h4>
@@ -301,33 +291,18 @@ class Quercus extends Component {
                 <br/>
                 <br/>
                 <div class="horizontal-section">
-                            <p class="center-content">Designing our interview method, we employed interviews and observations to conduct usability testing on our midfi prototype. Our interviews showed that participants could miss some of the new features and were confused by the difference between 'Group search' and 'Connections'. On the positive, participants really enjoyed the interests board and liked the customizable course materials. Overall they felt the user flow has been improved.</p>
+                            <p class="center-content">Designing our interview method, we conducted usability testing on our midfi prototype. We created tasks for our users to accomplish along with follow up questions. We then created steps for a predetermined 'happy' path for a task, along with its success criteria.<br/><br/>Our interviews showed that participants could miss some of the new features and were confused by the difference between 'Group search' and 'Connections'. On the positive, participants really enjoyed the interests board and liked the customizable course materials. Overall they felt the user flow was improved.</p>
                     <img loading="lazy" class="img-m" src={criteria}/>
                 </div>
                 <p class="p-right">An example task from our interviews.</p>
                 <br/>
             </div>
             <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <div class="circlebox" ref={this.div5}>
-                <div class="div1" onClick={this.div1}></div>
-                <div class="div2" onClick={this.div2}></div>
-                <div class="div3" onClick={this.div3}></div>
-                <div class="div4" onClick={this.div4}></div>
-                <div class="div5 filled"></div>
-            </div>
-            <br/>
-            <div class="spacer final-design-section">
+            <div class="spacer final-design-section border-top">
                 <h3>Final Design</h3>
+                <p class="center-content">With the feedback gathered, we each designed our own separate hifi prototype. These are mockups of the hifi prototype I made.</p>
+                <br/>
                 <img loading="lazy" src={dribbble}/>
-                <p class="p-center">With the feedback gathered, we each designed our own separate hifi prototype.</p>
-                <p class="p-center">The main user flow interactions are shown below.</p>
             </div>
             <br/>
             <br/>
@@ -339,7 +314,7 @@ class Quercus extends Component {
                 <div class="horizontal-section">
                     <div>
                         <h2 class="p-left">Content Connections</h2>
-                        <h4 class="storyboard-h4">Quickly find the right lectures to help with assignments</h4>
+                        <h4 class="storyboard-h4">Quickly find the right lectures to help with assignments.</h4>
                     </div>
                     <img loading="lazy" class="subtle-shadow" src={s1}/>
                 </div>
@@ -355,8 +330,8 @@ class Quercus extends Component {
                 <br/>
                 <div class="horizontal-section">
                     <div>
-            			<h2 class="p-left">Finding Groupmates</h2>
-                        <h4 class="storyboard-h4">Make teams without a sweat and see who you've worked with before</h4>
+            			<h2 class="p-left">Meeting classmates</h2>
+                        <h4 class="storyboard-h4">Make teams without a sweat and see who you've worked with before.</h4>
                     </div>
                     <img loading="lazy" class="subtle-shadow" src={s2}/>
                 </div>
@@ -373,7 +348,7 @@ class Quercus extends Component {
                 <div class="horizontal-section">
                     <div>
                         <h2 class="p-left">Interest Boards</h2>
-                        <h4 class="storyboard-h4">Find and bond with classmates over your shared interests</h4>
+                        <h4 class="storyboard-h4">Find and bond with classmates over your shared interests.</h4>
                     </div>
                     <img loading="lazy" class="subtle-shadow" src={s3}/>
                 </div>
@@ -393,7 +368,7 @@ class Quercus extends Component {
             <br/>
             <div class="spacer">
     			<h2>Reflection</h2>
-                <p class="center-content">Looking back, although we managed to successfully focus on key ideas, there were some ideas we could no longer work on. Initially, course consistency was an important goal of ours. However, we learned of legal barriers that ensure professors have total freedom and modularity with their course design. This makes course consistency a very idealistic goal too dependent on legal matters.</p>
+                <p class="center-content">Looking back, although we managed to successfully focus on key ideas, there were some ideas we could no longer work on. Initially, course consistency was an important goal of ours. However, we learned of legal barriers that ensure professors have total freedom and modularity with their course design. This made course consistency a very idealistic goal too dependent on legal matters.</p>
                 <br/>
                 <p class="center-content">While working on this project I was able to learn new features for Adobe XD (such as mapping a screen onto another screen), and get a better understanding of how to delegate tasks in a group UX project.</p>
                 <br/>

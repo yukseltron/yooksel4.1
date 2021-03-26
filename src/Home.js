@@ -35,16 +35,14 @@ class Home extends Component {
   render() {
     return (
         <div>
-    		<div class="fade-in home">
+    		<div class="fade-in home spacer">
     			<div class="intro">
     				<div class="home-intro">
                         <p class="hello p-center">Hi! I'm</p>
                         <h1 id="name">Hamid Yuksel</h1>
                         <div class="iam">
         					<h3>I'm a UX designer</h3>
-                            <br/>
                             <h3>With a background in computer science</h3>
-                            <br/>
                             <h3>and an interest in art, writing, and more.</h3>
                         </div>
     				</div>
