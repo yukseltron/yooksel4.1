@@ -41,8 +41,8 @@ class Home extends Component {
                         <p class="hello p-center">Hi! I'm</p>
                         <h1 id="name">Hamid Yuksel</h1>
                         <div class="iam">
-        					<h3>I'm a UX designer</h3>
-                            <h3>With a background in computer science</h3>
+        					<h3>I'm a UX designer,</h3>
+                            <h3>with a background in computer science,</h3>
                             <h3>and an interest in art, writing, and more.</h3>
                         </div>
     				</div>

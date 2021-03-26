@@ -92,17 +92,11 @@ class Walleto extends Component {
             <br/>
             <br/>
             <h3>Overview</h3>
-            <p class="center-content spacer">Cryptocurrencies and applications with blockchain technologies are growing and so are the need for online tools and uses for crypto. As such, a simple way to get crypto trading is needed for people new to the crypto world, but curious to learn more about it.</p>
+            <p class="center-content spacer">Cryptocurrencies and applications with blockchain technologies are growing and so are the need for online tools and uses for crypto. As such, a simple way to get into crypto trading is needed for people new to the crypto world, but curious to learn more about it.</p>
         </div>
         <br/>
         <br/>
-        <div class="border-bottom spacer" ref={this.div1}>
-            <div class="circlebox">
-                <div class="div1 filled"></div>
-                <div class="div2"></div>
-                <div class="div3"></div>
-                <div class="div4"></div>
-            </div>
+        <div class="spacer" ref={this.div1}>
             <h3>Introduction</h3>
             <br/>
             <br/>
@@ -151,16 +145,10 @@ class Walleto extends Component {
                 </div>
             </div>
         </div>
-        <div class="border-bottom section spacer" ref={this.div2}>
-            <div class="circlebox">
-                <div class="div1"></div>
-                <div class="div2 filled"></div>
-                <div class="div3"></div>
-                <div class="div4"></div>
-            </div>
+        <div class="border-top section spacer" ref={this.div2}>
             <div>
     			<h3>Research</h3>
-                <p class="center-content">Cyrptocurrencies are growing massively in popularity, yet they still seem to remain enigmatic to understand at times. Doing secondary research for this project, there were a lot of confusing concepts that often needed thorough explaining to understand. However, what can be seen for certain, is that people want to have metrics on their portfolio readily available.</p>
+                <p class="center-content">Cyrptocurrencies are growing massively in popularity, yet they still seem to remain enigmatic to understand. Doing secondary research for this project, there were a lot of confusing concepts that often needed thorough explaining to understand. However, what can be seen for certain, is that people want to have metrics on their portfolio readily available.</p>
                 <br/>
 
         	  	<br/>
@@ -169,7 +157,7 @@ class Walleto extends Component {
 			<img class="spacer" loading="lazy" src={moodBoard}/>
             <div class="spacer">
     			<h2>Persona</h2>
-                <p class="p-center">Here's a persona for this project.</p>
+                <p class="center-content">Here's a persona for this project, made from an interview with a person with crypto accounts and through secondary research.</p>
                 <br/>
                 <br/>
     			<img loading="lazy" class="subtle-shadow" src={persona}/>
@@ -193,14 +181,7 @@ class Walleto extends Component {
                 <img loading="lazy" src={sketches}/>
             </div>
 		</div>
-        <div class="circlebox" ref={this.div4}>
-            <div class="div1"></div>
-            <div class="div2"></div>
-            <div class="div3 filled"></div>
-            <div class="div4"></div>
-        </div>
-		<div class="section spacer">
-        <br/>
+		<div class="section border-top spacer">
             <div class="spacer">
     			<h3>Prototyping</h3>
                 <h2>Midfi</h2>
@@ -208,36 +189,51 @@ class Walleto extends Component {
     			<img loading="lazy" src={midfi}/>
             </div>
             <div class="spacer">
-                <h2>User Scenario</h2>
+                <h2>User Scenarios</h2>
+                <p class="center-content">Here are midfi user flows I made for 3 different tasks.</p>
+                <h4>1. Viewing Transactions</h4>
+                <h4>2. Sending Crypto</h4>
+                <h4>3. Setting a Price Alert</h4>
+                <br/>
+                <br/>
+                <br/>
                 <br/>
                 <div>
-                    <div class="horizontal-section scenario-section border-bottom">
-                        <p>Viewing their transactions history for a specific cryptocurrency they have.</p>
+                    <div class="scenario-section">
+                        <div>
+                        <h4>Viewing Transactions</h4>
+                        <p class="center-content">To start, our user wants to see the transactions history for a specific cryptocurrency they have.</p>
+                        </div>
+                        <br/>
+                        <br/>
                         <img loading="lazy" class="img-ml" src={scenario1}/>
                     </div>
                     <br/>
                     <br/>
-                    <div class="horizontal-section scenario-section border-bottom">
-                        <p>Here, a user wants to schedule a money transfer to a friend of theirs.</p>
+                    <div class=" scenario-section">
+                        <div>
+                            <h4>Sending Crypto</h4>
+                            <p class="center-content">In this scenario, our user wants to schedule a money transfer to a friend of theirs.</p>
+                        </div>
+                        <br/>
+                        <br/>
                         <img loading="lazy" class="img-ml" src={scenario2}/>
                     </div>
                     <br/>
                     <br/>
-                    <div class="horizontal-section scenario-section border-bottom">
-                        <p>In this scenario, our user wants to set an alert for a crypto in case it reaches a certain price.</p>
+                    <div class="scenario-section">
+                        <div>
+                            <h4>Setting a Price Alert</h4>
+                            <p class="center-content">Lastly, our user wants to set an alert for a crypto in case it reaches a certain price.</p>
+                        </div>
+                        <br/>
+                        <br/>
                         <img loading="lazy" class="img-ml" src={scenario3}/>
                     </div>
                 </div>
             </div>
         </div>
-            <div class="circlebox" ref={this.div5}>
-                <div class="div1" onClick={this.div1}></div>
-                <div class="div2" onClick={this.div2}></div>
-                <div class="div3" onClick={this.div3}></div>
-                <div class="div4 filled" onClick={this.div4}></div>
-            </div>
-            <br/>
-            <div class="spacer final-design-section">
+            <div class="spacer border-top final-design-section">
                 <h3>Final Design</h3>
                 <img loading="lazy" src={hifi}/>
                 <br/>
@@ -267,22 +263,6 @@ class Walleto extends Component {
                     </div>
                     <img loading="lazy" class="subtle-shadow" src={s1}/>
                 </div>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <div class="horizontal-section">
-                    <div>
-                        <h2 class="p-left">Setting a Price Alert</h2>
-                        <h4 class="storyboard-h4">Get notified for optimal trading.</h4>
-                    </div>
-                    <img loading="lazy" class="subtle-shadow" src={s3}/>
                 </div>
                 <br/>
                 <br/>
@@ -300,6 +280,22 @@ class Walleto extends Component {
                     </div>
                     <img loading="lazy" class="subtle-shadow" src={s2}/>
                 </div>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <div class="horizontal-section">
+                    <div>
+                        <h2 class="p-left">Setting a Price Alert</h2>
+                        <h4 class="storyboard-h4">Get notified for optimal trading.</h4>
+                    </div>
+                    <img loading="lazy" class="subtle-shadow" src={s3}/>
             </div>
             <br/>
             <br/>

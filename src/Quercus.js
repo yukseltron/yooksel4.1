@@ -358,7 +358,7 @@ class Quercus extends Component {
             <br/>
             <br/>
             <div class="border-bottom border-top spacer">
-                <h4> Check it out </h4>
+                <h2 class="p-center">Check it out</h2>
                 <h4 class="p-center"><a target="_blank" href="https://www.behance.net/gallery/111653313/Improving-Quercus">View case study on Behance</a></h4>
                 <h4 class="p-center"><a target="_blank" href="https://xd.adobe.com/view/bbecb767-a751-4c1d-b5a5-3131620dc877-eebf/?fullscreen">View final prototype</a></h4>
             </div>
