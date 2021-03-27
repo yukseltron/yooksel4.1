@@ -76,7 +76,7 @@ class RandomStringGenerator extends Component {
           <div class="spacer" ref={this.div1}>
               <div class="center-content">
                   <h3>Abstract</h3>
-                  <p>This was a final year project for a computer compilers course. The goal was to create a random string generator for context sensitive (and thereby, also context free) grammars. However, we also needed to add the ability to manipulate probabilities for productions and ensure the output was well typed. We were successfully able to create and test a compiler for reading both context sensitive and context free grammars. We also were able to implement editable probabilities and ensure well typing. For the future, it would be good to extend where probabilities could be added, and work on improving time efficiency.</p>
+                  <p>This was a final year project for a computer compilers course. The goal was to create a random string generator for context sensitive (and thereby, also context free) grammars. The purpose for this was so that the randomly created strings can be used for testing. However, we also needed to add the ability to manipulate probabilities for productions and ensure the output was well typed. We were successfully able to create and test a compiler for reading both context sensitive and context free grammars. We also were able to implement editable probabilities and ensure well typing. For the future, it would be good to extend where probabilities could be added, and work on improving time efficiency.</p>
               </div>
               <br/>
           </div>

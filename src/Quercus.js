@@ -12,9 +12,9 @@ import solution from './quercus/solution.png';
 import solution2 from './quercus/solution2.png';
 import journey from './quercus/journeymap.svg';
 import midfi from './quercus/midfi.svg';
-import scenario1 from './quercus/scenario1.png';
-import scenario2 from './quercus/scenario2.png';
-import scenario3 from './quercus/scenario3.png';
+import scenario1 from './quercus/s1.png';
+import scenario2 from './quercus/s2.png';
+import scenario3 from './quercus/s3.png';
 import criteria from './quercus/test.svg';
 import result from './quercus/results.svg';
 import s1 from './quercus/s1.gif';
@@ -251,35 +251,41 @@ class Quercus extends Component {
                 <br/>
                 <br/>
                 <div>
-                    <div class="horizontal-section scenario-section">
+                    <div class="scenario-section">
                         <div>
                             <h4>Content Connections</h4>
-                            <p>This scenario depicts how our user Allie could prepare for an assignment. She's shown which assignment needs the most attention, and can instantly find the lectures relevant to it. As well, she can view the lecture in different formats to her liking.</p>
+                            <p class="center-content">This scenario depicts how our user Allie could prepare for an assignment. She's shown which assignment needs the most attention, and can instantly find the lectures relevant to it. As well, she can view the lecture in different formats to her liking.</p>
                         </div>
-                        <img loading="lazy" src={scenario1}/>
+                        <br/>
+                        <br/>
+                        <img class="img-l" loading="lazy" src={scenario1}/>
                     </div>
                     <br/>
                     <br/>
                     <br/>
                     <br/>
-                    <div class="horizontal-section scenario-section">
+                    <div class="scenario-section">
                         <div>
                             <h4>Meeting Classmates</h4>
-                            <p>Here, Allie needs to find a teammate to work with. She has the option to do a group search, see which classmates she's worked with before, and view the classmate's contact info. Past group details are also available to be seen.</p>
+                            <p class="center-content">Here, Allie needs to find a teammate to work with. She has the option to do a group search, see which classmates she's worked with before, and view the classmate's contact info. Past group details are also available to be seen.</p>
                         </div>
-                        <img loading="lazy" src={scenario2}/>
+                        <br/>
+                        <br/>
+                        <img loading="lazy" class="img-l" src={scenario2}/>
                     </div>
                     <br/>
                     <br/>
                     <br/>
                     <br/>
-                    <div class="horizontal-section scenario-section">
+                    <div class="scenario-section">
                         <div>
                             <h4 class="striked">Course Consistency</h4>
                             <h4>Interests Baords</h4>
-                            <p>Originally, we wanted courses online to be organized consistently. Unfortunately we found out the barrier to this is a legal hurdle. Professors must be given total creative freedom over how they organize a course. So we switched to an idea that focuses on making connections with classmates. In this scenario, we see how Allie can connect to classmates as friends by exploring and joining interest groups for a course. This way, Allie can find ways to bond online with classmates she may have never met before.</p>
+                            <p class="center-content">Originally, we wanted courses online to be organized consistently. Unfortunately we found out the barrier to this is a legal hurdle. Professors must be given total creative freedom over how they organize a course. <br/> <br/>So we switched to an idea that focuses on making connections with classmates. In this scenario, we see how Allie can connect to classmates as friends by exploring and joining interest groups for a course. This way, Allie can find ways to bond online with classmates she may have never met before.</p>
                         </div>
-                        <img loading="lazy" src={scenario3}/>
+                        <br/>
+                        <br/>
+                        <img class="img-l" loading="lazy" src={scenario3}/>
                     </div>
                 </div>
             </div>
