@@ -16,8 +16,8 @@ a {
 
 .container {
 	margin-top: 50px;
-	border: 1px solid black;
 	padding: 50px;
+	border: 1px solid black;
 	transition: background-color 0.2s, color 0.2s;
 	transition-timing-function: ease-in-out;
 }

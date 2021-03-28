@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {Slide, Fade, LightSpeed} from 'react-reveal';
 import './about.css';
 import {
   Route,
@@ -56,13 +57,18 @@ class About extends Component {
     return (
         <div class='about-body fade-in'>
             <div class="center-content">
+                <Fade bottom cascade>
                 <h1 ref={this.myDivToFocus}>Hey,</h1>
             	<h2>
             	Looks like you want to get to know me better!
             	</h2>
+                <Fade bottom>
                 <h3>
                 I'm just a human being somewhere in Canada.<br/>Probably working on hobbies or projects.
                 </h3>
+                </Fade>
+                </Fade>
+                <Slide bottom>
                 <h4>Originally, I studied computer science, but I also taught myself how to use design tools in my spare time. Currently, I'm doing a masters where I can learn more about design (and also data science).</h4>
                 <h4>That being said, I still enjoy programming and try to learn new tools. This website you're on for example I built using React for the first time. But for now, I'm focusing on further developing a career in design.</h4>
                 <h4>
@@ -71,13 +77,14 @@ class About extends Component {
                 <h4>
                 In my spare time, I enjoy doing things like doodling or reading about history. En plus, je puis parler en Francais car je vivais au Montreal quand j'étais un petit enfant.
                 </h4>
-            	<Link class="link" to="/contact">
-            	Feel free to reach out to me!</Link>
-            	<br />
-            	<br />
-            	<a class="inline-a link" target="_blank" href="https://drive.google.com/file/d/1H-tHPjIP5dlZl9QtXDgoibdMZKjLbyDJ/view?usp=sharing">
-            		Here is my resume in PDF.
-            	</a>
+                </Slide>
+                <Link class="link" to="/contact">
+                Feel free to reach out to me!</Link>
+                <br />
+                <br />
+                <a class="inline-a link" target="_blank" href="https://drive.google.com/file/d/1H-tHPjIP5dlZl9QtXDgoibdMZKjLbyDJ/view?usp=sharing">
+                    Here is my resume in PDF.
+                </a>
             </div>
         	<br />
         	<br />

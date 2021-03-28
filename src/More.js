@@ -9,6 +9,7 @@ import ehoroIMG from './project-svgs/ehoro.svg';
 import uxstuffIMG from './project-svgs/uxstuff.svg';
 import styles from './projects.css';
 import React, { Component } from "react";
+import {Slide, Fade, LightSpeed} from 'react-reveal';
 import {
   BrowserRouter as Router,
   Switch,
@@ -117,12 +118,18 @@ class More extends Component {
                 <Link to={i.link}>
                     <div class="container">
                             <div class="info">
+                                <Fade top cascade>
                                 <h1>{i.title}</h1>
+                                </Fade>
+                                <Fade bottom cascade>
                                 <h3>{i.platform}</h3>
+                                </Fade>
                                 <p class="description">{i.description}</p>
                             </div>
                             <div class="img-container">
+                            <Fade bottom cascade>
                                 <img className={styles.animate__animated, styles.animate__fadeInDown} src={i.img}/>
+                            </Fade>
                             </div>
                             <p class="date">{i.year}</p>
                     </div>
@@ -140,11 +147,17 @@ class More extends Component {
                 <Link to="/projects">
                     <div class="container">
                         <div class="img-container">
+                        <Fade bottom cascade>
                             <img loading="lazy" src={uxstuffIMG}/>
+                        </Fade>
                         </div>
                         <div class="info">
+                            <Fade top cascade>
                             <h1>UX Designs</h1>
+                            </Fade>
+                            <Fade bottom cascade>
                             <h3>All my UX related work</h3>
+                            </Fade>
                             <p class="description">Check them out.</p>
                         </div>
                     </div>

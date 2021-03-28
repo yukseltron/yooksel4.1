@@ -7,6 +7,7 @@ import {
   NavLink,
   HashRouter
 } from "react-router-dom";
+import {Slide, Fade, LightSpeed} from 'react-reveal';
 import LazyLoad from 'react-lazyload';
 import quercusIMG from './project-svgs/quercus.svg';
 import routesIMG from './project-svgs/routes-app.svg';
@@ -25,7 +26,7 @@ import ScrollToTop from './ScrollToTop';
 var projs = [];
 
 class Proj {
-    constructor(title, platform, year, description, type, img, link) {
+    constructor(title, platform, year, description, type, img, link, color) {
       this.title = title;
       this.platform = platform;
       this.year = year;
@@ -33,26 +34,27 @@ class Proj {
       this.type = type;
       this.img = img;
       this.link = link;
+      this.color = color;
     }
 }
 
 let marqet = new Proj('Art Marqet', 'Mobile Crypto Market', '2021',
-"UI Design, UX Research", 'UX', marqetIMG, '/marqet');
+"UI Design, UX Research", 'UX', marqetIMG, '/marqet', 'marqet');
 
 let quercus = new Proj('Improving Quercus', 'Online Learning System on Web', '2020',
-'UI Design, UX Research, Illustration', 'UX', quercusIMG, '/quercus');
+'UI Design, UX Research, Illustration', 'UX', quercusIMG, '/quercus', 'quercus');
 
 let routes = new Proj('Routes', 'Mobile Commuting App', '2019',
-'UI Design, UX Research', 'UX', routesIMG, '/routes');
+'UI Design, UX Research', 'UX', routesIMG, '/routes', 'routes');
 
 let walleto = new Proj('Walleto', 'Crypto Wallet on Web', '2021',
-'UI Design, UX Research', 'UX', walletoIMG, '/walleto');
+'UI Design, UX Research', 'UX', walletoIMG, '/walleto', 'walleto');
 
 let glenbow = new Proj('Changing Glenbow', 'IA Redesign on Web', '2020',
-"UX Research, UI Design", 'UX', glenIMG, '/glenbow');
+"UX Research, UI Design", 'UX', glenIMG, '/glenbow', 'glenbow');
 
 let more = new Proj('Other Works', 'Coding, Writing, and Art Projects', '',
-'Check out some of my other creative projects.', '', moreIMG, '/more');
+'Check out some of my other creative projects.', '', moreIMG, '/more', 'more');
 
 projs[0] = marqet;
 projs[1] = walleto;
@@ -88,14 +90,21 @@ class Projects extends Component {
       for (var i of projs) {
         items.push(
                 <Link to={i.link}>
-                    <div class="container">
+                    <div class="container" id={i.color}>
                             <div class="info">
+                                <Fade top cascade>
                                 <h1>{i.title}</h1>
+                                </Fade>
+                                <Fade bottom cascade>
                                 <h3>{i.platform}</h3>
+                                </Fade>
                                 <p class="description">{i.description}</p>
                             </div>
+
                             <div class="img-container">
+                            <Fade bottom cascade>
                                 <img loading="lazy" className={styles.animate__animated, styles.animate__fadeInDown} src={i.img}/>
+                            </Fade>
                             </div>
                             <p class="date">{i.year}</p>
                     </div>
@@ -113,11 +122,17 @@ class Projects extends Component {
                 <Link to="/more">
                     <div class="container">
                         <div class="img-container">
+                        <Fade bottom cascade>
                             <img loading="lazy" src={moreIMG}/>
+                        </Fade>
                         </div>
                         <div class="info">
+                        <Fade top cascade>
                             <h1>Other Works</h1>
+                        </Fade>
+                        <Fade bottom cascade>
                             <h3>Coding, Writing, and Art Projects</h3>
+                        </Fade>
                             <p class="description">Check out some of my other creative projects.</p>
                         </div>
                     </div>

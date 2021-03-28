@@ -40,7 +40,7 @@ class Home extends Component {
     			<div class="intro">
     				<div class="home-intro">
                         <p class="hello p-center">Hi! I'm</p>
-                        <Fade bottom cascade>
+                        <Fade top cascade>
                         <h1 id="name">Hamid Yuksel</h1>
                         </Fade>
                         <div class="iam">
@@ -75,7 +75,7 @@ class Home extends Component {
                 <div class="intro">
                     <div class="home-intro">
                         <div class="iam">
-                            <Fade bottom cascade>
+                            <Fade top cascade>
                             <h1>As a UX designer,</h1>
                             </Fade>
                             <Fade bottom cascade>
@@ -113,7 +113,7 @@ class Home extends Component {
                 <div class="intro">
                     <div class="home-intro">
                         <div class="iam">
-                            <Fade bottom cascade>
+                            <Fade top cascade>
                             <h1>For other projects,</h1>
                             </Fade>
                             <Fade bottom cascade>
@@ -147,7 +147,7 @@ class Home extends Component {
             <br/>
             <div class="fade-in section-3 home">
                 <div class="intro">
-                    <Fade bottom cascade>
+                    <Fade top cascade>
                     <div class="home-intro">
                         <div class="iam">
                             <h1>What else?</h1>
