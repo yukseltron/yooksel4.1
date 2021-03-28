@@ -213,23 +213,23 @@ class Quercus extends Component {
     			<img loading="lazy" src={prioriGrid}/>
                 <p class="p-center">We each voted for what we felt were the right ideas to work on, when considering time, effort, and impact. The top 3 ideas we felt were best to work on:</p>
                 <div class="ideation-section center-content">
-                    <h4>Content Connections</h4>
+                    <h4>1. Content Connections</h4>
                     <p>Showing which lectures are relevant to an assignment.</p>
                 </div>
                 <div class="ideation-section center-content">
-                    <h4>Meeting Classmates</h4>
+                    <h4>2. Meeting Classmates</h4>
                     <p>Helping students meet others and form teams quickly.</p>
                 </div>
                 <div class="ideation-section center-content">
-                    <h4>Course Consistency</h4>
+                    <h4>3. Course Consistency</h4>
                     <p>Making course material easy to find across different courses online.</p>
                 </div>
             </div>
             <div class="">
     			<h2>Sketches</h2>
                 <br/>
-                <p class="center-content">We tested out on pen and paper to see how we could implement our ideas:</p>
-    			<img loading="lazy" src={sketches}/>
+                <p class="center-content">We tested out on pen and paper to see how we could implement our ideas. Here are some of the sketches we made:</p>
+    			<img loading="lazy" class="img-l" src={sketches}/>
             </div>
 		</div>
 		<div class="section">
@@ -243,7 +243,7 @@ class Quercus extends Component {
             <br/>
             <div class="spacer">
                 <h2>User Scenarios</h2>
-                <p class="center-content">Here we show the midfi user flows for the 3 ideas we settled on.</p>
+                <p class="center-content">Here are the the midfi user flows for the 3 ideas we settled on.</p>
                 <h4>1. Content Connections</h4>
                 <h4>2. Meeting Classmates</h4>
                 <h4 class="striked">3. Course Consistency</h4>
@@ -283,7 +283,7 @@ class Quercus extends Component {
                         <div>
                             <h4 class="striked">Course Consistency</h4>
                             <h4>Interests Boards</h4>
-                            <p class="center-content">Originally, we wanted courses online to be organized consistently. Unfortunately we found out the barrier to this is a legal hurdle. Professors must be given total creative freedom over how they organize a course. <br/> <br/>So we switched to an idea that focuses on making connections with classmates. In this scenario, we see how Allie can connect to classmates as friends by exploring and joining interest groups for a course. This way, Allie can find ways to bond online with classmates she may have never met before.</p>
+                            <p class="center-content">Originally, we wanted courses online to be organized consistently. But when considering constraints we encountered a legal hurdle. Professors must be given total creative freedom over how they organize a course. <br/> <br/>So we switched to an idea that focuses on making connections with classmates instead. In this scenario, we see how Allie can connect to classmates as friends by exploring and joining interest groups for a course. This way, Allie can find ways to bond online with classmates she may have never met before.</p>
                         </div>
                         <br/>
                         <br/>
@@ -293,13 +293,19 @@ class Quercus extends Component {
             </div>
             <div class="spacer">
                 <h2>Usability Testing</h2>
-                <br/>
-                <h4 class="quote">"It was pretty easy and intuitive to use compared to the current system,<br/>so I much prefer the new system."</h4>
-                <p class="p-center">- interview participant</p>
+                <p class="center-content">After I turned our midfi into a clickable prototype, we conducted usability testing to see where our midfi design could be refined.</p>
                 <br/>
                 <br/>
                 <div class="horizontal-section">
-                            <p class="center-content">Designing our interview method, we conducted usability testing on our midfi prototype. We created tasks for our users to accomplish along with follow up questions. We then created steps for a predetermined 'happy' path for a task, along with its success criteria.<br/><br/>Our interviews showed that participants could miss some of the new features and were confused by the difference between 'Group search' and 'Connections'. On the positive, participants really enjoyed the interests board and liked the customizable course materials. Overall they felt the user flow was improved.</p>
+                    <div>
+                            <p class="center-content">Designing our testing method, we created tasks for our users to accomplish along with follow up questions and steps for a predetermined 'happy' path to compare with. These questions and steps help determine our success criteria.</p><br/><br/>
+                            <h4>Negatives</h4>
+                            <p>Our interviews showed that participants could miss some of the new features and were confused by the difference between 'Group search' and 'Connections'.</p>
+                            <h4>Positives</h4>
+                            <p>On the positive, participants really enjoyed the interests board and liked the customizable course materials. Overall they felt the user flow was improved.</p><br/>
+                            <h4 class="quote">"It was pretty easy and intuitive to use compared to the current system,<br/>so I much prefer the new system."</h4>
+                            <p class="p-center">- interview participant</p><br/>
+                    </div>
                     <img loading="lazy" class="img-m" src={criteria}/>
                 </div>
                 <p class="p-right">An example task from our interviews.</p>
