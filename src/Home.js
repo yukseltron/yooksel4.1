@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import Projects from "./Projects";
 import About from "./About";
+import {Slide, Fade, LightSpeed} from 'react-reveal';
 import './home.css';
 import uxstuffIMG from './project-svgs/uxstuff.svg';
 import aboutIMG from './project-svgs/about.svg';
@@ -39,17 +40,27 @@ class Home extends Component {
     			<div class="intro">
     				<div class="home-intro">
                         <p class="hello p-center">Hi! I'm</p>
+                        <Fade bottom cascade>
                         <h1 id="name">Hamid Yuksel</h1>
+                        </Fade>
                         <div class="iam">
+                            <Fade bottom cascade>
         					<h3>I'm a UX designer,</h3>
+                            </Fade>
+                            <Fade bottom cascade>
                             <h3>with a background in computer science,</h3>
+                            </Fade>
+                            <Fade bottom cascade>
                             <h3>and an interest in art, writing, and more.</h3>
+                            </Fade>
                         </div>
     				</div>
                     <br />
+                    <Fade left>
                     <div class="home-links">
                         <h2><NavLink to="/contact" class="link">Contact me</NavLink></h2>
                     </div>
+                    </Fade>
     			</div>
                 <br/>
                 <br/>
@@ -64,12 +75,19 @@ class Home extends Component {
                 <div class="intro">
                     <div class="home-intro">
                         <div class="iam">
+                            <Fade bottom cascade>
                             <h1>As a UX designer,</h1>
+                            </Fade>
+                            <Fade bottom cascade>
                             <h3>I focus on meaningful interactions</h3>
+                            </Fade>
+                            <Fade bottom cascade>
                             <h3>and useful interfaces.</h3>
+                            </Fade>
                         </div>
                     </div>
                     <br />
+                    <Slide right>
                     <div class="home-links">
                         <h2><NavLink to="/projects" class="link">View my UX work</NavLink></h2>
                         <br/>
@@ -77,47 +95,78 @@ class Home extends Component {
                             My resume PDF
                         </a></h2>
                     </div>
+                    </Slide>
                 </div>
                 <div class="img-container">
+                    <Fade bottom>
                     <img src={uxstuffIMG}/>
+                    </Fade>
                 </div>
             </div>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
             <div class="fade-in spacer home section-2 ">
                 <div class="intro">
                     <div class="home-intro">
                         <div class="iam">
+                            <Fade bottom cascade>
                             <h1>For other projects,</h1>
+                            </Fade>
+                            <Fade bottom cascade>
                             <h3>I code, write,</h3>
+                            </Fade>
+                            <Fade bottom cascade>
                             <h3>and make art.</h3>
+                            </Fade>
                         </div>
                     </div>
                     <br />
+                    <Slide left>
                     <div class="home-links">
                         <h2><NavLink to="/more" class="link">View my other work</NavLink></h2>
                     </div>
+                    </Slide>
                 </div>
                 <br />
                 <br />
+                <Fade bottom>
                 <div class="shape-container center-content">
                     <div id="shape" style={{backgroundImage: backGradient}} class="shape1"></div>
                 </div>
+                </Fade>
             </div>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
             <div class="fade-in section-3 home">
                 <div class="intro">
+                    <Fade bottom cascade>
                     <div class="home-intro">
                         <div class="iam">
                             <h1>What else?</h1>
                         </div>
                     </div>
+                    </Fade>
                     <br />
+                    <Slide right>
                     <div class="home-links">
                         <h2><NavLink to="/about" class="link">Learn about me</NavLink></h2>
                     </div>
+                    </Slide>
                 </div>
                 <br />
                 <br />
                 <div class="shape-container center-content">
+                <LightSpeed left>
                     <img src={aboutIMG}/>
+                </LightSpeed>
                 </div>
                 <br/>
                 <br/>
