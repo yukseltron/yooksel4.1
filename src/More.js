@@ -116,7 +116,7 @@ class More extends Component {
       for (var i of projs) {
         items.push(
             <div id={i.color}>
-                <div class="container center-content spacer">
+                <div class="container spacer">
                     <Link to={i.link}>
                     <div class="info">
                         <Fade bottom cascade>
@@ -143,12 +143,16 @@ class More extends Component {
         <LazyLoad placeholder={<img src="https://media1.giphy.com/media/3oEjI6SIIHBdRxXI40/200.gif"/>}>
         <br/>
         <br/>
+            <Fade top cascade>
+            <div>
             <h4 class="p-center" ref={this.myDivToFocus}>My programming, writing, and graphic design work. <Link class="h-link" to="/projects">Want my UX stuff?</Link></h4>
+            </div>
+            </Fade>
             <br/>
             <br/>
             <div class="fade-in" id="projects">
 				{items}
-                    <div class="container center-content spacer">
+                    <div class="container spacer">
                         <Link to="/projects">
                         <div class="img-container">
                         <Fade bottom cascade>

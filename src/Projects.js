@@ -90,7 +90,7 @@ class Projects extends Component {
       for (var i of projs) {
         items.push(
                     <div id={i.color}>
-                        <div class="container center-content spacer">
+                        <div class="container spacer">
                             <Link to={i.link}>
                             <div class="info">
                                 <Fade bottom cascade>
@@ -126,7 +126,7 @@ class Projects extends Component {
             <br/>
             <div class="fade-in" id="projects">
 				{items}
-                    <div class="container center-content spacer">
+                    <div class="container spacer">
                     <Link to="/more">
                         <div class="img-container">
                             <Fade bottom cascade>

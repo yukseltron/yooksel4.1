@@ -116,7 +116,7 @@ class About extends Component {
                 </label>
                 </div>
                 </Slide>
-                <Slide bottom>
+                <Slide left>
             	<h3 id="skills">UX Skills</h3>
                 </Slide>
                 <div class="skills top-border" id="ux-skills">
@@ -159,7 +159,7 @@ class About extends Component {
                     </Slide>
                 </div>
                 <div class="skills top-border" id="cs-skills">
-                    <Slide bottom>
+                    <Slide right>
                     <div>
                         <h2>Codes using</h2>
                         <ul>
