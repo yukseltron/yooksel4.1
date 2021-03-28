@@ -38,29 +38,24 @@ class Home extends Component {
         <div>
     		<div class="fade-in home spacer">
     			<div class="intro">
+                    <Fade bottom cascade>
     				<div class="home-intro">
                         <p class="hello p-center">Hi! I'm</p>
-                        <Fade top cascade>
                         <h1 id="name">Hamid Yuksel</h1>
-                        </Fade>
                         <div class="iam">
-                            <Fade bottom cascade>
         					<h3>I'm a UX designer,</h3>
-                            </Fade>
-                            <Fade bottom cascade>
+
                             <h3>with a background in computer science,</h3>
-                            </Fade>
-                            <Fade bottom cascade>
                             <h3>and an interest in art, writing, and more.</h3>
-                            </Fade>
                         </div>
     				</div>
+                    </Fade>
                     <br />
-                    <Fade left>
+                    <Slide left>
                     <div class="home-links">
                         <h2><NavLink to="/contact" class="link">Contact me</NavLink></h2>
                     </div>
-                    </Fade>
+                    </Slide>
     			</div>
                 <br/>
                 <br/>
@@ -74,28 +69,26 @@ class Home extends Component {
             <div class="fade-in spacer section-1 home">
                 <div class="intro">
                     <div class="home-intro">
+                        <Fade bottom cascade>
                         <div class="iam">
-                            <Fade top cascade>
                             <h1>As a UX designer,</h1>
-                            </Fade>
-                            <Fade bottom cascade>
                             <h3>I focus on meaningful interactions</h3>
-                            </Fade>
-                            <Fade bottom cascade>
                             <h3>and useful interfaces.</h3>
-                            </Fade>
                         </div>
+                        </Fade>
                     </div>
                     <br />
-                    <Slide right>
                     <div class="home-links">
+                    <Slide right>
                         <h2><NavLink to="/projects" class="link">View my UX work</NavLink></h2>
+                    </Slide>
                         <br/>
+                    <Slide left>
                         <h2><a class="inline-a link" target="_blank" href="https://drive.google.com/file/d/1H-tHPjIP5dlZl9QtXDgoibdMZKjLbyDJ/view?usp=sharing">
                             My resume PDF
                         </a></h2>
-                    </div>
                     </Slide>
+                    </div>
                 </div>
                 <div class="img-container">
                     <Fade bottom>
@@ -112,17 +105,12 @@ class Home extends Component {
             <div class="fade-in spacer home section-2 ">
                 <div class="intro">
                     <div class="home-intro">
+                        <Fade bottom cascade>
                         <div class="iam">
-                            <Fade top cascade>
                             <h1>For other projects,</h1>
-                            </Fade>
-                            <Fade bottom cascade>
-                            <h3>I code, write,</h3>
-                            </Fade>
-                            <Fade bottom cascade>
-                            <h3>and make art.</h3>
-                            </Fade>
+                            <h3>I code, write,<br/>and make art.</h3>
                         </div>
+                        </Fade>
                     </div>
                     <br />
                     <Slide left>
@@ -164,9 +152,9 @@ class Home extends Component {
                 <br />
                 <br />
                 <div class="shape-container center-content">
-                <LightSpeed left>
+                <Fade bottom>
                     <img src={aboutIMG}/>
-                </LightSpeed>
+                </Fade>
                 </div>
                 <br/>
                 <br/>
