@@ -138,6 +138,10 @@ p {
 	width: 50% !important;
 }
 
+.img-mm {
+	width: 100% !important;
+}
+
 .img-s {
 	width: 30% !important;
 }
@@ -287,7 +291,7 @@ p {
 
 	.persona-section {
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-between !important;
 	}
 
 	.horizontal-section {
