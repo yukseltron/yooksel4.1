@@ -4,6 +4,7 @@ import {
   NavLink,
   HashRouter
 } from "react-router-dom";
+import ScrollToTop from './ScrollToTop';
 import Projects from "./Projects";
 import About from "./About";
 import {Slide, Fade, LightSpeed} from 'react-reveal';
@@ -33,17 +34,32 @@ function returnShape() {
 }
 
 class Home extends Component {
+    constructor(props){
+       super(props)
+       //creates a reference for your element to use
+       this.myDivToFocus = React.createRef()
+    }
+
+    handleOnClick = (event) => {
+        //.current is verification that your element has rendered
+        if(this.myDivToFocus.current){
+            this.myDivToFocus.current.scrollIntoView({
+               behavior: "smooth",
+               block: "end"
+            })
+        }
+    }
   render() {
     return (
         <div>
-    		<div class="fade-in home spacer">
+    		<div ref={this.myDivToFocus} class="fade-in home spacer">
     			<div class="intro">
                     <Fade bottom cascade>
     				<div class="home-intro">
                         <p class="hello p-center">Hi! I'm</p>
                         <h1 id="name">Hamid Yuksel</h1>
                         <div class="iam">
-        					<h3>I'm a UX designer,</h3>
+        					<h3>a UX designer,</h3>
 
                             <h3>with a background in computer science,</h3>
                             <h3>and an interest in art, writing, and more.</h3>
@@ -133,7 +149,7 @@ class Home extends Component {
             <br/>
             <br/>
             <br/>
-            <div class="fade-in section-3 home">
+            <div class="fade-in section-3 home  spacer">
                 <div class="intro">
                     <Fade top cascade>
                     <div class="home-intro">
@@ -156,11 +172,8 @@ class Home extends Component {
                     <img src={aboutIMG}/>
                 </Fade>
                 </div>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
             </div>
+            <h2><a class="p-center link-top spacer return" onClick={this.handleOnClick}>Return to top</a></h2>
             <br/>
             <br/>
             <br/>

@@ -89,26 +89,27 @@ class Projects extends Component {
 
       for (var i of projs) {
         items.push(
-                <Link to={i.link}>
-                    <div class="container" id={i.color}>
+                    <div id={i.color}>
+                        <div class="container center-content spacer">
+                            <Link to={i.link}>
                             <div class="info">
-                                <Fade top cascade>
-                                <h1>{i.title}</h1>
-                                </Fade>
                                 <Fade bottom cascade>
-                                <h3>{i.platform}</h3>
+                                <div>
+                                    <h1>{i.title}</h1>
+                                    <h3>{i.platform}</h3>
+                                    <p class="description">{i.description}</p>
+                                </div>
                                 </Fade>
-                                <p class="description">{i.description}</p>
                             </div>
-
                             <div class="img-container">
                             <Fade bottom cascade>
                                 <img loading="lazy" className={styles.animate__animated, styles.animate__fadeInDown} src={i.img}/>
                             </Fade>
                             </div>
                             <p class="date">{i.year}</p>
+                            </Link>
+                        </div>
                     </div>
-                </Link>
         )
       }
     return (
@@ -116,29 +117,36 @@ class Projects extends Component {
         <LazyLoad>
             <br/>
             <br/>
+            <Fade top cascade>
+            <div>
             <h4 class="p-center" ref={this.myDivToFocus}>These are my UX projects. Check out my <Link class="h-link" to="/more">other projects here.</Link></h4>
-			<div class="fade-in" id="projects">
+            </div>
+            </Fade>
+            <br/>
+            <br/>
+            <div class="fade-in" id="projects">
 				{items}
-                <Link to="/more">
-                    <div class="container">
+                    <div class="container center-content spacer">
+                    <Link to="/more">
                         <div class="img-container">
-                        <Fade bottom cascade>
-                            <img loading="lazy" src={moreIMG}/>
-                        </Fade>
+                            <Fade bottom cascade>
+                            <img class="container-img" loading="lazy" src={moreIMG}/>
+                            </Fade>
                         </div>
                         <div class="info">
-                        <Fade top cascade>
-                            <h1>Other Works</h1>
-                        </Fade>
-                        <Fade bottom cascade>
-                            <h3>Coding, Writing, and Art Projects</h3>
-                        </Fade>
-                            <p class="description">Check out some of my other creative projects.</p>
+                            <Fade bottom cascade>
+                            <div>
+                                <h1>Other Works</h1>
+                                <h3>Coding, Writing, and Art Projects</h3>
+                                <p class="description">Check out some of my other creative projects.</p>
+                            </div>
+                            </Fade>
                         </div>
+                        </Link>
                     </div>
-                </Link>
 			</div>
-            <h2><a class="p-center link-top spacer" onClick={this.handleOnClick}>Return to top</a></h2>
+            <h2><a class="p-center link-top spacer return" onClick={this.handleOnClick}>Return to top</a></h2>
+            <div class="spacer"></div>
         </LazyLoad>
 		</div>
     );

@@ -115,25 +115,27 @@ class More extends Component {
 
       for (var i of projs) {
         items.push(
-                <Link to={i.link}>
-                    <div class="container">
-                            <div class="info">
-                                <Fade top cascade>
-                                <h1>{i.title}</h1>
-                                </Fade>
-                                <Fade bottom cascade>
-                                <h3>{i.platform}</h3>
-                                </Fade>
-                                <p class="description">{i.description}</p>
-                            </div>
-                            <div class="img-container">
-                            <Fade bottom cascade>
-                                <img className={styles.animate__animated, styles.animate__fadeInDown} src={i.img}/>
-                            </Fade>
-                            </div>
-                            <p class="date">{i.year}</p>
+            <div id={i.color}>
+                <div class="container center-content spacer">
+                    <Link to={i.link}>
+                    <div class="info">
+                        <Fade bottom cascade>
+                        <div>
+                            <h1>{i.title}</h1>
+                            <h3>{i.platform}</h3>
+                            <p class="description">{i.description}</p>
+                        </div>
+                        </Fade>
                     </div>
-                </Link>
+                    <div class="img-container">
+                    <Fade bottom cascade>
+                        <img loading="lazy" className={styles.animate__animated, styles.animate__fadeInDown} src={i.img}/>
+                    </Fade>
+                    </div>
+                    <p class="date">{i.year}</p>
+                    </Link>
+                </div>
+            </div>
         )
       }
     return (
@@ -142,10 +144,12 @@ class More extends Component {
         <br/>
         <br/>
             <h4 class="p-center" ref={this.myDivToFocus}>My programming, writing, and graphic design work. <Link class="h-link" to="/projects">Want my UX stuff?</Link></h4>
-			<div class="fade-in" id="projects">
+            <br/>
+            <br/>
+            <div class="fade-in" id="projects">
 				{items}
-                <Link to="/projects">
-                    <div class="container">
+                    <div class="container center-content spacer">
+                        <Link to="/projects">
                         <div class="img-container">
                         <Fade bottom cascade>
                             <img loading="lazy" src={uxstuffIMG}/>
@@ -160,11 +164,12 @@ class More extends Component {
                             </Fade>
                             <p class="description">Check them out.</p>
                         </div>
+                        </Link>
                     </div>
-                </Link>
 			</div>
-            <h2 class="p-center link-top spacer"><a onClick={this.handleOnClick}>Return to top</a></h2>
+            <h2 class="p-center link-top spacer"><a class="return" onClick={this.handleOnClick}>Return to top</a></h2>
         </LazyLoad>
+        <div class="spacer"></div>
 		</div>
     );
   }

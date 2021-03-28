@@ -63,7 +63,7 @@ p {
 #nav-header {
 	display: flex;
 	justify-content: space-between;
-	font-size: 80%;
+	font-size: 60%;
 }
 
 h2 a {
@@ -92,6 +92,7 @@ h2 a:active {
 
 	#nav-header {
 		justify-content: flex-end;
+		font-size: 80%;
 	}
 
 	#nav-header a {
@@ -104,6 +105,10 @@ h2 a:active {
 
 	.margin-right {
 		margin-right: 50px;
+	}
+
+	.return {
+		width: 25%;
 	}
 }
 
@@ -173,11 +178,6 @@ h2 a:active {
 	text-align: right;
 }
 
-.border-white {
-	border-radius: 5px;
-	background-color: #3535ff;
-}
-
 .bottom-border-white {
 	border-bottom: 1px solid white;
 }
@@ -189,4 +189,16 @@ h2 a:active {
 
 .striked {
 	text-decoration: line-through;
+}
+
+.return {
+	color: blue;
+	margin: auto;
+	padding: 10px;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.return:hover {
+	cursor: pointer;
 }

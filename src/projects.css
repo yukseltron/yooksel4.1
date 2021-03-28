@@ -1,7 +1,18 @@
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 900px) {
 	.container {
 		margin-top: 150px;
 		margin-bottom: 150px;
+	}
+
+	.container:hover {
+		width: 45%;
+		box-shadow:
+	  inset 0 0 15px rgba(55, 84, 170,0),
+	  inset 0 0 20px rgba(255, 255, 255,0),
+	  7px 7px 15px rgba(55, 84, 170,.15),
+	  -7px -7px 20px rgba(255, 255, 255,1),
+	  inset 0px 0px 4px rgba(255, 255, 255,.2);
+	  border-radius: 2%;
 	}
 
 	.img-container img {
@@ -15,18 +26,18 @@ a {
 }
 
 .container {
+	padding: 25px;
+	border-radius: 10px !important;
 	margin-top: 50px;
-	padding: 50px;
-	border: 1px solid black;
-	transition: background-color 0.2s, color 0.2s;
+	border: 1px solid #EFEFEF;
+	transition: background-color 0.2s, color 0.2s, width 0.4s, box-shadow 0.4s;
 	transition-timing-function: ease-in-out;
+	margin: auto;
 }
 
 .container:hover {
 	cursor: pointer;
-	color: white;
-	background-color: black;
-	transition: background-color 0.2s, color 0.2s;
+	transition: background-color 0.2s, color 0.2s, width 0.4s, box-shadow 0.4s;
 	transition-timing-function: ease-in-out;
 }
 
@@ -72,4 +83,8 @@ a {
 .horizontal {
 	display: flex;
 	flex-direction: row;
+}
+
+.container-img {
+	width: 150%;
 }
