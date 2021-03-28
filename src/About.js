@@ -58,15 +58,19 @@ class About extends Component {
         <div class='about-body fade-in'>
             <div class="center-content">
                 <Fade bottom cascade>
+                <div>
                 <h1 ref={this.myDivToFocus}>Hey,</h1>
             	<h2>
             	Looks like you want to get to know me better!
             	</h2>
+                </div>
+                </Fade>
                 <Fade bottom>
+                <div>
                 <h3>
                 I'm just a human being somewhere in Canada.<br/>Probably working on hobbies or projects.
                 </h3>
-                </Fade>
+                </div>
                 </Fade>
                 <Slide bottom>
                 <h4>Originally, I studied computer science, but I also taught myself how to use design tools in my spare time. Currently, I'm doing a masters where I can learn more about design (and also data science).</h4>
@@ -78,13 +82,19 @@ class About extends Component {
                 In my spare time, I enjoy doing things like doodling or reading about history. En plus, je puis parler en Francais car je vivais au Montreal quand j'étais un petit enfant.
                 </h4>
                 </Slide>
+                <Slide right>
                 <Link class="link" to="/contact">
                 Feel free to reach out to me!</Link>
+                </Slide>
                 <br />
                 <br />
+                <Slide left>
+                <div>
                 <a class="inline-a link" target="_blank" href="https://drive.google.com/file/d/1H-tHPjIP5dlZl9QtXDgoibdMZKjLbyDJ/view?usp=sharing">
                     Here is my resume in PDF.
                 </a>
+                </div>
+                </Slide>
             </div>
         	<br />
         	<br />
@@ -95,6 +105,8 @@ class About extends Component {
             <br />
             <br />
             <div class="center-content-wide">
+                <Slide bottom>
+                <div>
                 <label class="label">
                 <p id="toggle-p">Switch skills</p>
                   <div class="toggle">
@@ -102,8 +114,13 @@ class About extends Component {
                     <div class="indicator"></div>
                   </div>
                 </label>
+                </div>
+                </Slide>
+                <Slide bottom>
             	<h3 id="skills">UX Skills</h3>
+                </Slide>
                 <div class="skills top-border" id="ux-skills">
+                    <Slide bottom>
                     <div>
                         <h2>Designs with</h2>
                         <ul>
@@ -115,6 +132,8 @@ class About extends Component {
                             <li>Data Analytics</li>
                         </ul>
                     </div>
+                    </Slide>
+                    <Slide bottom>
                     <div>
                         <h2>Methods used</h2>
                         <ul>
@@ -126,6 +145,8 @@ class About extends Component {
                             <li>Usability Testing</li>
                         </ul>
                     </div>
+                    </Slide>
+                    <Slide bottom>
                     <div>
                         <h2>Designs using</h2>
                         <ul>
@@ -135,8 +156,10 @@ class About extends Component {
                             <li>XD</li>
                         </ul>
                     </div>
+                    </Slide>
                 </div>
                 <div class="skills top-border" id="cs-skills">
+                    <Slide bottom>
                     <div>
                         <h2>Codes using</h2>
                         <ul>
@@ -147,6 +170,8 @@ class About extends Component {
                             <li>Bash</li>
                         </ul>
                     </div>
+                    </Slide>
+                    <Slide bottom>
                     <div>
                         <h2>Is learning</h2>
                         <ul>
@@ -154,6 +179,8 @@ class About extends Component {
                             <li>Swift</li>
                         </ul>
                     </div>
+                    </Slide>
+                    <Slide bottom>
                     <div>
                         <h2>Can use</h2>
                         <ul>
@@ -164,6 +191,7 @@ class About extends Component {
                             <li>NASM Assembly</li>
                         </ul>
                     </div>
+                    </Slide>
                 </div>
             </div>
         	<br />
@@ -171,23 +199,29 @@ class About extends Component {
             <br />
         	<br />
             <div class="center-content">
+                <Slide bottom>
             	<h3>Education</h3>
+                </Slide>
             	<div class="education top-border">
             		<div>
+                        <Slide bottom>
                         <div>
                             <h2>UX Design and Human-Centred Data Science</h2>
                             <h4>Masters of Information</h4>
                             <p>@ University of Toronto, St George</p>
                             <p>2022</p>
                         </div>
+                        </Slide>
                         <br/>
                         <br/>
+                        <Slide bottom>
                         <div class="top-border-dashed">
                             <h2>Computer Science</h2>
                             <h4>Bachelors of Applied Science</h4>
                             <p>@ McMaster University</p>
                             <p>2020</p>
                         </div>
+                        </Slide>
             		</div>
             	</div>
             </div>
@@ -196,7 +230,10 @@ class About extends Component {
             <br />
         	<br />
             <div class="center-content">
+                <Slide bottom>
             	<h3>Experience</h3>
+                </Slide>
+                <Slide bottom>
             	<div class="top-border">
                   <h2>UX Designer & Developer</h2>
                   <h4>@ CaseWare</h4>
@@ -206,8 +243,10 @@ class About extends Component {
     its style guides, 40+ icons, and illustrations to help communicate to developers.</h3>
                  <p>Tools: User Interviews, Angular, HTM/CSS, Illustrator, XD</p>
             	</div>
+                </Slide>
                 <br/>
                 <br/>
+                <Slide bottom>
             	<div class="top-border-dashed">
                     <h2>Web Developer & Graphic Designer</h2>
                     <h4>@ McMaster SSC</h4>
@@ -216,8 +255,10 @@ class About extends Component {
                     <h3 class="h3-para">Worked on a risk assessment app for students hosting events at the university. Designed the form and contributed to the risk assessment algorithm. Also made visual designs for the branding on various different SSC websites.</h3>
                     <p>Tools: Vue.js, HTML, CSS, Photoshop</p>
             	</div>
+                </Slide>
                 <br/>
                 <br/>
+                <Slide bottom>
             	<div class="top-border-dashed">
                     <h2>Software Design Engineer Intern</h2>
                     <h4>@ Concur</h4>
@@ -227,41 +268,50 @@ class About extends Component {
     a web app to dynamically show all the search query metrics and outcomes in real time and in an organized manner with customization options.</h3>
                     <p>Tools: Java, JQuery, HTML, CSS, Spring, SQL</p>
             	</div>
+                </Slide>
             </div>
         	<br />
         	<br />
             <br />
             <br />
             <div class="center-content">
+                <Slide bottom>
             	<h3>Activities</h3>
+                </Slide>
+                <Slide bottom>
             	<div class="top-border">
                     <h2>Design Lead</h2>
                     <h4>@ DeltaHacks</h4>
                     <p>Jan 2016 - May 2017</p>
                     <h3 class="h3-para">Designed and led the team behind the main visual styles and branding of DeltaHacks III, a hackathon.</h3>
             	</div>
+                </Slide>
             		<br />
                     <br/>
+                <Slide bottom>
             	<div class="top-border-dashed">
                     <h2>Dev Mentor</h2>
                     <h4>@ NameCheap</h4>
                     <p>Feb 2016-Jan 2017</p>
                     <h3 class="h3-para">Mentored for programming and design to students at hackathons across North America.</h3>
             	</div>
+                </Slide>
             		<br />
                     <br/>
+                <Slide bottom>
             	<div class="top-border-dashed">
                     <h2>Instructor</h2>
                     <h4>@ Mac Outreach</h4>
                     <p>Sep 2015-2016</p>
                     <h3 class="h3-para">Helped teach 1000+ elementary students recursion and functional programming basics using ELM.</h3>
             	</div>
+                </Slide>
             </div>
             <br/>
             <br/>
             <br/>
             <br/>
-            <h2 class="p-center"><a onClick={this.handleOnClick}>Return to top</a></h2>
+            <h2 class="p-center"><a class="return" onClick={this.handleOnClick}>Return to top</a></h2>
             <br/>
             <br/>
             <br/>
@@ -296,7 +346,9 @@ class About extends Component {
                 <br/>
                 <br/>
                 <br/>
+                <Fade bottom cascade>
                 <p>Still want more?</p>
+                </Fade>
                 <br/>
                 <br/>
                 <br/>
@@ -325,7 +377,9 @@ class About extends Component {
                 <br/>
                 <br/>
                 <br/>
+                <Fade bottom cascade>
                 <p> Keep scrolling for some fun stuff</p>
+                </Fade>
                 <br/>
                 <br/>
                 <br/>
@@ -356,6 +410,8 @@ class About extends Component {
                 <br/>
             </div>
             <div class="center-content">
+                <Fade bottom>
+                <div>
                 <h3>Fun stuff</h3>
                 <h2>Album of the moment</h2>
                 <iframe src="https://open.spotify.com/embed/album/49MNmJhZQewjt06rpwp6QR" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
@@ -371,8 +427,10 @@ class About extends Component {
                 <br/>
                 <br/>
                 <br/>
-                <h2 class="p-center"><a onClick={this.handleOnClick}>Return to top</a></h2>
+                </div>
+                </Fade>
             </div>
+            <h2 class="p-center"><a class="return" onClick={this.handleOnClick}>Return to top</a></h2>
         </div>
 
 
