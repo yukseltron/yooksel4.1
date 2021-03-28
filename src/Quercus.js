@@ -114,6 +114,7 @@ class Quercus extends Component {
                 <br/>
                 <div class="needs-section spacer center-content">
                     <h2>The Needs</h2>
+                    <p class="center-content">We identified the following needs based on our user research:</p>
                     <div class="needs">
                         <h1>1.</h1>
                         <h4 class="h-left">Students need a way to engage with professors and fellow students better, so that they may form groups faster and make lasting connections.</h4>
@@ -137,7 +138,7 @@ class Quercus extends Component {
                 <div class="solution-sector spacer center-content">
                     <div class="solution-info">
                         <div>
-                            <p class="p-left">Our recommendation is to implement on Quercus:</p>
+                            <p class="p-left">After implementing and testing our ideas, we recommend the following solutions for fulfilling the needs above:</p>
                             <h4>• A group search feature, to find teammates and their contact info.</h4>
                             <br/>
                             <h4>• Interest boards to learn about classmates, without needing to contact them.</h4>
@@ -155,9 +156,9 @@ class Quercus extends Component {
 		<div class="border-bottom spacer border-top">
             <div class="center-content">
     		  	<h3>My Contributions</h3>
-                <p>For the research phase, I was responsible for the survey questions and format. I also contributed to the user analysis in making the persona and journey maps.</p>
-                <p>During ideation, I helped come up with ideas and organized our results on a prioritization grid. As well, I helped design our user scenarios.</p>
-                <p>In the design phase, I was responsible for making the Midfi and Hifi prototypes and the overall visual design.</p>
+                <p>For the research phase, I was responsible for designing the survey questionnaire. I also contributed to the user analysis by making the persona and journey maps.</p>
+                <p>During ideation, I helped come up with ideas and organized our results visually on a prioritization grid. As well, I mapped out our user scenarios through user flow diagrams.</p>
+                <p>For the design phase, I was responsible for making the Midfi and Hifi prototypes and the overall visual design.</p>
             </div>
 		  	<br/>
     	  	<br/>
@@ -166,13 +167,13 @@ class Quercus extends Component {
 		<div class="section spacer" ref={this.div2}>
             <div class="spacer">
     			<h3>Research</h3>
-                <p class="center-content">We gathered our data from 11 UofT students through a survey on their experiences using Quercus.</p>
+                <p class="center-content">We began this project with by developing a survey and conducting interviews for user research. We gathered our data from 11 university students on their experiences using Quercus. I devised the questionnaire with Suzie, and conducted 1 user interview.</p>
                 <br/>
         	  	<br/>
-                <h2>Our data showed:</h2>
-    			<p class="p-center">Students struggle with inconsistent course pages</p>
+                <h2>Gathering our data showed:</h2>
+    			<p class="p-center">Students struggle with inconsistent course pages,</p>
     			<img src={research1}/>
-    			<p class="p-center">And that they do not really participate in online dicussions</p>
+    			<p class="p-center">And that they do not really participate in online dicussions.</p>
     			<img loading="lazy" src={research2}/>
             </div>
             <br/>
@@ -180,7 +181,7 @@ class Quercus extends Component {
             <br/>
             <div class="spacer">
     			<h2>Persona</h2>
-                <p class="p-center">Analyzing what we learned, we constructed a persona.</p>
+                <p class="center-content">Analyzing what we learned, we constructed a persona. We initially made proto-personas on our own with empathy maps, and I designed the final persona by synthesizing them.</p>
                 <br/>
                 <br/>
     			<img loading="lazy" src={persona}/>
@@ -192,7 +193,7 @@ class Quercus extends Component {
     			<h2>Journey Mapping</h2>
                 <br/>
                 <div>
-                    <p class="center-content">Afterwards, we created journey maps to connect with our users, see how their process works, and outline pain points and areas of opportunities.<br/><br/>This journey map is for a scenario where our user prepares for a lecture and assignments.</p>
+                    <p class="center-content">Afterwards, we created journey maps to connect with our users, see how their process works, and outline pain points and areas of opportunities.<br/><br/>This journey map is for an as-is-scenario where our user prepares for a lecture and assignments.</p>
                     <br/>
                     <br/>
                     <br/>
@@ -206,10 +207,11 @@ class Quercus extends Component {
 		<div class="border-top section spacer" ref={this.div3}>
             <div class="spacer">
     			<h3>Ideation</h3>
+                <p class="center-content">At this point, we understood the user context by developing a polished persona. We identified what our users do on Quercus, what painpoints they encounter, and what constraints they endured. Now we just had to figure out what were good solutions.</p>
     			<h2>Our Ideas</h2>
-                <p class="center-content">We came up with ideas and ranked them on a prioritization grid as seen below.</p>
+                <p class="center-content">We came up with ideas and ranked them on a prioritization grid as seen below. I made the illustrations and the grid for the ideas below.</p>
     			<img loading="lazy" src={prioriGrid}/>
-                <p class="p-center">The top ideas we felt was best to work on were:</p>
+                <p class="p-center">We each voted for what we felt were the right ideas to work on, when considering time, effort, and impact. The top 3 ideas we felt were best to work on:</p>
                 <div class="ideation-section center-content">
                     <h4>Content Connections</h4>
                     <p>Showing which lectures are relevant to an assignment.</p>
@@ -280,7 +282,7 @@ class Quercus extends Component {
                     <div class="scenario-section">
                         <div>
                             <h4 class="striked">Course Consistency</h4>
-                            <h4>Interests Baords</h4>
+                            <h4>Interests Boards</h4>
                             <p class="center-content">Originally, we wanted courses online to be organized consistently. Unfortunately we found out the barrier to this is a legal hurdle. Professors must be given total creative freedom over how they organize a course. <br/> <br/>So we switched to an idea that focuses on making connections with classmates. In this scenario, we see how Allie can connect to classmates as friends by exploring and joining interest groups for a course. This way, Allie can find ways to bond online with classmates she may have never met before.</p>
                         </div>
                         <br/>
