@@ -52,7 +52,7 @@ class Marqet extends Component {
               <h4 class="subtitle">Find art authenticated on a blockchain</h4>
           </div>
         </Slide>
-        <Fade right>
+        <Fade up>
           <div>
 		  <img  class="img-l" loading="lazy" src={frontIMG}/>
           </div>
@@ -63,7 +63,7 @@ class Marqet extends Component {
           <br/>
           <br/>
           <div class="background-info border-top border-bottom marqet">
-              <div class="my-info">
+              <div class="my-info center-content">
                   <div class="role-info">
                     <Slide bottom>
                           <div>
