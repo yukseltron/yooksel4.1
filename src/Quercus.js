@@ -130,46 +130,23 @@ class Quercus extends Component {
                     </div>
                 </div>
                 </Slide>
-                <br/>
-                <br/>
-                <br/>
-                <div class="needs-section spacer center-content">
-                    <Slide bottom>
-                    <div>
-                        <h2>The Needs</h2>
-                        <p class="text-left">We identified the following needs based on our user research:</p>
-                        <div class="needs">
-                            <h1>1.</h1>
-                            <h4 class="h-left">Students need a way to engage with professors and fellow students better, so that they may form groups faster and make lasting connections.</h4>
-                        </div>
-                        <div class="needs">
-                            <h1>2.</h1>
-                            <h4 class="h-left">Students need a way to find relevant course materials quickly, so that time isn't wasted searching for the right lectures to review.</h4>
-                        </div>
-                        <div class="needs spacer">
-                            <h1>3.</h1>
-                            <h4 class="h-left">Students need consistent course organization online, so that information on the course can be found and quickly understood.</h4>
-                        </div>
-                    </div>
-                    </Slide>
-                </div>
             </div>
             <br/>
             <br/>
             <br/>
             <Slide bottom>
             <div>
-                <h2>The Solution</h2>
                 <br/>
-                <div class="solution-sector spacer center-content">
-                    <div class="solution-info">
+                <div class="horizontal-section spacer">
+                    <div class="solution-info center-content">
                         <div>
-                            <p class="p-left">After implementing and testing our ideas, we recommend the following solutions for fulfilling the needs above:</p>
-                            <h4>• A group search feature, to find teammates and their contact info.</h4>
-                            <br/>
-                            <h4>• Interest boards to learn about classmates, without needing to contact them.</h4>
-                            <br/>
-                            <h4>• Guides on assignments to important and relevant lecture modules.</h4>
+                                <h2>The Solution</h2>
+                                <p>After implementing and testing our ideas, we recommend the following solutions for fulfilling the needs above:</p>
+                                <h4>• A group search feature, to find teammates and their contact info.</h4>
+                                <br/>
+                                <h4>• Interest boards to learn about classmates, without needing to contact them.</h4>
+                                <br/>
+                                <h4>• Guides on assignments to important and relevant lecture modules.</h4>
                         </div>
                     </div>
                     <br/>
@@ -236,6 +213,29 @@ class Quercus extends Component {
 		  	<br/>
 			<br/>
             <br/>
+            <div class="needs-section spacer center-content">
+                <Slide bottom>
+                <div>
+                    <h2>The Needs</h2>
+                    <p class="text-left">We identified the following needs based on our user research:</p>
+                    <div class="needs">
+                        <h1>1.</h1>
+                        <h4 class="h-left">Students need a way to engage with professors and fellow students better, so that they may form groups faster and make lasting connections.</h4>
+                    </div>
+                    <div class="needs">
+                        <h1>2.</h1>
+                        <h4 class="h-left">Students need a way to find relevant course materials quickly, so that time isn't wasted searching for the right lectures to review.</h4>
+                    </div>
+                    <div class="needs spacer">
+                        <h1>3.</h1>
+                        <h4 class="h-left">Students need consistent course organization online, so that information on the course can be found and quickly understood.</h4>
+                    </div>
+                </div>
+                </Slide>
+            </div>
+            <br/>
+            <br/>
+            <br/>
             <Slide bottom>
             <div class="">
     			<h2>Journey Mapping</h2>
@@ -300,7 +300,9 @@ class Quercus extends Component {
                 <br/>
                 <p class="center-content">We tested out on pen and paper to see how we could implement our ideas. Here are some of the sketches we made:</p>
                 <Fade right>
+                <div>
                 <img loading="lazy" class="img-l" src={sketches}/>
+                </div>
                 </Fade>
             </div>
             </Slide>

@@ -127,38 +127,6 @@ class Walleto extends Component {
                 </div>
                 <br/>
                 <br/>
-                <div class="needs-section spacer center-content">
-                    <Slide bottom>
-                    <div>
-                        <h2>The Needs</h2>
-                        <p>What could our user need for a crypto wallet site?</p>
-                        <Slide bottom>
-                        <div>
-                            <div class="needs">
-                                <h1>1.</h1>
-                                <h4 class="h-left">Be able to assess accounts and see how crypto prices are affecting them.</h4>
-                            </div>
-                        </div>
-                        </Slide>
-                        <Slide bottom>
-                        <div>
-                        <div class="needs">
-                            <h1>2.</h1>
-                            <h4 class="h-left">A way to quickly and easily send crypto between accounts or to people.</h4>
-                        </div>
-                        </div>
-                        </Slide>
-                        <Slide bottom>
-                        <div>
-                        <div class="needs spacer">
-                            <h1>3.</h1>
-                            <h4 class="h-left">A way to see and organize their portfolio and transactions history.</h4>
-                        </div>
-                        </div>
-                        </Slide>
-                    </div>
-                    </Slide>
-                </div>
             </div>
             <Slide bottom>
                 <div>
@@ -214,6 +182,38 @@ class Walleto extends Component {
                 </div>
                 </div>
             </Slide>
+            <div class="needs-section spacer center-content">
+                <Slide bottom>
+                <div>
+                    <h2>The Needs</h2>
+                    <p>What could our user need for a crypto wallet site?</p>
+                    <Slide bottom>
+                    <div>
+                        <div class="needs">
+                            <h1>1.</h1>
+                            <h4 class="h-left">Be able to assess accounts and see how crypto prices are affecting them.</h4>
+                        </div>
+                    </div>
+                    </Slide>
+                    <Slide bottom>
+                    <div>
+                    <div class="needs">
+                        <h1>2.</h1>
+                        <h4 class="h-left">A way to quickly and easily send crypto between accounts or to people.</h4>
+                    </div>
+                    </div>
+                    </Slide>
+                    <Slide bottom>
+                    <div>
+                    <div class="needs spacer">
+                        <h1>3.</h1>
+                        <h4 class="h-left">A way to see and organize their portfolio and transactions history.</h4>
+                    </div>
+                    </div>
+                    </Slide>
+                </div>
+                </Slide>
+            </div>
             <Slide bottom>
             <div>
                 <div class="spacer">

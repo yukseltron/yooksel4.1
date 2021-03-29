@@ -128,39 +128,6 @@ class Marqet extends Component {
                           </div>
                       </div>
                 </Slide>
-                <Slide bottom>
-                <div>
-                  <div class="needs-section spacer center-content">
-                      <h2>The Needs</h2>
-                      <br/>
-                      <p>What could our user need for a crypto-art market app?</p>
-                      <Slide bottom>
-                      <div>
-                          <div class="needs">
-                              <h1>1.</h1>
-                              <h4 class="h-left">Be able to place bids on crypto art.</h4>
-                          </div>
-                      </div>
-                      </Slide>
-                      <Slide bottom>
-                      <div>
-                          <div class="needs">
-                              <h1>2.</h1>
-                              <h4 class="h-left">View and adjust their <a target="_blank" href="https://en.wikipedia.org/wiki/Non-fungible_token">Non-Fungible Tokens</a> collection. These are digital items authenticated through blockchain technology that certifies a digital item is unique.</h4>
-                          </div>
-                      </div>
-                      </Slide>
-                      <Slide bottom>
-                      <div>
-                          <div class="needs spacer">
-                              <h1>3.</h1>
-                              <h4 class="h-left">A way to learn more information about a crypto art piece.</h4>
-                          </div>
-                      </div>
-                      </Slide>
-                  </div>
-                 </div>
-                 </Slide>
               </div>
               <Slide bottom>
                   <div>
@@ -229,6 +196,39 @@ class Marqet extends Component {
                   </div>
                   </div>
                   </Slide>
+                  <Slide bottom>
+                  <div>
+                    <div class="needs-section spacer center-content">
+                        <h2>The Needs</h2>
+                        <br/>
+                        <p>What could our user need for a crypto-art market app?</p>
+                        <Slide bottom>
+                        <div>
+                            <div class="needs">
+                                <h1>1.</h1>
+                                <h4 class="h-left">Be able to place bids on crypto art.</h4>
+                            </div>
+                        </div>
+                        </Slide>
+                        <Slide bottom>
+                        <div>
+                            <div class="needs">
+                                <h1>2.</h1>
+                                <h4 class="h-left">View and adjust their <a target="_blank" href="https://en.wikipedia.org/wiki/Non-fungible_token">Non-Fungible Tokens</a> collection. These are digital items authenticated through blockchain technology that certifies a digital item is unique.</h4>
+                            </div>
+                        </div>
+                        </Slide>
+                        <Slide bottom>
+                        <div>
+                            <div class="needs spacer">
+                                <h1>3.</h1>
+                                <h4 class="h-left">A way to learn more information about a crypto art piece.</h4>
+                            </div>
+                        </div>
+                        </Slide>
+                    </div>
+                   </div>
+                   </Slide>
                   <Slide bottom>
                   <div>
                       <div class="spacer">
