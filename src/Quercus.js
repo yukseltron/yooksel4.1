@@ -62,16 +62,14 @@ class Quercus extends Component {
 	  	<h4 class="subtitle">Helping students organize their courses and form teams online.</h4>
         </div>
         </Fade>
-        <Fade bottom>
-		<div class="">
+		<div class="spacer">
             <Fade bottom>
 			<img id="quercus" loading="lazy" src={clayIMG}/>
             </Fade>
             <br/>
 		</div>
-        </Fade>
     		<div class="background-info border-top">
-			<div class="my-info">
+			<div class="my-info center-content">
                 <div class="role-info">
                         <Slide bottom>
                         <div>
@@ -139,7 +137,7 @@ class Quercus extends Component {
                     <Slide bottom>
                     <div>
                         <h2>The Needs</h2>
-                        <p class="center-content">We identified the following needs based on our user research:</p>
+                        <p class="text-left">We identified the following needs based on our user research:</p>
                         <div class="needs">
                             <h1>1.</h1>
                             <h4 class="h-left">Students need a way to engage with professors and fellow students better, so that they may form groups faster and make lasting connections.</h4>
@@ -498,17 +496,13 @@ class Quercus extends Component {
             <br/>
             <div class="border-bottom border-top">
             <Slide bottom>
-            <div class="spacer">
+            <div>
                 <h2 class="p-center">Check it out</h2>
                 <h4 class="p-center"><a target="_blank" href="https://www.behance.net/gallery/111653313/Improving-Quercus">View case study on Behance</a></h4>
                 <h4 class="p-center"><a target="_blank" href="https://xd.adobe.com/view/bbecb767-a751-4c1d-b5a5-3131620dc877-eebf/?fullscreen">View final prototype</a></h4>
             </div>
             </Slide>
             </div>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
             <div class="spacer"></div>
             <Slide bottom>
             <div class="spacer">
