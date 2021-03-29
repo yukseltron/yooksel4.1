@@ -5,6 +5,10 @@
 		width: 80%;
 	}
 
+	.container:hover {
+		width: 90%;
+	}
+
 	.img-container img {
 	    width: 50% !important;
 	}
