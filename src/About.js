@@ -55,7 +55,7 @@ class About extends Component {
 
   render() {
     return (
-        <div class='about-body fade-in'>
+        <div class='about-body fade-in spacer-top'>
             <div class="center-content">
                 <Fade bottom cascade>
                 <div>

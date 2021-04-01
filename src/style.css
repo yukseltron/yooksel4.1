@@ -69,7 +69,6 @@ p {
 	border-bottom: 1px solid black;
 	display: flex;
 	justify-content: space-around;
-	height: 6%;
 	background-color: rgba(255, 255, 255, .90);
  	backdrop-filter: blur(35px);
 	z-index: 100;
@@ -101,10 +100,6 @@ h2 a:active {
 
 	#nav-header {
 		font-size: 80%;
-	}
-
-	#nav-header a {
-		margin-left: 100px;
 	}
 
 	.shape1 {
@@ -226,4 +221,8 @@ h2 a:active {
 	background: #ffffff;
 	box-shadow: inset 20px 20px 60px #d4d4d4,
 	            inset -20px -20px 60px #ffffff;
+}
+
+.spacer-top {
+	margin-top: 100px;
 }
