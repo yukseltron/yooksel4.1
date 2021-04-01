@@ -20,7 +20,7 @@ import result from './quercus/results.svg';
 import s1 from './quercus/s1.gif';
 import s2 from './quercus/s2.gif';
 import s3 from './quercus/s3.gif';
-import dribbble from './quercus/dribbble.svg';
+import dribbble from './quercus/hifi.png';
 import React, { Component } from "react";
 import {Slide, Fade, LightSpeed} from 'react-reveal';
 import {
@@ -177,29 +177,31 @@ class Quercus extends Component {
     	  	<br/>
 		</div>
 		<div class="section spacer border-top" ref={this.div2}>
-            <div class="spacer">
+            <div class="spacer ">
                 <Slide bottom>
                 <div class="spacer">
         			<h3>Research</h3>
                     <p class="center-content">We began this project with by developing a survey and conducting interviews for user research. We gathered our data from 11 university students on their experiences using Quercus. I devised the questionnaire with Suzie, and conducted 1 user interview.</p>
                     <br/>
             	  	<br/>
-                    <h2>Gathering our data showed:</h2>
-        			<p class="p-center">Students struggle with inconsistent course pages,</p>
-                    <Fade left>
-        			<img src={research1}/>
-                    </Fade>
-        			<p class="p-center">And that they do not really participate in online dicussions.</p>
-                    <Fade right>
-        			<img loading="lazy" src={research2}/>
-                    </Fade>
+                    <div class="border-left">
+                        <h2>Gathering our data showed:</h2>
+            			<p class="p-center">Students struggle with inconsistent course pages,</p>
+                        <Fade left>
+            			<img src={research1}/>
+                        </Fade>
+            			<p class="p-center">And that they do not really participate in online dicussions.</p>
+                        <Fade right>
+            			<img loading="lazy" src={research2}/>
+                        </Fade>
+                    </div>
                 </div>
                 </Slide>
             </div>
             <br/>
 			<br/>
             <br/>
-            <div class="spacer">
+            <div class="spacer border-right">
                 <Slide bottom>
                 <div class="spacer">
         			<h2>Persona</h2>
@@ -214,29 +216,6 @@ class Quercus extends Component {
             </div>
 		  	<br/>
 			<br/>
-            <br/>
-            <div class="needs-section spacer center-content">
-                <Slide bottom>
-                <div>
-                    <h2>The Needs</h2>
-                    <p class="text-left">We identified the following needs based on our user research:</p>
-                    <div class="needs">
-                        <h1>1.</h1>
-                        <h4 class="h-left">Students need a way to engage with professors and fellow students better, so that they may form groups faster and make lasting connections.</h4>
-                    </div>
-                    <div class="needs">
-                        <h1>2.</h1>
-                        <h4 class="h-left">Students need a way to find relevant course materials quickly, so that time isn't wasted searching for the right lectures to review.</h4>
-                    </div>
-                    <div class="needs spacer">
-                        <h1>3.</h1>
-                        <h4 class="h-left">Students need consistent course organization online, so that information on the course can be found and quickly understood.</h4>
-                    </div>
-                </div>
-                </Slide>
-            </div>
-            <br/>
-            <br/>
             <br/>
             <Slide bottom>
             <div class="">
@@ -258,56 +237,84 @@ class Quercus extends Component {
             <br/>
             <br/>
             <br/>
+            <div class="border-left">
+                <div class="needs-section spacer center-content">
+                    <Slide bottom>
+                    <div>
+                        <h2>The Needs</h2>
+                        <h4>We identified the following needs based on our user research:</h4>
+                        <div class="needs">
+                            <h1>1.</h1>
+                            <h4 class="h-left">Students need a way to engage with professors and fellow students better, so that they may form groups faster and make lasting connections.</h4>
+                        </div>
+                        <div class="needs">
+                            <h1>2.</h1>
+                            <h4 class="h-left">Students need a way to find relevant course materials quickly, so that time isn't wasted searching for the right lectures to review.</h4>
+                        </div>
+                        <div class="needs spacer">
+                            <h1>3.</h1>
+                            <h4 class="h-left">Students need consistent course organization online, so that information on the course can be found and quickly understood.</h4>
+                        </div>
+                    </div>
+                    </Slide>
+                </div>
+            </div>
 		</div>
 		<div class="border-top section spacer" ref={this.div3}>
             <Slide bottom>
             <div class="spacer">
     			<h3>Ideation</h3>
                 <p class="center-content spacer">At this point, we understood the user context by developing a polished persona. We identified what our users do on Quercus, what painpoints they encounter, and what constraints they endured. Now we just had to figure out what were good solutions.</p>
-    			<h2>Our Ideas</h2>
-                <p class="center-content">We came up with ideas and ranked them on a prioritization grid as seen below. I made the illustrations and the grid for the ideas below.</p>
-                <Fade left>
-                <img loading="lazy" src={prioriGrid}/>
-                </Fade>
+                <div class="border-left">
+                    <h2>Our Ideas</h2>
+                    <p class="center-content">We came up with ideas and ranked them on a prioritization grid as seen below. I made the illustrations and the grid for the ideas below.</p>
+                    <Fade left>
+                    <img loading="lazy" src={prioriGrid}/>
+                    </Fade>
+                </div>
                 <p class="center-content">We each voted for what we felt were the right ideas to work on, when considering time, effort, and impact. The top 3 ideas we felt were best to work on:</p>
-                <Slide bottom>
-                <div>
-                    <div class="ideation-section center-content">
-                        <h4>1. Content Connections</h4>
-                        <p>Showing which lectures are relevant to an assignment.</p>
+                <div class="border-right">
+                    <Slide bottom>
+                    <div>
+                        <div class="ideation-section center-content">
+                            <h4>1. Content Connections</h4>
+                            <p>Showing which lectures are relevant to an assignment.</p>
+                        </div>
                     </div>
+                    </Slide>
+                    <Slide bottom>
+                    <div>
+                        <div class="ideation-section center-content">
+                            <h4>2. Meeting Classmates</h4>
+                            <p>Helping students meet others and form teams quickly.</p>
+                        </div>
+                    </div>
+                    </Slide>
+                    <Slide bottom>
+                    <div>
+                        <div class="ideation-section center-content spacer">
+                            <h4>3. Course Consistency</h4>
+                            <p>Making course material easy to find across different courses online.</p>
+                        </div>
+                    </div>
+                    </Slide>
                 </div>
-                </Slide>
+            </div>
+            </Slide>
+            <div class="border-left">
                 <Slide bottom>
-                <div>
-                    <div class="ideation-section center-content">
-                        <h4>2. Meeting Classmates</h4>
-                        <p>Helping students meet others and form teams quickly.</p>
+                <div class="">
+        			<h2>Sketches</h2>
+                    <br/>
+                    <p class="center-content">We tested out on pen and paper to see how we could implement our ideas. Here are some of the sketches we made:</p>
+                    <Fade right>
+                    <div>
+                    <img loading="lazy" class="img-l" src={sketches}/>
                     </div>
-                </div>
-                </Slide>
-                <Slide bottom>
-                <div>
-                    <div class="ideation-section center-content spacer">
-                        <h4>3. Course Consistency</h4>
-                        <p>Making course material easy to find across different courses online.</p>
-                    </div>
+                    </Fade>
                 </div>
                 </Slide>
             </div>
-            </Slide>
-            <Slide bottom>
-            <div class="">
-    			<h2>Sketches</h2>
-                <br/>
-                <p class="center-content">We tested out on pen and paper to see how we could implement our ideas. Here are some of the sketches we made:</p>
-                <Fade right>
-                <div>
-                <img loading="lazy" class="img-l" src={sketches}/>
-                </div>
-                </Fade>
-            </div>
-            </Slide>
 		</div>
 		<div class="section border-top">
         <br/>
@@ -317,9 +324,11 @@ class Quercus extends Component {
             			<h3>Prototyping</h3>
                         <h2>Midfi</h2>
                         <p class="center-content">Using the sketches, I made some midfi screens to better test out and showcase our ideas as an MVP.</p>
-                        <Fade left>
-                        <img loading="lazy" src={midfi}/>
-                        </Fade>
+                        <div class="border-right border-left">
+                            <Fade left>
+                            <img loading="lazy" src={midfi}/>
+                            </Fade>
+                        </div>
                     </div>
                 </Slide>
             </div>
@@ -340,45 +349,49 @@ class Quercus extends Component {
                 <br/>
                 <br/>
                 <div>
-                    <Slide bottom>
-                    <div class="scenario-section">
-                        <div>
-                            <h4>Content Connections</h4>
-                            <p class="center-content">This scenario depicts how our user Allie could prepare for an assignment. She's shown which assignment needs the most attention, and can instantly find the lectures relevant to it. As well, she can view the lecture in different formats to her liking.</p>
+                    <div class="border-left">
+                        <Slide bottom>
+                        <div class="scenario-section">
+                            <div>
+                                <h4>Content Connections</h4>
+                                <p class="center-content">This scenario depicts how our user Allie could prepare for an assignment. She's shown which assignment needs the most attention, and can instantly find the lectures relevant to it. As well, she can view the lecture in different formats to her liking.</p>
+                            </div>
+                            <br/>
+                            <br/>
+                            <Fade right>
+                            <div>
+                            <img class="img-l" loading="lazy" src={scenario1}/>
+                            </div>
+                            </Fade>
                         </div>
-                        <br/>
-                        <br/>
-                        <Fade right>
-                        <div>
-                        <img class="img-l" loading="lazy" src={scenario1}/>
-                        </div>
-                        </Fade>
+                        </Slide>
                     </div>
-                    </Slide>
                     <br/>
                     <br/>
                     <br/>
                     <br/>
-                    <Slide bottom>
-                    <div class="scenario-section">
-                        <div>
-                            <h4>Meeting Classmates</h4>
-                            <p class="center-content">Here, Allie needs to find a teammate to work with. She has the option to do a group search, see which classmates she's worked with before, and view the classmate's contact info. Past group details are also available to be seen.</p>
+                    <div class="border-right">
+                        <Slide bottom>
+                        <div class="scenario-section">
+                            <div>
+                                <h4>Meeting Classmates</h4>
+                                <p class="center-content">Here, Allie needs to find a teammate to work with. She has the option to do a group search, see which classmates she's worked with before, and view the classmate's contact info. Past group details are also available to be seen.</p>
+                            </div>
+                            <br/>
+                            <br/>
+                            <Fade left>
+                            <div>
+                            <img loading="lazy" class="img-l" src={scenario2}/>
+                            </div>
+                            </Fade>
                         </div>
-                        <br/>
-                        <br/>
-                        <Fade left>
-                        <div>
-                        <img loading="lazy" class="img-l" src={scenario2}/>
-                        </div>
-                        </Fade>
+                        </Slide>
                     </div>
-                    </Slide>
                     <br/>
                     <br/>
                     <br/>
                     <br/>
-                    <div class="scenario-section">
+                    <div class="scenario-section border-left">
                         <Slide bottom>
                         <div>
                             <h4 class="striked">Course Consistency</h4>
@@ -433,7 +446,7 @@ class Quercus extends Component {
                     <br/>
                     <Fade right>
                     <div>
-                    <img class="img-l spacer" loading="lazy" src={dribbble}/>
+                    <img class="img-l spacer subtle-shadow" loading="lazy" src={dribbble}/>
                     </div>
                     </Fade>
                 </div>

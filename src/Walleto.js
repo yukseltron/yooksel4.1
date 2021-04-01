@@ -17,7 +17,7 @@ import s1 from './walleto/scenario1.gif';
 import s2 from './walleto/scenario2.gif';
 import s3 from './walleto/scenario3.gif';
 import chart from './walleto/chart.png';
-import access from './walleto/access.svg';
+import access from './walleto/access.png';
 import React, { Component } from "react";
 import {
   BrowserRouter as Router,
