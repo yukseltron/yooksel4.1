@@ -21,7 +21,6 @@ a {
 
 .container {
 	padding: 25px;
-	border-radius: 5px !important;
 	margin-top: 50px;
 	border: 1px solid #E0E0E2;
 	transition: background-color 0.2s, color 0.2s, width 0.4s, box-shadow 0.4s;

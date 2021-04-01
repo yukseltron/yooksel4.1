@@ -62,7 +62,7 @@ class Marqet extends Component {
           <br/>
           <br/>
           <br/>
-          <div class="background-info border-top border-bottom marqet">
+          <div class="background-info border-top marqet">
               <div class="my-info center-content">
                   <div class="role-info">
                     <Slide bottom>
@@ -102,7 +102,7 @@ class Marqet extends Component {
               </div>
               </Slide>
           </div>
-          <div class="border-top spacer" ref={this.div1}>
+          <div class="border-top spacer border-right" ref={this.div1}>
             <Slide bottom>
             <div>
                   <h3>Introduction</h3>
@@ -129,38 +129,43 @@ class Marqet extends Component {
                       </div>
                 </Slide>
               </div>
-              <Slide bottom>
-                  <div>
-                      <h2>The Solution</h2>
-                      <br/>
-                      <div class="solution-sector spacer center-content">
-                          <div class="solution-info">
-                              <div>
-                                  <h4>Marqet is a crypto art market and auction mobile app for art ethusiasts figuring out more about crypto.</h4>
+              <div class="border-left">
+                  <Slide bottom>
+                      <div>
+                          <h2>The Solution</h2>
+                          <br/>
+                          <div class="solution-sector spacer center-content">
+                              <div class="solution-info">
+                                  <div>
+                                      <h4>Marqet is a crypto art market and auction mobile app for art ethusiasts figuring out more about crypto.</h4>
+                                  </div>
                               </div>
+                              <br/>
+                              <br/>
+                              <br/>
+                              <br/>
+                              <Fade right>
+                              <img src={solution}/>
+                              </Fade>
                           </div>
-                          <br/>
-                          <br/>
-                          <br/>
-                          <br/>
-                          <Fade right>
-                          <img src={solution}/>
-                          </Fade>
                       </div>
-                  </div>
-                </Slide>
+                    </Slide>
+                </div>
           </div>
-          <div class="border-top section spacer" ref={this.div2}>
+          <div class="border-top section spacer border-left" ref={this.div2}>
             <Slide bottom>
                   <div>
-          			<h3>Research</h3>
-                      <p class="center-content">Doing some secondary research suggests that as crypto has grown massively in popularity, markets have emerged that try to sell things through crypto. Sometimes the things they sell are encrypted in a blockchain too as NFTs. Virtually any sort of file can be authenticated 'minted' to become an NFT.</p>
-                      <br/>
-                      <p class="center-content">Example of a NFT: <a target="_blank" href="https://gomint.me/query/?testnet&tokenId=0.0.453324">I made this NFT as an experiment</a></p>
-                      <p class="center-content">Example of an NFT market: <a target="_blank" href="https://www.nbatopshot.com/">nbatopshot.com</a></p>
-                      <br/>
-              	  	<br/>
                     <div>
+              			<h3>Research</h3>
+                            <br/>
+                          <p class="center-content">Doing some secondary research suggests that as crypto has grown massively in popularity, markets have emerged that try to sell things through crypto. Sometimes the things they sell are encrypted in a blockchain too as NFTs. Virtually any sort of file can be authenticated 'minted' to become an NFT.</p>
+                          <br/>
+                          <p class="center-content">Example of a NFT: <a target="_blank" href="https://gomint.me/query/?testnet&tokenId=0.0.453324">I made this NFT as an experiment</a></p>
+                          <p class="center-content">Example of an NFT market: <a target="_blank" href="https://www.nbatopshot.com/">nbatopshot.com</a></p>
+                          <br/>
+                    </div>
+              	  	<br/>
+                    <div class="border-right">
                         <p class="center-content">Cryptopunks were amongst the first NFTs made. It was a generative art project made by 2 people called Larva Labs. You can read more about them <a href="https://www.larvalabs.com/cryptopunks">in this article.</a>  Some examples are shown in the screenshot below.</p>
                         <br/>
                         <br/>
@@ -173,7 +178,7 @@ class Marqet extends Component {
             <div class="spacer"></div>
                 <Slide bottom>
                 <div>
-                  <div class="spacer">
+                  <div class="spacer border-right">
                       <Slide bottom>
                       <div>
                         <h2>Persona</h2>
@@ -196,53 +201,57 @@ class Marqet extends Component {
                   </div>
                   </div>
                   </Slide>
-                  <Slide bottom>
-                  <div>
-                    <div class="needs-section spacer center-content">
-                        <h2>The Needs</h2>
-                        <br/>
-                        <p>What could our user need for a crypto-art market app?</p>
-                        <Slide bottom>
-                        <div>
-                            <div class="needs">
-                                <h1>1.</h1>
-                                <h4 class="h-left">Be able to place bids on crypto art.</h4>
+                  <div class="border-right">
+                      <Slide bottom>
+                      <div>
+                        <div class="needs-section spacer center-content">
+                            <h2>The Needs</h2>
+                            <br/>
+                            <p>What could our user need for a crypto-art market app?</p>
+                            <Slide bottom>
+                            <div>
+                                <div class="needs">
+                                    <h1>1.</h1>
+                                    <h4 class="h-left">Be able to place bids on crypto art.</h4>
+                                </div>
                             </div>
-                        </div>
-                        </Slide>
-                        <Slide bottom>
-                        <div>
-                            <div class="needs">
-                                <h1>2.</h1>
-                                <h4 class="h-left">View and adjust their <a target="_blank" href="https://en.wikipedia.org/wiki/Non-fungible_token">Non-Fungible Tokens</a> collection. These are digital items authenticated through blockchain technology that certifies a digital item is unique.</h4>
+                            </Slide>
+                            <Slide bottom>
+                            <div>
+                                <div class="needs">
+                                    <h1>2.</h1>
+                                    <h4 class="h-left">View and adjust their <a target="_blank" href="https://en.wikipedia.org/wiki/Non-fungible_token">Non-Fungible Tokens</a> collection. These are digital items authenticated through blockchain technology that certifies a digital item is unique.</h4>
+                                </div>
                             </div>
-                        </div>
-                        </Slide>
-                        <Slide bottom>
-                        <div>
-                            <div class="needs spacer">
-                                <h1>3.</h1>
-                                <h4 class="h-left">A way to learn more information about a crypto art piece.</h4>
+                            </Slide>
+                            <Slide bottom>
+                            <div>
+                                <div class="needs spacer">
+                                    <h1>3.</h1>
+                                    <h4 class="h-left">A way to learn more information about a crypto art piece.</h4>
+                                </div>
                             </div>
+                            </Slide>
                         </div>
-                        </Slide>
-                    </div>
-                   </div>
-                   </Slide>
-                  <Slide bottom>
-                  <div>
-                      <div class="spacer">
-                          <h2>Ideation</h2>
-                          <br/>
-                          <p class="center-content">I sketched possible ideas on how to implement a solution. Here is an example sketch of a task about viewing an art piece.</p>
-                          <br/>
-                          <br/>
-                        <Fade right>
-                            <img  src={ideation}/>
-                        </Fade>
-                      </div>
-                 </div>
-                 </Slide>
+                       </div>
+                       </Slide>
+                     </div>
+                     <div class="border-right">
+                      <Slide bottom>
+                      <div>
+                          <div class="spacer">
+                              <h2>Ideation</h2>
+                              <br/>
+                              <p class="center-content">I sketched possible ideas on how to implement a solution. Here is an example sketch of a task about viewing an art piece.</p>
+                              <br/>
+                              <br/>
+                            <Fade right>
+                                <img  src={ideation}/>
+                            </Fade>
+                          </div>
+                     </div>
+                     </Slide>
+                     </div>
   		</div>
 		<div class="section spacer">
         <br/>
@@ -254,9 +263,11 @@ class Marqet extends Component {
                     <p class="center-content">Using the research and sketches I had done, I made some midfi screens to better test out the ideas.</p>
                     <br/>
                     <br/>
-                    <Fade left>
-                        <img  src={midfi}/>
-                    </Fade>
+                    <div class="border-right border-left">
+                        <Fade left>
+                            <img  src={midfi}/>
+                        </Fade>
+                    </div>
                 </div>
             </div>
             </Slide>
@@ -279,11 +290,13 @@ class Marqet extends Component {
                     <br/>
                     <br/>
                     <br/>
-                    <Fade left>
-                    <div>
-                        <img  class="img-m" src={specs}/>
+                    <div class="border-left">
+                        <Fade left>
+                        <div>
+                            <img  class="img-m" src={specs}/>
+                        </div>
+                        </Fade>
                     </div>
-                    </Fade>
                     <br/>
                     <br/>
                     <br/>

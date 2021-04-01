@@ -61,9 +61,18 @@ p {
 /**For Main.js**/
 
 #nav-header {
-	display: flex;
-	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
 	font-size: 60%;
+	border-bottom: 1px solid black;
+	display: flex;
+	justify-content: space-around;
+	height: 6%;
+	background-color: rgba(255, 255, 255, .90);
+ 	backdrop-filter: blur(35px);
+	z-index: 100;
 }
 
 h2 a {
@@ -91,7 +100,6 @@ h2 a:active {
 	}
 
 	#nav-header {
-		justify-content: flex-end;
 		font-size: 80%;
 	}
 
@@ -201,4 +209,21 @@ h2 a:active {
 
 .return:hover {
 	cursor: pointer;
+}
+
+.border-right {
+	border-right: 1px solid black;
+	padding-right: 10px;
+}
+
+.border-left {
+	border-left: 1px solid black;
+	padding-left: 10px;
+}
+
+.inner-frame {
+	border-radius: 0px;
+	background: #ffffff;
+	box-shadow: inset 20px 20px 60px #d4d4d4,
+	            inset -20px -20px 60px #ffffff;
 }

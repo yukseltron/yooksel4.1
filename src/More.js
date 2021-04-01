@@ -143,6 +143,10 @@ class More extends Component {
         <LazyLoad placeholder={<img src="https://media1.giphy.com/media/3oEjI6SIIHBdRxXI40/200.gif"/>}>
         <br/>
         <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
             <Fade top cascade>
             <div>
             <h4 class="p-center" ref={this.myDivToFocus}>My programming, writing, and graphic design work. <Link class="h-link" to="/projects">Want my UX stuff?</Link></h4>

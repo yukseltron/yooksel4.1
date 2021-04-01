@@ -88,8 +88,7 @@ class Home extends Component {
                         <Fade bottom cascade>
                         <div class="iam">
                             <h1>As a UX designer,</h1>
-                            <h3>I focus on meaningful interactions</h3>
-                            <h3>and useful interfaces.</h3>
+                            <h3>I focus on meaningful interactions.</h3>
                         </div>
                         </Fade>
                     </div>
@@ -118,7 +117,7 @@ class Home extends Component {
             <br/>
             <br/>
             <br/>
-            <div class="fade-in spacer home section-2 ">
+            <div class="fade-in spacer home section-2">
                 <div class="intro">
                     <div class="home-intro">
                         <Fade bottom cascade>

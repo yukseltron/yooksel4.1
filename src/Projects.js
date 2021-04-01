@@ -117,6 +117,10 @@ class Projects extends Component {
         <LazyLoad>
             <br/>
             <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
             <Fade top cascade>
             <div>
             <h4 class="p-center" ref={this.myDivToFocus}>These are my UX projects. Check out my <Link class="h-link" to="/more">other projects here.</Link></h4>

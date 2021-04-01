@@ -64,7 +64,9 @@ class Quercus extends Component {
         </Fade>
 		<div class="spacer">
             <Fade bottom>
-			<img id="quercus" loading="lazy" src={clayIMG}/>
+            <div class="inner-frame">
+			<img class="inner-frame" id="quercus" loading="lazy" src={clayIMG}/>
+            </div>
             </Fade>
             <br/>
 		</div>
@@ -118,7 +120,7 @@ class Quercus extends Component {
                 <div>
                     <h3>Introduction</h3>
                     <br/>
-                    <div class="problem-section spacer">
+                    <div class="problem-section spacer border-right">
                         <Fade left>
                         <img loading="lazy" class="problem" src={problem}/>
                         </Fade>
@@ -137,7 +139,7 @@ class Quercus extends Component {
             <Slide bottom>
             <div>
                 <br/>
-                <div class="horizontal-section spacer">
+                <div class="horizontal-section spacer border-left">
                     <div class="solution-info center-content">
                         <div>
                                 <h2>The Solution</h2>

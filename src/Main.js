@@ -31,7 +31,7 @@ class Main extends Component {
 			<div id="container" class="mobile-container fade-in">
                 <div class="header-content">
                     <div id="nav-header">
-                        <h2 id="home"><NavLink to="/">Home</NavLink></h2>
+                        <h2><NavLink to="/">Home</NavLink></h2>
                         <h2><NavLink to="/projects">Projects</NavLink></h2>
                         <h2><NavLink to="/about">About</NavLink></h2>
                         <h2><NavLink to="/contact">Contact</NavLink></h2>
