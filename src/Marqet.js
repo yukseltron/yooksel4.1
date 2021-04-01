@@ -367,7 +367,7 @@ class Marqet extends Component {
             <div>
                 <div class="border-bottom border-top spacer">
                     <h2 class="p-center">Check it out</h2>
-                    <h4 class="p-center"><a target="_blank" href="https://www.figma.com/file/kXyfQVuJfCT81cC5NLzLNg/A2?node-id=0%3A1">View figma</a></h4>
+                    <h4 class="p-center"><a target="_blank" href="https://www.figma.com/file/BnnGCuUM0paM6AlwuYkLVF/Marqet?node-id=0%3A1">View figma</a></h4>
                 </div>
             </div>
             </Slide>
