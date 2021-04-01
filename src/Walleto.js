@@ -1,18 +1,18 @@
 import LazyLoad from 'react-lazyload';
 import {Slide, Fade, LightSpeed} from 'react-reveal';
 import './projects-style.css';
-import main from './walleto/landing.svg';
+import main from './walleto/landing.png';
 import challenge from './walleto/challenge.svg';
-import solution from './walleto/solution.svg';
-import moodBoard from './walleto/mood.svg';
+import solution from './walleto/solution.png';
+import moodBoard from './walleto/mood.png';
 import persona from './walleto/persona.svg';
 import journey from './walleto/journey.svg';
 import sketches from './walleto/walleto-sketches.png';
-import midfi from './walleto/midfi.svg';
-import scenario1 from './walleto/scenario1.svg';
-import scenario2 from './walleto/scenario2.svg';
-import scenario3 from './walleto/scenario3.svg';
-import hifi from './walleto/hifi.svg';
+import midfi from './walleto/midfi.png';
+import scenario1 from './walleto/scenario1.png';
+import scenario2 from './walleto/scenario2.png';
+import scenario3 from './walleto/scenario3.png';
+import hifi from './walleto/hifi.png';
 import s1 from './walleto/scenario1.gif';
 import s2 from './walleto/scenario2.gif';
 import s3 from './walleto/scenario3.gif';
@@ -107,13 +107,13 @@ class Walleto extends Component {
         </div>
         <br/>
         <br/>
-        <div class="spacer border-top" ref={this.div1}>
+        <div class="spacer border-top border-left" ref={this.div1}>
             <Slide bottom>
             <h3>Introduction</h3>
             </Slide>
             <div>
                 <div>
-                    <div class="horizontal-section">
+                    <div class="horizontal-section border-right">
                         <Slide left>
                         <img class="img-s" loading="lazy" class="problem" src={challenge}/>
                         </Slide>
@@ -128,30 +128,32 @@ class Walleto extends Component {
                 <br/>
                 <br/>
             </div>
-            <Slide bottom>
-                <div>
-                    <h2>The Solution</h2>
-                    <br/>
-                    <div class="solution-sector spacer center-content">
-                        <div class="solution-info">
-                            <div>
-                                <h4>Walleto is a crypto wallet that focuses on practicality by showing gains/losses and transaction histories in your accounts, as well as allowing for easy transfering to contacts.</h4>
+            <div class="border-right">
+                <Slide bottom>
+                    <div>
+                        <h2>The Solution</h2>
+                        <br/>
+                        <div class="solution-sector spacer center-content border-t">
+                            <div class="solution-info">
+                                <div>
+                                    <h4>Walleto is a crypto wallet that focuses on practicality by showing gains/losses and transaction histories in your accounts, as well as allowing for easy transfering to contacts.</h4>
+                                </div>
                             </div>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <Fade right>
+                            <div>
+                                <img loading="lazy" src={solution}/>
+                            </div>
+                            </Fade>
                         </div>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <Fade right>
-                        <div>
-                            <img loading="lazy" src={solution}/>
-                        </div>
-                        </Fade>
                     </div>
-                </div>
-            </Slide>
+                </Slide>
+            </div>
         </div>
-        <div class="border-top section spacer" ref={this.div2}>
+        <div class="border-top section spacer border-right" ref={this.div2}>
             <Slide bottom>
                 <div>
         			<h3>Research</h3>
@@ -161,15 +163,17 @@ class Walleto extends Component {
             	  	<br/>
                 </div>
             </Slide>
-            <Fade left>
-            <div>
-                                <h2>Mood Board</h2>
-			         <img class="spacer" loading="lazy" src={moodBoard}/>
+            <div class="border-left spacer">
+                <Fade left>
+                <div>
+                    <h2>Mood Board</h2>
+    			    <img loading="lazy" src={moodBoard}/>
+                </div>
+                </Fade>
             </div>
-            </Fade>
             <Slide bottom>
                 <div>
-                <div class="spacer">
+                <div class="spacer border-left">
         			<h2>Persona</h2>
                     <p class="center-content">Here's a persona for this project, made from an interview with a person with crypto accounts and through secondary research.</p>
                     <br/>
@@ -182,41 +186,9 @@ class Walleto extends Component {
                 </div>
                 </div>
             </Slide>
-            <div class="needs-section spacer center-content">
-                <Slide bottom>
-                <div>
-                    <h2>The Needs</h2>
-                    <p>What could our user need for a crypto wallet site?</p>
-                    <Slide bottom>
-                    <div>
-                        <div class="needs">
-                            <h1>1.</h1>
-                            <h4 class="h-left">Be able to assess accounts and see how crypto prices are affecting them.</h4>
-                        </div>
-                    </div>
-                    </Slide>
-                    <Slide bottom>
-                    <div>
-                    <div class="needs">
-                        <h1>2.</h1>
-                        <h4 class="h-left">A way to quickly and easily send crypto between accounts or to people.</h4>
-                    </div>
-                    </div>
-                    </Slide>
-                    <Slide bottom>
-                    <div>
-                    <div class="needs spacer">
-                        <h1>3.</h1>
-                        <h4 class="h-left">A way to see and organize their portfolio and transactions history.</h4>
-                    </div>
-                    </div>
-                    </Slide>
-                </div>
-                </Slide>
-            </div>
             <Slide bottom>
             <div>
-                <div class="spacer">
+                <div class="spacer border-left">
         			<h2>Journey Mapping</h2>
                     <br/>
                     <div>
@@ -234,20 +206,56 @@ class Walleto extends Component {
                 </div>
             </div>
             </Slide>
-            <Slide bottom>
-            <div>
-                <div class="spacer">
-                    <h2>Ideation</h2>
-                    <br/>
-                    <p class="p-center">Sketches for ideas and concepts to help users manage their crypto assets.</p>
-                    <Fade right>
+            <div class="border-left">
+                <div class="needs-section space center-content">
+                    <Slide bottom>
                     <div>
-                        <img loading="lazy" src={sketches}/>
+                        <h2 class="text-left">The Needs</h2>
+                        <h4 class="text-left">What could our user need for a crypto wallet site?</h4>
+                        <Slide bottom>
+                        <div>
+                            <div class="needs">
+                                <h1>1.</h1>
+                                <h4 class="h-left">Be able to assess accounts and see how crypto prices are affecting them.</h4>
+                            </div>
+                        </div>
+                        </Slide>
+                        <Slide bottom>
+                        <div>
+                        <div class="needs">
+                            <h1>2.</h1>
+                            <h4 class="h-left">A way to quickly and easily send crypto between accounts or to people.</h4>
+                        </div>
+                        </div>
+                        </Slide>
+                        <Slide bottom>
+                        <div>
+                        <div class="needs spacer">
+                            <h1>3.</h1>
+                            <h4 class="h-left">A way to see and organize their portfolio and transactions history.</h4>
+                        </div>
+                        </div>
+                        </Slide>
                     </div>
-                    </Fade>
-                </div>
+                </Slide>
             </div>
-            </Slide>
+            </div>
+            <div class="border-left">
+                <Slide bottom>
+                <div>
+                    <div class="spacer">
+                        <h2>Ideation</h2>
+                        <br/>
+                        <p class="p-center">Sketches for ideas and concepts to help users manage their crypto assets.</p>
+                        <Fade right>
+                        <div>
+                            <img loading="lazy" src={sketches}/>
+                        </div>
+                        </Fade>
+                    </div>
+                </div>
+                </Slide>
+            </div>
 		</div>
 		<div class="section border-top spacer">
             <Slide bottom>
@@ -255,100 +263,24 @@ class Walleto extends Component {
                 <div class="spacer">
         			<h3>Prototyping</h3>
                     <h2>Midfi</h2>
-                    <p class="p-center">With the research I had done, I made some midfi screens to better test out the ideas.</p>
-                    <Fade left>
-                    <div>
-                        <img loading="lazy" src={midfi}/>
+                    <p class="center-content">With the research I had done, I made some midfi screens to better test out the ideas. Here are some of the screens I made.</p>
+                    <br/>
+                    <br/>
+                    <div class="border-left border-right">
+                        <Fade left>
+                        <div>
+                            <img loading="lazy" src={midfi}/>
+                        </div>
+                        </Fade>
                     </div>
-                    </Fade>
                 </div>
             </div>
             </Slide>
-            <div class="spacer">
-                <Slide bottom>
-                <div>
-                    <h2>User Scenarios</h2>
-                </div>
-                </Slide>
-                <Slide bottom>
-                    <div>
-                        <p class="center-content">Here are midfi user flows I made for 3 different tasks.</p>
-                        <h4>1. Viewing Transactions</h4>
-                        <h4>2. Sending Crypto</h4>
-                        <h4>3. Setting a Price Alert</h4>
-                    </div>
-                </Slide>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <div>
-                    <Slide bottom>
-                    <div>
-                        <div class="scenario-section">
-                            <div>
-                            <h4>Viewing Transactions</h4>
-                            <p class="center-content">To start, our user wants to see the transactions history for a specific cryptocurrency they have.</p>
-                            </div>
-                            <br/>
-                            <br/>
-                            <Fade left>
-                            <div>
-                                <img loading="lazy" class="img-ml" src={scenario1}/>
-                            </div>
-                            </Fade>
-                        </div>
-                    </div>
-                    </Slide>
-                    <br/>
-                    <br/>
-                    <Slide bottom>
-                    <div>
-                        <div class=" scenario-section">
-                            <Slide bottom>
-                            <div>
-                                <h4>Sending Crypto</h4>
-                                <p class="center-content">In this scenario, our user wants to schedule a money transfer to a friend of theirs.</p>
-                            </div>
-                            </Slide>
-                            <br/>
-                            <br/>
-                            <Fade right>
-                            <div>
-                                <img loading="lazy" class="img-ml" src={scenario2}/>
-                            </div>
-                            </Fade>
-                        </div>
-                    </div>
-                    </Slide>
-                    <br/>
-                    <br/>
-                    <Slide bottom>
-                    <div>
-                        <div class="scenario-section">
-                            <Slide bottom>
-                            <div>
-                                <h4>Setting a Price Alert</h4>
-                                <p class="center-content">Lastly, our user wants to set an alert for a crypto in case it reaches a certain price.</p>
-                            </div>
-                            </Slide>
-                            <br/>
-                            <br/>
-                            <Fade left>
-                            <div>
-                                <img loading="lazy" class="img-ml" src={scenario3}/>
-                            </div>
-                            </Fade>
-                        </div>
-                    </div>
-                    </Slide>
-                </div>
-            </div>
         </div>
-            <div class="spacer border-top final-design-section">
+            <div class="spacer final-design-section">
                 <Slide bottom>
                 <div>
-                    <h3>Final Design</h3>
+                    <h2>Final Design</h2>
                 </div>
                 </Slide>
                 <Fade right>
@@ -364,8 +296,7 @@ class Walleto extends Component {
                 <br/>
                 <Slide bottom>
                 <div>
-                    <p class="p-center">Next up, I designed a hi-fidelity prototype.</p>
-                    <p class="p-center">Here is the design and accessibility specifications made for it.</p>
+                    <p class="p-center">Working off of the midifi and its screens, I designed a hi-fidelity prototype.</p>
                 </div>
                 </Slide>
                 <br/>
@@ -374,16 +305,36 @@ class Walleto extends Component {
                 <br/>
                 <br/>
                 <br/>
+                <Slide bottom>
+                <div>
+                    <p class="p-center">Here are the design and accessibility specifications.</p>
+                </div>
+                <br/>
+                <br/>
+                <br/>
+                </Slide>
                 <Fade left>
                 <div>
                     <img loading="lazy" class="img-l" src={access}/>
                 </div>
                 </Fade>
-                <br/>
-                <br/>
-                <br/>
             </div>
-            <div class="spacer">
+            <div class="spacer border-right">
+                <Slide bottom>
+                <div>
+                    <h2>User Scenarios</h2>
+                </div>
+                </Slide>
+                <Slide bottom>
+                    <div class="center-content">
+                        <h4>Here are user flows for 3 different tasks.</h4>
+                        <h4>1. Viewing Transactions</h4>
+                        <h4>2. Sending Crypto</h4>
+                        <h4>3. Setting a Price Alert</h4>
+                    </div>
+                </Slide>
+            </div>
+            <div class="spacer border-left">
                 <Slide bottom>
                 <div>
                     <div class="horizontal-section">
@@ -395,31 +346,6 @@ class Walleto extends Component {
                     </div>
                 </div>
                 </Slide>
-                </div>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <Slide bottom>
-                <div>
-                <div class="horizontal-section">
-                    <div>
-                        <h2 class="p-left">Sending Crypto</h2>
-                        <h4 class="storyboard-h4">Quickly send or schedule crypto transfers.</h4>
-                    </div>
-                    <img loading="lazy" class="subtle-shadow" src={s2}/>
-                </div>
-                </div>
-                </Slide>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
                 <br/>
                 <br/>
                 <br/>
@@ -428,18 +354,111 @@ class Walleto extends Component {
                 <br/>
                 <Slide bottom>
                 <div>
-                    <div class="horizontal-section spacer">
+                    <div class="scenario-section">
                         <div>
-                            <h2 class="p-left">Setting a Price Alert</h2>
-                            <h4 class="storyboard-h4">Get notified for optimal trading when cryptos reach your desired prices.</h4>
+                        <p class="text-left">User flow for viewing transactions:</p>
                         </div>
-                        <img loading="lazy" class="subtle-shadow" src={s3}/>
+                        <br/>
+                        <br/>
+                        <Fade left>
+                        <div>
+                            <img loading="lazy" class="img-l" src={scenario1}/>
+                        </div>
+                        </Fade>
                     </div>
                 </div>
                 </Slide>
-            <br/>
-            <br/>
-            <br/>
+                </div>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <div class="border-left">
+                    <Slide bottom>
+                    <div>
+                    <div class="horizontal-section">
+                        <div>
+                            <h2 class="p-left">Sending Crypto</h2>
+                            <h4 class="storyboard-h4">Quickly send or schedule crypto transfers.</h4>
+                        </div>
+                        <img loading="lazy" class="subtle-shadow" src={s2}/>
+                    </div>
+                    </div>
+                    </Slide>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <Slide bottom>
+                    <div>
+                        <div class="scenario-section">
+                            <Slide bottom>
+                            <div>
+                                <p class="text-left">User flow for sending crypto:</p>
+                            </div>
+                            </Slide>
+                            <br/>
+                            <br/>
+                            <Fade right>
+                            <div>
+                                <img loading="lazy" class="img-l" src={scenario2}/>
+                            </div>
+                            </Fade>
+                        </div>
+                    </div>
+                    </Slide>
+                </div>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <div class="border-left">
+                    <Slide bottom>
+                    <div>
+                        <div class="horizontal-sectionr">
+                            <div>
+                                <h2 class="p-left">Setting a Price Alert</h2>
+                                <h4 class="storyboard-h4">Get notified for optimal trading when cryptos reach your desired prices.</h4>
+                            </div>
+                            <img loading="lazy" class="subtle-shadow" src={s3}/>
+                        </div>
+                    </div>
+                    </Slide>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                <Slide bottom>
+                <div>
+                    <div class="scenario-section spacer">
+                        <Slide bottom>
+                        <div>
+                            <p class="text-left">User flow for setting price alerts.</p>
+                        </div>
+                        </Slide>
+                        <br/>
+                        <br/>
+                        <Fade left>
+                        <div>
+                            <img loading="lazy" class="img-l" src={scenario3}/>
+                        </div>
+                        </Fade>
+                    </div>
+                </div>
+                </Slide>
+            </div>
             <br/>
             <br/>
             <br/>
@@ -447,7 +466,7 @@ class Walleto extends Component {
             <div>
                 <div class="border-bottom border-top spacer">
                     <h2 class="p-center">Check it out</h2>
-                    <h4 class="p-center"><a target="_blank" href="https://www.figma.com/file/G5kmU9JP0DI3rG5kEBJoRS/A1?node-id=0%3A1">View on figma</a></h4>
+                    <h4 class="p-center"><a target="_blank" href="https://www.figma.com/file/N7eo0cVe09cHn5T1GPc7gA/Walleto?node-id=0%3A1">View on figma</a></h4>
                 </div>
             </div>
             </Slide>
