@@ -113,7 +113,7 @@ class Walleto extends Component {
             </Slide>
             <div>
                 <div>
-                    <div class="horizontal-section border-right">
+                    <div class="horizontal-section">
                         <Slide left>
                         <img class="img-s" loading="lazy" class="problem" src={challenge}/>
                         </Slide>

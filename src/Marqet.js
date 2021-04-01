@@ -3,16 +3,16 @@ import {Slide, Fade, LightSpeed} from 'react-reveal';
 import './projects-style.css';
 import frontIMG from './proj-fronts/marqet.png';
 import challenge from './marqet/challenge.svg';
-import solution from './marqet/solution.svg';
+import solution from './marqet/solution.png';
 import research from './marqet/cryptopunks.png';
 import persona from './marqet/persona.svg';
 import ideation from './marqet/ideation.svg';
 import midfi from './marqet/midfi.svg';
-import hifi from './marqet/hifi2.svg';
-import s1 from './marqet/s1.svg';
-import s2 from './marqet/s2.svg';
-import s3 from './marqet/s3.svg';
-import specs from './marqet/specs.svg';
+import hifi from './marqet/hifi.png';
+import s1 from './marqet/s1.png';
+import s2 from './marqet/s2.png';
+import s3 from './marqet/s3.png';
+import specs from './marqet/specs.png';
 import React, { Component } from "react";
 import {
   BrowserRouter as Router,
@@ -121,7 +121,6 @@ class Marqet extends Component {
                               <Slide bottom>
                                   <div>
                                       <h2 class="text-left center-content">The Challenge</h2>
-                                      <br/>
                                       <p class="text-left center-content">How can we provide a mobile art market for any art enthusiast wondering what they can do with their crypto funds?</p>
                                   </div>
                               </Slide>
@@ -133,7 +132,6 @@ class Marqet extends Component {
                   <Slide bottom>
                       <div>
                           <h2>The Solution</h2>
-                          <br/>
                           <div class="solution-sector spacer center-content">
                               <div class="solution-info">
                                   <div>
@@ -207,7 +205,7 @@ class Marqet extends Component {
                         <div class="needs-section spacer center-content">
                             <h2>The Needs</h2>
                             <br/>
-                            <p>What could our user need for a crypto-art market app?</p>
+                            <h4>What could our user need for a crypto-art market app?</h4>
                             <Slide bottom>
                             <div>
                                 <div class="needs">
