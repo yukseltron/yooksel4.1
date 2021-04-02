@@ -311,7 +311,7 @@ class Walleto extends Component {
                 <br/>
                 <br/>
                 <div>
-                    <div class="scenario-section">
+                    <div class="scenario-section spacer">
                         <div>
                         <p class="text-left">User flow for viewing transactions:</p>
                         </div>
@@ -323,16 +323,7 @@ class Walleto extends Component {
                     </div>
                 </div>
                 </div>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <div class="border-left">
+                <div class="border-left spacer">
                     <div>
                     <div class="horizontal-section">
                         <div>
@@ -342,12 +333,6 @@ class Walleto extends Component {
                         <img loading="lazy" class="subtle-shadow" src={s2}/>
                     </div>
                     </div>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
                     <div>
                         <div class="scenario-section">
                             <div>
@@ -361,14 +346,7 @@ class Walleto extends Component {
                         </div>
                     </div>
                 </div>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <div class="border-left">
+                <div class="border-left spacer">
                     <div>
                         <div class="horizontal-section">
                             <div>
@@ -378,14 +356,8 @@ class Walleto extends Component {
                             <img loading="lazy" class="subtle-shadow" src={s3}/>
                         </div>
                     </div>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
                 <div>
-                    <div class="scenario-section spacer">
+                    <div class="scenario-section">
                         <div>
                             <p class="text-left">User flow for setting price alerts.</p>
                         </div>
@@ -416,7 +388,7 @@ class Walleto extends Component {
                     <p>As cool as the technology seems however, I also learned about the toll they have on the environment.</p>
                     <p>This can be seen in the chart below, showing the increasing energy consumption needed for bitcoin mining over time.</p>
                     <img class="img-l" loading="lazy" src={chart}/>
-                    <p class="p-center">Chart taken from <a target="_blank" href="http://climatestate.com/2013/07/11/the-rise-of-digital-currency-like-bitcoin-and-carbon-footprints/">this site.</a></p>
+                    <p class="p-center">Chart on Bitcoin mining difficulty over time taken from <a target="_blank" href="http://climatestate.com/2013/07/11/the-rise-of-digital-currency-like-bitcoin-and-carbon-footprints/">this site.</a></p>
                     <p>For the future, it'd be interesting to maybe track environmental impact metrics as well for the user, in order to promote more environmentally-friendly trading and crypto.</p>
                 </div>
             </div>

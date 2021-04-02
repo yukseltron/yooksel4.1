@@ -115,8 +115,9 @@ class Marqet extends Component {
                               <img class="img-s" class="problem" src={challenge}/>
                                   <div>
                                       <h2 class="text-left center-content">The Challenge</h2>
-                                      <br/>
+                                      <div>
                                       <p class="text-left center-content">How can we provide a mobile art market for any art enthusiast wondering what they can do with their crypto funds?</p>
+                                      </div>
                                   </div>
                           </div>
                       </div>
@@ -175,7 +176,7 @@ class Marqet extends Component {
                               <h3 class="text-left">Sarah</h3>
                               <h4 class="text-left">Age: 35</h4>
                               <h4 class="text-left">Art enthusiast, Crypto newcomer</h4>
-                              <h5 class="text-left">"I Have ethereum, but doesn’t really know what to do with it."" <br/><br/>"I'm interested in art,
+                              <h5 class="text-left">"I Have ethereum, but don't really know what to do with it."<br/><br/>"I'm interested in art,
          and digital mediums, but I'm unsure how the auctions would work."</h5>
                             </div>
                       </div>
