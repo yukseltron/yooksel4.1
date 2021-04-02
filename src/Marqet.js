@@ -163,7 +163,7 @@ class Marqet extends Component {
                   </div>
             <div class="spacer"></div>
                 <div>
-                  <div class="spacer border-left">
+                  <div class="spacer border-left border-right">
                       <div>
                         <h2>Persona</h2>
                         <p class="center-content">Here's a persona for this project, made through secondary research and a user interview with a small-time art collector.</p>
@@ -171,6 +171,7 @@ class Marqet extends Component {
                       <br/>
                       <br/>
                       <div class="horizontal-section center-content border-top border-bottom">
+                        <br/>
                           <img class="border-white center-content margin-right img-m" src={persona} />
                             <div>
                               <h3 class="text-left">Sarah</h3>
