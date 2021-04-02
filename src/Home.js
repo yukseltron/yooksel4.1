@@ -68,7 +68,7 @@ class Home extends Component {
                     </Fade>
                     <br />
                     <div class="home-links">
-                        <Slide left>
+                        <Slide bottom>
                             <h2><NavLink to="/contact" class="link">Contact me</NavLink></h2>
                         </Slide>
                     </div>
@@ -94,11 +94,11 @@ class Home extends Component {
                     </div>
                     <br />
                     <div class="home-links">
-                    <Slide right>
+                    <Slide bottom>
                         <h2><NavLink to="/projects" class="link">View my UX work</NavLink></h2>
                     </Slide>
                         <br/>
-                    <Slide left>
+                    <Slide bottom>
                         <h2><a class="inline-a link" target="_blank" href="https://drive.google.com/file/d/1H-tHPjIP5dlZl9QtXDgoibdMZKjLbyDJ/view?usp=sharing">
                             My resume PDF
                         </a></h2>

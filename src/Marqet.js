@@ -102,35 +102,26 @@ class Marqet extends Component {
               </div>
               </Slide>
           </div>
-          <div class="border-top spacer border-right" ref={this.div1}>
-            <Slide bottom>
+          <div class="border-top spacer" ref={this.div1}>
             <div>
                   <h3>Introduction</h3>
             </div>
-            </Slide>
               <br/>
               <br/>
               <br/>
-              <div>
-                <Slide bottom>
+              <div class="border-right">
                       <div>
                           <div class="problem-section spacer">
-                            <Fade left>
                               <img class="img-s" class="problem" src={challenge}/>
-                             </Fade>
-                              <Slide bottom>
                                   <div>
                                       <h2 class="text-left center-content">The Challenge</h2>
                                       <br/>
                                       <p class="text-left center-content">How can we provide a mobile art market for any art enthusiast wondering what they can do with their crypto funds?</p>
                                   </div>
-                              </Slide>
                           </div>
                       </div>
-                </Slide>
               </div>
               <div class="border-left">
-                  <Slide bottom>
                       <div>
                           <h2>The Solution</h2>
                           <div class="solution-sector spacer center-content">
@@ -143,16 +134,12 @@ class Marqet extends Component {
                               <br/>
                               <br/>
                               <br/>
-                              <Fade right>
                               <img src={solution}/>
-                              </Fade>
                           </div>
                       </div>
-                    </Slide>
                 </div>
           </div>
-          <div class="border-top section spacer border-left" ref={this.div2}>
-            <Slide bottom>
+          <div class="border-top section spacer" ref={this.div2}>
                   <div>
                     <div>
               			<h3>Research</h3>
@@ -168,75 +155,60 @@ class Marqet extends Component {
                         <p class="center-content">Cryptopunks were amongst the first NFTs made. It was a generative art project made by 2 people called Larva Labs. You can read more about them <a href="https://www.larvalabs.com/cryptopunks">in this article.</a>  Some examples are shown in the screenshot below.</p>
                         <br/>
                         <br/>
-                        <Fade left>
+                        <Fade bottom>
                         <img class="img-s" alt="art work titled cryptopunks, generative art and among the first NFTs minted" src={research} />
                         </Fade>
                     </div>
                   </div>
-            </Slide>
             <div class="spacer"></div>
-                <Slide bottom>
                 <div>
-                  <div class="spacer border-right">
-                      <Slide bottom>
+                  <div class="spacer border-left">
                       <div>
                         <h2>Persona</h2>
                         <p class="center-content">Here's a persona for this project, made through secondary research and a user interview with a small-time art collector.</p>
                       </div>
-                      </Slide>
                       <br/>
                       <br/>
                       <div class="horizontal-section center-content border-padding subtle-shadow">
                           <img class="border-white center-content margin-right img-m" src={persona} />
                             <div>
-                              <h3 class="text-left">Hailey</h3>
+                              <h3 class="text-left">Sarah</h3>
                               <h4 class="text-left">Age: 35</h4>
-                              <h4 class="text-left bottom-border-white">Art enthusiast, Crypto newcomer</h4>
-                              <h5 class="text-left">Hailey has cryptocurrency in the form of ethereum, but doesn’t really know what to do with it. <br/><br/>She’s interested in art,
-          and how they can be purchased as NFT’s,
-          but she’s new to the overall process.</h5>
+                              <h4 class="text-left">Art enthusiast, Crypto newcomer</h4>
+                              <h5 class="text-left">"I Have ethereum, but doesn’t really know what to do with it."" <br/><br/>"I'm interested in art,
+         and digital mediums, but I'm unsure how the auctions would work."</h5>
                             </div>
                       </div>
                   </div>
                   </div>
-                  </Slide>
                   <div class="border-right">
-                      <Slide bottom>
                       <div>
                         <div class="needs-section spacer center-content">
                             <h2>The Needs</h2>
                             <br/>
                             <h4>What could our user need for a crypto-art market app?</h4>
-                            <Slide bottom>
                             <div>
                                 <div class="needs">
                                     <h1>1.</h1>
                                     <h4 class="h-left">Be able to place bids on crypto art.</h4>
                                 </div>
                             </div>
-                            </Slide>
-                            <Slide bottom>
                             <div>
                                 <div class="needs">
                                     <h1>2.</h1>
                                     <h4 class="h-left">View and adjust their <a target="_blank" href="https://en.wikipedia.org/wiki/Non-fungible_token">Non-Fungible Tokens</a> collection. These are digital items authenticated through blockchain technology that certifies a digital item is unique.</h4>
                                 </div>
                             </div>
-                            </Slide>
-                            <Slide bottom>
                             <div>
                                 <div class="needs spacer">
                                     <h1>3.</h1>
                                     <h4 class="h-left">A way to learn more information about a crypto art piece.</h4>
                                 </div>
                             </div>
-                            </Slide>
                         </div>
                        </div>
-                       </Slide>
                      </div>
-                     <div class="border-right">
-                      <Slide bottom>
+                     <div class="border-left">
                       <div>
                           <div class="spacer">
                               <h2>Ideation</h2>
@@ -244,17 +216,15 @@ class Marqet extends Component {
                               <p class="center-content">I sketched possible ideas on how to implement a solution. Here is an example sketch of a task about viewing an art piece.</p>
                               <br/>
                               <br/>
-                            <Fade right>
+                            <Fade bottom>
                                 <img  src={ideation}/>
                             </Fade>
                           </div>
                      </div>
-                     </Slide>
                      </div>
   		</div>
 		<div class="section spacer">
         <br/>
-            <Slide bottom>
             <div>
                 <div class="spacer border-top">
         			<h3>Prototyping</h3>
@@ -263,19 +233,17 @@ class Marqet extends Component {
                     <br/>
                     <br/>
                     <div class="border-right border-left">
-                        <Fade left>
+                        <Fade bottom>
                             <img  src={midfi}/>
                         </Fade>
                     </div>
                 </div>
             </div>
-            </Slide>
-            <Slide bottom>
             <div>
                 <div class="spacer final-design-section">
                     <h2>Hifi</h2>
-                    <p class="center-content">Next up, after getting peer-reviewed and taking notes of improvements, I designed a hi-fidelity prototype.</p>
-                    <Fade right>
+                    <p class="center-content">Next up, after getting peer-reviewed and taking notes on improvements, I designed a hi-fidelity prototype.</p>
+                    <Fade bottom>
                         <img src={hifi}/>
                     </Fade>
                     <br/>
@@ -301,10 +269,8 @@ class Marqet extends Component {
                     <br/>
                 </div>
             </div>
-            </Slide>
             <div class="spacer">
                 <div class="spacer">
-                    <Slide bottom>
                         <div>
                             <h2 class="center-content p-left">Artwork Info</h2>
                             <br/>
@@ -312,19 +278,17 @@ class Marqet extends Component {
     learn more about it, and decide
     to keep it on a watch list.</h4>
                         </div>
-                    </Slide>
                     <br/>
                     <br/>
                     <br/>
                     <br/>
-                    <Fade right>
+                    <Fade bottom>
                     <div>
                         <img class="spacer img-l" src={s1} />
                     </div>
                     </Fade>
                 </div>
                 <div class="spacer">
-                    <Slide bottom>
                         <div>
                             <h2 class="center-content p-left">Auctions</h2>
                             <br/>
@@ -332,19 +296,17 @@ class Marqet extends Component {
     and now wants to place a bid to buy it
     in auction.</h4>
                         </div>
-                    </Slide>
                     <br/>
                     <br/>
                     <br/>
                     <br/>
-                    <Fade left>
+                    <Fade bottom>
                     <div>
                         <img  class="spacer img-l" src={s2}/>
                     </div>
                     </Fade>
                 </div>
                 <div>
-                    <Slide bottom>
                         <div>
                             <h2 class="center-content  p-left">Adjust Privacy</h2>
                             <br/>
@@ -352,28 +314,24 @@ class Marqet extends Component {
     settings for an art piece in her collection.
     She wants it to be hidden from the public.</h4>
                         </div>
-                    </Slide>
                     <br/>
                     <br/>
                     <br/>
                     <br/>
-                    <Fade right>
+                    <Fade bottom>
                     <div>
                         <img  class="img-l" src={s3}/>
                     </div>
                     </Fade>
                 </div>
             </div>
-            <Slide bottom>
             <div>
                 <div class="border-bottom border-top spacer">
                     <h2 class="p-center">Check it out</h2>
                     <h4 class="p-center"><a target="_blank" href="https://www.figma.com/file/BnnGCuUM0paM6AlwuYkLVF/Marqet?node-id=0%3A1">View figma</a></h4>
                 </div>
             </div>
-            </Slide>
             <br/>
-            <Slide bottom>
             <div>
                 <div class="spacer">
                     <h2>Reflection</h2>
@@ -388,9 +346,16 @@ class Marqet extends Component {
                     <p class="center-content">As such, for the future, it would be good to focus on adding more socially-conscious aspects such as the carbon footprint of a crypto artwork.</p>
                 </div>
             </div>
-            </Slide>
-            <h2><a onClick={this.handleOnClick}>Return to top</a></h2>
+            <h2 class="spacer"><a onClick={this.handleOnClick}>Return to top</a></h2>
         </div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
         </div>
 
     );
