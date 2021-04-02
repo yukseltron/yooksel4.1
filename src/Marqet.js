@@ -170,13 +170,13 @@ class Marqet extends Component {
                       </div>
                       <br/>
                       <br/>
-                      <div class="horizontal-section center-content border-padding subtle-shadow">
+                      <div class="horizontal-section center-content border-top border-bottom">
                           <img class="border-white center-content margin-right img-m" src={persona} />
                             <div>
                               <h3 class="text-left">Sarah</h3>
                               <h4 class="text-left">Age: 35</h4>
                               <h4 class="text-left">Art enthusiast, Crypto newcomer</h4>
-                              <h5 class="text-left">"I Have ethereum, but don't really know what to do with it."<br/><br/>"I'm interested in art,
+                              <h5 class="text-left">"I recently got Ethereum, but don't really know what to do with it."<br/><br/>"I'm interested in art,
          and digital mediums, but I'm unsure how the auctions would work."</h5>
                             </div>
                       </div>
