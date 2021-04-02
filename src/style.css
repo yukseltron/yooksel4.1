@@ -1,5 +1,9 @@
 @import url("https://use.typekit.net/hvq3uny.css");
 
+:root {
+	color: #3B3E40;
+}
+
 body {
 	margin-left: 5%;
 	margin-right: 5%;
@@ -9,6 +13,7 @@ pre {
 	background-color: black;
 	color: orange;
 }
+
 .mobile-container {
   max-width: 2000px;
   margin: auto;
@@ -53,9 +58,10 @@ h5 {
 
 
 p {
-	font-family: antarctican-mono, sans-serif;
-	font-weight: 500;
+	font-family: pragmatica,sans-serif;
+	font-weight: 400;
 	font-style: normal;
+	line-height: 25px;
 }
 
 /**For Main.js**/
@@ -75,11 +81,11 @@ p {
 }
 
 h2 a {
-	font-family: antarctican-mono, sans-serif;
+	font-family: pragmatica-extended, sans-serif;
 	font-weight: 500;
 	font-style: normal;
 	text-decoration: none;
-	color: black;
+	color: #3B3E40;
 }
 
 h2 a:hover {

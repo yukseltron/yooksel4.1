@@ -67,11 +67,11 @@ class Home extends Component {
     				</div>
                     </Fade>
                     <br />
-                    <Slide left>
                     <div class="home-links">
-                        <h2><NavLink to="/contact" class="link">Contact me</NavLink></h2>
+                        <Slide left>
+                            <h2><NavLink to="/contact" class="link">Contact me</NavLink></h2>
+                        </Slide>
                     </div>
-                    </Slide>
     			</div>
                 <br/>
                 <br/>

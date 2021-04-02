@@ -121,6 +121,7 @@ class Marqet extends Component {
                               <Slide bottom>
                                   <div>
                                       <h2 class="text-left center-content">The Challenge</h2>
+                                      <br/>
                                       <p class="text-left center-content">How can we provide a mobile art market for any art enthusiast wondering what they can do with their crypto funds?</p>
                                   </div>
                               </Slide>

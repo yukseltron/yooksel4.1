@@ -315,7 +315,7 @@ class Walleto extends Component {
                 </Slide>
                 <Fade left>
                 <div>
-                    <img loading="lazy" class="img-l" src={access}/>
+                    <img loading="lazy" class="img-m" src={access}/>
                 </div>
                 </Fade>
             </div>
