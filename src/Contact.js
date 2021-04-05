@@ -6,6 +6,10 @@ class Contact extends Component {
   render() {
     return (
 		<div class="fade-in center-content contact">
+        <br />
+        <br />
+        <br />
+        <br />
                 <Fade bottom cascade>
                 <div>
     				<h3>
@@ -13,7 +17,7 @@ class Contact extends Component {
     				</h3>
                 </div>
                 </Fade>
-                <Slide left>
+                <Slide bottom>
                 <div>
                     <a class="inline-a link" target="_blank" href="https://drive.google.com/file/d/1H-tHPjIP5dlZl9QtXDgoibdMZKjLbyDJ/view?usp=sharing">
                 		In case you're actually looking for my resume.

@@ -6,11 +6,12 @@ import {
 } from "react-router-dom";
 import ScrollToTop from './ScrollToTop';
 import Projects from "./Projects";
+import More from "./More";
+import Play from "./Play";
 import About from "./About";
 import {Slide, Fade, LightSpeed} from 'react-reveal';
 import './home.css';
 import uxstuffIMG from './project-svgs/uxstuff.svg';
-import aboutIMG from './project-svgs/about.svg';
 
 var backGradient = "";
 
@@ -38,6 +39,9 @@ class Home extends Component {
        super(props)
        //creates a reference for your element to use
        this.myDivToFocus = React.createRef()
+       this.UXwork = React.createRef()
+       this.Codework = React.createRef()
+       this.Artwork = React.createRef()
     }
 
     handleOnClick = (event) => {
@@ -49,66 +53,87 @@ class Home extends Component {
             })
         }
     }
+
+    handleUXClick = (event) => {
+        //.current is verification that your element has rendered
+        if(this.UXwork.current){
+            this.UXwork.current.scrollIntoView({
+               behavior: "smooth",
+               block: "start"
+            })
+        }
+    }
+
+    handleCodeClick = (event) => {
+        //.current is verification that your element has rendered
+        if(this.Codework.current){
+            this.Codework.current.scrollIntoView({
+               behavior: "smooth",
+               block: "start"
+            })
+        }
+    }
+
+    handleArtClick = (event) => {
+        //.current is verification that your element has rendered
+        if(this.Artwork.current){
+            this.Artwork.current.scrollIntoView({
+               behavior: "smooth",
+               block: "start"
+            })
+        }
+    }
   render() {
     return (
         <div>
-    		<div ref={this.myDivToFocus} class="fade-in home spacer">
-    			<div class="intro">
+            <div class="spacer"></div>
+    		<div ref={this.myDivToFocus} class="fade-in home spacer border-bottom">
+    			<div class='center-content spacer'>
                     <Fade bottom cascade>
-    				<div class="home-intro">
-                        <p class="hello p-center">Hi! I'm</p>
-                        <h1 id="name">Hamid Yuksel</h1>
-                        <div class="iam">
-        					<h3>a UX designer,</h3>
-
-                            <h3>with a background in computer science,</h3>
-                            <h3>and an interest in art, writing, and more.</h3>
+                    <div>
+        				<div class="home-intro">
+                            <h4 class="p-center">Designer | Developer | Artist</h4>
+                            <h1 id="name">Hamid Yuksel</h1>
+        				</div>
+                        <br/>
+                        <br/>
+                        <div class="shape-container">
+                            <div id="shape" class="shape1"></div>
                         </div>
-    				</div>
-                    </Fade>
-                    <br />
-                    <div class="home-links">
-                        <Slide bottom>
-                            <h2><NavLink to="/contact" class="link">Contact me</NavLink></h2>
-                        </Slide>
                     </div>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <div class="center-content spacer">
+                        <div class="horizontal">
+                            <h3 onClick={this.handleUXClick} class="p-center click-proj">UX Cases</h3>
+                            <h3 onClick={this.handleCodeClick} class="p-center click-proj">Code Projects</h3>
+                            <h3 onClick={this.handleArtClick} class="p-center click-proj">Art</h3>
+                        </div>
+                    </div>
+                    </Fade>
     			</div>
-                <br/>
-                <br/>
     		</div>
             <br/>
+            <div ref={this.UXwork}></div>
             <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <div class="fade-in spacer section-1 home">
+            <div class="fade-in spacer home">
                 <div class="intro">
                     <div class="home-intro">
-                        <Fade bottom cascade>
-                        <div class="iam">
-                            <h1>As a UX designer,</h1>
-                            <h3>I focus on meaningful interactions.</h3>
-                        </div>
-                        </Fade>
+                            <div>
+                                <div class="border-bottom ux-color center-content">
+                                    <h1 id="name" class="text-center">UX Cases</h1>
+                                </div>
+                            </div>
                     </div>
-                    <br />
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
                     <div class="home-links">
-                    <Slide bottom>
-                        <h2><NavLink to="/projects" class="link">View my UX work</NavLink></h2>
-                    </Slide>
-                        <br/>
-                    <Slide bottom>
-                        <h2><a class="inline-a link" target="_blank" href="https://drive.google.com/file/d/1H-tHPjIP5dlZl9QtXDgoibdMZKjLbyDJ/view?usp=sharing">
-                            My resume PDF
-                        </a></h2>
-                    </Slide>
+                        <Projects/>
                     </div>
-                </div>
-                <div class="img-container">
-                    <Fade bottom>
-                    <img src={uxstuffIMG}/>
-                    </Fade>
                 </div>
             </div>
             <br/>
@@ -117,30 +142,25 @@ class Home extends Component {
             <br/>
             <br/>
             <br/>
-            <div class="fade-in spacer home section-2">
+            <div ref={this.Codework}></div>
+            <br/>
+            <div  class="fade-in spacer home">
                 <div class="intro">
                     <div class="home-intro">
-                        <Fade bottom cascade>
-                        <div class="iam">
-                            <h1>For other projects,</h1>
-                            <h3>I code, write,<br/>and make art.</h3>
-                        </div>
-                        </Fade>
+                            <div>
+                                <div class="border-bottom center-content">
+                                    <h1 class="text-center" id="name">Code Projects</h1>
+                                </div>
+                            </div>
                     </div>
-                    <br />
-                    <Slide left>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
                     <div class="home-links">
-                        <h2><NavLink to="/more" class="link">View my other work</NavLink></h2>
+                        <More/>
                     </div>
-                    </Slide>
                 </div>
-                <br />
-                <br />
-                <Fade bottom>
-                <div class="shape-container center-content">
-                    <div id="shape" style={{backgroundImage: backGradient}} class="shape1"></div>
-                </div>
-                </Fade>
             </div>
             <br/>
             <br/>
@@ -148,28 +168,24 @@ class Home extends Component {
             <br/>
             <br/>
             <br/>
-            <div class="fade-in section-3 home  spacer">
+            <div ref={this.Artwork}></div>
+            <br/>
+            <div class="fade-in spacer home">
                 <div class="intro">
-                    <Fade top cascade>
                     <div class="home-intro">
-                        <div class="iam">
-                            <h1>What else?</h1>
-                        </div>
+                            <div>
+                                <div class="border-bottom center-content">
+                                    <h1 class="text-center" id="name">Art</h1>
+                                </div>
+                            </div>
                     </div>
-                    </Fade>
-                    <br />
-                    <Slide right>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
                     <div class="home-links">
-                        <h2><NavLink to="/about" class="link">Learn about me</NavLink></h2>
+                        <Play/>
                     </div>
-                    </Slide>
-                </div>
-                <br />
-                <br />
-                <div class="shape-container center-content">
-                <Fade bottom>
-                    <img src={aboutIMG}/>
-                </Fade>
                 </div>
             </div>
             <h2><a class="p-center link-top spacer return" onClick={this.handleOnClick}>Return to top</a></h2>
@@ -178,7 +194,7 @@ class Home extends Component {
             <br/>
             <br/>
             <p class="text-right">I built this site with React</p>
-            <p class="text-right">Last updated Mar.26.2021</p>
+            <p class="text-right">Last updated Apr.5.2021</p>
         </div>
     );
   }

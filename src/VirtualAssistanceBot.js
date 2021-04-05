@@ -1,4 +1,5 @@
 import './projects-style.css';
+import Footer from './Footer';
 import frontIMG from './proj-fronts/vb-front.svg';
 import React, { Component } from "react";
 import {
@@ -112,6 +113,10 @@ class VirtualAssistanceBot extends Component {
             <br/>
             <h2><a onClick={this.handleOnClick}>Return to top</a></h2>
         </div>
+        <Footer/>
+        <br/>
+        <br/>
+        <br/>
         </div>
     );
   }

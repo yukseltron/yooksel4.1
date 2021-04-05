@@ -86,26 +86,21 @@ class Projects extends Component {
 
   render() {
       const items = []
-
       for (var i of projs) {
         items.push(
                     <div id={i.color}>
                         <div class="container spacer">
                             <Link to={i.link}>
                             <div class="info">
-                                <Fade bottom cascade>
                                 <div>
                                     <h1>{i.title}</h1>
                                     <h3>{i.platform}</h3>
-                                    <p class="description">{i.description}</p>
                                 </div>
-                                </Fade>
                             </div>
                             <div class="img-container">
-                            <Fade bottom cascade>
                                 <img loading="lazy" className={styles.animate__animated, styles.animate__fadeInDown} src={i.img}/>
-                            </Fade>
                             </div>
+                            <h3 class="description">{i.description}</h3>
                             <p class="date">{i.year}</p>
                             </Link>
                         </div>
@@ -115,42 +110,9 @@ class Projects extends Component {
     return (
 		<div class="projects-container">
         <LazyLoad>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <Fade top cascade>
-            <div>
-            <h4 class="p-center" ref={this.myDivToFocus}>These are my UX projects. Check out my <Link class="h-link" to="/more">other projects here.</Link></h4>
-            </div>
-            </Fade>
-            <br/>
-            <br/>
             <div class="fade-in" id="projects">
 				{items}
-                    <div class="container spacer">
-                    <Link to="/more">
-                        <div class="img-container">
-                            <Fade bottom cascade>
-                            <img class="container-img" loading="lazy" src={moreIMG}/>
-                            </Fade>
-                        </div>
-                        <div class="info">
-                            <Fade bottom cascade>
-                            <div>
-                                <h1>Other Works</h1>
-                                <h3>Coding, Writing, and Art Projects</h3>
-                                <p class="description">Check out some of my other creative projects.</p>
-                            </div>
-                            </Fade>
-                        </div>
-                        </Link>
-                    </div>
 			</div>
-            <h2><a class="p-center link-top spacer return" onClick={this.handleOnClick}>Return to top</a></h2>
-            <div class="spacer"></div>
         </LazyLoad>
 		</div>
     );

@@ -10,6 +10,7 @@ import {
   HashRouter
 } from "react-router-dom";
 import ScrollToTop from './ScrollToTop';
+import Footer from './Footer';
 
 
 class EmojiHoroscope extends Component {
@@ -54,6 +55,10 @@ class EmojiHoroscope extends Component {
           </p>
           <br/>
           <br/>
+          <br/>
+          <br/>
+          <br/>
+          <Footer/>
           <br/>
           <br/>
           <br/>

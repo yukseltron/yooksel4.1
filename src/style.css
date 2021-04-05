@@ -1,7 +1,7 @@
 @import url("https://use.typekit.net/hvq3uny.css");
 
 :root {
-	color: #3B3E40;
+	color: black;
 }
 
 body {
@@ -85,7 +85,7 @@ h2 a {
 	font-weight: 500;
 	font-style: normal;
 	text-decoration: none;
-	color: #3B3E40;
+	color: black;
 }
 
 h2 a:hover {
@@ -106,6 +106,8 @@ h2 a:active {
 
 	#nav-header {
 		font-size: 80%;
+		padding-left: 25%;
+		padding-right: 25%;
 	}
 
 	.shape1 {
@@ -212,6 +214,10 @@ h2 a:active {
 	cursor: pointer;
 }
 
+.borders {
+	border: 1px solid black;
+}
+
 .border-right {
 	border-right: 1px solid black;
 	padding-right: 10px;
@@ -242,4 +248,23 @@ h2 a:active {
 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
 0 100px 80px rgba(0, 0, 0, 0.12)
 ;
+}
+
+.horizontal {
+	display: flex;
+	justify-content: space-around;
+}
+
+.click-proj {
+	padding: 5px;
+	border: 1px solid transparent;
+}
+.click-proj:hover {
+	border: 1px solid blue;
+	cursor: pointer;
+	color: blue;
+}
+.click-proj:active {
+	background-color: black;
+	color: white;
 }

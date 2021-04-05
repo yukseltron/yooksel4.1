@@ -1,4 +1,5 @@
 import LazyLoad from 'react-lazyload';
+import Footer from './Footer';
 import quercusIMG from './project-svgs/quercus.svg';
 import './projects-style.css';
 import clayIMG from './quercus/quercus-clay.png';
@@ -485,6 +486,10 @@ class Quercus extends Component {
             </div>
 		</div>
         </LazyLoad>
+        <Footer/>
+        <br/>
+        <br/>
+        <br/>
 	  </div>
 
     );

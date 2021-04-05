@@ -1,4 +1,5 @@
 import LazyLoad from 'react-lazyload';
+import Footer from './Footer';
 import {Slide, Fade, LightSpeed} from 'react-reveal';
 import './projects-style.css';
 import frontIMG from './proj-fronts/marqet.png';
@@ -350,6 +351,7 @@ class Marqet extends Component {
             </div>
             <h2 class="spacer"><a onClick={this.handleOnClick}>Return to top</a></h2>
         </div>
+        <Footer/>
         <br/>
         <br/>
         <br/>

@@ -7,6 +7,7 @@ import {
   Link,
   HashRouter
 } from "react-router-dom";
+import aboutIMG from './project-svgs/about.svg';
 
 function onToggle() {
   var x = document.getElementById("skill-type").checked;
@@ -55,21 +56,28 @@ class About extends Component {
 
   render() {
     return (
-        <div class='about-body fade-in spacer-top'>
-            <div class="center-content">
+        <div class='about-body fade-in spacer-top center-content'>
+        <br />
+        <br />
+        <br />
+        <br />
+            <div>
                 <Fade bottom cascade>
                 <div>
-                <h1 ref={this.myDivToFocus}>Hey,</h1>
+                <img src={aboutIMG}/>
+                <h1 id="name" ref={this.myDivToFocus}>Hey!</h1>
             	<h2>
-            	Looks like you want to get to know me better!
+            	Looks like you want to get to know me better.
             	</h2>
                 </div>
                 </Fade>
                 <Fade bottom>
                 <div>
+                <br/>
                 <h4>
                 I'm just a human being somewhere in Canada.<br/>Probably working on hobbies or projects.
                 </h4>
+                <br/>
                 </div>
                 </Fade>
                 <Slide bottom>
@@ -83,13 +91,13 @@ class About extends Component {
                 </p>
                 </Slide>
                 <br/>
-                <Slide right>
+                <Slide bottom>
                 <Link class="link" to="/contact">
                 Feel free to reach out to me!</Link>
                 </Slide>
                 <br />
                 <br />
-                <Slide left>
+                <Slide bottom>
                 <div>
                 <a class="inline-a link" target="_blank" href="https://drive.google.com/file/d/1H-tHPjIP5dlZl9QtXDgoibdMZKjLbyDJ/view?usp=sharing">
                     Here is my resume in PDF.
@@ -105,7 +113,7 @@ class About extends Component {
             <br />
             <br />
             <br />
-            <div class="center-content-wide">
+            <div class="">
                 <Slide bottom>
                 <div>
                 <label class="label">
@@ -117,7 +125,7 @@ class About extends Component {
                 </label>
                 </div>
                 </Slide>
-                <Slide left>
+                <Slide bottom>
             	<h3 id="skills">UX Skills</h3>
                 </Slide>
                 <div class="skills top-border" id="ux-skills">
@@ -160,7 +168,7 @@ class About extends Component {
                     </Slide>
                 </div>
                 <div class="skills top-border" id="cs-skills">
-                    <Slide right>
+                    <Slide bottom>
                     <div>
                         <h2>Codes using</h2>
                         <ul>
@@ -199,7 +207,7 @@ class About extends Component {
         	<br />
             <br />
         	<br />
-            <div class="center-content">
+            <div class="">
                 <Slide bottom>
             	<h3>Education</h3>
                 </Slide>
@@ -230,7 +238,7 @@ class About extends Component {
         	<br />
             <br />
         	<br />
-            <div class="center-content">
+            <div class="">
                 <Slide bottom>
             	<h3>Experience</h3>
                 </Slide>
@@ -275,7 +283,7 @@ class About extends Component {
         	<br />
             <br />
             <br />
-            <div class="center-content">
+            <div class="">
                 <Slide bottom>
             	<h3>Activities</h3>
                 </Slide>
@@ -318,7 +326,7 @@ class About extends Component {
             <br/>
             <br/>
             <br/>
-            <div class="section-1 center-content">
+            <div class="section-1">
                 <br/>
                 <br/>
                 <br/>
@@ -410,7 +418,7 @@ class About extends Component {
                 <br/>
                 <br/>
             </div>
-            <div class="center-content">
+            <div class="">
                 <Fade bottom>
                 <div>
                 <h3>Fun stuff</h3>

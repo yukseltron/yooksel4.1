@@ -107,3 +107,8 @@ h2 a {
 #name {
 	font-size: 300%;
 }
+
+.project-type-banner {
+	position: sticky;
+	top: 20%;
+}

@@ -1,4 +1,5 @@
 import './projects-style.css';
+import Footer from './Footer';
 import React, { Component } from "react";
 import {
   BrowserRouter as Router,
@@ -101,6 +102,10 @@ class UVCatastrophe extends Component {
               <br/>
               <h2 class="spacer"><a onClick={this.handleOnClick}>Return to top</a></h2>
         </div>
+        <Footer/>
+        <br/>
+        <br/>
+        <br/>
     </div>
     );
   }

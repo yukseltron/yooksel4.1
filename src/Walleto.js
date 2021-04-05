@@ -1,4 +1,5 @@
 import LazyLoad from 'react-lazyload';
+import Footer from './Footer';
 import {Slide, Fade, LightSpeed} from 'react-reveal';
 import './projects-style.css';
 import main from './walleto/landing.png';
@@ -397,6 +398,7 @@ class Walleto extends Component {
             <br/>
             <h2><a class="spacer" onClick={this.handleOnClick}>Return to top</a></h2>
         </LazyLoad>
+        <Footer/>
         <br/>
         <br/>
         <br/>

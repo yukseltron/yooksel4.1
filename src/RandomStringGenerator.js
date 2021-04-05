@@ -1,4 +1,5 @@
 import './projects-style.css';
+import Footer from './Footer';
 import {Slide, Fade, LightSpeed} from 'react-reveal';
 import frontIMG from './proj-fronts/rsg-front.svg';
 import React, { Component } from "react";
@@ -168,6 +169,11 @@ class RandomStringGenerator extends Component {
             </Slide>
           </div>
           <h2 class="spacer"><a onClick={this.handleOnClick}>Return to top</a></h2>
+          <br/>
+          <Footer/>
+          <br/>
+          <br/>
+          <br/>
         </div>
     );
   }

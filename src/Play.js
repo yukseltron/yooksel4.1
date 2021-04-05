@@ -43,33 +43,13 @@ class Proj {
 }
 
 
-let rsg = new Proj('Random String Generator', 'Grammar Compiler in Python', '2020',
-'Programming, Project Management', 'Code', rsgIMG, '/random-string-generator');
-
-let vab = new Proj('Virtual Assistance Bot', 'Unity VR Capstone', '2020',
-'Project Management, Programming', 'Code', vabIMG, '/virtual-assistance-bot');
-
-let monodrift = new Proj('Mono Drift', 'Vue.js Web app', '2019',
-'Writing, Programming', 'Writing', monodriftIMG, '/mono-drift');
 
 let uvc = new Proj('UVC', 'Album Artwork', '2018',
-'Graphic design.', 'Art', uvcIMG, '/uvc');
-
-let jp = new Proj('The Josephus Problem', 'Angular Web App', '2017',
-'Programming, Visualization', 'Code', jpIMG, '/jp');
-
-let emojihoroscope = new Proj('Emoji Horoscope', 'Django Web App', '2018',
-'Programming', 'Code', ehoroIMG, '/emojihoroscope');
-
-let uxstuff = new Proj('UX Design', 'All my UX related work', '',
-'Check them out', 'UX', uxstuffIMG, '/projects');
+'Graphic design', 'Art', uvcIMG, '/uvc');
 
 
-projs[0] = rsg;
-projs[1] = vab;
-projs[2] = monodrift;
-projs[3] = emojihoroscope
-projs[4] = jp;
+
+projs[0] = uvc;
 //projs[6] = Intro to Comp poster
 //projs[7] = Flora
 //projs[8] = ELM slash bit fiction
@@ -92,7 +72,7 @@ projs[4] = jp;
 
 
 
-class More extends Component {
+class Play extends Component {
     constructor(props){
        super(props)
        //creates a reference for your element to use
@@ -145,4 +125,4 @@ class More extends Component {
   }
 }
 
-export default More;
+export default Play;
