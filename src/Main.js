@@ -7,6 +7,7 @@ import {
 import Home from "./Home";
 import Projects from "./Projects";
 import Playground from "./Playground";
+import AllProjects from "./AllProjects";
 import About from "./About";
 import Contact from "./Contact";
 import Quercus from "./Quercus";
@@ -39,6 +40,7 @@ class Main extends Component {
                 </div>
     			  <div className="content">
     	             <Route exact path="/" component={Home}/>
+                      <Route exact path="/projects" component={AllProjects}/>
      	             <Route path="/playground" component={Playground}/>
     	             <Route path="/about" component={About}/>
     	             <Route path="/contact" component={Contact}/>

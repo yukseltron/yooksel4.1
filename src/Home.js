@@ -86,14 +86,24 @@ class Home extends Component {
   render() {
     return (
         <div>
-            <div class="spacer"></div>
-    		<div ref={this.myDivToFocus} class="fade-in home spacer border-bottom">
-    			<div class='center-content spacer'>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+    		<div ref={this.myDivToFocus} class="fade-in home border-bottom">
+    			<div class='center-content'>
                     <Fade bottom cascade>
+                    <div class="center-content">
+                        <div class="horizontal">
+                            <h3 onClick={this.handleUXClick} class="p-center click-proj">UX</h3>
+                            <h3 onClick={this.handleArtClick} class="p-center click-proj">Art</h3>
+                            <h3 onClick={this.handleCodeClick} class="p-center click-proj">Code</h3>
+                        </div>
+                    </div>
                     <div>
         				<div class="home-intro">
-                            <h4 class="p-center">Designer | Developer | Artist</h4>
                             <h1 id="name">Hamid Yuksel</h1>
+                            <p class="hello p-center">Designer | Developer | Artist</p>
         				</div>
                         <br/>
                         <br/>
@@ -105,13 +115,6 @@ class Home extends Component {
                     <br/>
                     <br/>
                     <br/>
-                    <div class="center-content spacer">
-                        <div class="horizontal">
-                            <h3 onClick={this.handleUXClick} class="p-center click-proj">UX Cases</h3>
-                            <h3 onClick={this.handleCodeClick} class="p-center click-proj">Code Projects</h3>
-                            <h3 onClick={this.handleArtClick} class="p-center click-proj">Art</h3>
-                        </div>
-                    </div>
                     </Fade>
     			</div>
     		</div>
@@ -142,6 +145,32 @@ class Home extends Component {
             <br/>
             <br/>
             <br/>
+            <div ref={this.Artwork}></div>
+            <br/>
+            <div class="spacer home">
+                <div class="intro">
+                    <div class="home-intro">
+                            <div>
+                                <div class="border-bottom center-content">
+                                    <h1 class="text-center" id="name">Art Projects</h1>
+                                </div>
+                            </div>
+                    </div>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <div class="home-links">
+                        <Play/>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
             <div ref={this.Codework}></div>
             <br/>
             <div  class="fade-in spacer home">
@@ -159,32 +188,6 @@ class Home extends Component {
                     <br/>
                     <div class="home-links">
                         <More/>
-                    </div>
-                </div>
-            </div>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <div ref={this.Artwork}></div>
-            <br/>
-            <div class="fade-in spacer home">
-                <div class="intro">
-                    <div class="home-intro">
-                            <div>
-                                <div class="border-bottom center-content">
-                                    <h1 class="text-center" id="name">Art</h1>
-                                </div>
-                            </div>
-                    </div>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <div class="home-links">
-                        <Play/>
                     </div>
                 </div>
             </div>

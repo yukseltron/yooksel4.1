@@ -75,7 +75,7 @@ class About extends Component {
                 <div>
                 <br/>
                 <h4>
-                I'm just a human being somewhere in Canada.<br/>Probably working on hobbies or projects.
+                My name is Hamid. I'm just a human being somewhere in Canada.<br/>Probably working on hobbies or projects.
                 </h4>
                 <br/>
                 </div>

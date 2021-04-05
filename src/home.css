@@ -1,8 +1,4 @@
 @media screen and (min-width: 1000px) {
-	.hello {
-		margin-bottom: -50px;
-		margin-top: 50px;
-	}
 
 	.section-1 {
 		border-left: 1px solid black;
@@ -100,8 +96,7 @@ h2 a {
 }
 
 .hello {
-	margin-bottom: -30px;
-	margin-top: 80px;
+	margin-top: -30px;
 }
 
 #name {

@@ -255,7 +255,20 @@ h2 a:active {
 	justify-content: space-around;
 }
 
+.horizontal div {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.horizontal h3 {
+	font-size: 100%;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
 .click-proj {
+	width: 100px;
+	height: 50%;
 	padding: 5px;
 	border: 1px solid transparent;
 }
@@ -267,4 +280,9 @@ h2 a:active {
 .click-proj:active {
 	background-color: black;
 	color: white;
+}
+
+.proj-nav {
+	position: sticky;
+	top:50px;
 }
