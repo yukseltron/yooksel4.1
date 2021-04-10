@@ -12,6 +12,7 @@ class Contact extends Component {
         <br />
                 <Slide bottom>
                 <div>
+                    <h4>Feel free to reach out or explore my social media!</h4>
                     <a class="inline-a link" target="_blank" href="https://drive.google.com/file/d/1H-tHPjIP5dlZl9QtXDgoibdMZKjLbyDJ/view?usp=sharing">
                 		In case you're looking for my resume.
                 	</a>
