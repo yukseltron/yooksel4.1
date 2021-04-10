@@ -34,7 +34,7 @@ function returnShape() {
     x.style.backgroundImage = "linear-gradient(45deg, #81F499 0%, #6DD3CE 100%)";
 }
 
-class Home extends Component {
+class UXProjects extends Component {
     constructor(props){
        super(props)
        //creates a reference for your element to use
@@ -65,14 +65,15 @@ class Home extends Component {
                     <Fade bottom cascade>
                     <div>
                         <div class="home-intro">
-                            <h1>Hamid Yuksel</h1>
+							<h4>Hamid Yuksel's</h4>
+                            <h1>UX Work</h1>
                         </div>
                     </div>
                     <div class="center-content">
                         <div class="horizontal">
                             <NavLink to="/uxprojects">
                             <div>
-                                <h3 id="ux"  class="p-center click-proj">UX</h3>
+                                <h3 id="ux"  class="p-center click-proj active-page">UX</h3>
                             </div>
                             </NavLink>
                             <NavLink to="/codeprojects">
@@ -100,34 +101,14 @@ class Home extends Component {
                     </div>
                 </div>
             </div>
-            <div ref={this.Artwork}></div>
-            <br/>
-            <div class="spacer home">
-                <div class="intro">
-                    <div class="home-links">
-                        <Play/>
-                    </div>
-                </div>
-            </div>
-            <div ref={this.Codework}></div>
-            <br/>
-            <div  class="fade-in spacer home">
-                <div class="intro">
-                    <div class="home-links">
-                        <Code/>
-                    </div>
-                </div>
-            </div>
             <h2><a class="p-center link-top spacer return" onClick={this.handleOnClick}>Return to top</a></h2>
             <br/>
             <br/>
             <br/>
             <br/>
-            <p class="text-right">I built this site with React</p>
-            <p class="text-right">Last updated Apr.10.2021</p>
         </div>
     );
   }
 }
 
-export default Home;
+export default UXProjects;

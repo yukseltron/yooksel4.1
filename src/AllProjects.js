@@ -12,7 +12,7 @@ import LazyLoad from 'react-lazyload';
 import './projects.css';
 import Projects from './Projects';
 import Play from './Play';
-import More from './More';
+import Code from './Code';
 import ScrollToTop from './ScrollToTop';
 
 
@@ -71,7 +71,7 @@ class AllProjects extends Component {
 			   <br/>
 			   <br/>
 			   <div class="home-links">
-				   <More/>
+				   <Code/>
 			   </div>
 		   </div>
 	   </div>

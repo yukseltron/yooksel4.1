@@ -475,14 +475,6 @@ class Quercus extends Component {
                 <br/>
                 <br/>
                 <h2 class="spacer"><a onClick={this.handleOnClick}>Return to top</a></h2>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
             </div>
 		</div>
         </LazyLoad>

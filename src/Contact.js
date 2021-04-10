@@ -10,17 +10,10 @@ class Contact extends Component {
         <br />
         <br />
         <br />
-                <Fade bottom cascade>
-                <div>
-    				<h3>
-    					If you want to reach out,<br/>here's my email and social media links.
-    				</h3>
-                </div>
-                </Fade>
                 <Slide bottom>
                 <div>
                     <a class="inline-a link" target="_blank" href="https://drive.google.com/file/d/1H-tHPjIP5dlZl9QtXDgoibdMZKjLbyDJ/view?usp=sharing">
-                		In case you're actually looking for my resume.
+                		In case you're looking for my resume.
                 	</a>
                 </div>
                 </Slide>

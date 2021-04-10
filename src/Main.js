@@ -21,7 +21,10 @@ import Walleto from "./Walleto";
 import Marqet from "./Marqet";
 import Glenbow from "./Glenbow";
 import EmojiHoroscope from "./EmojiHoroscope";
-import More from "./More";
+import Code from "./Code";
+import CodeProjects from "./CodeProjects";
+import UXProjects from "./UXProjects";
+import ArtProjects from "./ArtProjects";
 import './style.css';
 import ScrollToTop from './ScrollToTop';
 
@@ -54,8 +57,11 @@ class Main extends Component {
                      <Route path="/emojihoroscope" component={EmojiHoroscope}/>
                      <Route path="/walleto" component={Walleto}/>
                      <Route path="/glenbow" component={Glenbow}/>
-                      <Route path="/marqet" component={Marqet}/>
-                     <Route path="/more" component={More}/>
+                     <Route path="/marqet" component={Marqet}/>
+                     <Route path="/code" component={Code}/>
+                     <Route path="/codeprojects" component={CodeProjects}/>
+                     <Route path="/uxprojects" component={UXProjects}/>
+                     <Route path="/artprojects" component={ArtProjects}/>
     	           </div>
 	        </div>
             </ScrollToTop>

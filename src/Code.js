@@ -92,7 +92,7 @@ projs[4] = jp;
 
 
 
-class More extends Component {
+class Code extends Component {
     constructor(props){
        super(props)
        //creates a reference for your element to use
@@ -115,18 +115,18 @@ class More extends Component {
       for (var i of projs) {
         items.push(
             <div id={i.color}>
-                <div class="container spacer">
+                <div class="container spacer-small">
                     <Link to={i.link}>
                     <div class="info">
                         <div>
-                            <h1>{i.title}</h1>
-                            <h3>{i.platform}</h3>
+                        <h1>{i.title}</h1>
+                        <h3>{i.platform}</h3>
+                        <p class="description">{i.description}</p>
                         </div>
                     </div>
                     <div class="img-container">
                         <img loading="lazy" className={styles.animate__animated, styles.animate__fadeInDown} src={i.img}/>
                     </div>
-                    <h3 class="description">{i.description}</h3>
                     <p class="date">{i.year}</p>
                     </Link>
                 </div>
@@ -145,4 +145,4 @@ class More extends Component {
   }
 }
 
-export default More;
+export default Code;

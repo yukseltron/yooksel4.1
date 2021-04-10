@@ -252,7 +252,7 @@ h2 a:active {
 
 .horizontal {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 }
 
 .horizontal div {
@@ -270,19 +270,36 @@ h2 a:active {
 	width: 100px;
 	height: 50%;
 	padding: 5px;
-	border: 1px solid transparent;
+	border: 1px solid black;
+	top: 20px;
 }
 .click-proj:hover {
 	border: 1px solid blue;
 	cursor: pointer;
-	color: blue;
+	background-color: blue;
+	color: white;
 }
 .click-proj:active {
-	background-color: black;
-	color: white;
+	background-color: white;
+	color: blue;
 }
 
 .proj-nav {
 	position: sticky;
 	top:50px;
+}
+
+.horizontal-footer {
+	display: flex;
+	justify-content: space-around;
+}
+
+.active-page {
+	background-color: blue;
+	border-color: blue;
+	color: white !important;
+}
+
+.spacer-small {
+	margin-bottom: 100px;
 }

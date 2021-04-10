@@ -34,7 +34,7 @@ function returnShape() {
     x.style.backgroundImage = "linear-gradient(45deg, #81F499 0%, #6DD3CE 100%)";
 }
 
-class Home extends Component {
+class CodeProjects extends Component {
     constructor(props){
        super(props)
        //creates a reference for your element to use
@@ -53,6 +53,36 @@ class Home extends Component {
             })
         }
     }
+
+    handleUXClick = (event) => {
+        //.current is verification that your element has rendered
+        if(this.UXwork.current){
+            this.UXwork.current.scrollIntoView({
+               behavior: "smooth",
+               block: "start"
+            })
+        }
+    }
+
+    handleCodeClick = (event) => {
+        //.current is verification that your element has rendered
+        if(this.Codework.current){
+            this.Codework.current.scrollIntoView({
+               behavior: "smooth",
+               block: "start"
+            })
+        }
+    }
+
+    handleArtClick = (event) => {
+        //.current is verification that your element has rendered
+        if(this.Artwork.current){
+            this.Artwork.current.scrollIntoView({
+               behavior: "smooth",
+               block: "start"
+            })
+        }
+    }
   render() {
     return (
         <div>
@@ -65,7 +95,8 @@ class Home extends Component {
                     <Fade bottom cascade>
                     <div>
                         <div class="home-intro">
-                            <h1>Hamid Yuksel</h1>
+							<h4>Hamid Yuksel's</h4>
+                            <h1>Code Projects</h1>
                         </div>
                     </div>
                     <div class="center-content">
@@ -77,7 +108,7 @@ class Home extends Component {
                             </NavLink>
                             <NavLink to="/codeprojects">
                             <div>
-                                <h3 id="code" class="p-center click-proj">Code</h3>
+                                <h3 id="code" class="p-center click-proj active-page">Code</h3>
                             </div>
                             </NavLink>
                             <NavLink to="/artprojects">
@@ -90,25 +121,7 @@ class Home extends Component {
                     </Fade>
     			</div>
     		</div>
-            <br/>
-            <div ref={this.UXwork}></div>
-            <br/>
-            <div class="fade-in spacer home">
-                <div class="intro">
-                    <div class="home-links">
-                        <Projects/>
-                    </div>
-                </div>
-            </div>
-            <div ref={this.Artwork}></div>
-            <br/>
-            <div class="spacer home">
-                <div class="intro">
-                    <div class="home-links">
-                        <Play/>
-                    </div>
-                </div>
-            </div>
+			<br/>
             <div ref={this.Codework}></div>
             <br/>
             <div  class="fade-in spacer home">
@@ -123,11 +136,9 @@ class Home extends Component {
             <br/>
             <br/>
             <br/>
-            <p class="text-right">I built this site with React</p>
-            <p class="text-right">Last updated Apr.10.2021</p>
         </div>
     );
   }
 }
 
-export default Home;
+export default CodeProjects;

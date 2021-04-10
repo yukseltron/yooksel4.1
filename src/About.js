@@ -56,15 +56,15 @@ class About extends Component {
 
   render() {
     return (
-        <div class='about-body fade-in spacer-top center-content'>
+        <div class='about-body fade-in spacer-top'>
         <br />
         <br />
         <br />
         <br />
-            <div>
+            <div class="bio center-content">
                 <Fade bottom cascade>
                 <div>
-                <img src={aboutIMG}/>
+                <img src={aboutIMG} class="center-content"/>
                 <h1 id="name" ref={this.myDivToFocus}>Hey!</h1>
             	<h2>
             	Looks like you want to get to know me better.
@@ -81,365 +81,319 @@ class About extends Component {
                 </div>
                 </Fade>
                 <Slide bottom>
-                <p>Originally, I studied computer science, but I also taught myself how to use design tools in my spare time. Currently, I'm doing a masters where I can learn more about design (and also data science).</p>
-                <p>That being said, I still enjoy programming and try to learn new tools. This website you're on for example I built using React for the first time. But for now, I'm focusing on further developing a career in design.</p>
+                <p>Originally, I studied computer science, but I also taught myself how to use design tools in my spare time. Currently, I'm pursuing a masters where I can learn more about design (and also data science).</p>
+                <p>That being said, I still enjoy programming and try to learn new tools. This website you're on for example I built using React for the first time.</p>
                 <p>
-                Professionally, I've worked as a UX Designer, Web developer, and Graphic Designer. Currently I'm looking for new challenging UX work.
-                </p>
-                <p>
-                In my spare time, I enjoy doing things like doodling or reading about history. En plus, je puis parler en Francais car je vivais au Montreal quand j'étais un petit enfant.
+                Professionally, I've worked as a UX Designer, Web developer, and Graphic Designer.
                 </p>
                 </Slide>
                 <br/>
                 <Slide bottom>
-                <Link class="link" to="/contact">
-                Feel free to reach out to me!</Link>
-                </Slide>
-                <br />
-                <br />
-                <Slide bottom>
                 <div>
-                <a class="inline-a link" target="_blank" href="https://drive.google.com/file/d/1H-tHPjIP5dlZl9QtXDgoibdMZKjLbyDJ/view?usp=sharing">
-                    Here is my resume in PDF.
+                <a class=" link" target="_blank" href="https://drive.google.com/file/d/1H-tHPjIP5dlZl9QtXDgoibdMZKjLbyDJ/view?usp=sharing">
+                    My resume in PDF.
                 </a>
                 </div>
                 </Slide>
-            </div>
-        	<br />
-        	<br />
-        	<br />
-        	<br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <div class="">
-                <Slide bottom>
-                <div>
-                <label class="label">
-                <p id="toggle-p">Switch skills</p>
-                  <div class="toggle">
-                    <input class="toggle-state" onClick={this.onToggle} type="checkbox" name="check" value="check" id="skill-type"/>
-                    <div class="indicator"></div>
-                  </div>
-                </label>
-                </div>
-                </Slide>
-                <Slide bottom>
-            	<h3 id="skills">UX Skills</h3>
-                </Slide>
-                <div class="skills top-border" id="ux-skills">
-                    <Slide bottom>
-                    <div>
-                        <h2>Designs with</h2>
-                        <ul>
-                            <li>User Research</li>
-                            <li>Information Architecture</li>
-                            <li>Wireframing & Prototyping</li>
-                            <li>Visual Communication</li>
-                            <li>Collaboration</li>
-                            <li>Data Analytics</li>
-                        </ul>
-                    </div>
-                    </Slide>
-                    <Slide bottom>
-                    <div>
-                        <h2>Methods used</h2>
-                        <ul>
-                            <li>Iterative Design</li>
-                            <li>Card Sorting</li>
-                            <li>Tree Testing</li>
-                            <li>Surveys</li>
-                            <li>Interviews</li>
-                            <li>Usability Testing</li>
-                        </ul>
-                    </div>
-                    </Slide>
-                    <Slide bottom>
-                    <div>
-                        <h2>Designs using</h2>
-                        <ul>
-                            <li>Figma</li>
-                            <li>illustrator</li>
-                            <li>Photoshop</li>
-                            <li>XD</li>
-                        </ul>
-                    </div>
-                    </Slide>
-                </div>
-                <div class="skills top-border" id="cs-skills">
-                    <Slide bottom>
-                    <div>
-                        <h2>Codes using</h2>
-                        <ul>
-                            <li>Python</li>
-                            <li>JavaScript</li>
-                            <li>HTML/CSS</li>
-                            <li>Git</li>
-                            <li>Bash</li>
-                        </ul>
-                    </div>
-                    </Slide>
-                    <Slide bottom>
-                    <div>
-                        <h2>Is learning</h2>
-                        <ul>
-                            <li>Haskell</li>
-                            <li>Swift</li>
-                        </ul>
-                    </div>
-                    </Slide>
-                    <Slide bottom>
-                    <div>
-                        <h2>Can use</h2>
-                        <ul>
-                            <li>Java</li>
-                            <li>SQL</li>
-                            <li>Elm</li>
-                            <li>C</li>
-                            <li>NASM Assembly</li>
-                        </ul>
-                    </div>
-                    </Slide>
-                </div>
-            </div>
-        	<br />
-        	<br />
-            <br />
-        	<br />
-            <div class="">
-                <Slide bottom>
-            	<h3>Education</h3>
-                </Slide>
-            	<div class="education top-border">
-            		<div>
-                        <Slide bottom>
-                        <div>
-                            <h2>UX Design and Human-Centred Data Science</h2>
-                            <h4>Masters of Information</h4>
-                            <p>@ University of Toronto, St George</p>
-                            <p>2022</p>
-                        </div>
-                        </Slide>
-                        <br/>
-                        <br/>
-                        <Slide bottom>
-                        <div class="top-border-dashed">
-                            <h2>Computer Science</h2>
-                            <h4>Bachelors of Applied Science</h4>
-                            <p>@ McMaster University</p>
-                            <p>2020</p>
-                        </div>
-                        </Slide>
-            		</div>
-            	</div>
-            </div>
-            <br />
-        	<br />
-            <br />
-        	<br />
-            <div class="">
-                <Slide bottom>
-            	<h3>Experience</h3>
-                </Slide>
-                <Slide bottom>
-            	<div class="top-border">
-                  <h2>UX Designer & Developer</h2>
-                  <h4>@ CaseWare</h4>
-                  <p>Toronto ON</p>
-                  <p>May 2018-2019</p>
-                  <h3 class="h3-para">Helped make NOVA, the internal design system used across CaseWare products. Contributed to designing and developing the NOVA UI library, the NOVA site,
-    its style guides, 40+ icons, and illustrations to help communicate to developers.</h3>
-                 <p>Tools: User Interviews, Angular, HTM/CSS, Illustrator, XD</p>
-            	</div>
-                </Slide>
-                <br/>
-                <br/>
-                <Slide bottom>
-            	<div class="top-border-dashed">
-                    <h2>Web Developer & Graphic Designer</h2>
-                    <h4>@ McMaster SSC</h4>
-                    <p>Hamilton ON</p>
-                    <p>Summer 2017</p>
-                    <h3 class="h3-para">Worked on a risk assessment app for students hosting events at the university. Designed the form and contributed to the risk assessment algorithm. Also made visual designs for the branding on various different SSC websites.</h3>
-                    <p>Tools: Vue.js, HTML, CSS, Photoshop</p>
-            	</div>
-                </Slide>
-                <br/>
-                <br/>
-                <Slide bottom>
-            	<div class="top-border-dashed">
-                    <h2>Software Design Engineer Intern</h2>
-                    <h4>@ Concur</h4>
-                    <p>Seattle WA</p>
-                    <p>Summer 2016</p>
-                    <h3 class="h3-para">Collaborated on a multithreading solution to optimize database search time from ~8hrs to ~30min. Built
-    a web app to dynamically show all the search query metrics and outcomes in real time and in an organized manner with customization options.</h3>
-                    <p>Tools: Java, JQuery, HTML, CSS, Spring, SQL</p>
-            	</div>
-                </Slide>
-            </div>
-        	<br />
-        	<br />
-            <br />
-            <br />
-            <div class="">
-                <Slide bottom>
-            	<h3>Activities</h3>
-                </Slide>
-                <Slide bottom>
-            	<div class="top-border">
-                    <h2>Design Lead</h2>
-                    <h4>@ DeltaHacks</h4>
-                    <p>Jan 2016 - May 2017</p>
-                    <h3 class="h3-para">Designed and led the team behind the main visual styles and branding of DeltaHacks III, a hackathon.</h3>
-            	</div>
-                </Slide>
-            		<br />
-                    <br/>
-                <Slide bottom>
-            	<div class="top-border-dashed">
-                    <h2>Dev Mentor</h2>
-                    <h4>@ NameCheap</h4>
-                    <p>Feb 2016-Jan 2017</p>
-                    <h3 class="h3-para">Mentored for programming and design to students at hackathons across North America.</h3>
-            	</div>
-                </Slide>
-            		<br />
-                    <br/>
-                <Slide bottom>
-            	<div class="top-border-dashed">
-                    <h2>Instructor</h2>
-                    <h4>@ Mac Outreach</h4>
-                    <p>Sep 2015-2016</p>
-                    <h3 class="h3-para">Helped teach 1000+ elementary students recursion and functional programming basics using ELM.</h3>
-            	</div>
-                </Slide>
-            </div>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <h2 class="p-center"><a class="return" onClick={this.handleOnClick}>Return to top</a></h2>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <div class="section-1">
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <Fade bottom cascade>
-                <p>Still want more?</p>
-                </Fade>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <Fade bottom cascade>
-                <p> Keep scrolling for some fun stuff</p>
-                </Fade>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-            </div>
-            <div class="">
-                <Fade bottom>
-                <div>
-                <h3>Fun stuff</h3>
-                <h2>Album of the moment</h2>
-                <iframe src="https://open.spotify.com/embed/album/49MNmJhZQewjt06rpwp6QR" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                 <br />
-                <br/>
-                <h2>Film of the moment</h2>
-                <iframe src="https://www.youtube.com/embed/2HkjrJ6IK5E?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
+                <br />
+                <Slide bottom>
+                <div>
                 </div>
-                </Fade>
+                </Slide>
             </div>
-            <h2 class="p-center"><a class="return" onClick={this.handleOnClick}>Return to top</a></h2>
+        	<br />
+            <div class="details">
+                <div class="center-content-wide">
+                    <div>
+                    <label class="label">
+                    <p id="toggle-p">Switch skills</p>
+                      <div class="toggle">
+                        <input class="toggle-state" onClick={this.onToggle} type="checkbox" name="check" value="check" id="skill-type"/>
+                        <div class="indicator"></div>
+                      </div>
+                    </label>
+                    </div>
+                	<h3 id="skills">UX Skills</h3>
+                    <div class="skills top-border" id="ux-skills">
+                        <div>
+                            <h4>Designs with</h4>
+                            <ul>
+                                <li>User Research</li>
+                                <li>Information Architecture</li>
+                                <li>Wireframing & Prototyping</li>
+                                <li>Visual Communication</li>
+                                <li>Collaboration</li>
+                                <li>Data Analytics</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>Methods used</h4>
+                            <ul>
+                                <li>Iterative Design</li>
+                                <li>Card Sorting</li>
+                                <li>Tree Testing</li>
+                                <li>Surveys</li>
+                                <li>Interviews</li>
+                                <li>Usability Testing</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>Designs using</h4>
+                            <ul>
+                                <li>Figma</li>
+                                <li>illustrator</li>
+                                <li>Photoshop</li>
+                                <li>XD</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="skills top-border" id="cs-skills">
+                        <div>
+                            <h4>Codes using</h4>
+                            <ul>
+                                <li>Python</li>
+                                <li>JavaScript</li>
+                                <li>HTML/CSS</li>
+                                <li>Git</li>
+                                <li>Bash</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>Is learning</h4>
+                            <ul>
+                                <li>Haskell</li>
+                                <li>Swift</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>Can use</h4>
+                            <ul>
+                                <li>Java</li>
+                                <li>SQL</li>
+                                <li>Elm</li>
+                                <li>C</li>
+                                <li>NASM Assembly</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            	<br />
+            	<br />
+                <br />
+            	<br />
+                <div class="center-content">
+                	<h3>Education</h3>
+                	<div class="education top-border">
+                		<div>
+                            <div>
+                                <h2>UX Design and Human-Centred Data Science</h2>
+                                <h4>Masters of Information</h4>
+                                <p>@ University of Toronto, St George</p>
+                                <p>2022</p>
+                            </div>
+                            <br/>
+                            <br/>
+                            <div class="top-border-dashed">
+                                <h2>Computer Science</h2>
+                                <h4>Bachelors of Applied Science</h4>
+                                <p>@ McMaster University</p>
+                                <p>2020</p>
+                            </div>
+                		</div>
+                	</div>
+                </div>
+                <br />
+            	<br />
+                <br />
+            	<br />
+                <div class="center-content">
+                	<h3>Experience</h3>
+                	<div class="top-border">
+                      <h2>UX Designer & Developer</h2>
+                      <h4>@ CaseWare</h4>
+                      <p>Toronto ON</p>
+                      <p>May 2018-2019</p>
+                      <h3 class="h3-para">Helped make NOVA, the internal design system used across CaseWare products. Contributed to designing and developing the NOVA UI library, the NOVA site,
+        its style guides, 40+ icons, and illustrations to help communicate to developers.</h3>
+                     <p>Tools: User Interviews, Angular, HTM/CSS, Illustrator, XD</p>
+                	</div>
+                    <br/>
+                    <br/>
+                	<div class="top-border-dashed">
+                        <h2>Web Developer & Graphic Designer</h2>
+                        <h4>@ McMaster SSC</h4>
+                        <p>Hamilton ON</p>
+                        <p>Summer 2017</p>
+                        <h3 class="h3-para">Worked on a risk assessment app for students hosting events at the university. Designed the form and contributed to the risk assessment algorithm. Also made visual designs for the branding on various different SSC websites.</h3>
+                        <p>Tools: Vue.js, HTML, CSS, Photoshop</p>
+                	</div>
+                    <br/>
+                    <br/>
+                	<div class="top-border-dashed">
+                        <h2>Software Design Engineer Intern</h2>
+                        <h4>@ Concur</h4>
+                        <p>Seattle WA</p>
+                        <p>Summer 2016</p>
+                        <h3 class="h3-para">Collaborated on a multithreading solution to optimize database search time from ~8hrs to ~30min. Built
+        a web app to dynamically show all the search query metrics and outcomes in real time and in an organized manner with customization options.</h3>
+                        <p>Tools: Java, JQuery, HTML, CSS, Spring, SQL</p>
+                	</div>
+                </div>
+            	<br />
+            	<br />
+                <br />
+                <br />
+                <div class="center-content">
+                	<h3>Activities</h3>
+                	<div class="top-border">
+                        <h2>Design Lead</h2>
+                        <h4>@ DeltaHacks</h4>
+                        <p>Jan 2016 - May 2017</p>
+                        <h3 class="h3-para">Designed and led the team behind the main visual styles and branding of DeltaHacks III, a hackathon.</h3>
+                	</div>
+                		<br />
+                        <br/>
+                	<div class="top-border-dashed">
+                        <h2>Dev Mentor</h2>
+                        <h4>@ NameCheap</h4>
+                        <p>Feb 2016-Jan 2017</p>
+                        <h3 class="h3-para">Mentored for programming and design to students at hackathons across North America.</h3>
+                	</div>
+                		<br />
+                        <br/>
+                	<div class="top-border-dashed">
+                        <h2>Instructor</h2>
+                        <h4>@ Mac Outreach</h4>
+                        <p>Sep 2015-2016</p>
+                        <h3 class="h3-para">Helped teach 1000+ elementary students recursion and functional programming basics using ELM.</h3>
+                	</div>
+                </div>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <h2 class="p-center"><a class="return" onClick={this.handleOnClick}>Return to top</a></h2>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <div class="section-1 center-content">
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <Fade bottom cascade>
+                    <p>Still want more?</p>
+                    </Fade>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <Fade bottom cascade>
+                    <p> Keep scrolling for some fun stuff</p>
+                    </Fade>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                </div>
+                <div class="center-content">
+                    <Fade bottom>
+                    <div>
+                    <h3>Fun stuff</h3>
+                    <h2>Album of the moment</h2>
+                    <iframe src="https://open.spotify.com/embed/album/49MNmJhZQewjt06rpwp6QR" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    <br />
+                    <br/>
+                    <h2>Film of the moment</h2>
+                    <iframe src="https://www.youtube.com/embed/2HkjrJ6IK5E?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    </div>
+                    </Fade>
+                </div>
+                <h2 class="p-center"><a class="return" onClick={this.handleOnClick}>Return to top</a></h2>
+            </div>
         </div>
 
 

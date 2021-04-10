@@ -103,7 +103,12 @@ h2 a {
 	font-size: 300%;
 }
 
-.project-type-banner {
-	position: sticky;
-	top: 20%;
+#ux {
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+}
+
+#art {
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
 }

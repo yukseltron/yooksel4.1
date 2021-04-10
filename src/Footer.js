@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 import ScrollToTop from './ScrollToTop';
 import Projects from "./Projects";
-import More from "./More";
+import Code from "./Code";
 import Play from "./Play";
 import About from "./About";
 import {Slide, Fade, LightSpeed} from 'react-reveal';
@@ -19,7 +19,7 @@ import './home.css';
 class Footer extends Component {
   render() {
     return (
-		<div class="horizontal border-top">
+		<div class="horizontal-footer border-top">
 			<div class="text-left">
 				<h4>UX Cases</h4>
 				<Link to="/quercus"><p>Improving Quercus</p></Link>

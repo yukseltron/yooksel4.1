@@ -23,6 +23,7 @@ a {
 .container {
 	padding: 25px;
 	margin-top: 50px;
+	width: 80%;
 	border: 1px solid black;
 	transition: background-color 0.2s, color 0.2s, box-shadow 0.4s;
 	transition-timing-function: ease-in-out;

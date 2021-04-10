@@ -10,17 +10,24 @@ import {
 import {Slide, Fade, LightSpeed} from 'react-reveal';
 import LazyLoad from 'react-lazyload';
 import quercusIMG from './project-svgs/quercus.svg';
+import clayIMG from './quercus/quercus-clay.png';
+
 import routesIMG from './project-svgs/routes-app.svg';
 import moreIMG from './project-svgs/more.svg';
 import glenIMG from './project-svgs/glenbow.svg';
+
 import walletoIMG from './project-svgs/walleto.svg';
+import main from './walleto/landing.png';
+
 import marqetIMG from './project-svgs/marqet.svg';
+import hifi from './marqet/hifi.png';
+
 import styles from './projects.css';
 import Quercus from "./Quercus";
 import Routes from "./Routes";
 import Walleto from "./Walleto";
 import Glenbow from "./Glenbow";
-import More from "./More";
+import Code from "./Code";
 import ScrollToTop from './ScrollToTop';
 
 var projs = [];
@@ -39,16 +46,16 @@ class Proj {
 }
 
 let marqet = new Proj('Art Marqet', 'Mobile Crypto Market', '2021',
-"UI Design, UX Research", 'UX', marqetIMG, '/marqet', 'marqet');
+"UI Design, UX Research", 'UX', hifi, '/marqet', 'marqet');
 
-let quercus = new Proj('Improving Quercus', 'Online Learning System on Web', '2020',
-'UI Design, UX Research, Illustration', 'UX', quercusIMG, '/quercus', 'quercus');
+let quercus = new Proj('Improving Quercus', 'Web Online Learning System', '2020',
+'UI Design, UX Research, Illustration', 'UX', clayIMG, '/quercus', 'quercus');
 
 let routes = new Proj('Routes', 'Mobile Commuting App', '2019',
 'UI Design, UX Research', 'UX', routesIMG, '/routes', 'routes');
 
-let walleto = new Proj('Walleto', 'Crypto Wallet on Web', '2021',
-'UI Design, UX Research', 'UX', walletoIMG, '/walleto', 'walleto');
+let walleto = new Proj('Walleto', 'Web Crypto Wallet', '2021',
+'UI Design', 'UX', main, '/walleto', 'walleto');
 
 let glenbow = new Proj('Changing Glenbow', 'IA Redesign on Web', '2020',
 "UX Research, UI Design", 'UX', glenIMG, '/glenbow', 'glenbow');
@@ -89,19 +96,19 @@ class Projects extends Component {
       for (var i of projs) {
         items.push(
                     <div id={i.color}>
-                        <div class="container spacer">
+                        <div class="container spacer-small">
                             <Link to={i.link}>
                             <div class="info">
                                 <div>
                                     <h1>{i.title}</h1>
                                     <h3>{i.platform}</h3>
+                                    <p class="description">{i.description}</p>
                                 </div>
                             </div>
                             <div class="img-container">
                                 <img loading="lazy" className={styles.animate__animated, styles.animate__fadeInDown} src={i.img}/>
+                                <p class="date">{i.year}</p>
                             </div>
-                            <h3 class="description">{i.description}</h3>
-                            <p class="date">{i.year}</p>
                             </Link>
                         </div>
                     </div>
